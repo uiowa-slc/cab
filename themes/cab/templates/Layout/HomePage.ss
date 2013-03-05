@@ -14,18 +14,97 @@
                 <div class="ribbon"></div>
                 <div id="slider" class="nivoSlider">
 				
-					<% control EventList(6) %>
-                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption{$Pos}" /></a>
+					<% if SliderFeature1 %>
+					<% control SliderFeature1 %>
+                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption1" /></a>
 					<% end_control %>
+					<% end_if %>
+					
+					<% if SliderFeature2 %>
+					<% control SliderFeature2 %>
+                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption2" /></a>
+					<% end_control %>
+					<% end_if %>
+					
+					<% if SliderFeature3 %>
+					<% control SliderFeature3 %>
+                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption3" /></a>
+					<% end_control %>
+					<% end_if %>
+					
+					<% if SliderFeature4 %>
+					<% control SliderFeature4 %>
+                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption4" /></a>
+					<% end_control %>
+					<% end_if %>
+					
+					<% if SliderFeature5 %>
+					<% control SliderFeature5 %>
+                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption5" /></a>
+					<% end_control %>
+					<% end_if %>	
+					
+					<% if SliderFeature6 %>
+					<% control SliderFeature6 %>
+                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption6" /></a>
+					<% end_control %>	
+					<% end_if %>	
+								
                 </div>
 			</div>
 			
             <!-- CAPTIONS -->
+           
+			<% if SliderFeature1 %>
+				<% control SliderFeature1 %>
+				  <div id="htmlcaption1" class="nivo-html-caption">
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				    </div>
+				<% end_control %>		
+			<% end_if %>
+			
+			<% if SliderFeature2 %>
+				<% control SliderFeature2 %>
+				  <div id="htmlcaption2" class="nivo-html-caption">
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				    </div>
+				<% end_control %>		
+			<% end_if %>
+			
+			<% if SliderFeature3 %>
+				<% control SliderFeature3 %>
+				  <div id="htmlcaption3" class="nivo-html-caption">
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				    </div>
+				<% end_control %>		
+			<% end_if %>
+			
+			<% if SliderFeature4 %>
+				<% control SliderFeature4 %>
+				  <div id="htmlcaption4" class="nivo-html-caption">
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				    </div>
+				<% end_control %>		
+			<% end_if %>
+			
+			<% if SliderFeature5 %>
+				<% control SliderFeature5 %>
+				  <div id="htmlcaption5" class="nivo-html-caption">
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				    </div>
+				<% end_control %>		
+			<% end_if %>
+
+			<% if SliderFeature6 %>
+				<% control SliderFeature6 %>
+				  <div id="htmlcaption6" class="nivo-html-caption">
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				    </div>
+				<% end_control %>		
+			<% end_if %>					
 			
 			<% control EventList(6) %>
-                        <div id="htmlcaption{$Pos}" class="nivo-html-caption">
-                             <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
-                        </div>
+              
 			<% end_control %>
                          
             <!-- END CAPTIONS -->
