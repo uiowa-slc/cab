@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
+/*Gives Body 0 margin on top*/
+.ZBody{
+	margin-top: 0;
+}
 a {outline:none;}
 a:hover {text-decoration:underline;}
 form.updates p input.subscribe {
@@ -495,6 +499,8 @@ label.left {
 .middleColumn textarea {
   width: 400px;
 }
+
+
 .Actions input {
   background-color: #9D1212;
   border: 0px;
@@ -505,8 +511,9 @@ label.left {
   font-size: 1.1em;
   line-height: 2px;
   margin-left: 155px;
-  padding: 2px;
+  height: 20px; 
   width: 140px;
+
 }
 
 .content{
@@ -524,6 +531,20 @@ label.left {
 }
 
 .recaptcha{ margin-top: 80px;
+}
+#ForgotPassword{
+	margin-left:155px;
+	margin-bottom: 35px;  
+}
 
-	
+/*Will Hopefully modify the securtiy log-in page*/
+.typography {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 12px;
+	color: white; 
+}
+
+div h2 {
+	margin-top: 50px; 
+	margin-left: 40px;
 }
