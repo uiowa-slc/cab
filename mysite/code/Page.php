@@ -13,8 +13,10 @@ class Page extends SiteTree {
 		return $fields;
 	}
 	function BlogPosts() {
-		$lectures = DataObject::get("BlogEntry", "Date <= CURDATE()", "EventDate ASC", "");
-		return $lectures;
+	$curDate = date("Y-m-d");
+	$lectures = BlogEntry::get()->filter(array ('EventDate:GreaterThan' => $curDate))->sort('EventDate ASC');
+		//$lectures = DataObject::get("BlogEntry", "Date <= CURDATE()", "EventDate ASC", "");
+	return $lectures;
 	}
 
 
@@ -41,26 +43,31 @@ class Page_Controller extends ContentController {
 	
 	public function EventList($number = 0) {
 		#Date > NOW() AND EndDate IS NULL OR EndDate > NOW()
-		$events = DataObject::get("EventListing","IF(EndDate IS NULL,Date > NOW(),EndDate > NOW())","Date ASC",null,$number);
+		//$events = DataObject::get("EventListing","IF(EndDate IS NULL,Date > NOW(),EndDate > NOW())","Date ASC",null,$number);
+		$curDate = date("Y-m-d");
+		$events = EventListing::get()->filter(array('EndDate' => NULL, 'Date:GreaterThan' => $curDate, 'EndDate:GreaterThan' => $curDate))->sort('Date Asc');
 		#$events->sort("EventDate","DESC");
 		return $events;
 	}
 	
 	public function AllEvents(){
-		$events = DataObject::get("EventListing");
-		$events->sort("EventDate","DESC");
+		//$events = DataObject::get("EventListing");
+		//$events->sort("EventDate","DESC");
+		$events = EventListing::get()->sort("EventDate", 'DESC');
 		return $events;
 	}
 	
 	public function BlogList(){
-		$blogPosts = DataObject::get("BlogEntry",null,"Date DESC",null,"3");
+		//$blogPosts = DataObject::get("BlogEntry",null,"Date DESC",null,"3");
+		$blogPosts = BlogEntry::get()->sort('Date', 'DESC')->limit(3); 
 		if($blogPosts){
 			return $blogPosts;
 		}
 	}
 	
 	public function BlogPosts(){
-		$blogPosts = DataObject::get("BlogEntry");
+		//$blogPosts = DataObject::get("BlogEntry");
+		$blogPosts = BlogEntry::get();
 		if($blogPosts){
 			return $blogPosts;
 		}
@@ -69,11 +76,11 @@ class Page_Controller extends ContentController {
 	function SearchForm() {
         $searchText = isset($this->Query) ? $this->Query : 'Search';
          
-        $fields = new FieldSet(
+        $fields = new FieldList(
             new TextField("Search", "", $searchText)
         );
  
-        $actions = new FieldSet(
+        $actions = new FieldList(
             new FormAction('results', 'Go')
         );
          

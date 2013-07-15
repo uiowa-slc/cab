@@ -9,6 +9,7 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo&v1' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
 		<% require themedCSS(cab) %> 
 		<% require themedCSS(nivo-slider) %> 
 		<% require themedCSS(default) %> 
@@ -17,20 +18,20 @@
 
 	<script type="text/javascript" src="$ThemeDir/javascript/js/backstretch/lib/jquery-1.4.2.min.js"></script>
 	    <script type="text/javascript" src="$ThemeDir/javascript/js/backstretch/jquery.backstretch.min.js"></script>
-	<% control SiteConfig %>
+	<% loop SiteConfig %>
 	<script type="text/javascript" src="$ThemeDir/javascript/js/backstretch/backstretch_{$BackgroundImage}.js"></script> 
-	<% end_control %>
+	<% end_loop %>
 	
 
     <script src="$ThemeDir/javascript/js/jquery.min.js" type="text/javascript"></script>
     <script src="$ThemeDir/javascript/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
     <script src="$ThemeDir/javascript/js/nivoslider.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
 
 </head>
 
-
-<body>
-
+<body class = "ZBody">
+	<%include DivisionBar%> 
 	<div id="preheader">	
     		<h1><a href="/">Cab</a> </h1>
             <h2><a href="/">Entertainment Done <span class="white">Right.</span></a></h2>
@@ -46,6 +47,7 @@
 			
             </div>-->
             <div class="clear"></div>
+            
     </div>
 	
 	 <div id="nav">

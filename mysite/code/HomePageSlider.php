@@ -16,17 +16,18 @@ class HomePageSlider extends Page {
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 		
-		$eventListings = DataObject::get("EventListing");
-		$eventListings->sort('Title');
+		//$eventListings = DataObject::get("EventListing");
 		
+		$eventListings = EventListing::get();
+		$eventListings->sort('Title');
 		$eventListingsSource = $eventListings->toDropDownMap('ID','Title'); 
 		
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureTitle', 'Event Title'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureDay', 'Event Day'));	
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureTime', 'Event Time'));	
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureLocation', 'Event Location'));	
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureTitle', 'Event Title'));
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureDay', 'Event Day'));	
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureTime', 'Event Time'));	
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureLocation', 'Event Location'));	
 
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('Image', 'Image'));
+	$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Image'));
 	//$fields->addFieldToTab('Root.Content.Main', new TreeDropDownField('EventListingID', 'Link slider to this event:', $eventListingsSource));
 	//$fields->addFieldToTab('Root.Content.Main', new LabelField('EventRequired', 'This is REQUIRED'));
 	
@@ -35,7 +36,7 @@ class HomePageSlider extends Page {
 
 
 
-			  $fields->removeFieldFromTab("Root.Content.Main","Content");
+			  $fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}

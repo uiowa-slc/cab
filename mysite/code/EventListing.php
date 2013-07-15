@@ -23,25 +23,25 @@ class EventListing extends Page {
 		$committees_source = $committees->toDropDownMap('ID','Title'); 
 	
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.Content.Main', new DropdownField('CommitteePageID', 'Committee', $committees_source) );
-		$fields->addFieldToTab('Root.Content.Main', new TextField('FirstWords', 'FirstWords'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('LastWords', 'LastWords'));
+		$fields->addFieldToTab('Root.Main', new DropdownField('CommitteePageID', 'Committee', $committees_source) );
+		$fields->addFieldToTab('Root.Main', new TextField('FirstWords', 'FirstWords'));
+		$fields->addFieldToTab('Root.Main', new TextField('LastWords', 'LastWords'));
 		
 		$datefield = new DateField('Date','Date of the event.');
 		$datefield->setConfig('showcalendar', true);
-		$fields->addFieldToTab('Root.Content.Main', $datefield);
+		$fields->addFieldToTab('Root.Main', $datefield);
 		
 		$datefield2 = new DateField('EndDate','End date - enter only if multiple days..');
 		$datefield2->setConfig('showcalendar', true);
-		$fields->addFieldToTab('Root.Content.Main', $datefield2);
+		$fields->addFieldToTab('Root.Main', $datefield2);
 		
 		//$fields->addFieldToTab('Root.Content.Main', new TextField('EventDate', 'Old EventDate - Will be removed.'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('EventTime', 'EventTime'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('EventLocation', 'EventLocation'));
-		$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField('EventDescription'));
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Youtube','YouTube ID'));
-		$fields->addFieldToTab('Root.Content.Main', new ImageField('Image', 'Image'));
-		$fields->removeFieldFromTab("Root.Content.Main","Content");
+		$fields->addFieldToTab('Root.Main', new TextField('EventTime', 'EventTime'));
+		$fields->addFieldToTab('Root.Main', new TextField('EventLocation', 'EventLocation'));
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField('EventDescription'));
+		$fields->addFieldToTab("Root.Main", new TextField('Youtube','YouTube ID'));
+		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Image'));
+		$fields->removeFieldFromTab("Root.Main","Content");
 		return $fields;
 	}
 }

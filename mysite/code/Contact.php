@@ -13,9 +13,9 @@ class Contact extends UserDefinedForm {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.Content.Main', new TextField('FirstWords', 'Headline, first word'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('LastWords', 'Headline, second word'));
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Tagline','Contact Info'));
+		$fields->addFieldToTab('Root.Main', new TextField('FirstWords', 'Headline, first word'));
+		$fields->addFieldToTab('Root.Main', new TextField('LastWords', 'Headline, second word'));
+		$fields->addFieldToTab("Root.Main", new TextField('Tagline','Contact Info'));
 		#$fields->removeFieldFromTab("Root.Content.Main","Content");
 		return $fields;
 	}

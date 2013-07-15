@@ -31,7 +31,7 @@
                <h2 class="float">$WordOne<span class="fontweight"> $WordTwo</span></h2>
                 <div class="clear"></div>	
 				
-				<% control Children %>
+				<% loop Children %>
 						 <div class="profile">
 							<div class="img">
 								$Image
@@ -48,7 +48,7 @@
 							</div>
 											<div class="clear"></div>
 						</div>
-				<% end_control %>
+				<% end_loop %>
 				
 				
                

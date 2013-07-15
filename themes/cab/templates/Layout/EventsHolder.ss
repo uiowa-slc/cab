@@ -23,7 +23,7 @@
 					<td style="height:10px;"></td>
 					<td style="height:10px;"></td>
 				</tr>
-					<% control Children %>
+					<% loop Children %>
 					
                 	<tr>
 						
@@ -32,7 +32,7 @@
                         <td><a href="$Link">$EventTime</a></td>
                         <td><a href="$Link">$EventLocation</a></td>
                     </tr>
-					<% end_control %>
+					<% end_loop %>
                    
                 </tbody>
             

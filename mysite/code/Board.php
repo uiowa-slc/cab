@@ -23,13 +23,13 @@ class Board extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-	$fields->addFieldToTab('Root.Content.Main', new TextField('BoardMember', 'Board member name'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MemberTitle', 'Member title'));	
-	$fields->addFieldToTab('Root.Content.Main', new TextField('Email', 'Member email'));	
-	$fields->addFieldToTab('Root.Content.Main', new TextField('Major', 'Member major'));	
-	$fields->addFieldToTab('Root.Content.Main', new TextField('Year', 'Member year in school'));	
+	$fields->addFieldToTab('Root.Main', new TextField('BoardMember', 'Board member name'));
+	$fields->addFieldToTab('Root.Main', new TextField('MemberTitle', 'Member title'));	
+	$fields->addFieldToTab('Root.Main', new TextField('Email', 'Member email'));	
+	$fields->addFieldToTab('Root.Main', new TextField('Major', 'Member major'));	
+	$fields->addFieldToTab('Root.Main', new TextField('Year', 'Member year in school'));	
 
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('Image', 'Image'));
+	$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Image'));
 
 	
 	
@@ -37,7 +37,7 @@ class Board extends Page {
 
 
 
-			  $fields->removeFieldFromTab("Root.Content.Main","Content");
+			  $fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}

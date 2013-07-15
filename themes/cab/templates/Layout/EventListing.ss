@@ -36,7 +36,7 @@
                     
                     <h4 id="nextupinterior">next up:</h4>
                     <ul class="interiornextup">
-                        <% control EventList(6) %>
+                        <% loop EventList(6) %>
                     <li><a href="$Link" >
 						$Title
 						$Date.format(n).$Date.format(j).$Date.format(y)
@@ -45,7 +45,7 @@
 						<% end_if %>
 					 	| $EventTime at $EventLocation
 					</a></li>
-               <% end_control %>
+               <% end_loop %>
                   
                     </ul>
 					

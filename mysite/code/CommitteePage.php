@@ -24,20 +24,20 @@ class CommitteePage extends Page {
     
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-	$fields->addFieldToTab('Root.Content.Main', new TextField('CommitteeName', 'CommitteeName'));
+	$fields->addFieldToTab('Root.Main', new TextField('CommitteeName', 'CommitteeName'));
 	
-	$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField('CommitteeDescription'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('CommitteeEvent', 'Committee Event'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('EventDate', 'Event Date'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('CommitteeEvent1', 'Committee Event 1'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('EventDate1', 'Event Date 1'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('CommitteeEvent2', 'Committee Event 2'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('EventDate2', 'Event Date 2'));
+	$fields->addFieldToTab("Root.Main", new HTMLEditorField('CommitteeDescription'));
+	$fields->addFieldToTab('Root.Main', new TextField('CommitteeEvent', 'Committee Event'));
+	$fields->addFieldToTab('Root.Main', new TextField('EventDate', 'Event Date'));
+	$fields->addFieldToTab('Root.Main', new TextField('CommitteeEvent1', 'Committee Event 1'));
+	$fields->addFieldToTab('Root.Main', new TextField('EventDate1', 'Event Date 1'));
+	$fields->addFieldToTab('Root.Main', new TextField('CommitteeEvent2', 'Committee Event 2'));
+	$fields->addFieldToTab('Root.Main', new TextField('EventDate2', 'Event Date 2'));
 	
 
 
 
-			  $fields->removeFieldFromTab("Root.Content.Main","Content");
+			  $fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}

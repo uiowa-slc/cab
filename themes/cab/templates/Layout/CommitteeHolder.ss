@@ -8,13 +8,13 @@
     <div id="interior">
     	<h2>$PageTitle</h2>
         	<ul class="subgroups">
-                 <% control Children %>
+                 <% loop Children %>
                <li><h3>$CommitteeName</h3>
 			   		<% if EventListings %>
                     <ul class="events">
-                    <% control EventListings %>
+                    <% loop EventListings %>
                         <li><a href="$Link">$Title<span class="date">$EventDate</span></a></li>
-                    <% end_control %>
+                    <% end_loop %>
 		
                     </ul>
 					<div class="committee_description_small">
@@ -29,7 +29,7 @@
                     <div class="clear"></div>
                 </li>
 				
-                <% end_control %>
+                <% end_loop %>
         	</ul>
     
     

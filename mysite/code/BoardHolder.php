@@ -18,14 +18,14 @@ class BoardHolder extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FirstWords', 'Headline, first word'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('LastWords', 'Headline, last word'));	
-	$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField('MissionStatement'));
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('Image', 'Image'));
+	$fields->addFieldToTab('Root.Main', new TextField('FirstWords', 'Headline, first word'));
+	$fields->addFieldToTab('Root.Main', new TextField('LastWords', 'Headline, last word'));	
+	$fields->addFieldToTab("Root.Main", new HTMLEditorField('MissionStatement'));
+	$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Image'));
 
-	$fields->addFieldToTab('Root.Content.Main', new TextField('WordOne', 'Secondary Headline, first word'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('WordTwo', 'Secondary Headline, second word'));	
-			  $fields->removeFieldFromTab("Root.Content.Main","Content");
+	$fields->addFieldToTab('Root.Main', new TextField('WordOne', 'Secondary Headline, first word'));
+	$fields->addFieldToTab('Root.Main', new TextField('WordTwo', 'Secondary Headline, second word'));	
+			  $fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}
@@ -51,7 +51,8 @@ class BoardHolder_Controller extends Page_Controller {
 	);
 
 	public function Events(){
-		$board = DataObject::get("Board");	
+		//$board = DataObject::get("Board");	
+		$board = Board::get(); 
 		
 		if($board)
 			return $board;

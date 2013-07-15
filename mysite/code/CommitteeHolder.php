@@ -13,9 +13,9 @@ class CommitteeHolder extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.Content.Main', new TextField('PageTitle', 'Headline'));
+		$fields->addFieldToTab('Root.Main', new TextField('PageTitle', 'Headline'));
 
-			  $fields->removeFieldFromTab("Root.Content.Main","Content");
+			  $fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}

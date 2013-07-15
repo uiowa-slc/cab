@@ -1,16 +1,13 @@
 <?php
  
-class SiteBackgroundConfig extends DataObjectDecorator {
+class SiteBackgroundConfig extends DataExtension {
      
-    function extraStatics() {
-        return array(
-            'db' => array(
-                "BackgroundImage" => "Text",
-            )
-        );
-    }
+
+    static $db = array(
+        'BackgroundImage' => 'Text'
+    );
  
-    public function updateCMSFields(FieldSet $fields) {
+    public function updateCMSFields(FieldList $fields) {
     
     	$background_list = array("cultural", "cultural_otheroption", "movie", "movie_otheroption", "variety", "variety_otheroption", "roads", "roads_otheroption", "comedy", "comedy_otheroption", "nighthawks", "nighthawks_otheroption", );
     	

@@ -14,9 +14,9 @@ class Committees extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab("Root.Content.LeftColumn", new HTMLEditorField('LeftColumn'));
+		$fields->addFieldToTab("Root.LeftColumn", new HTMLEditorField('LeftColumn'));
 
-		$fields->addFieldToTab("Root.Content.RightColumn", new HTMLEditorField('RightColumn'));
+		$fields->addFieldToTab("Root.RightColumn", new HTMLEditorField('RightColumn'));
 	
 
 
