@@ -2,7 +2,7 @@
 /* CSS Document */
 /*Gives Body 0 margin on top*/
 .ZBody{
-	margin-top: 0;
+	margin: 0;
 }
 a {outline:none;}
 a:hover {text-decoration:underline;}
@@ -537,14 +537,14 @@ label.left {
 	margin-bottom: 35px;  
 }
 
-/*Will Hopefully modify the securtiy log-in page*/
+/*Will Hopefully modify the security log-in page*/
 .typography {
 	font-family: Verdana, Tahoma, sans-serif;
 	font-size: 12px;
 	color: white; 
 }
 
-div h2 {
+.typography h2 {
 	margin-top: 50px; 
 	margin-left: 40px;
 }
