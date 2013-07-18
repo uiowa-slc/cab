@@ -19,8 +19,9 @@ class EventListing extends Page {
 	);
 	
 	function getCMSFields() {
-		$committees = DataObject::get('CommitteePage'); 
-		$committees_source = $committees->toDropDownMap('ID','Title'); 
+		//$committees = DataObject::get('CommitteePage');
+		$committees = CommitteePage::get(); 
+		$committees_source = $committees->map('ID','Title'); 
 	
 		$fields = parent::getCMSFields();
 		$fields->addFieldToTab('Root.Main', new DropdownField('CommitteePageID', 'Committee', $committees_source) );
