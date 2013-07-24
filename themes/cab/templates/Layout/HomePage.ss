@@ -112,10 +112,10 @@
 			<!-- NEXT UP -->
            <% end_if %>
 			<div id="nextup">
-				<% if $AllEvents %>
+				<% if $Events %>
                 <h4>$NextUp</h4>
 				
-                <ul> <% loop AllEvents %>
+                <ul> <% loop EventList %>
                     <li><a href="$Link" class="uppercase">
 						$Title <span class="differentiate">
 						$Date.Format('n.j.y')

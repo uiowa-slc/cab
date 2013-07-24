@@ -45,7 +45,8 @@ class Page_Controller extends ContentController {
 		#Date > NOW() AND EndDate IS NULL OR EndDate > NOW()
 		//$events = DataObject::get("EventListing","IF(EndDate IS NULL,Date > NOW(),EndDate > NOW())","Date ASC",null,$number);
 		$curDate = date("Y-m-d");
-		$events = EventListing::get()->filter(array('EndDate' => NULL, 'Date:GreaterThan' => $curDate, 'EndDate:GreaterThan' => $curDate))->sort('Date Asc');
+		$events = EventListing::get()->filter(array('EndDate:GreaterThan' => $curDate))->sort('Date DESC');
+		//$events = EventListing::get()->filter(array('EndDate' => NULL));
 		#$events->sort("EventDate","DESC");
 		return $events;
 	}

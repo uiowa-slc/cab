@@ -28,7 +28,7 @@
                 	<tr>
 						
                     	<td><a href="$Link">$FirstWords $LastWords</a></td>
-                        <td><a href="$Link">$Date.format(n).$Date.format(j).$Date.format(y)</a></td>
+                        <td><a href="$Link">$Date.Format('n.j.y')</a></td>
                         <td><a href="$Link">$EventTime</a></td>
                         <td><a href="$Link">$EventLocation</a></td>
                     </tr>

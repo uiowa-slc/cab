@@ -22,7 +22,6 @@
 					</div>
 					<% else_if Image %>
 					 
-					 
 					 $Image
 					 
 					 <% else %>
@@ -36,12 +35,13 @@
                     
                     <h4 id="nextupinterior">next up:</h4>
                     <ul class="interiornextup">
+                      
                         <% loop EventList(6) %>
                     <li><a href="$Link" >
 						$Title
-						$Date.format(n).$Date.format(j).$Date.format(y)
+						$Date.Format('n.j.y')
 						<% if EndDate %>
-							- $EndDate.format(n).$EndDate.format(j).$EndDate.format(y)
+							- $EndDate.Format('n.j.y')
 						<% end_if %>
 					 	| $EventTime at $EventLocation
 					</a></li>
@@ -59,9 +59,9 @@
                  <div id="leftcolumn">
                          <div id="eventdetails">
                             <h3>
-								$Date.format(n).$Date.format(j).$Date.format(y)
+								$Date.Format('n.j.y')
 								<% if EndDate %>
-									- $EndDate.format(n).$EndDate.format(j).$EndDate.format(y)
+									- $EndDate.Format('n.j.y')
 								<% end_if %>
 							</h3>
                             <h3>$EventTime</h3>
