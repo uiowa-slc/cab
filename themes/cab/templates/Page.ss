@@ -26,7 +26,7 @@
 
    
     <script src="$ThemeDir/javascript/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-    <!--<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>--->
+    <script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
     <script src="$ThemeDir/javascript/js/nivoslider.js" type="text/javascript"></script>
     
 
