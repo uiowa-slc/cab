@@ -112,7 +112,7 @@
 			<!-- NEXT UP -->
            <% end_if %>
 			<div id="nextup">
-				<% if $Events %>
+				<% if $EventList %>
                 <h4>$NextUp</h4>
 				
                 <ul> <% loop EventList %>
