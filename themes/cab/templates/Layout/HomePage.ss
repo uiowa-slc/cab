@@ -9,43 +9,43 @@
     	<!-- LEFT COLUMN, TOP -->
         <div id="leftcolumn">
             <!-- NIVO SLIDER -->
-            <% if EventList %>
+            <% if AllEvents %>
             <div class="slider-wrapper theme-default">
                 <div class="ribbon"></div>
                 <div id="slider" class="nivoSlider">
 				
-					<% if SliderFeature1 %>
-					<% loop SliderFeature1 %>
+					<% if $SliderFeature1 %>
+					<% loop $SliderFeature1 %>
                         <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption1" /></a>
 					<% end_loop %>
 					<% end_if %>
 					
-					<% if SliderFeature2 %>
-					<% loop SliderFeature2 %>
+					<% if $SliderFeature2 %>
+					<% loop $SliderFeature2 %>
                         <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption2" /></a>
 					<% end_loop %>
 					<% end_if %>
 					
-					<% if SliderFeature3 %>
-					<% loop SliderFeature3 %>
+					<% if $SliderFeature3 %>
+					<% loop $SliderFeature3 %>
                         <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption3" /></a>
 					<% end_loop %>
 					<% end_if %>
 					
-					<% if SliderFeature4 %>
-					<% loop SliderFeature4 %>
+					<% if $SliderFeature4 %>
+					<% loop $SliderFeature4 %>
                         <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption4" /></a>
 					<% end_loop %>
 					<% end_if %>
 					
-					<% if SliderFeature5 %>
-					<% loop SliderFeature5 %>
+					<% if $SliderFeature5 %>
+					<% loop $SliderFeature5 %>
                         <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption5" /></a>
 					<% end_loop %>
 					<% end_if %>	
 					
-					<% if SliderFeature6 %>
-					<% loop SliderFeature6 %>
+					<% if $SliderFeature6 %>
+					<% loop $SliderFeature6 %>
                         <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption6" /></a>
 					<% end_loop %>	
 					<% end_if %>	
@@ -55,50 +55,50 @@
 			
             <!-- CAPTIONS -->
            
-			<% if SliderFeature1 %>
-				<% loop SliderFeature1 %>
+			<% if $SliderFeature1 %>
+				<% loop $SliderFeature1 %>
 				  <div id="htmlcaption1" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if EndDate %> - $EndDate.Format('F j') <% end_if %> at $EventTime @ $EventLocation</a>.
 				    </div>
 				<% end_loop %>		
 			<% end_if %>
 			
-			<% if SliderFeature2 %>
-				<% loop SliderFeature2 %>
+			<% if $SliderFeature2 %>
+				<% loop $SliderFeature2 %>
 				  <div id="htmlcaption2" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if EndDate %> - $EndDate.Format('F j') <% end_if %> at $EventTime @ $EventLocation</a>.
 				    </div>
 				<% end_loop %>		
 			<% end_if %>
 			
-			<% if SliderFeature3 %>
-				<% loop SliderFeature3 %>
+			<% if $SliderFeature3 %>
+				<% loop $SliderFeature3 %>
 				  <div id="htmlcaption3" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if EndDate %> - $EndDate.Format('F j') <% end_if %> at $EventTime @ $EventLocation</a>.
 				    </div>
 				<% end_loop %>		
 			<% end_if %>
 			
-			<% if SliderFeature4 %>
-				<% loop SliderFeature4 %>
+			<% if $SliderFeature4 %>
+				<% loop $SliderFeature4 %>
 				  <div id="htmlcaption4" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if EndDate %> - $EndDate.Format('F j') <% end_if %> at $EventTime @ $EventLocation</a>.
 				    </div>
 				<% end_loop %>		
 			<% end_if %>
 			
-			<% if SliderFeature5 %>
-				<% loop SliderFeature5 %>
+			<% if $SliderFeature5 %>
+				<% loop $SliderFeature5 %>
 				  <div id="htmlcaption5" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if EndDate %> - $EndDate.Format('F j') <% end_if %> at $EventTime @ $EventLocation</a>.
 				    </div>
 				<% end_loop %>		
 			<% end_if %>
 
-			<% if SliderFeature6 %>
-				<% loop SliderFeature6 %>
+			<% if $SliderFeature6 %>
+				<% loop $SliderFeature6 %>
 				  <div id="htmlcaption6" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format(F j) <% if EndDate %> - $EndDate.Format(F j) <% end_if %> at $EventTime @ $EventLocation</a>.
+				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if EndDate %> - $EndDate.Format('F j') <% end_if %> at $EventTime @ $EventLocation</a>.
 				    </div>
 				<% end_loop %>		
 			<% end_if %>					
@@ -112,16 +112,15 @@
 			<!-- NEXT UP -->
            <% end_if %>
 			<div id="nextup">
-				<% if EventList %>
+				<% if $AllEvents %>
                 <h4>$NextUp</h4>
 				
-                <ul> <% loop EventList(13) %>
+                <ul> <% loop AllEvents %>
                     <li><a href="$Link" class="uppercase">
 						$Title <span class="differentiate">
-						$Date.format(n).$Date.format(j).$Date.format(y)
+						$Date.Format('n.j.y')
 						<% if EndDate %>
-							- $EndDate.format(n).$EndDate.format(j).$EndDate.format(y)
-						<% end_if %>
+							- $EndDate.Format('n.j.y')						<% end_if %>
 						| $EventTime at $EventLocation</span>
 					</a></li>
                <% end_loop %> </ul>
