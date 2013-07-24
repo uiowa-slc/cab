@@ -119,8 +119,9 @@
                     <li><a href="$Link" class="uppercase">
 						$Title <span class="differentiate">
 						$Date.Format('n.j.y')
-						<% if EndDate %>
-							- $EndDate.Format('n.j.y')						<% end_if %>
+						<% if $EndDate = $Date %><%else_if 1%>
+							- $EndDate.Format('n.j.y')						
+						<% end_if %>
 						| $EventTime at $EventLocation</span>
 					</a></li>
                <% end_loop %> </ul>

@@ -44,12 +44,13 @@ class Page_Controller extends ContentController {
 	public function EventList($number = 0) {
 		#Date > NOW() AND EndDate IS NULL OR EndDate > NOW()
 		//$events = DataObject::get("EventListing","IF(EndDate IS NULL,Date > NOW(),EndDate > NOW())","Date ASC",null,$number);
-		$curDate = date("Y-m-d");
-		$events = EventListing::get()->filter(array('EndDate:GreaterThan' => $curDate))->sort('Date DESC');
-		//$events = EventListing::get()->filter(array('EndDate' => NULL));
+		$curDate = date("Y-m-(d-1)");
+		$events = EventListing::get()->filter(array('EndDate:GreaterThan' => $curDate))->sort('Date ASC');
+		//$events = EventListing::get()->filter(array('EndDate' => ''));
 		#$events->sort("EventDate","DESC");
 		return $events;
 	}
+
 	
 	public function AllEvents(){
 		//$events = DataObject::get("EventListing");

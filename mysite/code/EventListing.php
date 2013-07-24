@@ -28,11 +28,11 @@ class EventListing extends Page {
 		$fields->addFieldToTab('Root.Main', new TextField('FirstWords', 'FirstWords'));
 		$fields->addFieldToTab('Root.Main', new TextField('LastWords', 'LastWords'));
 		
-		$datefield = new DateField('Date','Date of the event.');
+		$datefield = new DateField('Date','Start Date (Even if event is one day, fill out both Date fields.)');
 		$datefield->setConfig('showcalendar', true);
 		$fields->addFieldToTab('Root.Main', $datefield);
 		
-		$datefield2 = new DateField('EndDate','End date - enter only if multiple days..');
+		$datefield2 = new DateField('EndDate','End Date (Please fill out)');
 		$datefield2->setConfig('showcalendar', true);
 		$fields->addFieldToTab('Root.Main', $datefield2);
 		

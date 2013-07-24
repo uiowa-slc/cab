@@ -40,8 +40,8 @@
                     <li><a href="$Link" >
 						$Title
 						$Date.Format('n.j.y')
-						<% if EndDate %>
-							- $EndDate.Format('n.j.y')
+						<% if $EndDate = $Date %><%else_if 1%>
+							- $EndDate.Format('n.j.y')						
 						<% end_if %>
 					 	| $EventTime at $EventLocation
 					</a></li>
@@ -60,8 +60,8 @@
                          <div id="eventdetails">
                             <h3>
 								$Date.Format('n.j.y')
-								<% if EndDate %>
-									- $EndDate.Format('n.j.y')
+								<% if $EndDate = $Date %><%else_if 1%>
+							- $EndDate.Format('n.j.y')						
 								<% end_if %>
 							</h3>
                             <h3>$EventTime</h3>
