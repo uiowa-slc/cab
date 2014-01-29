@@ -1,22 +1,22 @@
 <?php
 class EventsHolder extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"PageTitle" => "Text",
 		"PageTitle1" => "Text",
 		);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 	
 	
-	static $allowed_children = array(	'EventListing');
+	private static $allowed_children = array(	'EventListing');
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-	$fields->addFieldToTab('Root.Main', new TextField('PageTitle', 'Headline, first word'));
-	$fields->addFieldToTab('Root.Main', new TextField('PageTitle1', 'Same headline, second word'));
-			  $fields->removeFieldFromTab("Root.Main","Content");
+		$fields->addFieldToTab('Root.Main', new TextField('PageTitle', 'Headline, first word'));
+		$fields->addFieldToTab('Root.Main', new TextField('PageTitle1', 'Same headline, second word'));
+			 $fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}
@@ -38,7 +38,7 @@ class EventsHolder_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function Events(){

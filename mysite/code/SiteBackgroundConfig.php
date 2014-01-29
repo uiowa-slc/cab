@@ -3,7 +3,7 @@
 class SiteBackgroundConfig extends DataExtension {
      
 
-    static $db = array(
+    private static $db = array(
         'BackgroundImage' => 'Text'
     );
  

@@ -1,7 +1,7 @@
 <?php
 class CommitteePage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 				"CommitteeName" => "Text",
 				'CommitteeDescription' => 'HTMLText',	
 				"CommitteeEvent" => "Text",
@@ -13,12 +13,12 @@ class CommitteePage extends Page {
 
 		);
 
-	public static $has_one = array(
+	private static $has_one = array(
 				"Image" => "Image",
 
 	);
 	
-    static $has_many = array(
+    private static $has_many = array(
         'EventListings' => 'EventListing'
     );
     
@@ -59,7 +59,7 @@ class CommitteePage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

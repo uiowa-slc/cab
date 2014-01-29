@@ -1,7 +1,7 @@
 <?php
 class EventListing extends Page {
 
-	public static $db = array(
+	private static $db = array(
 				"FirstWords" => "Text",
 				"LastWords" => "Text",
 				"Date" => "Date",
@@ -13,7 +13,7 @@ class EventListing extends Page {
 				'Youtube' => 'Text'
 		);
 
-	public static $has_one = array(
+	private static $has_one = array(
 				"Image" => "Image",
 				"CommitteePage" => "CommitteePage"
 	);
@@ -63,7 +63,7 @@ class EventListing_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

@@ -1,7 +1,7 @@
 <?php
 class BoardHolder extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"FirstWords" => "Text",
 				"LastWords" => "Text",
 				"MissionStatement" => "HTMLText",
@@ -9,12 +9,12 @@ class BoardHolder extends Page {
 				"WordTwo" => "Text",	
 		);
 
-	public static $has_one = array(
+	private static $has_one = array(
 			"Image" => "Image",
 	);
 	
 	
-	static $allowed_children = array(	'Board');
+	private static $allowed_children = array(	'Board');
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -47,7 +47,7 @@ class BoardHolder_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function Events(){

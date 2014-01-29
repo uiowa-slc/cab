@@ -1,7 +1,7 @@
 <?php
 class About extends Page {
 
-	public static $db = array(
+	private static $db = array(
 				"FirstWords" => "Text",
 				"LastWords" => "Text",
 				"MissionStatement" => "HTMLText",
@@ -12,7 +12,7 @@ class About extends Page {
 
 		);
 
-	public static $has_one = array(
+	private static $has_one = array(
 				"Image" => "Image",
 				
 
@@ -55,7 +55,7 @@ class About_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

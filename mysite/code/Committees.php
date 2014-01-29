@@ -1,14 +1,14 @@
 <?php
 class Committees extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		'LeftColumn' => 'HTMLText',
 		'RightColumn' => 'HTMLText',
 			
 
 		);
 
-	public static $has_one = array(
+	private static $has_one = array(
 
 	);
 	
@@ -40,7 +40,7 @@ class Committees_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

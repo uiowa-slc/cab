@@ -1,14 +1,14 @@
 <?php
 class HomePage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 			"NextUp" => "Text",
 			"RedLightHeadline" => "Text",
 			'RedLightDescription' => 'HTMLText',
 
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		"SliderFeature1" => "SiteTree",
 		"SliderFeature2" => "SiteTree",
 		"SliderFeature3" => "SiteTree",
@@ -18,7 +18,7 @@ class HomePage extends Page {
 
 
 	);
-	static $allowed_children = array(	'HomePageSlider');
+	private static $allowed_children = array(	'HomePageSlider');
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -72,7 +72,7 @@ class HomePage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-public static $allowed_actions = array (
+private static $allowed_actions = array (
 	);
 
 	public function Events(){

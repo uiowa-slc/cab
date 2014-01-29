@@ -1,15 +1,15 @@
 <?php
 class CommitteeHolder extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"PageTitle" => "Text",
 		);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 	
 	
-	static $allowed_children = array(	'CommitteePage');
+	private static $allowed_children = array(	'CommitteePage');
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -37,7 +37,7 @@ class CommitteeHolder_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

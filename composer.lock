@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "08cfe9d9ed89cf1f9c48147e9274e0b9",
+    "hash": "5715ae0169f0feb4e664fa636986d044",
     "packages": [
         {
             "name": "composer/installers",
@@ -119,6 +119,47 @@
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
             "time": "2014-01-27 19:58:19"
+        },
+        {
+            "name": "silverstripe/blog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-blog.git",
+                "reference": "2a25b9459c89dbb84e4fa9b4765ceac3d4ea6d79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/2a25b9459c89dbb84e4fa9b4765ceac3d4ea6d79",
+                "reference": "2a25b9459c89dbb84e4fa9b4765ceac3d4ea6d79",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1"
+            },
+            "suggest": {
+                "silverstripe/comments": "Enable user comments on any page type, including blog posts",
+                "silverstripe/widgets": "Additional 'sidebar features', e.g. a list of recent posts and a tagcloud",
+                "simplepie/simplepie": "Parse RSS feeds, required for the RSS widget"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Saophalkun Ponlu",
+                    "email": "phalkunz@silverstripe.com"
+                },
+                {
+                    "name": "Carlos Barberis",
+                    "email": "carlos@silverstripe.com"
+                }
+            ],
+            "description": "The blog module allows you to post blogs on your SilverStripe. It includes the ability to post blogs using a site front-end form. Blogs are summarised on the blog holder page type, with more detail viewable when a specific blog is clicked.",
+            "keywords": [
+                "blog",
+                "silverstripe"
+            ],
+            "time": "2014-01-27 23:24:31"
         },
         {
             "name": "silverstripe/cms",
@@ -289,6 +330,43 @@
                 "spamprotection"
             ],
             "time": "2013-09-02 09:44:06"
+        },
+        {
+            "name": "silverstripe/userforms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-userforms.git",
+                "reference": "a9b49e01650e3d04c53164e2264c64aa12fd5ded"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/a9b49e01650e3d04c53164e2264c64aa12fd5ded",
+                "reference": "a9b49e01650e3d04c53164e2264c64aa12fd5ded",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": ">=3.1.0",
+                "silverstripe/framework": ">=3.1.0"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io",
+                    "homepage": "http://wilr.github.com"
+                }
+            ],
+            "description": "UserForms enables CMS users to create dynamic forms via a drag and drop interface and without getting involved in any PHP code",
+            "keywords": [
+                "silverstripe",
+                "userforms"
+            ],
+            "time": "2014-01-24 01:37:01"
         }
     ],
     "packages-dev": [
