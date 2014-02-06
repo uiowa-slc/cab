@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "c1da3532e471f059585d7c56670b4e3de69ab97d"
+                "reference": "35a07647186a910b725fca9290b13ca2e265491a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/c1da3532e471f059585d7c56670b4e3de69ab97d",
-                "reference": "c1da3532e471f059585d7c56670b4e3de69ab97d",
+                "url": "https://api.github.com/repos/composer/installers/zipball/35a07647186a910b725fca9290b13ca2e265491a",
+                "reference": "35a07647186a910b725fca9290b13ca2e265491a",
                 "shasum": ""
             },
             "replace": {
@@ -86,7 +86,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-01-28 16:49:00"
+            "time": "2014-01-31 16:53:31"
         },
         {
             "name": "md/division-bar",
@@ -158,12 +158,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "2a25b9459c89dbb84e4fa9b4765ceac3d4ea6d79"
+                "reference": "6653cc254611417f6fe0b92aacfe39601c1eea83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/2a25b9459c89dbb84e4fa9b4765ceac3d4ea6d79",
-                "reference": "2a25b9459c89dbb84e4fa9b4765ceac3d4ea6d79",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/6653cc254611417f6fe0b92aacfe39601c1eea83",
+                "reference": "6653cc254611417f6fe0b92aacfe39601c1eea83",
                 "shasum": ""
             },
             "require": {
@@ -191,7 +191,7 @@
                 "blog",
                 "silverstripe"
             ],
-            "time": "2014-01-27 23:24:31"
+            "time": "2014-01-10 23:28:32"
         },
         {
             "name": "silverstripe/cms",
