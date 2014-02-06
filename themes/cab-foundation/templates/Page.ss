@@ -21,31 +21,25 @@
 	<script src="$ThemeDir/bower_components/modernizr/modernizr.js"></script>
 </head>
 <body class="$ClassName.ATT">
+	<% include DivisionBar %>
 
 	<header class="header" role="banner">
-		<div class="fixed contain-to-grid">
+		<div class="contain-to-grid">
 			<% include TopBar %>
 		</div>
 	</header>
 
-	<div class="main typography" role="main">
+	<div class="main typography $ClassName" role="main">
 		<div class="row">
 			$Layout
 		</div>
 	</div>
 
-	<nav role="navigation">
-		<div class="row">
-			<div class="large-12 columns">
-				<% include Breadcrumbs %>
-			</div>
-		</div>
-	</nav>
-
 	<footer class="footer" role="contentinfo">
 		<div class="row">
 			<div class="large-12 columns">
-				<p>&copy; $Now.Year $SiteConfig.Title</p>
+				<p>&copy; $Now.Year The University of Iowa.</p>
+				<p>Individuals with disabilities are encouraged to attend all University of Iowa - sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact the Center for Student Involvement and Leadership in advance at 319-335-3059./p>
 			</div>
 		</div>
 	</footer>
@@ -56,10 +50,10 @@
 		$LoginForm
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
-
 	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
 	<script src="$ThemeDir/bower_components/jquery/jquery.js"></script>
 	<script src="$ThemeDir/bower_components/foundation/js/foundation.min.js"></script>
 	<script src="$ThemeDir/javascript/app.js"></script>
+	<script src="division-bar/js/division-bar.js"></script>
 </body>
 </html>

@@ -1,5 +1,55 @@
+@import url('http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic');
 @import "settings";
 @import "foundation";
+@import "../../../division-bar/css/_division-bar.css";
+$include-html-type-classes: $include-html-classes;
+
+
+.wrapper {
+	 @include grid-row();
+}
+
+
+body{
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	background-position: 20% 0;
+}
+
+header{
+	@media #{$large-up} {
+	margin-top: 20px;
+	}
+}
+
+
+
+.main {
+	background-color: $darkGray;
+}
+body .main.HomePage {
+	background: none;
+	color: white;
+}
+.main-header h1, .main-header h2{
+	display: inline;
+}
+
+.main-header h2 {
+	color: $gray;
+}
+
+.main-header h2 {
+	margin-left: 20px;
+}
+
+.top-bar{
+	height: auto;
+}
+.top-bar-section ul {
+	background: none;
+	text-transform: lowercase;
+}
 
 .main {
 	padding-top: 32px;

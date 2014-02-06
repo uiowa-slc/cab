@@ -1,11 +1,11 @@
 <nav class="top-bar" role="navigation" data-topbar>
-	<ul class="title-area">
-		<li class="name">
-			<h1><a href="/home">$SiteConfig.Title</a></h1>
-		</li>
-		<li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
-	</ul>
+
 	<section class="top-bar-section">
+
+	<div class="main-header">
+	<h1><a href="{$BaseHref}"><img src="{$ThemeDir}/images/cablogo.png" alt="$SiteConfig.Title" /></a></h1><h2>entertainment done right.</h2>
+	
+	</div>
 		<%-- Left Nav Section --%>
 		<ul class="left">
 			<% loop Menu(1) %>
@@ -35,18 +35,7 @@
 		</ul>
 		<%-- Right Nav Section --%>
 		<ul class="right">
-			<% if $CurrentMember %>
-			<li class="has-dropdown">
-				<a href="admin/myprofile">Hi $CurrentMember.FirstName</a>
-				<ul class="dropdown">
-					<li><a href="admin/">Admin</a></li>
-					<li><a href="admin/myprofile">My Profile</a></li>
-					<li><a href="Security/logout">Logout</a></li>
-				</ul>
-			</li>
-			<% else %>
-			<li><a href="Security/login?BackURL=%2Fadmin" data-reveal-id="login-form-modal">Login</a></li>
-			<% end_if %>
+			<li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
 		</ul>
 	</section>
 </nav>
