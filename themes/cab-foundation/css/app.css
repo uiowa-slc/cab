@@ -6532,6 +6532,10 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+#home-top-right {
+  background-color: #fff;
+}
+
 .wrapper {
   width: 100%;
   margin-left: auto;

@@ -2,8 +2,8 @@
 @import "settings";
 @import "foundation";
 @import "../../../division-bar/css/_division-bar.css";
+@import "home";
 $include-html-type-classes: $include-html-classes;
-
 
 .wrapper {
 	 @include grid-row();
@@ -21,8 +21,6 @@ header{
 	margin-top: 20px;
 	}
 }
-
-
 
 .main {
 	background-color: $darkGray;
@@ -55,3 +53,4 @@ body .main.HomePage {
 	padding-top: 32px;
 	min-height: 320px;
 }
+
