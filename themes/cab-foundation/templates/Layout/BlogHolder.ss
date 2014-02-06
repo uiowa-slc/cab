@@ -1,0 +1,30 @@
+		<% require themedCSS(interior) %> 
+<div id ="content">
+   
+        <div id="interior">
+			<h2 class="float">Cab<span class="fontweight">fare</span></h2>
+			<h3 class="tagline">the official blog of <br /> campus activities board</h3>
+			<div class="clear"></div>
+<div id="BlogContent" class="blogcontent typography">
+	
+	<% include BreadCrumbs %>
+	
+	<% if SelectedTag %>
+		<!--<h3><% _t('VIEWINGTAGGED', 'Viewing entries tagged with') %> '$SelectedTag'</h3>
+	<% else_if SelectedDate %> -->
+		<h3><% _t('VIEWINGPOSTEDIN', 'Viewing entries posted in') %> $SelectedDate.Month $SelectedDate.Year</h3>
+	<% end_if %>
+	
+	<% if BlogEntries %>
+		<% loop BlogEntries %>
+				<% include BlogSummary %>
+		<% end_loop %>
+	<% else %>
+		<h3><% _t('NOENTRIES', 'There are no blog entries') %></h3>
+	<% end_if %>
+	
+	<% include BlogPagination %>
+	
+</div>
+</div>
+</div>
