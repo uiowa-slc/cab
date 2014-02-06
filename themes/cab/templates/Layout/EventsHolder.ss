@@ -23,16 +23,29 @@
 					<td style="height:10px;"></td>
 					<td style="height:10px;"></td>
 				</tr>
-					<% loop Children %>
-					
-                	<tr>
-						
-                    	<td><a href="$Link">$FirstWords $LastWords</a></td>
-                        <td><a href="$Link">$Date.Format('n.j.y')</a></td>
-                        <td><a href="$Link">$EventTime</a></td>
-                        <td><a href="$Link">$EventLocation</a></td>
-                    </tr>
-					<% end_loop %>
+				    <% if $URLSegment == "movies" %>
+						<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+	
+	                	<tr>
+							
+	                    	<td><a href="$Link" target="_blank">$Title</a></td>
+	                        <td><a href="$Link" target="_blank">$Dates</a></td>
+	                        <td><a href="$Link" target="_blank">View Times<img src="$ThemeDir/images/externalLink.jpeg" class = "externalLink"/></a></td>
+	                        <td><a href="$Link" target="_blank">$Location</a></td>
+	                	</tr>
+						<% end_loop %>
+                   <% else_if $URLSegment == "events" %>
+	                   <% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+	
+	                	<tr>
+							
+	                    	<td><a href="$Link" target="_blank">$Title</a></td>
+	                        <td><a href="$Link" target="_blank">$Dates</a></td>
+	                        <td><a href="$Link" target="_blank">View Times<img src="$ThemeDir/images/externalLink.jpeg" class = "externalLink"/></a></td>
+	                        <td><a href="$Link" target="_blank">$Location</a></td>
+	                	</tr>
+						<% end_loop %>
+					<% end_if %>
                    
                 </tbody>
             

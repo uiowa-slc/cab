@@ -9,7 +9,8 @@
 		"silverstripe/spamprotection" : "*",
 		"silverstripe/recaptcha" : "*",
 		"silverstripe/blog" : "*",
-		"silverstripe/userforms" : "*"
+		"silverstripe/userforms" : "*",
+		"md/rss-display" : "*"
 	},
 	"config": {
 		"process-timeout": 600	
@@ -19,7 +20,12 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"       
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display"
         }
+
     ]
 }

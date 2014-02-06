@@ -516,6 +516,18 @@ label.left {
 
 }
 
+.externalLink {
+	height: 10px;
+	width: 10px; 
+	padding-bottom: 1px; 
+	padding-left: 4px;
+}
+
+.homeSliderImage {
+	width: 450px;
+	height: 389px; 
+}
+
 .content{
 	font-family: 'Arimo', arial, serif;	
 	color: white;

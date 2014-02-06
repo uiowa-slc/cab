@@ -10,116 +10,33 @@
         <div id="leftcolumn">
             <!-- NIVO SLIDER -->
             <% if AllEvents %>
-            <div class="slider-wrapper theme-default">
-                <div class="ribbon"></div>
-                <div id="slider" class="nivoSlider">
-				
-					<% if $SliderFeature1 %>
-					<% loop $SliderFeature1 %>
-                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption1" /></a>
-					<% end_loop %>
-					<% end_if %>
+	            <div class="slider-wrapper theme-default">
+	                <div class="ribbon"></div>
+	                <div id="slider" class="nivoSlider">
 					
-					<% if $SliderFeature2 %>
-					<% loop $SliderFeature2 %>
-                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption2" /></a>
-					<% end_loop %>
-					<% end_if %>
-					
-					<% if $SliderFeature3 %>
-					<% loop $SliderFeature3 %>
-                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption3" /></a>
-					<% end_loop %>
-					<% end_if %>
-					
-					<% if $SliderFeature4 %>
-					<% loop $SliderFeature4 %>
-                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption4" /></a>
-					<% end_loop %>
-					<% end_if %>
-					
-					<% if $SliderFeature5 %>
-					<% loop $SliderFeature5 %>
-                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption5" /></a>
-					<% end_loop %>
-					<% end_if %>	
-					
-					<% if $SliderFeature6 %>
-					<% loop $SliderFeature6 %>
-                        <a href="$Link"><img src="$Image.URL" alt="" title="#htmlcaption6" /></a>
-					<% end_loop %>	
-					<% end_if %>	
-								
-                </div>
-			</div>
+					<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+						<a href="$Link"><img src="$Image" alt="" title="#htmlcaption{$Pos}" class="homeSliderImage" /></a>
+					<% end_loop %> 						
+									
+	                </div>
+				</div>
 			
             <!-- CAPTIONS -->
             
             
-			<% if $SliderFeature1 %>
-				<% loop $SliderFeature1 %>
-				  <div id="htmlcaption1" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j')<% if $EndDate = $Date %><%else_if 1%>
-							- $EndDate.Format('F j')						
-						<% end_if %> at $EventTime @ $EventLocation</a>.
+		
+				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+				  <div id="htmlcaption{$Pos}" class="nivo-html-caption">
+				         <a href="$Link"><span class="featurename">$Title</span><br /> on $Dates								 at $Location</a>.
 				    </div>
 				<% end_loop %>		
-			<% end_if %>
-			
-			<% if $SliderFeature2 %>
-				<% loop $SliderFeature2 %>
-				  <div id="htmlcaption2" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if $EndDate = $Date %><%else_if 1%>
-							- $EndDate.Format('F j')						
-						<% end_if %> at $EventTime @ $EventLocation</a>.
-				    </div>
-				<% end_loop %>		
-			<% end_if %>
-			
-			<% if $SliderFeature3 %>
-				<% loop $SliderFeature3 %>
-				  <div id="htmlcaption3" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if $EndDate = $Date %><%else_if 1%>
-							- $EndDate.Format('F j')						
-						<% end_if %> at $EventTime @ $EventLocation</a>.
-				    </div>
-				<% end_loop %>		
-			<% end_if %>
-			
-			<% if $SliderFeature4 %>
-				<% loop $SliderFeature4 %>
-				  <div id="htmlcaption4" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if $EndDate = $Date %><%else_if 1%>
-							- $EndDate.Format('F j')						
-						<% end_if %> at $EventTime @ $EventLocation</a>.
-				    </div>
-				<% end_loop %>		
-			<% end_if %>
-			
-			<% if $SliderFeature5 %>
-				<% loop $SliderFeature5 %>
-				  <div id="htmlcaption5" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if $EndDate = $Date %><%else_if 1%>
-							- $EndDate.Format('F j')						
-						<% end_if %> at $EventTime @ $EventLocation</a>.
-				    </div>
-				<% end_loop %>		
-			<% end_if %>
-
-			<% if $SliderFeature6 %>
-				<% loop $SliderFeature6 %>
-				  <div id="htmlcaption6" class="nivo-html-caption">
-				         <a href="$Link"><span class="featurename">$Title</span><br /> $Date.Format('F j') <% if $EndDate = $Date %><%else_if 1%>
-							- $EndDate.Format('F j')						
-						<% end_if %> at $EventTime @ $EventLocation</a>.
-				    </div>
-				<% end_loop %>		
-			<% end_if %>					
-			
-			<% loop EventList(6) %>
-              
-			<% end_loop %>
-                         
+	
+	
+				
+				<% loop EventList(6) %>
+	              
+				<% end_loop %>
+	                         
             <!-- END CAPTIONS -->
            <!-- END NIVO SLIDER -->
 			<!-- NEXT UP -->
@@ -128,23 +45,38 @@
 				<% if $EventList %>
                 <h4>$NextUp</h4>
 				
-                <ul> <% loop EventList %>
-                    <li><a href="$Link" class="uppercase">
-						$Title <span class="differentiate">
-						$Date.Format('n.j.y')
-						<% if $EndDate = $Date %><%else_if 1%>
-							- $EndDate.Format('n.j.y')						
-						<% end_if %>
-						| $EventTime at $EventLocation</span>
-					</a></li>
-               <% end_loop %> </ul>
+				<!--<% loop RSSDisplay(99,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+        		<% if $Title %>
+					<div class="event">
+						<% if Smallimage %><a href="$Link"><img src="$Smallimage" /></a><% end_if %>
+						<div class="info">
+							<h3><a href="$Link">$Title</a></h3>
+							<% if Dates %><h4>$Dates</h4><% end_if %>
+							<p class="description">$Description.FirstSentence[<a href="$Link">more</a>]</p>
+						</div>
+					</div>
+				<% end_if %>
+				<% end_loop %>-->
+			
+		<ul><% loop RSSDisplay(99,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+			<li><a href="$Link" class="uppercase">
+				$Title <span class="differentiate">
+				$Dates
+				|at $Location </span>
+			</a></li>
+		<% end_loop %> 
+		</ul>
+			 <div id="calendar">
+			   <a href="{$BaseHref}/movies">view all movies</a><br />
+			   <a href="{$BaseHref}/events">view all events</a>
+			 </div>
+				
+				<!-- wrap the loop RSSDISPlay in format from below --> 
+               
                <% else %>
                	<h4>No upcoming shows. Please check back soon.</h4>
                <% end_if %>
-			   <div id="calendar">
-			   <a href="{$BaseHref}/movies">view all movies</a><br />
-			   <a href="{$BaseHref}/events">view all events</a>
-				</div>
+			   
             </div>
 			
          	<!-- END NEXT UP -->
