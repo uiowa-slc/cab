@@ -5061,23 +5061,23 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 h1 {
-  font-size: rem-calc(64)-0.625rem;
+  font-size: 2.125rem;
 }
 
 h2 {
-  font-size: rem-calc(57)-0.625rem;
+  font-size: 1.6875rem;
 }
 
 h3 {
-  font-size: rem-calc(47)-0.3125rem;
+  font-size: 1.375rem;
 }
 
 h4 {
-  font-size: rem-calc(43)-0.3125rem;
+  font-size: 1.125rem;
 }
 
 h5 {
-  font-size: rem-calc(38);
+  font-size: 1.125rem;
 }
 
 h6 {
@@ -5258,19 +5258,19 @@ blockquote p {
   }
 
   h1 {
-    font-size: rem-calc(64);
+    font-size: 2.75rem;
   }
 
   h2 {
-    font-size: rem-calc(57);
+    font-size: 2.3125rem;
   }
 
   h3 {
-    font-size: rem-calc(47);
+    font-size: 1.6875rem;
   }
 
   h4 {
-    font-size: rem-calc(43);
+    font-size: 1.4375rem;
   }
 }
 /*
@@ -5856,7 +5856,7 @@ nav.tab-bar h1, nav.tab-bar h2, nav.tab-bar h3, nav.tab-bar h4, nav.tab-bar h5, 
   margin: 0;
 }
 nav.tab-bar h1, nav.tab-bar h2, nav.tab-bar h3, nav.tab-bar h4 {
-  font-size: rem-calc(38);
+  font-size: 1.125rem;
 }
 
 section.left-small {

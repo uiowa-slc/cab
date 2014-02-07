@@ -16,6 +16,10 @@ body{
 	background-position: 20% 0;
 }
 
+.row {
+	margin-bottom: 20px;
+}
+
 header{
 	@media #{$large-up} {
 	margin-top: 20px;
@@ -54,3 +58,6 @@ body .main.HomePage {
 	min-height: 320px;
 }
 
+li {
+	list-style: none;
+}
