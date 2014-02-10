@@ -4,8 +4,8 @@ class HomePage extends Page {
 	private static $db = array(
 			"NextUp" => "Text",
 			"RedLightHeadline" => "Text",
-			'RedLightDescription' => 'HTMLText',
-
+			"RedLightDescription" => "HTMLText"
+			
 	);
 
 	private static $has_one = array(
@@ -14,11 +14,10 @@ class HomePage extends Page {
 		"SliderFeature3" => "SiteTree",
 		"SliderFeature4" => "SiteTree",
 		"SliderFeature5" => "SiteTree",
-		"SliderFeature6" => "SiteTree",
-
-
+		"SliderFeature6" => "SiteTree"
 	);
-	private static $allowed_children = array(	'HomePageSlider');
+	
+	private static $allowed_children = array('HomePageSlider');
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -76,13 +75,15 @@ private static $allowed_actions = array (
 	);
 
 	public function Events(){
-		//$events = DataObject::get("EventListing");	
 		$events = EventListing::get(); 
 		if($events)
 			return $events;
 			
 	}
 	
+	public function OrbitEvents(){
+		
+	}
 	
 	
 }

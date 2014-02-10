@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f8b2a739cff5129e99c9286931d0d9fdf66e7693
 @charset "UTF-8";
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /* Settings that need to be in app.scss */
@@ -5061,6 +5065,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 h1 {
+<<<<<<< HEAD
   font-size: rem-calc(64)-0.625rem;
 }
 
@@ -5078,6 +5083,25 @@ h4 {
 
 h5 {
   font-size: rem-calc(38);
+=======
+  font-size: 2.125rem;
+}
+
+h2 {
+  font-size: 1.6875rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+>>>>>>> f8b2a739cff5129e99c9286931d0d9fdf66e7693
 }
 
 h6 {
@@ -5258,6 +5282,7 @@ blockquote p {
   }
 
   h1 {
+<<<<<<< HEAD
     font-size: rem-calc(64);
   }
 
@@ -5273,12 +5298,35 @@ blockquote p {
     font-size: rem-calc(43);
   }
 }
+=======
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.3125rem;
+  }
+
+  h3 {
+    font-size: 1.6875rem;
+  }
+
+  h4 {
+    font-size: 1.4375rem;
+  }
+}
+=======
+>>>>>>> 0892e4920b82b85993b2867c6f75649a123b93a9
+>>>>>>> f8b2a739cff5129e99c9286931d0d9fdf66e7693
 /*
  * Print styles.
  *
  * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
  * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
 */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f8b2a739cff5129e99c9286931d0d9fdf66e7693
 .print-only {
   display: none !important;
 }
@@ -5856,7 +5904,11 @@ nav.tab-bar h1, nav.tab-bar h2, nav.tab-bar h3, nav.tab-bar h4, nav.tab-bar h5, 
   margin: 0;
 }
 nav.tab-bar h1, nav.tab-bar h2, nav.tab-bar h3, nav.tab-bar h4 {
+<<<<<<< HEAD
   font-size: rem-calc(38);
+=======
+  font-size: 1.125rem;
+>>>>>>> f8b2a739cff5129e99c9286931d0d9fdf66e7693
 }
 
 section.left-small {
@@ -6533,3 +6585,12 @@ th.hide-for-touch {
 .typography {
   padding: 18px 20px;
 }
+<<<<<<< HEAD
+=======
+=======
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: foundation.\A               Load paths:\A                 /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-960-plugin-0.10.4/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/yui-compass-plugin-0.3/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-h5bp-0.0.5/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/zen-grids-1.2/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss/editor.scss\A \A 1: /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss/editor.scss"; }
+>>>>>>> 0892e4920b82b85993b2867c6f75649a123b93a9
+>>>>>>> f8b2a739cff5129e99c9286931d0d9fdf66e7693

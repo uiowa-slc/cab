@@ -5,79 +5,66 @@
 
  <div id="topcontent" class="row">
 	<!-- LEFT COLUMN, TOP -->
- 	<div class="small-6 large-6 columns">
-            <!-- NIVO SLIDER -->
-            <% if AllEvents %>
-	            <div class="slider-wrapper theme-default">
-	                <div class="ribbon"></div>
-	                <div id="slider" class="nivoSlider">
-					
-					<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
-						<a href="$Link"><img src="$Image" alt="" title="#htmlcaption{$Pos}" class="homeSliderImage" /></a>
-					<% end_loop %> 						
-									
-	                </div>
-				</div>
-			
-            <!-- CAPTIONS -->
-		
+ 	<div class="small-12 medium-6 large-6 columns">    
+			<ul class="example-orbit" data-orbit>
 				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
-				  <div id="htmlcaption{$Pos}" class="nivo-html-caption">
+				<li>	
+					<img src="http://cab.uiowa.edu/assets/Uploads/Speed-Dating-CAB.jpeg" alt="slide 1" />
+					<div class="orbit-caption">
+					 <!-- <div id="htmlcaption{$Pos}" class="nivo-html-caption"> -->
 				         <a href="$Link"><span class="featurename">$Title</span><br /> on $Dates at $Location</a>.
-				    </div>
-				<% end_loop %>					
-				<% loop EventList(6) %>              
+						<!-- </div> -->			
+					</div>
+				</li>
 				<% end_loop %>
-	                         
-            <!-- END CAPTIONS -->
-            <!-- END NIVO SLIDER -->
-			<!-- NEXT UP -->
-			<% end_if %>
-			<% if $EventList %>
-				<h4>$NextUp</h4>	
-				<ul><% loop RSSDisplay(99,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
-					<li>
-						<a href="$Link" class="uppercase">
-						$Title <span class="differentiate">	$Dates|at $Location</span>
-						</a>
-					</li>
-					<% end_loop %> 
-				</ul>
-			 <div id="calendar">
-			   <a href="{$BaseHref}/movies">view all movies</a><br />
-			   <a href="{$BaseHref}/events">view all events</a>
-			 </div>
+			</ul>           
+		<!-- NEXT UP -->
+		<% if $EventList %>
+		<div id="next-up">
+			<h3>$NextUp</h3>	
+			<ul>
+				<% loop RSSDisplay(99,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+				<li>
+					<a href="$Link" class="uppercase">
+					$Title <span class="differentiate">	$Dates|at $Location</span>
+					</a>
+				</li>
+				<% end_loop %> 
+			</ul>
+			<div id="calendar">
+			  <a href="{$BaseHref}/movies">view all movies</a><br />
+			  <a href="{$BaseHref}/events">view all events</a>
+			</div>
+		</div>
 				
 				<!-- wrap the loop RSSDISPlay in format from below --> 
                
                <% else %>
                	<h4>No upcoming shows. Please check back soon.</h4>
                <% end_if %>
-
-			
-         	<!-- END NEXT UP -->
-        <!-- END LEFT COLUMN, TOP -->
-	
+			   <!-- END NEXT UP -->
+	</div><!-- END LEFT COLUMN, TOP -->
+	<div class="small-12 medium-6 large-6 columns">
+		<div id="social-media"><p>Social Media links will go here</p></div>
+		<div id="blog-box">
+			<h2 id="cabfare"><img src="http://cab.uiowa.edu/themes/cab/images/cabfarecutout.png" alt="Cabfare" /></h2>
+			<div class="white-bg">
+				<% include BlogSample %>
+				<hr>
+				<a class="more" href="/blog/">view all</a>
+			</div>
+	    </div>
 	</div>
 </div>
-	
-	
-	
-	
-	    <div class="clear"></div> 
-	</div>
-	                   
-
-  <!-- END TOP CONTENT -->
-  
-
+<div class="clear"></div>           
+<!-- END TOP ROW CONTENT -->
 <!-- BOTTOM CONTENT -->
     <div id="bottomcontent">
     
     	<!-- OPACITY CONTAINER --> 
-    	<div id="opacitycontainer">
+    	<div id="opacitycontainer" class="row">
         	<!-- Clipping Mask -->
-            <div id="clippingmask">
+            <div id="clippingmask" class="small-12 medium-5 large-5 columns">
                 <h2>Everyone Talking Cab</h2>
                 	<!-- FEEDS -->
                     <div id="feeds">
@@ -130,7 +117,7 @@
             <!--END Clipping Mask -->
 
            <!-- SIDEBAR -->
-            <div id="sidebar">
+            <div id="sidebar" class="small-12 medium-7 large-6 large-offset-1 columns">
             	<!-- GET INVOLVED -->
             	<div id="involve">
                     <h4> <span class="bold">$RedLightHeadline</span> </h4>
