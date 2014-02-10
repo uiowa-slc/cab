@@ -3,7 +3,7 @@
 		<% require themedCSS(nivo-slider) %> 
 		<% require themedCSS(default) %> 
 
-<div id="topcontent" class="row">
+ <div id="topcontent" class="row">
 	<!-- LEFT COLUMN, TOP -->
  	<div class="small-12 medium-6 large-6 columns">    
 			<ul class="example-orbit" data-orbit>
@@ -36,7 +36,9 @@
 			  <a href="{$BaseHref}/events">view all events</a>
 			</div>
 		</div>
+				
 				<!-- wrap the loop RSSDISPlay in format from below --> 
+               
                <% else %>
                	<h4>No upcoming shows. Please check back soon.</h4>
                <% end_if %>
@@ -44,7 +46,7 @@
 	</div><!-- END LEFT COLUMN, TOP -->
 	<div class="small-12 medium-6 large-6 columns">
 		<div id="social-media"><p>Social Media links will go here</p></div>
-			<div id="blog-box">
+		<div id="blog-box">
 			<h2 id="cabfare"><img src="http://cab.uiowa.edu/themes/cab/images/cabfarecutout.png" alt="Cabfare" /></h2>
 			<div class="white-bg">
 				<% include BlogSample %>
@@ -52,8 +54,8 @@
 				<a class="more" href="/blog/">view all</a>
 			</div>
 	    </div>
-	</div> <!-- END COLUMN -->
-</div> <!-- END ROW -->
+	</div>
+</div>
 <div class="clear"></div>           
 <!-- END TOP ROW CONTENT -->
 <!-- BOTTOM CONTENT -->
@@ -69,8 +71,39 @@
                     	<!-- TWITTER FEED -->
                     	<div id="twitterfeed"> 
                            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-								<a class="twitter-timeline"  href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+								<script>
+                                new TWTR.Widget({
+                                  version: 2,
+                                  type: 'search',
+                                  search: '@uiowacab',
+                                  interval: 6000,
+                                  title: 'UIowa CAB',
+                                  subject: 'UI Campus Activities Board',
+                                  width: 380,
+                                  height: 120,
+                                  theme: {
+                                    shell: {
+                                      background: '#312828',
+                                      color: '#ffffff'
+                                    },
+                                    tweets: {
+                                      background: '#ffffff',
+                                      color: '#444444',
+                                      links: '#919191'
+                                    }
+                                  },
+                                  features: {
+                                    scrollbar: false,
+                                    loop: true,
+                                    live: true,
+                                    hashtags: true,
+                                    timestamp: true,
+                                    avatars: false,
+                                    toptweets: true,
+                                    behavior: 'default'
+                                  }
+                                }).render().start();
+                                </script>
                 			</div>
                        <!-- END TWITTER FEED -->
                        
@@ -87,7 +120,7 @@
             <div id="sidebar" class="small-12 medium-7 large-6 large-offset-1 columns">
             	<!-- GET INVOLVED -->
             	<div id="involve">
-                    <h4> <span class="bold">$RedLightHeadline</span> </h4> <!--Add field to CMS for editing -->
+                    <h4> <span class="bold">$RedLightHeadline</span> </h4>
                   <img id="redlight" src="$ThemeDir/images/key.png" />
                     <h5>Win <span class="uppercase">big</span> prizes from Apple by earning <strong>10 punches</strong> at <strong>10 CAB events</strong>! Each completed card gives you the chance to win in every <strong> Red Light Raffle </strong>until you graduate! </h5>                  
                       <div class="clear"></div>
