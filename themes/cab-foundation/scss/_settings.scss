@@ -23,7 +23,7 @@
 // $rem-base: 16px;
 
 // We use this to control whether or not CSS classes come through in the gem files.
-// $include-html-classes: true;
+ $include-html-classes: true;
 // $include-print-styles: true;
 // $include-html-global-classes: $include-html-classes;
 
@@ -32,7 +32,7 @@
 // $include-html-grid-classes: $include-html-classes;
 
 
- $row-width: 1100px;
+ $row-width: 1200px;
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -229,11 +229,11 @@ $header-font-color: white;
 
 // Button Groups
 
-// $include-html-button-classes: $include-html-classes;
+//$include-html-button-classes: $include-html-classes;
 
 // Sets the margin for the right side by default, and the left margin if right-to-left direction is used
-// $button-bar-margin-opposite: rem-calc(10);
-// $button-group-border-width: 1px;
+ $button-bar-margin-opposite: rem-calc(20);
+ $button-group-border-width: 1px;
 
 // Clearing
 
@@ -642,8 +642,8 @@ $header-font-color: white;
 
 // We use these to control the background and border styles
  $panel-bg: $darkGray;
-// $panel-border-style: solid;
-// $panel-border-size: 1px;
+ $panel-border-style: solid;
+ $panel-border-size: 1px;
 
 // We use this % to control how much we darken things on hover
 // $panel-function-factor: 10%;
@@ -956,7 +956,7 @@ $header-font-color: white;
 // TOP BAR
 //
 
-// $include-html-top-bar-classes: $include-html-classes;
+$include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
  $topbar-bg-color: rgba($secondary-color, 0);

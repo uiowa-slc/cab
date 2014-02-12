@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic");
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
@@ -147,7 +146,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1100px;
+  max-width: 1200px;
   *zoom: 1;
 }
 .row:before, .row:after {
@@ -2675,7 +2674,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 }
 .button-bar .button-group {
   float: left;
-  margin-right: 0.625rem;
+  margin-right: rem-calc(20);
 }
 .button-bar .button-group div {
   overflow: hidden;
@@ -5276,84 +5275,12 @@ blockquote p {
     font-size: 1.4375rem;
   }
 }
-=======
->>>>>>> 0892e4920b82b85993b2867c6f75649a123b93a9
 /*
-Syntax error: File to import not found or unreadable: foundation.
-              Load paths:
-                /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-960-plugin-0.10.4/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/yui-compass-plugin-0.3/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-h5bp-0.0.5/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/zen-grids-1.2/stylesheets
-                Compass::SpriteImporter
-        on line 3 of /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss/app.scss
-
-1: /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss/app.scss
-
-Backtrace:
-/Users/michaelnagy/Sites/cab/themes/cab-foundation/scss/app.scss:3
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/import_node.rb:64:in `import'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/import_node.rb:25:in `imported_file'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/Scout.app/Contents/Resources/bin/compass:12:in `(root)'
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
 */
-<<<<<<< HEAD
 .print-only {
   display: none !important;
 }
@@ -5751,7 +5678,7 @@ meta.foundation-mq-topbar {
   }
 
   .contain-to-grid .top-bar {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 0;
   }
@@ -6628,48 +6555,56 @@ ul {
   margin: 0;
 }
 
-#next-up h1, #next-up h2, #next-up h3, #next-up h4, #next-up h5, #next-up p {
-  color: #fff;
-  font-family: 'Arimo',arial,serif;
+/*
+#next-up {
+	h1, h2, h3, h4, h5, p{
+		color: #fff;
+		font-family: 'Arimo',arial,serif;
+	}
+	a {
+		font-family: 'Arimo',arial,serif;
+		font-weight: bold;
+		size:1.33em;
+	}
+		a:hover {
+		color: #000; 
+	}
+	span {
+		font-size: 0.88em;
+		font-weight: normal;
+		text-transform: lowercase;	
+		text-decoration: none;
+	}
+	#calendar {
+		margin: 10px 0px;
+	
+	}
 }
-#next-up a {
+*/
+.white-box {
+  background: #fff;
   font-family: 'Arimo',arial,serif;
-  font-weight: bold;
-  size: 1.33em;
+  text-transform: lowercase;
+  padding: 11px;
 }
-#next-up a:hover {
+.white-box p {
+  color: rgba(34, 37, 44, 0.90196);
+}
+.white-box a {
+  color: #a5a3a3;
+}
+.white-box h1, .white-box h2, .white-box h3, .white-box h4 {
   color: #000;
 }
-#next-up span {
-  font-size: 0.88em;
+
+h2.connect {
+  color: #FFFFFF;
+  float: left;
+  font-family: 'Arimo',arial,serif;
+  font-size: 1.6em;
   font-weight: normal;
   text-transform: lowercase;
-  text-decoration: none;
-}
-#next-up #calendar {
-  margin: 10px 0px;
-}
-
-.white-bg {
-  background: #fff;
-  color: #000000;
-  font-family: 'Arimo',arial,serif;
-  text-transform: lowercase;
-}
-
-.white-bg h1, h2, h3, h4, h5, h6, p {
-  color: #000;
-}
-
-.white-bg a {
-  color: #780112;
-}
-
-#cabfare {
-  background: rgba(0, 0, 0, 0);
-  margin-bottom: 1px;
-  padding: 0;
-  width: 100%;
+  margin: 0;
 }
 
 #blog-box {
@@ -6679,22 +6614,37 @@ ul {
   -mox-border-radius: 5px;
   border-radius: 5px;
 }
-
+#blog-box #cabfare {
+  background: rgba(0, 0, 0, 0);
+  margin-bottom: -10px;
+  padding: 0;
+  width: 100%;
+}
 #blog-box li {
   border-top: solid black 1px;
 }
-
-.more {
-  padding: 10px;
-  padding-bottom: 5px;
-}
-
-#opacitycontainer {
-  background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
+#blog-box button {
+  background-color: #a5a3a3;
+  margin-bottom: 0px;
 }
 
 #bottomcontent {
   margin-top: 20px;
+  padding: 10px 3px;
+}
+#bottomcontent #opacitycontainer {
+  background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
+}
+#bottomcontent #get-involved {
+  padding-top: 10px;
+  color: #fff;
+}
+#bottomcontent .widget {
+  max-width: 355px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .wrapper {
@@ -6703,7 +6653,7 @@ ul {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1100px;
+  max-width: 1200px;
   *zoom: 1;
 }
 .wrapper:before, .wrapper:after {
@@ -6722,6 +6672,18 @@ body {
 
 .row {
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 40.063em) {
+  .row {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .row {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
 }
 
 @media only screen and (min-width: 64.063em) {
@@ -6765,12 +6727,10 @@ body .main.HomePage {
   min-height: 320px;
 }
 
-li {
+ul li {
   list-style: none;
 }
-=======
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: foundation.\A               Load paths:\A                 /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-960-plugin-0.10.4/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/yui-compass-plugin-0.3/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-h5bp-0.0.5/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/zen-grids-1.2/stylesheets\A                 Compass::SpriteImporter\A         on line 3 of /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss/app.scss\A \A 1: /Users/michaelnagy/Sites/cab/themes/cab-foundation/scss/app.scss"; }
->>>>>>> 0892e4920b82b85993b2867c6f75649a123b93a9
+
+button, .button {
+  margin: 0;
+}
