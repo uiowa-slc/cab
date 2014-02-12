@@ -1,8 +1,3 @@
- <link href='http://fonts.googleapis.com/css?family=Arimo&v1' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-		<% require themedCSS(interior) %> 
-
    <div id ="content">
     <div id="interior">
     	<h2>$PageTitle <span class="fontweight">$PageTitle1</span></h2>

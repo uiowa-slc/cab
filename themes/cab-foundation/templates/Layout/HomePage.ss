@@ -3,7 +3,7 @@
 		<% require themedCSS(nivo-slider) %> 
 		<% require themedCSS(default) %> 
 
- <div id="topcontent" class="row">
+<div id="topcontent" class="row">
 	<!-- LEFT COLUMN, TOP -->
  	<div class="small-12 medium-6 large-6 columns">    
 			<ul class="example-orbit" data-orbit>
@@ -20,7 +20,7 @@
 			</ul>           
 		<!-- NEXT UP -->
 		<% if $EventList %>
-		<div id="next-up">
+		<div id="next-up" class="panel radius">
 			<h3>$NextUp</h3>	
 			<ul>
 				<% loop RSSDisplay(99,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
@@ -31,10 +31,11 @@
 				</li>
 				<% end_loop %> 
 			</ul>
-			<div id="calendar">
-			  <a href="{$BaseHref}/movies">view all movies</a><br />
-			  <a href="{$BaseHref}/events">view all events</a>
-			</div>
+			<hr>
+			<ul class="button-group [radius round]">
+			  <li><a href="{$BaseHref}/movies" class="button">view all movies</a></li>
+			  <li><a href="{$BaseHref}/events" class="button">view all events</a></li>
+			</ul>
 		</div>
 				
 				<!-- wrap the loop RSSDISPlay in format from below --> 
@@ -45,98 +46,60 @@
 			   <!-- END NEXT UP -->
 	</div><!-- END LEFT COLUMN, TOP -->
 	<div class="small-12 medium-6 large-6 columns">
-		<div id="social-media"><p>Social Media links will go here</p></div>
 		<div id="blog-box">
-			<h2 id="cabfare"><img src="http://cab.uiowa.edu/themes/cab/images/cabfarecutout.png" alt="Cabfare" /></h2>
-			<div class="white-bg">
+			<div id="socialmedia">
+                <h2 class="connect">Never miss an event.</h2>
+                    <ul class="sm">
+                        <li id="fb"><a href="https://www.facebook.com/pages/Campus-Activities-Board/31817664925"></a></li>
+                        <li id="twitter"><a href="http://twitter.com/#!/uiowaCAB"></a></li>
+                        <li id="youtube"><a href="http://www.youtube.com/user/IowaCAB"></a></li>
+						<!--<li id="foursquare"><a href="http://facebook.com"></a></li>-->
+                        <li id="flickr"><a href="http://www.flickr.com/photos/uiowacab"></a></li>
+                        <!--<li id="rss"><a href="http://facebook.com"></a></li>-->
+                    </ul>
+				<div class="clear"></div>
+	        </div>
+			<h2 id="cabfare"><img src="$THemeDir/images/cabfarecutout3.png" alt="Cabfare" /></h2>
+			<div class="white-box">
 				<% include BlogSample %>
 				<hr>
-				<a class="more" href="/blog/">view all</a>
+				<button href="/blog/">view all</a>
 			</div>
 	    </div>
 	</div>
 </div>
 <div class="clear"></div>           
-<!-- END TOP ROW CONTENT -->
-<!-- BOTTOM CONTENT -->
-    <div id="bottomcontent">
-    
-    	<!-- OPACITY CONTAINER --> 
-    	<div id="opacitycontainer" class="row">
-        	<!-- Clipping Mask -->
-            <div id="clippingmask" class="small-12 medium-5 large-5 columns">
-                <h2>Everyone Talking Cab</h2>
-                	<!-- FEEDS -->
-                    <div id="feeds">
-                    	<!-- TWITTER FEED -->
-                    	<div id="twitterfeed"> 
-                           <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-								<script>
-                                new TWTR.Widget({
-                                  version: 2,
-                                  type: 'search',
-                                  search: '@uiowacab',
-                                  interval: 6000,
-                                  title: 'UIowa CAB',
-                                  subject: 'UI Campus Activities Board',
-                                  width: 380,
-                                  height: 120,
-                                  theme: {
-                                    shell: {
-                                      background: '#312828',
-                                      color: '#ffffff'
-                                    },
-                                    tweets: {
-                                      background: '#ffffff',
-                                      color: '#444444',
-                                      links: '#919191'
-                                    }
-                                  },
-                                  features: {
-                                    scrollbar: false,
-                                    loop: true,
-                                    live: true,
-                                    hashtags: true,
-                                    timestamp: true,
-                                    avatars: false,
-                                    toptweets: true,
-                                    behavior: 'default'
-                                  }
-                                }).render().start();
-                                </script>
-                			</div>
-                       <!-- END TWITTER FEED -->
-                       
-						<!-- FB FEED -->
-                        <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FCampus-Activities-Board%2F31817664925&amp;width=380&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=true&amp;header=false&amp;height=215" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:380px; height:215px;" allowTransparency="false"></iframe>
-                        <!-- END FB FEED -->
-
-                     </div>
-                     <!-- end FEEDS -->
+<!-- END TOP/ START BOTTOM CONTENT -->
+<div id="bottomcontent">
+	<!-- OPACITY CONTAINER --> 
+	<div id="opacitycontainer" class="row">
+		<div id="get-involved" class="small-12 large-4 columns">
+            <!-- GET INVOLVED -->
+            <div class="">
+           		<h4>$RedLightHeadline</h4>
+				$RedLightDescription           
             </div>
-            <!--END Clipping Mask -->
-
-           <!-- SIDEBAR -->
-            <div id="sidebar" class="small-12 medium-7 large-6 large-offset-1 columns">
-            	<!-- GET INVOLVED -->
-            	<div id="involve">
-                    <h4> <span class="bold">$RedLightHeadline</span> </h4>
-                  <img id="redlight" src="$ThemeDir/images/key.png" />
-                    <h5>Win <span class="uppercase">big</span> prizes from Apple by earning <strong>10 punches</strong> at <strong>10 CAB events</strong>! Each completed card gives you the chance to win in every <strong> Red Light Raffle </strong>until you graduate! </h5>                  
-                      <div class="clear"></div>
-
-                    <ol>
-                        <li>Enjoy yourself at 10 CAB events</li>
-                        <li>Show your completed punchcard to a CAB member working your 10th event</li>
-                        <li>Fill out the information sticker on your punchcard</li>
-                        <li>Get to work on your new punchcard and wait for a call/email from CAB telling you what you've won!</li>
-                    </ol>
-           		 </div>
-             <!-- end GET INVOLVED -->
-			</div>
-            <!-- END SIDEBAR -->
-            <div class="clear"></div>
-        </div>
-        
-        <!-- end OPACITY CONTAINER --> 
-    </div>
+            <!-- end GET INVOLVED -->
+		</div>
+		<div id="widgets" class="small-12 large-8 columns">
+			<img src="" alt="everybody Talking CAB" />
+			<!--<h2>Everyone Talking Cab</h2>-->
+			<div class="row">
+				<div id="facebook" class="small-12 medium-6 large-6 columns">                    	                       
+						<!-- FB FEED -->
+					<div class="widget">
+                     <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=355&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:355px; height:590px; background-color: #fff;" allowTransparency="true"></iframe>
+					</div>
+                        <!-- END FB FEED -->
+            </div>
+				<div id="twitter" class="small-12 medium-6 large-6 columns">
+            <!-- TWITTER FEED -->
+            	<div id="twitterfeed" class="widget"> 
+                	<a class="twitter-timeline"  href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a>    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+            </div>
+			</div><!-- end row -->	
+		</div>
+    </div><!-- end OPACITY CONTAINER --> 
+	<div class="clear"></div>   
+</div>

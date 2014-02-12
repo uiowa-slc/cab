@@ -1,7 +1,7 @@
 
 <ul class="blog">            
 <% if BlogPosts %>
-	<% loop BlogPosts %>
+	<% loop BlogPosts.limit(2) %>
 		<li>
 			<h3><a href="$Link" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a></h3>
 			<p>posted on $Date.Format('n.j.y') by $Author.XML</p>

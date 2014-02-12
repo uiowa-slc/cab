@@ -18,6 +18,15 @@ body{
 
 .row {
 	margin-bottom: 20px;
+	@media #{$medium-up} {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	@media #{$small-only} {
+		padding-right:3px;
+		padding-left: 3px;
+	}
 }
 
 header{
@@ -29,10 +38,12 @@ header{
 .main {
 	background-color: $darkGray;
 }
+
 body .main.HomePage {
 	background: none;
 	color: white;
 }
+
 .main-header h1, .main-header h2{
 	display: inline;
 }
@@ -48,6 +59,7 @@ body .main.HomePage {
 .top-bar{
 	height: auto;
 }
+
 .top-bar-section ul {
 	background: none;
 	text-transform: lowercase;
@@ -57,9 +69,10 @@ body .main.HomePage {
 	min-height: 320px;
 }
 
-li {
+ul li {
 	list-style: none;
 }
+
 
 // Events holder modification of DATA
 .externalLink{
@@ -110,5 +123,10 @@ table tr td {
 a {
 	text-decoration: none;
 	color: #8e8d8d;
+}
+
+
+button, .button {
+	margin: 0;
 }
 
