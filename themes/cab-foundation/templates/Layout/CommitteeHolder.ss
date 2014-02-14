@@ -5,7 +5,7 @@
 	
 
      <div id ="content">
-    <div id="interior">
+    <div id="interior" class="large-11 large-centered column">
     	<h2>$PageTitle</h2>
         	<ul class="subgroups">
                  <% loop Children %>
