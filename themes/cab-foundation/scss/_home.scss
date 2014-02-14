@@ -1,78 +1,39 @@
-#slider {
-	background: url("images/loading.gif") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
-	height: 389px;
-	position: relative;
-	width: 430px;
-	background-color: #fff;
-}
+#top-content {
 
-ul {
-	margin: 0;
-}
-
-#next-up {
-	h1, h2, h3, h4, h5, p{
-		color: #fff;
-		font-family: 'Arimo',arial,serif;
-	}
-	a {
-		font-family: 'Arimo',arial,serif;
-		font-weight: bold;
-		size:1.03em;
-	}
+	#next-up {
+		margin: 10px 0px;
+		
+		ul {
+			margin: 0;
+		}	
+		
+		a {
+			font-size:1.11em;
+		}
 		a:hover {
-		color: #000; 
-	}
-	span {
-		font-size: 0.88em;
-		font-weight: normal;
-		text-transform: lowercase;	
-		text-decoration: none;
-	}
-}
-
-.white-box {
-	background: #fff;
-	font-family: 'Arimo',arial,serif;
-	text-transform: lowercase;
-	p {
-		color: $darkGray;
-	}
-	a {
-		color: $gray;
-	}
-	h1,h2,h3,h4 {
-		color: #000;
-		
+			color: #000; 
+		}
+		span {
+			font-size: 0.88em;
+			font-weight: normal;
+			text-transform: lowercase;	
+			text-decoration: none;
+		}
+	}	
 	
+	#blog-box {
+		margin-bottom: 10px 0px;
+				
+		#cabfare {
+			background: rgba(0,0,0,0);
+			margin-bottom: -10px;
+			padding: 0;
+			width: 100%;
+	    }
 	}
-	padding: 11px;
 }
 
-#blog-box {
-
-	#cabfare {
-	background: rgba(0,0,0,0);
-	margin-bottom: -10px;
-	padding: 0;
-	width: 100%;
-    }
-    
-	margin-bottom: 20px;
-	padding: 20px;
-	padding-top:0px;
-	-mox-border-radius: 5px;
-	border-radius: 5px;
-		
-	button {
-		background-color: $gray;
-		margin-bottom: 0px;
-	}
-	
-}
-
-
-#bottomcontent {
+#bottom-content {
 	#get-involved {
 		padding-top: 10px;
 		color: #fff;

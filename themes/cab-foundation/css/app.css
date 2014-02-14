@@ -6532,84 +6532,47 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-#slider {
-  background: url("images/loading.gif") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
-  height: 389px;
-  position: relative;
-  width: 430px;
-  background-color: #fff;
+#top-content #next-up {
+  margin: 10px 0px;
 }
-
-ul {
+#top-content #next-up ul {
   margin: 0;
 }
-
-#next-up h1, #next-up h2, #next-up h3, #next-up h4, #next-up h5, #next-up p {
-  color: #fff;
-  font-family: 'Arimo',arial,serif;
+#top-content #next-up a {
+  font-size: 1.11em;
 }
-#next-up a {
-  font-family: 'Arimo',arial,serif;
-  font-weight: bold;
-  size: 1.03em;
-}
-#next-up a:hover {
+#top-content #next-up a:hover {
   color: #000;
 }
-#next-up span {
+#top-content #next-up span {
   font-size: 0.88em;
   font-weight: normal;
   text-transform: lowercase;
   text-decoration: none;
 }
-
-.white-box {
-  background: #fff;
-  font-family: 'Arimo',arial,serif;
-  text-transform: lowercase;
-  padding: 11px;
+#top-content #blog-box {
+  margin-bottom: 10px 0px;
 }
-.white-box p {
-  color: rgba(34, 37, 44, 0.90196);
-}
-.white-box a {
-  color: #a5a3a3;
-}
-.white-box h1, .white-box h2, .white-box h3, .white-box h4 {
-  color: #000;
-}
-
-#blog-box {
-  margin-bottom: 20px;
-  padding: 20px;
-  padding-top: 0px;
-  -mox-border-radius: 5px;
-  border-radius: 5px;
-}
-#blog-box #cabfare {
+#top-content #blog-box #cabfare {
   background: rgba(0, 0, 0, 0);
   margin-bottom: -10px;
   padding: 0;
   width: 100%;
 }
-#blog-box button {
-  background-color: #a5a3a3;
-  margin-bottom: 0px;
-}
 
-#bottomcontent #get-involved {
+#bottom-content #get-involved {
   padding-top: 10px;
   color: #fff;
   background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
 }
-#bottomcontent #twitter-feed {
+#bottom-content #twitter-feed {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
   padding: 7px;
   background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
 }
-#bottomcontent #twitter-widget {
+#bottom-content #twitter-widget {
   width: 100%;
 }
 
@@ -6742,7 +6705,24 @@ table tr td {
   font-weight: normal;
 }
 
+.round {
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 12px;
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 12px;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 12px;
+}
+
+.button {
+  margin-right: .33em;
+}
+
 a {
-  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
   color: #8e8d8d;
 }
