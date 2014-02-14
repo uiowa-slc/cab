@@ -1,13 +1,13 @@
 <div id="top-content" class="row" data-equalizer>
 	<!-- LEFT COLUMN, TOP -->
  	<div class="small-12 medium-6 large-6 columns" data-equalizer-watch>  
- 		<div>  
-			<ul class="orbit-slider" data-orbit>
+ 		<div> 
+			<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
 				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
 				<li>	
-					<img src="http://cab.uiowa.edu/assets/Uploads/Speed-Dating-CAB.jpeg" alt="slide 1" />
+					<img src="http://afterclass.uiowa.edu/assets/Uploads/_resampled/croppedimage730462-Speed-Dating-AC.jpeg" alt="slide 1" />
 					<div class="orbit-caption">	
-				         <a href="$Link"><span class="featurename">$Title</span><br>on $Dates at $Location</a>.	
+				         <a href="$Link"><span class="featurename">$Title</span><br>on $Dates at $Location</a>
 					</div>
 				</li>
 				<% end_loop %>
@@ -17,11 +17,10 @@
 		<% if $EventList %>
 		<div id="next-up">
 			<h2>$NextUp</h2>	
-			<ul>
+			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
 				<% loop RSSDisplay(99,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
-				<li>
-					<a href="$Link">
-					$Title <span>	$Dates|at $Location</span>
+				<li data-tooltip data-options="disable_for_touch:true" class="has-tip" title="<h4>$Title</h4><span>$Dates</span><% if $Location %> at $Location <% end_if %>">
+					<a class="th" href="$Link"><img style="margin: 0 auto;" src="http://dummyimage.com/200x200/000/fff.jpg&text=Testing+123+Testing+123" />
 					</a>
 				</li>
 				<% end_loop %> 
@@ -39,8 +38,8 @@
 	</div><!-- END LEFT COLUMN, TOP -->
 	<div class="small-12 medium-6 large-6 columns" data-equalizer-watch>
 		<div id="blog-box">
-			<h2 id="cabfare"><img src="$THemeDir/images/cabfarecutout_wide.png" alt="Cabfare" /></h2>
-			<div>
+			<h2 id="cabfare"><img src="$THemeDir/images/cabfarecutout_628.png" alt="Cabfare" /></h2>
+			<div id="facebook-feed">
 			<!-- FACEBOOK WIDGET -->
 			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:580px; background-color: #fff;" allowTransparency="true"></iframe>
 			</div>	                    		
