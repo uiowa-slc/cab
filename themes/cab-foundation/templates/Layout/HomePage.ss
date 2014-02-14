@@ -49,7 +49,7 @@
 		<div id="blog-box">
 			<h2 id="cabfare"><img src="$THemeDir/images/cabfarecutout3.png" alt="Cabfare" /></h2>
 			<div>
-			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:635px; background-color: #fff;" allowTransparency="true"></iframe>
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:600px; background-color: #fff;" allowTransparency="true"></iframe>
 			</div>	                    		
 	    </div>
 	</div>
@@ -57,19 +57,19 @@
 <div class="clear"></div>           
 <!-- END TOP/ START BOTTOM CONTENT -->
 <div id="bottomcontent" class="row">
-	<div id="widgets" class="small-12 large-4 columns">
+	<div id="social-media" class="small-12 large-5 columns">
 		<!-- TWITTER FEED -->
-    	<div id="twitterfeed" class="widget "> 
-        	<a class="twitter-timeline"  data-chrome="transparent" href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    	<div id="twitter-feed"> 
+        	<a id="twitter-widget" class="twitter-timeline"  data-chrome="transparent" href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 		<hr>
 		<div class="widget">
-			<h5>Check Out: &nbsp; <img src="$ThemeDir/images/icons/youtube.png" />
-			<img src="$ThemeDir/images/icons/flickr.png" />
+			<h5>Check Out: &nbsp; <a href="http://www.youtube.com/user/IowaCAB" target="_blank"><img src="$ThemeDir/images/icons/youtube.png" /></a>
+			<a href="http://www.flickr.com/photos/uiowacab" target="_blank"><img src="$ThemeDir/images/icons/flickr.png" /></a>
 			</h5>
 		</div>
 	</div><!-- end widgets -->	
-	<div id="get-involved" class="small-12 large-8 columns ">
+	<div id="get-involved" class="small-12 large-7 columns ">
         <!-- GET INVOLVED -->
         <div class="">
        		<h4>$RedLightHeadline</h4>
