@@ -3,11 +3,13 @@
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 		<% require themedCSS(interior) %> 
 
-   <div id ="content">
-    <div id="interior">
-    	<h2>$PageTitle <span class="fontweight">$PageTitle1</span></h2>
-        	<table class="events">
-            	<thead>
+   <div id ="content small-12 column">
+	    <div id="interior" class="large-11 large-centered column">
+	    		
+	    		<h2>$PageTitle <span class="fontweight">$PageTitle1</span></h2>
+	        	
+	        	<table>
+	            	<thead>
                 	<tr>
                     	<td>event</td>
                         <td>date</td>
@@ -15,14 +17,9 @@
                         <td>location</td>
                     </tr>
                 </thead>
-                
-                <tbody>
-				<tr>
-					<td style="height:10px;"></td>
-					<td style="height:10px;"></td>
-					<td style="height:10px;"></td>
-					<td style="height:10px;"></td>
-				</tr>
+	                
+	                <tbody>
+			
 				    <% if $URLSegment == "movies" %>
 						<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
 	
@@ -48,8 +45,8 @@
 					<% end_if %>
                    
                 </tbody>
-            
-            </table>
-
-    </div>
+	            
+	            </table>
+	
+	    </div>
     </div>

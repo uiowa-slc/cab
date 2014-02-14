@@ -3,9 +3,9 @@
 		<% require themedCSS(nivo-slider) %> 
 		<% require themedCSS(default) %> 
 
-<div id="topcontent" class="row" data-equalizer>
+<div id="topcontent" class="row">
 	<!-- LEFT COLUMN, TOP -->
- 	<div class="small-12 medium-6 large-6 columns" data-equalizer-watch>    
+ 	<div class="small-12 medium-6 large-6 columns">    
 			<ul class="example-orbit" data-orbit>
 				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
 				<li>	
@@ -45,7 +45,7 @@
                <% end_if %>
 			   <!-- END NEXT UP -->
 	</div><!-- END LEFT COLUMN, TOP -->
-	<div class="small-12 medium-6 large-6 columns" data-equalizer-watch>
+	<div class="small-12 medium-6 large-6 columns">
 		<div id="blog-box">
 			<h2 id="cabfare"><img src="$THemeDir/images/cabfarecutout3.png" alt="Cabfare" /></h2>
 			<div>
