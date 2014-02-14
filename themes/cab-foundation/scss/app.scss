@@ -1,6 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic');
 @import "settings";
-@import "foundation";
+@import "../../cab-foundation/bower_components/foundation/css/foundation";
 @import "../../../division-bar/css/_division-bar.css";
 @import "home";
 $include-html-type-classes: $include-html-classes;

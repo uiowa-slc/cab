@@ -5,9 +5,9 @@
 	
 
      <div id ="content">
-    <div id="interior" class="large-11 large-centered column">
+    <div id="interior" class="large-12 large-centered column">
     	<h2>$PageTitle</h2>
-        	<ul class="subgroups">
+        	<ul class="subgroups" >
                  <% loop Children %>
                <li><h3>$CommitteeName</h3>
 			   		<% if EventListings %>
