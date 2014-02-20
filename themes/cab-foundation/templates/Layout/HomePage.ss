@@ -60,11 +60,11 @@
 			</h5>
 		</div>
 	</div><!-- end widgets -->	
-	<div id="get-involved" class="small-12 large-7 columns" data-equalizer-watch>
+	<div id="get-involved" class="small-12 medium-11 end large-7 columns" data-equalizer-watch>
         <!-- GET INVOLVED -->
-        <div class="">
+        <div>
        		<h2>$RedLightHeadline</h2>
-			$RedLightDescription           
+				$RedLightDescription         
         </div>
         <!-- end GET INVOLVED -->
 	</div>

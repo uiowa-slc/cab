@@ -6506,6 +6506,9 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+#top-content {
+  margin-top: 1em;
+}
 #top-content #next-up {
   margin-bottom: 10px;
 }

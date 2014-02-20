@@ -23,16 +23,12 @@
 <body class="$ClassName.ATT">
 	<% include DivisionBar %>
 
-	<header class="header" role="banner">
-		<div class="row">
+	<header class="header row" role="banner">
 			<% include TopBar %>
-		</div>
 	</header>
 
 	<div class="main typography $ClassName" role="main">
-		
-			$Layout
-		
+			$Layout	
 	</div>
 
 	<footer class="footer" role="contentinfo">
