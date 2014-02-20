@@ -77,6 +77,7 @@ ul li {
 button, .button {
 	margin: 0;
 }
+
 // Events holder modification of DATA
 .externalLink{
 	width: 12px;
@@ -103,9 +104,7 @@ table tr td {
 
 #content {
 	height: auto;
-	min-width: 980px;
-	margin: 60px 0 60px 0;
-	padding: 0 0 60px 0;
+	//min-width: 980px;
 
 }
 
@@ -122,6 +121,41 @@ table tr td {
 	font-weight: normal;
 }
 
+.main {
+	padding-top: 0px;
+	
+}
+
+//Committees
+
+//about
+
+.info li {
+	color: white; 
+	font-size:1em; 
+}
+
+.info p {
+	color: white; 
+}
+
+.info a {
+	background: rgb(148, 15, 15);
+	border-radius: 5px;
+	color: white;
+	display: block;
+	text-indent: 0;
+	background-position: 0 0;
+	height: 38px;
+	padding: 10px;
+	font-family: arial, sans-serif;
+	width: 199px;
+}
+
+.tagline{
+	font-size: 15px; 
+	padding-top: 10px; 
+}
 
 a {
 	text-decoration: none;

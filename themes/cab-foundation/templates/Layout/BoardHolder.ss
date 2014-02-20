@@ -7,48 +7,48 @@
 	
 		
 
-  <div id ="content">
-        <div id="interior">
-        
-        
-            <div id="aboutus">
-                <h2 class="float">$FirstWords<span class="fontweight"> $LastWords</span></h2>
-                <h3 class="tagline">our mission - <br />entertainment done right</h3>
+  <div id ="content" class = "row">
+        <div id="interior" class="large-12 large-centered column">
+                   
                 <div class="clear"></div>
-                <div class="info">
-                	<p>$MissionStatement</p>
-                    <a href="https://orgsync.com/17245/forms/66329">Become a CAB member!</a>
-                </div>
-                <div class="photo">
-                	$Image
-                </div>
-
-            </div>
+                
+                <div class= "row">
+                	<div class="info large-3 column">
+                		
+                		<h2 class="float">$FirstWords<span class="fontweight"> $LastWords</span></h2>
+                		<p>$MissionStatement</p>
+                	    <a href="https://orgsync.com/17245/forms/66329">Become a CAB member!</a>
+					</div>
+                	<!--- Image currently not working --->
+                	<div class="photo large-9 column">
+                		$Image
             
+					</div>
+                </div>           
             
-            
-            <div id="board">
-               <h2 class="float">$WordOne<span class="fontweight"> $WordTwo</span></h2>
-                <div class="clear"></div>	
-				
+            <div id="board" class="row">
+               <div class = "large-12 column">
+               <h2>$WordOne<span class="fontweight"> $WordTwo</span></h2>
+        
+               <div class="clear"></div>	
+				<ul class = "info small-block-grid-2 medium-block-grid-3 large-block-grid-4">
 				<% loop Children %>
-						 <div class="profile">
-							<div class="img">
-								$Image
-							</div>
-							<div class="info">
-								<h4>$BoardMember</h4>
-								<h5>$MemberTitle <br />
-								$Email</h5>
-								<ul>
-							 
-									<li>major: $Major</li>
-									<li>year: $Year</li>
-								</ul>
-							</div>
-											<div class="clear"></div>
-						</div>
+					<li>		
+						
+						 	<!--- Image currently not working --->
+							$Image
+																	
+							<h4>$BoardMember</h4>
+							<h5>$MemberTitle <br />
+							$Email</h5>
+							major: $Major <br />
+							year: $Year
+						
+						
+					</li>
 				<% end_loop %>
+				</ul>
+			</div>
 				
 				
                

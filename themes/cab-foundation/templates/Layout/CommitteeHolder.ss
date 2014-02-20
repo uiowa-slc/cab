@@ -4,19 +4,24 @@
 		<% require themedCSS(interior) %> 
 	
 
-     <div id ="content">
+    <div id ="content" >
     <div id="interior">
     	<h2>$PageTitle</h2>
+    	
         	<ul class="subgroups">
                  <% loop Children %>
-               <li><h3>$CommitteeName</h3>
+				 
+				 	<li><h3>$CommitteeName</h3>
+			   		
 			   		<% if EventListings %>
-                    <ul class="events">
-                    <% loop EventListings %>
-                        <li><a href="$Link">$Title<span class="date">$EventDate</span></a></li>
-                    <% end_loop %>
-		
-                    </ul>
+                    <div class = "large-6 column">
+	                    <ul class="events">
+		                    <% loop EventListings %>
+		                        <li><a href="$Link">$Title<span class="date">$EventDate</span></a></li>
+		                    <% end_loop %>
+			
+	                    </ul>
+                    </div>
 					<div class="committee_description_small">
 						$CommitteeDescription
 					</div>
@@ -25,6 +30,7 @@
 						$CommitteeDescription
 						</div>
 					<% end_if %>
+					
                     
                     <div class="clear"></div>
                 </li>
