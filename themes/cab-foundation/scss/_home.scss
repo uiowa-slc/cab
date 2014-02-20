@@ -1,32 +1,42 @@
 #top-content {
-
 	#next-up {
 		margin-bottom: 10px;
 		
-		ul {
+		ul, ol {
 			margin: 0;
 		}	
 		
 		a {
-			font-size:1.11em;
+			font-size:1em;
 		}
 		a:hover {
-			color: #000; 
-		}
-		li span {
-			font-size: 0.88em;
-			font-weight: normal;
-			text-transform: lowercase;	
 			text-decoration: none;
-			color: aqua;
+			color: #fff;
 		}
-		li img {
-			cursor: help;
+		#next-up-list {
+			li {
+				background-color: rgba(27,0,0,.11);
+				list-style-position: inside;
+				margin-bottom: 2px;
+				padding-left: 3px;
+				padding-right: 3px;
+				
+			}
+			li:hover {
+				background-color: rgba(27,0,0,.66);
+				cursor: hand;
+			}
+			li span {
+				font-size: 1.25em;
+				text-transform: uppercase;	
+				text-decoration: none;
+				color: #fff;
+			}
 		}
 	}	
 	
 	#blog-box {
-		margin-bottom: 10px;
+		margin: 0 auto;
 				
 		#cabfare {
 			background: rgba(0,0,0,0);
@@ -36,11 +46,21 @@
 			width: 100%;
 	    }
 	    #facebook-feed { 
-	    }
+	    	@media #{$small-only} {
+				height: 400px;
+			}
+			@media #{$medium-only} {
+				height: 400px;
+			}
+			@media #{$large-only} {
+				max-height: auto;
+			}
+		}
 	}
 }
 
 #bottom-content {
+	margin-top: 1em;
 	#get-involved {
 		padding-top: 10px;
 		color: #fff;

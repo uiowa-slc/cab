@@ -1,7 +1,7 @@
 <div id="top-content" class="row" data-equalizer>
 	<!-- LEFT COLUMN, TOP -->
- 	<div class="small-12 medium-6 large-6 columns" data-equalizer-watch>  
- 		<div> 
+ 	<div class="small-12 medium-9 large-6 columns">  
+ 		<div data-equalizer-watch>
 			<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
 				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
 				<li>	
@@ -11,46 +11,45 @@
 					</div>
 				</li>
 				<% end_loop %>
-			</ul>  
-		</div>         
+			</ul>       
 		<!-- NEXT UP -->
 		<% if $EventList %>
 		<div id="next-up">
 			<h2>$NextUp</h2>	
-			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-				<% loop RSSDisplay(99,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
-				<li data-tooltip data-options="disable_for_touch:true" class="has-tip" title="<h4>$Title</h4><span>$Dates</span><% if $Location %> at $Location <% end_if %>">
-					<a class="th" href="$Link"><img style="margin: 0 auto;" src="http://dummyimage.com/200x200/000/fff.jpg&text=Testing+123+Testing+123" />
-					</a>
-				</li>
+			<ul id="next-up-list">
+				<% loop RSSDisplay(20,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+				<a href="$Link"><li>
+					<span>$Title</span> $Dates <% if $Location %> at $Location <% end_if %>
+				</li></a>
 				<% end_loop %> 
-			</ul>
+			</ul>			
 			<hr>
 			<ul class="button-group">
 			  <li><a href="{$BaseHref}/movies" class="tiny button radius">view all movies</a></li>
 			  <li><a href="{$BaseHref}/events" class="tiny button radius">view all events</a></li>
 			</ul>
 		</div>	
+	</div>
         <% else %>
         	<h4>No upcoming shows. Please check back soon.</h4>
         <% end_if %>
 		<!-- END NEXT UP -->
 	</div><!-- END LEFT COLUMN, TOP -->
-	<div class="small-12 medium-6 large-6 columns" data-equalizer-watch>
-		<div id="blog-box">
-			<h2 id="cabfare"><img src="$THemeDir/images/cabfarecutout_628.png" alt="Cabfare" /></h2>
-			<div id="facebook-feed">
+	<div class="small-12 medium-7 end large-6 columns" data-equalizer-watch>
+		<div id="blog-box" style="height: 100%;">
+			<h2 id="cabfare"><img src="$ThemeDir/images/cabfarecutout_628.png" alt="Cabfare" /></h2>
+			<div id="facebook-feed" style="height: 99%;">
 			<!-- FACEBOOK WIDGET -->
-			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:580px; background-color: #fff;" allowTransparency="true"></iframe>
-			</div>	                    		
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=1500&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:90%; background-color: #fff;" allowTransparency="true"></iframe>
+			</div>	     		
 	    </div>
 	</div>
 </div>       
 <!-- END TOP/ START BOTTOM CONTENT -->
-<div id="bottom-content" class="row">
-	<div id="social-media" class="small-12 large-5 columns">
+<div id="bottom-content" class="row" data-equalizer>
+	<div id="social-media" class="small-12 medium-8 large-5 columns">
 		<!-- TWITTER FEED -->
-    	<div id="twitter-feed"> 
+    	<div id="twitter-feed" data-equalizer-watch> 
         	<a id="twitter-widget" class="twitter-timeline" data-show-faces="false"  data-chrome="transparent" href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 		<hr>
@@ -61,7 +60,7 @@
 			</h5>
 		</div>
 	</div><!-- end widgets -->	
-	<div id="get-involved" class="small-12 large-7 columns ">
+	<div id="get-involved" class="small-12 large-7 columns" data-equalizer-watch>
         <!-- GET INVOLVED -->
         <div class="">
        		<h2>$RedLightHeadline</h2>
