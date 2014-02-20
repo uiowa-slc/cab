@@ -864,7 +864,7 @@ $header-font-color: white;
 // Tables
 
 // These control the background color for the table and even rows
-   $table-bg: none;
+  $table-bg: none;
   $table-even-row-bg: none;
 
 // These control the table cell border style
@@ -873,10 +873,10 @@ $header-font-color: white;
  $table-border-color: #ddd;
 
 // These control the table head styles
-   $table-head-bg: none  ;
-   $table-head-font-size: rem-calc(24);
-   $table-head-font-color: #fff;
-// $table-head-font-weight: bold;
+ $table-head-bg: none  ;
+ $table-head-font-size: rem-calc(24);
+ $table-head-font-color: #fff;
+ $table-head-font-weight: bold;
 // $table-head-padding: rem-calc(8 10 10);
 
 // These control the row padding and font styles
@@ -912,14 +912,14 @@ $header-font-color: white;
 // THUMBNAILS
 //
 
-// $include-html-media-classes: $include-html-classes;
+$include-html-media-classes: $include-html-classes;
 
 // We use these to control border styles
-// $thumb-border-style: solid;
-// $thumb-border-width: 4px;
-// $thumb-border-color: #fff;
-// $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
-// $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+ $thumb-border-style: solid;
+ $thumb-border-width: 0;
+ $thumb-border-color: #fff;
+ $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
+ $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
 
 // Radius and transition speed for thumbs
 // $thumb-radius: $global-radius;
@@ -931,12 +931,12 @@ $header-font-color: white;
 
 // $include-html-tooltip-classes: $include-html-classes;
 
-// $has-tip-border-bottom: dotted 1px #ccc;
+ $has-tip-border-bottom: none;
 // $has-tip-font-weight: bold;
 // $has-tip-font-color: #333;
-// $has-tip-border-bottom-hover: dotted 1px darken($primary-color, 20%);
+ $has-tip-border-bottom-hover: dotted 1px darken($primary-color, 20%);
 // $has-tip-font-color-hover: $primary-color;
-// $has-tip-cursor-type: help;
+ $has-tip-cursor-type: help;
 
 // $tooltip-padding: rem-calc(12);
 // $tooltip-bg: #333;

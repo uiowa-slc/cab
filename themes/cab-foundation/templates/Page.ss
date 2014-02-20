@@ -24,7 +24,7 @@
 	<% include DivisionBar %>
 
 	<header class="header" role="banner">
-		<div class="contain-to-grid">
+		<div class="row">
 			<% include TopBar %>
 		</div>
 	</header>
@@ -39,11 +39,11 @@
 		<div class="row">
 			<div class="large-12 columns">
 				<p>&copy; $Now.Year The University of Iowa.</p>
-				<p>Individuals with disabilities are encouraged to attend all University of Iowa - sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact the Center for Student Involvement and Leadership in advance at 319-335-3059./p>
+				<p>Individuals with disabilities are encouraged to attend all University of Iowa - sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact the Center for Student Involvement and Leadership in advance at 319-335-3059.</p>
 			</div>
 		</div>
 	</footer>
-
+	
 	<%--Login Modal--%>
 	<div id="login-form-modal" class="reveal-modal medium" data-reveal>
 		<h2>Login</h2>
@@ -51,9 +51,15 @@
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
 	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
-	<script src="$ThemeDir/bower_components/jquery/jquery.js"></script>
+	
+	<script src="$ThemeDir/bower_components/jquery/dist/jquery.js"></script>
 	<script src="$ThemeDir/bower_components/foundation/js/foundation.min.js"></script>
 	<script src="$ThemeDir/javascript/app.js"></script>
 	<script src="division-bar/js/division-bar.js"></script>
+	<script>
+		$(document).foundation();
+  	</script>
+
+	
 </body>
 </html>

@@ -16,6 +16,8 @@ body{
 	background-position: 20% 0;
 }
 
+/*
+
 .row {
 	margin-bottom: 20px;
 	@media #{$medium-up} {
@@ -28,6 +30,7 @@ body{
 		padding-left: 3px;
 	}
 }
+*/
 
 header{
 	@media #{$large-up} {
@@ -76,6 +79,7 @@ ul li {
 
 button, .button {
 	margin: 0;
+	margin-right: .33em;
 }
 
 // Events holder modification of DATA
@@ -121,6 +125,7 @@ table tr td {
 	font-weight: normal;
 }
 
+
 .main {
 	padding-top: 0px;
 	
@@ -155,9 +160,14 @@ table tr td {
 .tagline{
 	font-size: 15px; 
 	padding-top: 10px; 
-}
+
+
 
 a {
-	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
 	color: #8e8d8d;
 }
