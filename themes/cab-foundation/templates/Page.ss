@@ -30,9 +30,9 @@
 	</header>
 
 	<div class="main typography $ClassName" role="main">
-		<div class="row">
+		
 			$Layout
-		</div>
+		
 	</div>
 
 	<footer class="footer" role="contentinfo">
