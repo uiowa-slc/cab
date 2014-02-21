@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 		<% require themedCSS(interior) %> 
 
-   <div id ="content">
+   <div id ="content" class = "row">
 	    <div id="interior" class="large-11 large-centered column">
 	    		
 	    		<h2>$PageTitle <span class="fontweight">$PageTitle1</span></h2>
@@ -49,4 +49,5 @@
 	            </table>
 	
 	    </div>
+	   	    
     </div>

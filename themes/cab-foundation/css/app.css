@@ -7969,23 +7969,110 @@ table tr td {
   font-weight: normal;
 }
 
-/* line 129, ../scss/app.scss */
-.main {
-  padding-top: 0px;
+/* line 134, ../scss/app.scss */
+.eventListing li a {
+  color: #8e8d8d;
+}
+/* line 137, ../scss/app.scss */
+.eventListing p {
+  color: white;
 }
 
-/* line 138, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
+.committeeName {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+/* line 147, ../scss/app.scss */
+.committee-list {
+  display: block;
+  padding: 0;
+  margin: 0 -2.5px;
+  *zoom: 1;
+}
+/* line 130, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.committee-list:before, .committee-list:after {
+  content: " ";
+  display: table;
+}
+/* line 131, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.committee-list:after {
+  clear: both;
+}
+/* line 36, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.committee-list > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 2.5px 5px;
+}
+/* line 47, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.committee-list > li {
+  width: 100%;
+  padding: 0 2.5px 5px;
+  list-style: none;
+}
+/* line 54, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.committee-list > li:nth-of-type(n) {
+  clear: none;
+}
+/* line 55, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.committee-list > li:nth-of-type(1n+1) {
+  clear: both;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 147, ../scss/app.scss */
+  .committee-list {
+    display: block;
+    padding: 0;
+    margin: 0 -0.5em;
+    *zoom: 1;
+  }
+  /* line 130, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .committee-list:before, .committee-list:after {
+    content: " ";
+    display: table;
+  }
+  /* line 131, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .committee-list:after {
+    clear: both;
+  }
+  /* line 36, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .committee-list > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.5em 1em;
+  }
+  /* line 47, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .committee-list > li {
+    width: 50%;
+    padding: 0 0.5em 1em;
+    list-style: none;
+  }
+  /* line 54, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .committee-list > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 55, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .committee-list > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+
+/* line 166, ../scss/app.scss */
 .info li {
   color: white;
   font-size: 0.8em;
 }
 
-/* line 143, ../scss/app.scss */
+/* line 171, ../scss/app.scss */
 .info p {
   color: white;
 }
 
-/* line 147, ../scss/app.scss */
+/* line 175, ../scss/app.scss */
 .info a {
   background: #940f0f;
   border-radius: 5px;
@@ -7999,18 +8086,18 @@ table tr td {
   width: 199px;
 }
 
-/* line 160, ../scss/app.scss */
+/* line 188, ../scss/app.scss */
 .tagline {
   font-size: 15px;
   padding-top: 10px;
 }
 
-/* line 166, ../scss/app.scss */
+/* line 194, ../scss/app.scss */
 a {
   color: white;
 }
 
-/* line 170, ../scss/app.scss */
+/* line 198, ../scss/app.scss */
 a:hover {
   text-decoration: underline;
   color: #8e8d8d;
