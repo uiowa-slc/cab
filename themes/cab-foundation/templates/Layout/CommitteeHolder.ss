@@ -8,9 +8,7 @@
 	    <div id="interior" class="large-12 large-centered column">
 	    	<h2>$PageTitle</h2>	    	
 	        		<ul class="committee-list small-block-grid-1 ">
-	                 <% loop Children %>
-	
-					   	   
+	                 <% loop Children %> 	   
 					   		<li>
 					   		 <h3 class= "committeeName">$CommitteeName</h3>
 						   		<% if EventListings %>

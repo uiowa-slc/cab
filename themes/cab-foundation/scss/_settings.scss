@@ -959,7 +959,7 @@ $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
  $topbar-bg-color: rgba($secondary-color, 0);
- $topbar-bg: $topbar-bg-color;
+ $topbar-bg: none;
 
 // Height and margin
  $topbar-height: 45px;
@@ -984,11 +984,11 @@ $include-html-top-bar-classes: $include-html-classes;
  $topbar-link-color-hover: white;
  $topbar-link-color-active: white;
  $topbar-link-weight: normal;
- $topbar-link-font-size: rem-calc(28);
+ $topbar-link-font-size: 1.6em;
  $topbar-link-hover-lightness: 10%; // Darken by 10%
- $topbar-link-bg-hover: $secondary-color;
- $topbar-link-bg-active: $secondary-color;
- $topbar-link-bg-active-hover: darken($secondary-color, 5%);
+ $topbar-link-bg-hover: none;
+ $topbar-link-bg-active: none;
+ $topbar-link-bg-active-hover: none;
 // $topbar-link-font-family: $body-font-family;
 
 // $topbar-button-font-size: 0.75rem;

@@ -15,7 +15,7 @@
         <div id="board" class="row">
            <div class = "large-12 column">
            <h2>$WordOne<span class="fontweight"> $WordTwo</span></h2>
-			<ul class = "info small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+			<ul class = "info small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 			<% loop Children %>
 				<li>					
 					 	<!--- Image currently not working --->
