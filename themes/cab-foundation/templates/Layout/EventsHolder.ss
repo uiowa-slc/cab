@@ -4,7 +4,7 @@
    <div id ="content" class = "row">
 	    <div id="interior" class="large-12 large-centered column">
 	    		<h2>$PageTitle <span class="fontweight">$PageTitle1</span></h2>
-	        	<table>
+	        	<table class="event-table">
 	            	<thead>
                 	<tr>
                     	<td>event</td>
@@ -19,7 +19,7 @@
 	                	<tr>
 	                    	<td><a href="$Link" target="_blank">$Title</a></td>
 	                        <td><a href="$Link" target="_blank">$Dates</a></td>
-	                        <td><a href="$Link" target="_blank">View Times<img src="$ThemeDir/images/externalLink.jpeg" class = "externalLink"/></a></td>
+	                        <td><a href="$Link" target="_blank">View Times &rarr;</a></td>
 	                        <td><a href="$Link" target="_blank">$Location</a></td>
 	                	</tr>
 						<% end_loop %>
@@ -30,7 +30,7 @@
 							
 	                    	<td><a href="$Link" target="_blank">$Title</a></td>
 	                        <td><a href="$Link" target="_blank">$Dates</a></td>
-	                        <td><a href="$Link" target="_blank">View Times<img src="$ThemeDir/images/externalLink.jpeg" class = "externalLink"/></a></td>
+	                        <td><a href="$Link" target="_blank">View Times &rarr;</td>
 	                        <td><a href="$Link" target="_blank">$Location</a></td>
 	                	</tr>
 						<% end_loop %>

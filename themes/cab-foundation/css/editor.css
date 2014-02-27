@@ -51,8 +51,8 @@ body {
 }
 
 body {
-  background: white;
-  color: #222222;
+  background: #7f1b1a;
+  color: white;
   padding: 0;
   margin: 0;
   font-family: "Arimo", arial, serif;
@@ -162,8 +162,8 @@ select {
 }
 .row .row {
   width: auto;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -192,8 +192,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   width: 100%;
   float: left;
 }
@@ -341,8 +341,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     float: left;
   }
 
@@ -602,8 +602,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     float: left;
   }
 
@@ -983,8 +983,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     float: left;
   }
 
@@ -1252,7 +1252,7 @@ select {
 }
 .accordion .content {
   display: none;
-  padding: 0.9375rem;
+  padding: 0.5rem;
 }
 .accordion .content.active {
   display: block;
@@ -2614,7 +2614,7 @@ form .row textarea.columns {
 /* Label Styles */
 label {
   font-size: 0.875rem;
-  color: #4d4d4d;
+  color: white;
   cursor: pointer;
   display: block;
   font-weight: normal;
@@ -2632,7 +2632,7 @@ label.inline {
 }
 label small {
   text-transform: capitalize;
-  color: #676767;
+  color: white;
 }
 
 select {
@@ -2989,7 +2989,7 @@ span.error, small.error {
   color: white;
 }
 .error > label > small {
-  color: #676767;
+  color: white;
   background: transparent;
   padding: 0;
   text-transform: capitalize;
@@ -4369,20 +4369,20 @@ table tfoot tr td {
 .tabs-content > .content {
   display: none;
   float: left;
-  padding: 0.9375rem 0;
+  padding: 0.5rem 0;
   width: 100%;
 }
 .tabs-content > .content.active {
   display: block;
 }
 .tabs-content > .content.contained {
-  padding: 0.9375rem;
+  padding: 0.5rem;
 }
 .tabs-content.vertical {
   display: block;
 }
 .tabs-content.vertical > .content {
-  padding: 0 0.9375rem;
+  padding: 0 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -4517,7 +4517,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: none;
+  background: #7f1b1a;
 }
 .contain-to-grid .top-bar {
   margin-bottom: 0;
@@ -4551,7 +4551,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: none;
+  background: #7f1b1a;
   margin-bottom: 0;
 }
 .top-bar ul {
@@ -4596,7 +4596,7 @@ meta.foundation-mq-topbar {
   color: white;
   width: 50%;
   display: block;
-  padding: 0 15px;
+  padding: 0 0.6em;
 }
 .top-bar .toggle-topbar {
   position: absolute;
@@ -4610,12 +4610,12 @@ meta.foundation-mq-topbar {
   font-weight: bold;
   position: relative;
   display: block;
-  padding: 0 15px;
+  padding: 0 0.6em;
   height: 45px;
   line-height: 45px;
 }
 .top-bar .toggle-topbar.menu-icon {
-  right: 15px;
+  right: 0.6em;
   top: 50%;
   margin-top: -16px;
   padding-left: 40px;
@@ -4625,7 +4625,7 @@ meta.foundation-mq-topbar {
   line-height: 33px;
   padding: 0;
   padding-right: 25px;
-  color: black;
+  color: white;
   position: relative;
 }
 .top-bar .toggle-topbar.menu-icon a::after {
@@ -4644,7 +4644,7 @@ meta.foundation-mq-topbar {
   background: transparent;
 }
 .top-bar.expanded .title-area {
-  background: none;
+  background: #7f1b1a;
 }
 .top-bar.expanded .toggle-topbar a {
   color: #888888;
@@ -4666,7 +4666,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   height: auto;
   display: block;
-  background: #333333;
+  background: #7f1b1a;
   font-size: 16px;
   margin: 0;
 }
@@ -4682,17 +4682,17 @@ meta.foundation-mq-topbar {
   width: 100%;
   color: white;
   padding: 12px 0 12px 0;
-  padding-left: 15px;
+  padding-left: 0.6em;
   font-family: "Arimo", arial, serif;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: normal;
-  background: #333333;
+  background: #7f1b1a;
 }
 .top-bar-section ul li > a.button {
   background: white;
-  font-size: 1.6em;
-  padding-right: 15px;
-  padding-left: 15px;
+  font-size: 1.2em;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
 }
 .top-bar-section ul li > a.button:hover {
   background: #bababa;
@@ -4716,19 +4716,19 @@ meta.foundation-mq-topbar {
   background: #d42b0f;
 }
 .top-bar-section ul li:hover > a {
-  background: none;
+  background: #7f1b1a;
   color: white;
 }
 .top-bar-section ul li.active > a {
-  background: none;
+  background: #7f1b1a;
   color: white;
 }
 .top-bar-section ul li.active > a:hover {
-  background: none;
+  background: #7f1b1a;
   color: white;
 }
 .top-bar-section .has-form {
-  padding: 15px;
+  padding: 0.6em;
 }
 .top-bar-section .has-dropdown {
   position: relative;
@@ -4741,7 +4741,7 @@ meta.foundation-mq-topbar {
   border: inset 5px;
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
   border-left-style: solid;
-  margin-right: 15px;
+  margin-right: 0.6em;
   margin-top: -4.5px;
   position: absolute;
   top: 50%;
@@ -4766,7 +4766,7 @@ meta.foundation-mq-topbar {
 }
 .top-bar-section .dropdown li a {
   font-weight: normal;
-  padding: 8px 15px;
+  padding: 8px 0.6em;
 }
 .top-bar-section .dropdown li a.parent-link {
   font-weight: normal;
@@ -4780,13 +4780,13 @@ meta.foundation-mq-topbar {
   display: block;
 }
 .top-bar-section .dropdown li.has-form {
-  padding: 8px 15px;
+  padding: 8px 0.6em;
 }
 .top-bar-section .dropdown li .button {
   top: auto;
 }
 .top-bar-section .dropdown label {
-  padding: 8px 15px 2px;
+  padding: 8px 0.6em 2px;
   margin-bottom: 0;
   text-transform: uppercase;
   color: #777777;
@@ -4800,7 +4800,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: none;
+    background: #7f1b1a;
     *zoom: 1;
     overflow: visible;
   }
@@ -4827,7 +4827,7 @@ meta.foundation-mq-topbar {
     top: 7px;
   }
   .top-bar.expanded {
-    background: none;
+    background: #7f1b1a;
   }
 
   .contain-to-grid .top-bar {
@@ -4854,28 +4854,28 @@ meta.foundation-mq-topbar {
     display: none;
   }
   .top-bar-section li.hover > a:not(.button) {
-    background: none;
+    background: #7f1b1a;
     color: white;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
-    padding: 0 15px;
+    padding: 0 0.6em;
     line-height: 45px;
-    background: none;
+    background: #7f1b1a;
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background: none;
+    background: #7f1b1a;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
     color: white;
-    background: none;
+    background: #7f1b1a;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: none;
+    background: #7f1b1a;
   }
   .top-bar-section .has-dropdown > a {
-    padding-right: 35px !important;
+    padding-right: 20.6em !important;
   }
   .top-bar-section .has-dropdown > a:after {
     content: "";
@@ -4915,7 +4915,7 @@ meta.foundation-mq-topbar {
     color: white;
     line-height: 1;
     white-space: nowrap;
-    padding: 12px 15px;
+    padding: 12px 0.6em;
     background: #333333;
   }
   .top-bar-section .dropdown li label {
@@ -4935,8 +4935,8 @@ meta.foundation-mq-topbar {
     width: 0;
   }
   .top-bar-section .has-form {
-    background: none;
-    padding: 0 15px;
+    background: #7f1b1a;
+    padding: 0 0.6em;
     height: 45px;
   }
   .top-bar-section .right li .dropdown {
@@ -4955,11 +4955,11 @@ meta.foundation-mq-topbar {
   }
 
   .no-js .top-bar-section ul li:hover > a {
-    background: none;
+    background: #7f1b1a;
     color: white;
   }
   .no-js .top-bar-section ul li:active > a {
-    background: none;
+    background: #7f1b1a;
     color: white;
   }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
@@ -5230,7 +5230,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6875rem;
+  font-size: 3.375rem;
 }
 
 h3 {
@@ -5362,7 +5362,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222222;
+  color: white;
   border-bottom: 1px dotted #dddddd;
   cursor: help;
 }
@@ -5433,7 +5433,7 @@ blockquote p {
   }
 
   h2 {
-    font-size: 2.3125rem;
+    font-size: 4rem;
   }
 
   h3 {
@@ -5819,7 +5819,7 @@ a.menu-icon {
   display: block;
   line-height: 2.0625rem;
   padding: 0;
-  color: black;
+  color: white;
   position: relative;
 }
 a.menu-icon span {

@@ -18,14 +18,9 @@ class BoardHolder extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-	$fields->addFieldToTab('Root.Main', new TextField('FirstWords', 'Headline, first word'));
-	$fields->addFieldToTab('Root.Main', new TextField('LastWords', 'Headline, last word'));	
-	$fields->addFieldToTab("Root.Main", new HTMLEditorField('MissionStatement'));
-	$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Image'));
-
-	$fields->addFieldToTab('Root.Main', new TextField('WordOne', 'Secondary Headline, first word'));
-	$fields->addFieldToTab('Root.Main', new TextField('WordTwo', 'Secondary Headline, second word'));	
-			  $fields->removeFieldFromTab("Root.Main","Content");
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField('MissionStatement'));
+		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Image'));	
+		$fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}

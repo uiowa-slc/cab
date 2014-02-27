@@ -10,7 +10,8 @@
 		"silverstripe/recaptcha" : "*",
 		"silverstripe/blog" : "*",
 		"silverstripe/userforms" : "*",
-		"md/rss-display" : "*"
+		"md/rss-display" : "*",
+		"rywa/silverstripe-foundation-forms": "dev-master"
 	},
 	"config": {
 		"process-timeout": 600	

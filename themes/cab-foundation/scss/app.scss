@@ -15,13 +15,13 @@ form .division-search-input{
 
 }
 
+
 .wrapper {
 	 @include grid-row();
 }
 
 
 body{
-	background-image: url('../images/background.jpg');
 	background-size: cover;
 	background-position: 20% 0;
 }
@@ -32,14 +32,15 @@ header{
 	}
 }
 
-.main {
-	background-color: $darkGray;
+h2{
+	text-transform: lowercase;
+	line-height: 1;
+	margin-top: 0.5rem;
+	margin-bottom: 0.8rem;
 }
 
-body .main.HomePage {
-	background: none;
-	color: white;
-	padding-top: 0;
+.main {
+	background-color: $darkGray;
 }
 
 .main-header h1, .main-header h2{
@@ -54,32 +55,42 @@ body .main.HomePage {
 	margin-left: 20px;
 }
 
-.top-bar{
-	height: auto;
+.top-bar {
+	height: 85px;
 }
-
+.top-bar .name {
+	padding-top: 10px;
+	height: 85px;
+}
+.top-bar .name h1 a {
+	padding: 0 5px;
+}
 .top-bar-section ul {
 	background: none;
 	text-transform: lowercase;
 }
 
-.top-bar-section ul.top-menu-items li{
-
-	@media #{$large-up}{ 
-		padding-top: 1.3em;
+.top-bar-section ul.right.top-menu-items li{
+	@media #{$medium-up}{ 
+		padding-top: 2.3em;
 	}
 }
 
-.top-bar-section ul.top-menu-items li.title{
-	@media #{$large-up}{ 
-		padding-top: 0;
+.top-bar-section ul li > a {
+	@media #{$medium-up}{
+		padding: 0;
+	}
+	@media #{$large-up}{
+		font-size: 1.6em;
 	}
 }
-
 
 .main {
-	padding-top: 32px;
+	//padding-top: 32px;
 	min-height: 320px;
+	@media #{$large-up}{
+		min-height: 600px;
+	}
 }
 
 ul li {
@@ -87,7 +98,6 @@ ul li {
 }
 
 button, .button {
-	margin: 0;
 	margin-right: .33em;
 }
 
@@ -108,7 +118,8 @@ table thead tr td {
 
 table {
 	overflow: scroll; 
-	border-spacing: 0; 
+	border-spacing: 0;
+	width: 100%;
 }
 
 table tr td {
@@ -124,7 +135,7 @@ table tr td {
 .EventsHolder .main h2{
 	text-transform: lowercase;
 	font-weight: bold;
-	color: white;
+	color: $body-font-color;
 	padding: 10px 0 15px 0;
 	margin: 0;
 }
@@ -144,7 +155,7 @@ table tr td {
 		color:  #8e8d8d;
 	}
 	p{
-		color: white; 
+		color: $body-font-color; 
 	}
 }
 
@@ -163,7 +174,7 @@ table tr td {
   @media #{$medium-up}{
 	 @include block-grid(
 	 	$per-row: 2,	
-	 	$spacing: 1em,
+	 	$spacing: 2em,
 	 	$base-style: true
 	);	  
   }
@@ -171,29 +182,50 @@ table tr td {
 }
 
 //about
-
-.info li {
-	color: white; 
-	font-size:0.8em; 
+.photo{
+	padding-top: 10px;
+	img{
+		width: 100%;
+	}
 }
+.info {
 
-.info p {
-	color: white; 
+	h3{
+		font-size: rem-calc(18);
+		line-height: 1;
+		margin-top: 8px;
+	}
+
+	h4 {
+		color: darken($body-font-color, 20);
+		font-size: rem-calc(14);
+		line-height: 1;
+	}
+
+	li p{
+		font-size: rem-calc(12);
+	}
+
+	hr {
+		margin: 0.25rem 0 0.1875rem
+	}
+
+	p {
+		
+	}
+
+	a {
+		background: rgb(148, 15, 15);
+		border-radius: 5px;
+		display: block;
+		text-indent: 0;
+		background-position: 0 0;
+		height: 38px;
+		padding: 10px;
+		font-family: arial, sans-serif;
+		width: 199px;
+	}
 }
-
-.info a {
-	background: rgb(148, 15, 15);
-	border-radius: 5px;
-	color: white;
-	display: block;
-	text-indent: 0;
-	background-position: 0 0;
-	height: 38px;
-	padding: 10px;
-	font-family: arial, sans-serif;
-	width: 199px;
-}
-
 .tagline{
 	font-size: 15px; 
 	padding-top: 10px; 
@@ -202,7 +234,7 @@ table tr td {
 
 
 a {
-	color: white;
+	color: $body-font-color;
 }
 
 a:hover {
@@ -211,6 +243,6 @@ a:hover {
 }
 
 footer{
-	color: white;
+	color: $body-font-color;
 	padding-top: 1em;
 }
