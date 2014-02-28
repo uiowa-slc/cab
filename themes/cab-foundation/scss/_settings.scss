@@ -33,13 +33,13 @@
 
 
  $row-width: 1200px;
-// $column-gutter: rem-calc(30);
+ $column-gutter: 1rem;
 // $total-columns: 12;
 
 // We use these to control various global styles
 
- $body-bg: white;
-// $body-font-color: #222;
+ $body-bg: #7F1B1A;
+$body-font-color: white;
 
  $body-font-family: 'Arimo', arial, serif;
 // $body-font-weight: normal;
@@ -144,7 +144,7 @@ $header-font-color: white;
 
 // We use these to control header font sizes
 //*$h1-font-size: rem-calc(84);
-//$h2-font-size: rem-calc(77);
+$h2-font-size: 4rem;
 //$h3-font-size: rem-calc(67);
 //$h4-font-size: rem-calc(63);
 //$h5-font-size: rem-calc(58);
@@ -359,7 +359,7 @@ $header-font-color: white;
 // $form-label-pointer: pointer;
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: normal;
-// $form-label-font-color: lighten(#000, 30%);
+ $form-label-font-color: white;
 // $form-label-bottom-margin: rem-calc(8);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
@@ -972,7 +972,7 @@ $include-html-top-bar-classes: $include-html-classes;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
- //$topbar-dropdown-bg: #FFF;
+$topbar-dropdown-bg: $body-bg;
 // $topbar-dropdown-link-color: #000;
 // $topbar-dropdown-link-bg: #fff;
 // $topbar-dropdown-toggle-size: 5px;
@@ -984,11 +984,13 @@ $include-html-top-bar-classes: $include-html-classes;
  $topbar-link-color-hover: white;
  $topbar-link-color-active: white;
  $topbar-link-weight: normal;
- $topbar-link-font-size: rem-calc(28);
+ $topbar-link-font-size: 1.2em;
  $topbar-link-hover-lightness: 10%; // Darken by 10%
- $topbar-link-bg-hover: $secondary-color;
- $topbar-link-bg-active: $secondary-color;
- $topbar-link-bg-active-hover: darken($secondary-color, 5%);
+ $topbar-link-bg-hover: rgba($body-bg, 0);
+ $topbar-link-bg-active: rgba($body-bg, 0);
+ $topbar-link-bg-active-hover: rgba($body-bg, 0);
+ $topbar-link-padding: 0.6em;
+
 // $topbar-link-font-family: $body-font-family;
 
 // $topbar-button-font-size: 0.75rem;
@@ -1003,10 +1005,10 @@ $include-html-top-bar-classes: $include-html-classes;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
- $topbar-menu-link-color: #000;
+ $topbar-menu-link-color: white;
 // $topbar-menu-icon-color: #fff;
 // $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+ $topbar-menu-icon-color-toggled: #888;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;

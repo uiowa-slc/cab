@@ -1,14 +1,11 @@
-<div class="<% if $Children || $Parent %>large-9 large-push-3<% else %>large-12<% end_if %> columns">
-	<article>
+<div id ="content" class="row">
+
+	<article class="large-7 columns">
 		<h2>$Title</h2>
 		$Content
 		$Form
 	</article>
-</div>
-<% if $Children || $Parent %><%--Determine if Side Nav should be rendered, you can change this logic--%>
-<div class="large-3 large-pull-9 columns">
-	<div class="panel">
-		<% include SideNav %>
+	<div class="large-5 columns">
+		<% include NextTiles %>
 	</div>
 </div>
-<% end_if %>

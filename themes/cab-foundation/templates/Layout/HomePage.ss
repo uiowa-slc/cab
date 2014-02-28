@@ -1,11 +1,11 @@
 <div id="top-content" class="row" data-equalizer>
 	<!-- LEFT COLUMN, TOP -->
- 	<div class="small-12 medium-9 large-6 columns">  
+ 	<div class="medium-6 large-6 columns">  
  		<div data-equalizer-watch>
 			<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
 				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
 				<li>	
-					<img src="http://afterclass.uiowa.edu/assets/Uploads/_resampled/croppedimage730462-Speed-Dating-AC.jpeg" alt="slide 1" />
+					<img src="$ImageURL" alt="slide 1" />
 					<div class="orbit-caption">	
 				         <a href="$Link"><span class="featurename">$Title</span><br>on $Dates at $Location</a>
 					</div>
@@ -23,7 +23,6 @@
 				</li></a>
 				<% end_loop %> 
 			</ul>			
-			<hr>
 			<ul class="button-group">
 			  <li><a href="{$BaseHref}/movies" class="tiny button radius">view all movies</a></li>
 			  <li><a href="{$BaseHref}/events" class="tiny button radius">view all events</a></li>
@@ -35,7 +34,7 @@
         <% end_if %>
 		<!-- END NEXT UP -->
 	</div><!-- END LEFT COLUMN, TOP -->
-	<div class="small-12 medium-7 end large-6 columns" data-equalizer-watch>
+	<div class="medium-6 end large-6 columns" data-equalizer-watch>
 		<div id="blog-box" style="height: 100%;">
 			<h2 id="cabfare"><img src="$ThemeDir/images/cabfarecutout_628.png" alt="Cabfare" /></h2>
 			<div id="facebook-feed" style="height: 99%;">
@@ -47,22 +46,22 @@
 </div>       
 <!-- END TOP/ START BOTTOM CONTENT -->
 <div id="bottom-content" class="row" data-equalizer>
-	<div id="social-media" class="small-12 medium-8 large-5 columns">
+	<div id="social-media" class="medium-6 large-6 columns">
+
+		<!--<div class="widget">
+			<h5>Check Out: &nbsp; <a href="http://www.youtube.com/user/IowaCAB" target="_blank"><img src="$ThemeDir/images/icons/youtube.png" /></a>
+			<a href="http://www.flickr.com/photos/uiowacab" target="_blank"><img src="$ThemeDir/images/icons/flickr.png" /></a>
+			</h5>
+		</div>-->
 		<!-- TWITTER FEED -->
     	<div id="twitter-feed" data-equalizer-watch> 
         	<a id="twitter-widget" class="twitter-timeline" data-show-faces="false"  data-chrome="transparent" href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
-		<hr>
 		<!-- FLICKR, YOUTUBE -->
-		<div class="widget">
-			<h5>Check Out: &nbsp; <a href="http://www.youtube.com/user/IowaCAB" target="_blank"><img src="$ThemeDir/images/icons/youtube.png" /></a>
-			<a href="http://www.flickr.com/photos/uiowacab" target="_blank"><img src="$ThemeDir/images/icons/flickr.png" /></a>
-			</h5>
-		</div>
 	</div><!-- end widgets -->	
-	<div id="get-involved" class="small-12 medium-11 end large-7 columns" data-equalizer-watch>
+	<div class="feature-box medium-6 large-6 columns" data-equalizer-watch>
         <!-- GET INVOLVED -->
-        <div>
+        <div class="feature-box-content">
        		<h2>$RedLightHeadline</h2>
 				$RedLightDescription         
         </div>

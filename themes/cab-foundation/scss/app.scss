@@ -1,9 +1,20 @@
 @import url('http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic');
 @import "settings";
 @import "../bower_components/foundation/scss/foundation";
-@import "../../../division-bar/css/_division-bar.css";
 @import "home";
 $include-html-type-classes: $include-html-classes;
+@import "../../../division-bar/css/_division-bar.css";
+
+form .division-search-input{
+	padding: 5px 0 4px 5px;
+	margin-left:0;
+	margin-right: 0;
+	margin-top: 4px;
+	margin-bottom: 2px;
+	height: auto;
+
+}
+
 
 .wrapper {
 	 @include grid-row();
@@ -11,9 +22,23 @@ $include-html-type-classes: $include-html-classes;
 
 
 body{
-	background-image: url('../images/background.jpg');
-	background-size: 100%;
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #B53935),
+		color-stop(1, #741411)
+	);
+	background-image: -o-linear-gradient(bottom, #B53935 0%, #741411 100%);
+	background-image: -moz-linear-gradient(bottom, #B53935 0%, #741411 100%);
+	background-image: -webkit-linear-gradient(bottom, #B53935 0%, #741411 100%);
+	background-image: -ms-linear-gradient(bottom, #B53935 0%, #741411 100%);
+	background-image: linear-gradient(to bottom, #B53935 0%, #741411 100%);
+
 	background-position: 20% 0;
+	background-attachment: fixed;
+
 }
 
 header{
@@ -22,13 +47,15 @@ header{
 	}
 }
 
-.main {
-	background-color: $darkGray;
+h2{
+	text-transform: lowercase;
+	line-height: 1;
+	margin-top: 0.5rem;
+	margin-bottom: 0.8rem;
 }
 
-body .main.HomePage {
-	background: none;
-	color: white;
+.main {
+	background-color: $darkGray;
 }
 
 .main-header h1, .main-header h2{
@@ -43,18 +70,42 @@ body .main.HomePage {
 	margin-left: 20px;
 }
 
-.top-bar{
-	height: auto;
+.top-bar {
+	height: 85px;
 }
-
+.top-bar .name {
+	padding-top: 10px;
+	height: 85px;
+}
+.top-bar .name h1 a {
+	padding: 0 5px;
+}
 .top-bar-section ul {
 	background: none;
 	text-transform: lowercase;
 }
 
+.top-bar-section ul.right.top-menu-items li{
+	@media #{$medium-up}{ 
+		padding-top: 1.3em;
+	}
+}
+
+.top-bar-section ul li > a {
+	@media #{$medium-up}{
+		padding: 0;
+	}
+	@media #{$large-up}{
+		font-size: 1.6em;
+	}
+}
+
 .main {
-	padding-top: 32px;
+	//padding-top: 32px;
 	min-height: 320px;
+	@media #{$large-up}{
+		min-height: 600px;
+	}
 }
 
 ul li {
@@ -62,7 +113,6 @@ ul li {
 }
 
 button, .button {
-	margin: 0;
 	margin-right: .33em;
 }
 
@@ -83,7 +133,8 @@ table thead tr td {
 
 table {
 	overflow: scroll; 
-	border-spacing: 0; 
+	border-spacing: 0;
+	width: 100%;
 }
 
 table tr td {
@@ -99,7 +150,7 @@ table tr td {
 .EventsHolder .main h2{
 	text-transform: lowercase;
 	font-weight: bold;
-	color: white;
+	color: $body-font-color;
 	padding: 10px 0 15px 0;
 	margin: 0;
 }
@@ -119,7 +170,7 @@ table tr td {
 		color:  #8e8d8d;
 	}
 	p{
-		color: white; 
+		color: $body-font-color; 
 	}
 }
 
@@ -138,37 +189,58 @@ table tr td {
   @media #{$medium-up}{
 	 @include block-grid(
 	 	$per-row: 2,	
-	 	$spacing: 1em,
+	 	$spacing: 2em,
 	 	$base-style: true
 	);	  
   }
-  
+ 
 }
 
 //about
-
-.info li {
-	color: white; 
-	font-size:0.8em; 
+.photo{
+	padding-top: 10px;
+	img{
+		width: 100%;
+	}
 }
+.info {
 
-.info p {
-	color: white; 
-}
- 
-.info a {
-	background: rgb(148, 15, 15);
-	border-radius: 5px;
-	color: white;
-	display: block;
-	text-indent: 0;
-	background-position: 0 0;
-	height: 38px;
-	padding: 10px;
-	font-family: arial, sans-serif;
-	width: 199px;
-}
+	h3{
+		font-size: rem-calc(18);
+		line-height: 1;
+		margin-top: 8px;
+	}
 
+	h4 {
+		color: darken($body-font-color, 20);
+		font-size: rem-calc(14);
+		line-height: 1;
+	}
+
+	li p{
+		font-size: rem-calc(12);
+	}
+
+	hr {
+		margin: 0.25rem 0 0.1875rem
+	}
+
+	p {
+		
+	}
+
+	a {
+		background: rgb(148, 15, 15);
+		border-radius: 5px;
+		display: block;
+		text-indent: 0;
+		background-position: 0 0;
+		height: 38px;
+		padding: 10px;
+		font-family: arial, sans-serif;
+		width: 199px;
+	}
+}
 .tagline{
 	font-size: 15px; 
 	padding-top: 10px; 
@@ -177,10 +249,19 @@ table tr td {
 
 
 a {
-	color: white;
+	color: $body-font-color;
 }
 
 a:hover {
 	text-decoration: underline;
 	color: #8e8d8d;
+}
+
+.next-tiles h2 {
+	font-size: rem-calc(48);
+}
+
+footer{
+	color: $body-font-color;
+	padding-top: 1em;
 }

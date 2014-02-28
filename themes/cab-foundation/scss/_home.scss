@@ -1,5 +1,9 @@
+body .main.HomePage {
+	background: none;
+	color: $body-font-color;
+	padding-top: 0;
+}
 #top-content {
-	margin-top: 1em;
 	#next-up {
 		margin-bottom: 10px;
 		
@@ -16,7 +20,6 @@
 		}
 		#next-up-list {
 			li {
-				background-color: rgba(27,0,0,.11);
 				list-style-position: inside;
 				margin-bottom: 2px;
 				padding-left: 3px;
@@ -38,11 +41,10 @@
 	
 	#blog-box {
 		margin: 0 auto;
+		background: white;
 				
 		#cabfare {
-			background: rgba(0,0,0,0);
 			margin-top:0px;
-			margin-bottom: -10px;
 			padding: 0;
 			width: 100%;
 	    }
@@ -62,11 +64,17 @@
 
 #bottom-content {
 	margin-top: 1em;
-	#get-involved {
-		padding-top: 10px;
-		color: #fff;
-		background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
-	}
+
+		.feature-box-content {
+			background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
+			padding: 1em;
+			height: inherit;
+
+			h2{
+				margin-top: 0;
+			}
+		}
+
 	#twitter-feed {
 		width: 100%;
 		overflow: hidden;

@@ -22,34 +22,8 @@ class HomePage extends Page {
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->addFieldToTab("Root.Main", new TextField('NextUp', 'Headline for upcoming events'));
-		$fields->addFieldToTab("Root.Main", new TextField('RedLightHeadline', 'RedLightHeadline'));
-		$fields->addFieldToTab("Root.Main", new HTMLEditorField('RedLightDescription'));
-		
-		$simpleTree1 = new TreeDropdownField('SliderFeature1ID', 'First Slider Event (To remove the slider, select the very first empty item on top)', 'EventListing');
-		//$simpleTree1->setHasEmptyDefault(true);
-		$fields->addFieldToTab("Root.SliderEvents",$simpleTree1);
-
-		$simpleTree2 = new TreeDropdownField('SliderFeature2ID', 'Second Slider Event', 'EventListing');
-		//$simpleTree2->setHasEmptyDefault(true);
-		$fields->addFieldToTab("Root.SliderEvents",$simpleTree2);
-		
-		$simpleTree3 = new TreeDropdownField('SliderFeature3ID', 'Third Slider Event', 'EventListing');
-		//$simpleTree3->setHasEmptyDefault(true);
-		$fields->addFieldToTab("Root.SliderEvents",$simpleTree3);
-
-		$simpleTree4 = new TreeDropdownField('SliderFeature4ID', 'Fourth Slider Event', 'EventListing');
-		//$simpleTree4->setHasEmptyDefault(true);
-		$fields->addFieldToTab("Root.SliderEvents",$simpleTree4);	
-		
-		$simpleTree5 = new TreeDropdownField('SliderFeature5ID', 'Fifth Slider Event', 'EventListing');
-		//$simpleTree5->setHasEmptyDefault(true);
-		$fields->addFieldToTab("Root.SliderEvents",$simpleTree5);	
-	
-		
-		$simpleTree6 = new TreeDropdownField('SliderFeature6ID', 'Sixth Slider Event', 'EventListing');
-		//$simpleTree6->setHasEmptyDefault(true);
-		$fields->addFieldToTab("Root.SliderEvents",$simpleTree6);	
-		
+		$fields->addFieldToTab("Root.Main", new TextField('RedLightHeadline', 'Feature Box Title'));
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField('Feature Box Content'));
 		return $fields;
 		
 	}

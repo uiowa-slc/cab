@@ -1,14 +1,10 @@
- <link href='http://fonts.googleapis.com/css?family=Arimo&v1' rel='stylesheet' type='text/css'>
-
+<link href='http://fonts.googleapis.com/css?family=Arimo&v1' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-		<% require themedCSS(interior) %> 
-
+<% require themedCSS(interior) %> 
    <div id ="content" class = "row">
-	    <div id="interior" class="large-11 large-centered column">
-	    		
+	    <div id="interior" class="large-12 large-centered column">
 	    		<h2>$PageTitle <span class="fontweight">$PageTitle1</span></h2>
-	        	
-	        	<table>
+	        	<table class="event-table">
 	            	<thead>
                 	<tr>
                     	<td>event</td>
@@ -17,17 +13,13 @@
                         <td>location</td>
                     </tr>
                 </thead>
-	                
-	                <tbody>
-			
+	            <tbody>
 				    <% if $URLSegment == "movies" %>
 						<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
-	
 	                	<tr>
-							
 	                    	<td><a href="$Link" target="_blank">$Title</a></td>
 	                        <td><a href="$Link" target="_blank">$Dates</a></td>
-	                        <td><a href="$Link" target="_blank">View Times<img src="$ThemeDir/images/externalLink.jpeg" class = "externalLink"/></a></td>
+	                        <td><a href="$Link" target="_blank">View Times &rarr;</a></td>
 	                        <td><a href="$Link" target="_blank">$Location</a></td>
 	                	</tr>
 						<% end_loop %>
@@ -38,7 +30,7 @@
 							
 	                    	<td><a href="$Link" target="_blank">$Title</a></td>
 	                        <td><a href="$Link" target="_blank">$Dates</a></td>
-	                        <td><a href="$Link" target="_blank">View Times<img src="$ThemeDir/images/externalLink.jpeg" class = "externalLink"/></a></td>
+	                        <td><a href="$Link" target="_blank">View Times &rarr;</td>
 	                        <td><a href="$Link" target="_blank">$Location</a></td>
 	                	</tr>
 						<% end_loop %>
