@@ -6550,19 +6550,20 @@ body .main.HomePage {
   padding: 0;
   width: 100%;
 }
-@media only screen and (max-width: 40em) {
+#top-content #blog-box #facebook-feed * {
+  width: 200px;
+  max-width: 100% !important;
+  overflow: hidden;
+  height: inherit;
+}
+@media only screen {
   #top-content #blog-box #facebook-feed {
     height: 400px;
   }
 }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (min-width: 40.063em) {
   #top-content #blog-box #facebook-feed {
-    height: 400px;
-  }
-}
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  #top-content #blog-box #facebook-feed {
-    max-height: auto;
+    height: 700px;
   }
 }
 

@@ -1,4 +1,4 @@
-<div id="top-content" class="row" data-equalizer>
+<div id="top-content" class="row">
 	<!-- LEFT COLUMN, TOP -->
  	<div class="medium-6 large-6 columns">  
  		<div data-equalizer-watch>
@@ -34,18 +34,18 @@
         <% end_if %>
 		<!-- END NEXT UP -->
 	</div><!-- END LEFT COLUMN, TOP -->
-	<div class="medium-6 end large-6 columns" data-equalizer-watch>
-		<div id="blog-box" style="height: 100%;">
+	<div class="medium-6 end large-6 columns">
+		<div id="blog-box">
 			<h2 id="cabfare"><img src="$ThemeDir/images/cabfarecutout_628.png" alt="Cabfare" /></h2>
-			<div id="facebook-feed" style="height: 99%;">
+			<div id="facebook-feed">
 			<!-- FACEBOOK WIDGET -->
-			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=1500&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:90%; background-color: #fff;" allowTransparency="true"></iframe>
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=9000&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; background-color: #fff;" allowTransparency="true"></iframe>
 			</div>	     		
 	    </div>
 	</div>
 </div>       
 <!-- END TOP/ START BOTTOM CONTENT -->
-<div id="bottom-content" class="row" data-equalizer>
+<div id="bottom-content" class="row">
 	<div id="social-media" class="medium-6 large-6 columns">
 
 		<!--<div class="widget">
@@ -54,12 +54,12 @@
 			</h5>
 		</div>-->
 		<!-- TWITTER FEED -->
-    	<div id="twitter-feed" data-equalizer-watch> 
+    	<div id="twitter-feed"> 
         	<a id="twitter-widget" class="twitter-timeline" data-show-faces="false"  data-chrome="transparent" href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 		<!-- FLICKR, YOUTUBE -->
 	</div><!-- end widgets -->	
-	<div class="feature-box medium-6 large-6 columns" data-equalizer-watch>
+	<div class="feature-box medium-6 large-6 columns">
         <!-- GET INVOLVED -->
         <div class="feature-box-content">
        		<h2>$RedLightHeadline</h2>
