@@ -4519,7 +4519,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #7f1b1a;
+  background: rgba(118, 1, 17, 0);
 }
 .contain-to-grid .top-bar {
   margin-bottom: 0;
@@ -4553,7 +4553,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #7f1b1a;
+  background: rgba(118, 1, 17, 0);
   margin-bottom: 0;
 }
 .top-bar ul {
@@ -4646,7 +4646,7 @@ meta.foundation-mq-topbar {
   background: transparent;
 }
 .top-bar.expanded .title-area {
-  background: #7f1b1a;
+  background: rgba(118, 1, 17, 0);
 }
 .top-bar.expanded .toggle-topbar a {
   color: #888888;
@@ -4718,15 +4718,15 @@ meta.foundation-mq-topbar {
   background: #d42b0f;
 }
 .top-bar-section ul li:hover > a {
-  background: #7f1b1a;
+  background: rgba(127, 27, 26, 0);
   color: white;
 }
 .top-bar-section ul li.active > a {
-  background: #7f1b1a;
+  background: rgba(127, 27, 26, 0);
   color: white;
 }
 .top-bar-section ul li.active > a:hover {
-  background: #7f1b1a;
+  background: rgba(127, 27, 26, 0);
   color: white;
 }
 .top-bar-section .has-form {
@@ -4802,7 +4802,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #7f1b1a;
+    background: rgba(118, 1, 17, 0);
     *zoom: 1;
     overflow: visible;
   }
@@ -4829,7 +4829,7 @@ meta.foundation-mq-topbar {
     top: 7px;
   }
   .top-bar.expanded {
-    background: #7f1b1a;
+    background: rgba(118, 1, 17, 0);
   }
 
   .contain-to-grid .top-bar {
@@ -4856,25 +4856,25 @@ meta.foundation-mq-topbar {
     display: none;
   }
   .top-bar-section li.hover > a:not(.button) {
-    background: #7f1b1a;
+    background: rgba(127, 27, 26, 0);
     color: white;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 0.6em;
     line-height: 45px;
-    background: #7f1b1a;
+    background: rgba(118, 1, 17, 0);
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background: #7f1b1a;
+    background: rgba(127, 27, 26, 0);
   }
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
     color: white;
-    background: #7f1b1a;
+    background: rgba(127, 27, 26, 0);
   }
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #7f1b1a;
+    background: rgba(127, 27, 26, 0);
   }
   .top-bar-section .has-dropdown > a {
     padding-right: 20.6em !important;
@@ -4937,7 +4937,7 @@ meta.foundation-mq-topbar {
     width: 0;
   }
   .top-bar-section .has-form {
-    background: #7f1b1a;
+    background: rgba(118, 1, 17, 0);
     padding: 0 0.6em;
     height: 45px;
   }
@@ -4957,11 +4957,11 @@ meta.foundation-mq-topbar {
   }
 
   .no-js .top-bar-section ul li:hover > a {
-    background: #7f1b1a;
+    background: rgba(127, 27, 26, 0);
     color: white;
   }
   .no-js .top-bar-section ul li:active > a {
-    background: #7f1b1a;
+    background: rgba(127, 27, 26, 0);
     color: white;
   }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
@@ -6572,6 +6572,7 @@ body .main.HomePage {
 #bottom-content .feature-box-content {
   background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
   padding: 1em;
+  height: inherit;
 }
 #bottom-content .feature-box-content h2 {
   margin-top: 0;
@@ -6614,8 +6615,14 @@ form .division-search-input {
 }
 
 body {
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b53935), color-stop(1, #741411));
+  background-image: -o-linear-gradient(bottom, #b53935 0%, #741411 100%);
+  background-image: -moz-linear-gradient(bottom, #b53935 0%, #741411 100%);
+  background-image: -webkit-linear-gradient(bottom, #b53935 0%, #741411 100%);
+  background-image: -ms-linear-gradient(bottom, #b53935 0%, #741411 100%);
+  background-image: linear-gradient(to bottom, #b53935 0%, #741411 100%);
   background-position: 20% 0;
+  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 64.063em) {
@@ -6667,7 +6674,7 @@ h2 {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar-section ul.right.top-menu-items li {
-    padding-top: 2.3em;
+    padding-top: 1.3em;
   }
 }
 
@@ -6860,6 +6867,10 @@ a {
 a:hover {
   text-decoration: underline;
   color: #8e8d8d;
+}
+
+.next-tiles h2 {
+  font-size: 3rem;
 }
 
 footer {

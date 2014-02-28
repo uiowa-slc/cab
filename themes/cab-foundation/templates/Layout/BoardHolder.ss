@@ -13,7 +13,7 @@
         <div id="board" class="row">
            <div class = "large-12 column">
            <h2>Executive Board</h2>
-			<ul class = "info small-block-grid-2 medium-block-grid-4 large-block-grid-6">
+			<ul class = "info small-block-grid-2 medium-block-grid-4 large-block-grid-5">
 			<% loop Children %>
 				<li>					
 						$Image.SetHeight("200")														
@@ -27,7 +27,6 @@
 			<% end_loop %>
 			</ul>
 			</div>
-        </div>   
-        <% include NextTiles %>       
+        </div>      
     </div>
 </div>            

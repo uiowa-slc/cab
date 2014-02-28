@@ -5,7 +5,7 @@
 			<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
 				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
 				<li>	
-					<img src="http://afterclass.uiowa.edu/assets/Uploads/_resampled/croppedimage730462-Speed-Dating-AC.jpeg" alt="slide 1" />
+					<img src="$ImageURL" alt="slide 1" />
 					<div class="orbit-caption">	
 				         <a href="$Link"><span class="featurename">$Title</span><br>on $Dates at $Location</a>
 					</div>

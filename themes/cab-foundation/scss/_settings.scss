@@ -959,7 +959,7 @@ $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
  $topbar-bg-color: rgba($secondary-color, 0);
- $topbar-bg: $body-bg;
+ $topbar-bg: $topbar-bg-color;
 
 // Height and margin
  $topbar-height: 45px;
@@ -986,9 +986,9 @@ $topbar-dropdown-bg: $body-bg;
  $topbar-link-weight: normal;
  $topbar-link-font-size: 1.2em;
  $topbar-link-hover-lightness: 10%; // Darken by 10%
- $topbar-link-bg-hover: $body-bg;
- $topbar-link-bg-active: $body-bg;
- $topbar-link-bg-active-hover: $body-bg;
+ $topbar-link-bg-hover: rgba($body-bg, 0);
+ $topbar-link-bg-active: rgba($body-bg, 0);
+ $topbar-link-bg-active-hover: rgba($body-bg, 0);
  $topbar-link-padding: 0.6em;
 
 // $topbar-link-font-family: $body-font-family;
@@ -1008,7 +1008,7 @@ $topbar-dropdown-bg: $body-bg;
  $topbar-menu-link-color: white;
 // $topbar-menu-icon-color: #fff;
 // $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+ $topbar-menu-icon-color-toggled: #888;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;

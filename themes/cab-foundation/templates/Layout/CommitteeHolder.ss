@@ -2,9 +2,9 @@
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 <% require themedCSS(interior) %> 
 <div id ="content" class ="row">
-    <div id="interior" class="large-12 large-centered column">
+    <div id="interior" class="large-7 column">
     	<h2>$PageTitle</h2>	    	
-		<ul class="committee-list small-block-grid-1 ">
+		<ul class="committee-list">
          <% loop Children %> 	   
 		   		<li>
 		   		 <h3 class= "committeeName">$CommitteeName</h3>					   		
@@ -14,5 +14,8 @@
 				</li>
         <% end_loop %>
         </ul>
+    </div>
+    <div class="large-5 column">
+    	<% include NextTiles %>
     </div>
 </div>
