@@ -12,6 +12,9 @@
 			</li>
 			<% end_loop %>
 		</ul>
+		<ul class="left show-for-large-up">
+      		<li><span>entertainment</span> done right.</li>
+    	</ul>
 	</section>
 </nav>
 </div>

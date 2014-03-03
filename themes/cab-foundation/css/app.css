@@ -6635,8 +6635,8 @@ body {
 h2 {
   text-transform: lowercase;
   line-height: 1;
-  margin-top: 0.5rem;
-  margin-bottom: 0.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .main {
@@ -6673,6 +6673,20 @@ h2 {
   text-transform: lowercase;
 }
 
+.top-bar-section ul.left li {
+  font-size: 1.125rem;
+}
+.top-bar-section ul.left li span {
+  color: #a5a3a3;
+}
+@media only screen and (min-width: 64.063em) {
+  .top-bar-section ul.left li {
+    font-size: 1.5625rem;
+    padding-top: 19px;
+    padding-left: 10px;
+  }
+}
+
 @media only screen and (min-width: 40.063em) {
   .top-bar-section ul.right.top-menu-items li {
     padding-top: 1.3em;
@@ -6686,7 +6700,7 @@ h2 {
 }
 @media only screen and (min-width: 64.063em) {
   .top-bar-section ul li > a {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 }
 
@@ -6695,6 +6709,7 @@ h2 {
 }
 @media only screen and (min-width: 64.063em) {
   .main {
+    padding-top: 20px;
     min-height: 600px;
   }
 }
@@ -6821,9 +6836,6 @@ table tr td {
   }
 }
 
-.photo {
-  padding-top: 10px;
-}
 .photo img {
   width: 100%;
 }
