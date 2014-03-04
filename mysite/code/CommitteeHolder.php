@@ -3,9 +3,11 @@ class CommitteeHolder extends Page {
 
 	private static $db = array(
 		"PageTitle" => "Text",
+		
 		);
 
 	private static $has_one = array(
+	
 	);
 	
 	
@@ -14,8 +16,7 @@ class CommitteeHolder extends Page {
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->addFieldToTab('Root.Main', new TextField('PageTitle', 'Headline'));
-
-			  $fields->removeFieldFromTab("Root.Main","Content");
+		$fields->removeFieldFromTab("Root.Main","Content");	
 
 		return $fields;
 	}

@@ -33,7 +33,7 @@ class CommitteePage extends Page {
 	$fields->addFieldToTab('Root.Main', new TextField('EventDate1', 'Event Date 1'));
 	$fields->addFieldToTab('Root.Main', new TextField('CommitteeEvent2', 'Committee Event 2'));
 	$fields->addFieldToTab('Root.Main', new TextField('EventDate2', 'Event Date 2'));
-	
+	$fields->addFieldToTab('Root.Main', new UploadField('Image', 'CategoryImage'));	
 
 
 

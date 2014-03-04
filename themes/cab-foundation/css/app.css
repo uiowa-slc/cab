@@ -7851,7 +7851,7 @@ form .division-search-input {
   height: auto;
 }
 
-/* line 19, ../scss/app.scss */
+/* line 16, ../scss/app.scss */
 .wrapper {
   width: 100%;
   margin-left: auto;
@@ -7871,7 +7871,7 @@ form .division-search-input {
   clear: both;
 }
 
-/* line 24, ../scss/app.scss */
+/* line 19, ../scss/app.scss */
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b53935), color-stop(1, #741411));
   background-image: -o-linear-gradient(bottom, #b53935 0%, #741411 100%);
@@ -7884,110 +7884,128 @@ body {
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 44, ../scss/app.scss */
+  /* line 35, ../scss/app.scss */
   header {
     margin-top: 20px;
   }
 }
 
-/* line 50, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 h2 {
   text-transform: lowercase;
   line-height: 1;
-  margin-top: 0.5rem;
-  margin-bottom: 0.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
-/* line 57, ../scss/app.scss */
+/* line 46, ../scss/app.scss */
 .main {
   background-color: rgba(34, 37, 44, 0.90196);
 }
 
-/* line 61, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 .main-header h1, .main-header h2 {
   display: inline;
 }
 
-/* line 65, ../scss/app.scss */
+/* line 54, ../scss/app.scss */
 .main-header h2 {
   color: #a5a3a3;
 }
 
-/* line 69, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 .main-header h2 {
   margin-left: 20px;
 }
 
-/* line 73, ../scss/app.scss */
+/* line 61, ../scss/app.scss */
 .top-bar {
   height: 85px;
 }
 
-/* line 76, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
 .top-bar .name {
   padding-top: 10px;
   height: 85px;
 }
 
-/* line 80, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .top-bar .name h1 a {
   padding: 0 5px;
 }
 
-/* line 83, ../scss/app.scss */
+/* line 71, ../scss/app.scss */
 .top-bar-section ul {
   background: none;
   text-transform: lowercase;
 }
 
+/* line 75, ../scss/app.scss */
+.top-bar-section ul.left li {
+  font-size: 1.125rem;
+}
+/* line 77, ../scss/app.scss */
+.top-bar-section ul.left li span {
+  color: #a5a3a3;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 75, ../scss/app.scss */
+  .top-bar-section ul.left li {
+    font-size: 1.5625rem;
+    padding-top: 19px;
+    padding-left: 10px;
+  }
+}
+
 @media only screen and (min-width: 40.063em) {
-  /* line 88, ../scss/app.scss */
+  /* line 86, ../scss/app.scss */
   .top-bar-section ul.right.top-menu-items li {
     padding-top: 1.3em;
   }
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 94, ../scss/app.scss */
+  /* line 91, ../scss/app.scss */
   .top-bar-section ul li > a {
     padding: 0;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 94, ../scss/app.scss */
+  /* line 91, ../scss/app.scss */
   .top-bar-section ul li > a {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 }
 
-/* line 103, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .main {
   min-height: 320px;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 103, ../scss/app.scss */
+  /* line 99, ../scss/app.scss */
   .main {
+    padding-top: 20px;
     min-height: 600px;
   }
 }
 
-/* line 111, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 ul li {
   list-style: none;
 }
 
-/* line 115, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 button, .button {
   margin-right: .33em;
 }
 
-/* line 120, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 .externalLink {
   width: 12px;
   height: 12px;
 }
 
-/* line 125, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 table thead tr td {
   font-size: 1.5em;
   font-weight: normal;
@@ -7996,24 +8014,24 @@ table thead tr td {
   border-collapse: collapse;
 }
 
-/* line 134, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 table {
   overflow: scroll;
   border-spacing: 0;
   width: 100%;
 }
 
-/* line 140, ../scss/app.scss */
+/* line 129, ../scss/app.scss */
 table tr td {
   font-size: 1.2em;
 }
 
-/* line 144, ../scss/app.scss */
+/* line 132, ../scss/app.scss */
 #content {
   height: auto;
 }
 
-/* line 150, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 .EventsHolder .main h2 {
   text-transform: lowercase;
   font-weight: bold;
@@ -8022,27 +8040,32 @@ table tr td {
   margin: 0;
 }
 
-/* line 159, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .fontweight {
   font-weight: normal;
 }
 
-/* line 169, ../scss/app.scss */
+/* line 147, ../scss/app.scss */
+.categoryImage img {
+  width: 100%;
+}
+
+/* line 152, ../scss/app.scss */
 .eventListing li a {
   color: #8e8d8d;
 }
-/* line 172, ../scss/app.scss */
+/* line 155, ../scss/app.scss */
 .eventListing p {
   color: white;
 }
 
-/* line 177, ../scss/app.scss */
+/* line 160, ../scss/app.scss */
 .committeeName {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
 
-/* line 182, ../scss/app.scss */
+/* line 165, ../scss/app.scss */
 .committee-list {
   display: block;
   padding: 0;
@@ -8080,7 +8103,7 @@ table tr td {
   clear: both;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 182, ../scss/app.scss */
+  /* line 165, ../scss/app.scss */
   .committee-list {
     display: block;
     padding: 0;
@@ -8119,65 +8142,61 @@ table tr td {
   }
 }
 
-/* line 200, ../scss/app.scss */
-.photo {
-  padding-top: 10px;
-}
-/* line 202, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
 .photo img {
   width: 100%;
 }
 
-/* line 208, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 .info h3 {
   font-size: 1.125rem;
   line-height: 1;
   margin-top: 8px;
 }
-/* line 214, ../scss/app.scss */
+/* line 196, ../scss/app.scss */
 .info h4 {
   color: #cccccc;
   font-size: 0.875rem;
   line-height: 1;
 }
-/* line 220, ../scss/app.scss */
+/* line 202, ../scss/app.scss */
 .info li p {
   font-size: 0.75rem;
 }
-/* line 224, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 .info hr {
   margin: 0.25rem 0 0.1875rem;
 }
 
-/* line 234, ../scss/app.scss */
+/* line 216, ../scss/app.scss */
 .tagline {
   font-size: 15px;
   padding-top: 10px;
 }
 
-/* line 241, ../scss/app.scss */
+/* line 221, ../scss/app.scss */
 a {
   color: white;
 }
 
-/* line 245, ../scss/app.scss */
+/* line 224, ../scss/app.scss */
 a:hover {
   text-decoration: underline;
   color: #8e8d8d;
 }
 
-/* line 250, ../scss/app.scss */
+/* line 228, ../scss/app.scss */
 .next-tiles h2 {
   font-size: 3rem;
 }
 
-/* line 254, ../scss/app.scss */
+/* line 231, ../scss/app.scss */
 footer {
   color: white;
   padding-top: 1em;
 }
 
-/* line 260, ../scss/app.scss */
+/* line 237, ../scss/app.scss */
 .becomeCAB {
   background: #940f0f;
   border-radius: 5px;

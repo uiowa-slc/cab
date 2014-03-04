@@ -15,7 +15,7 @@ form .division-search-input{
 }
 .wrapper {
 	 @include grid-row();
-}
+} 
 body{
 	background-image: -webkit-gradient(
 		linear,
@@ -144,6 +144,10 @@ table tr td {
 }
 
 //Committees
+.categoryImage img{
+	width: 100%;
+}
+
 .eventListing{
 	li a{
 		color:  #8e8d8d;
