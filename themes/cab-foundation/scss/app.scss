@@ -12,17 +12,11 @@ form .division-search-input{
 	margin-top: 4px;
 	margin-bottom: 2px;
 	height: auto;
-
 }
-
-
 .wrapper {
 	 @include grid-row();
 }
-
-
 body{
-
 	background-image: -webkit-gradient(
 		linear,
 		left top,
@@ -35,25 +29,20 @@ body{
 	background-image: -webkit-linear-gradient(bottom, #B53935 0%, #741411 100%);
 	background-image: -ms-linear-gradient(bottom, #B53935 0%, #741411 100%);
 	background-image: linear-gradient(to bottom, #B53935 0%, #741411 100%);
-
 	background-position: 20% 0;
 	background-attachment: fixed;
-
 }
-
 header{
 	@media #{$large-up} {
 	margin-top: 20px;
 	}
 }
-
 h2{
 	text-transform: lowercase;
 	line-height: 1;
-	margin-top: 0.5rem;
-	margin-bottom: 0.8rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.8rem;
 }
-
 .main {
 	background-color: $darkGray;
 }
@@ -69,7 +58,6 @@ h2{
 .main-header h2 {
 	margin-left: 20px;
 }
-
 .top-bar {
 	height: 85px;
 }
@@ -84,69 +72,66 @@ h2{
 	background: none;
 	text-transform: lowercase;
 }
-
+.top-bar-section ul.left li{
+	font-size: rem-calc(18);
+	span{
+		color: #A5A3A3
+	}
+	@media #{$large-up}{ 
+		font-size: rem-calc(25);
+		padding-top: 19px;
+		padding-left: 10px;
+	}	
+}
 .top-bar-section ul.right.top-menu-items li{
 	@media #{$medium-up}{ 
 		padding-top: 1.3em;
 	}
 }
-
 .top-bar-section ul li > a {
 	@media #{$medium-up}{
 		padding: 0;
 	}
 	@media #{$large-up}{
-		font-size: 1.6em;
+		font-size: 1.4em;
 	}
 }
-
 .main {
-	//padding-top: 32px;
 	min-height: 320px;
 	@media #{$large-up}{
+		padding-top: 20px;
 		min-height: 600px;
 	}
 }
-
 ul li {
 	list-style: none;
 }
-
 button, .button {
 	margin-right: .33em;
 }
-
 // Events holder modification of DATA
 .externalLink{
 	width: 12px;
 	height: 12px; 
 }
-
 table thead tr td {
 	font-size: 1.5em;
 	font-weight: normal;
 	border-top: 2px solid white;
 	border-bottom: 2px solid white;
 	border-collapse: collapse;
-
 }
-
 table {
 	overflow: scroll; 
 	border-spacing: 0;
 	width: 100%;
 }
-
 table tr td {
 	font-size: 1.2em; 
 }
-
 #content {
 	height: auto;
-	//min-width: 980px;
-
 }
-
 .EventsHolder .main h2{
 	text-transform: lowercase;
 	font-weight: bold;
@@ -154,17 +139,11 @@ table tr td {
 	padding: 10px 0 15px 0;
 	margin: 0;
 }
-
-
 .fontweight {
 	font-weight: normal;
 }
 
-
-
-
 //Committees
-
 .eventListing{
 	li a{
 		color:  #8e8d8d;
@@ -198,7 +177,6 @@ table tr td {
 
 //about
 .photo{
-	padding-top: 10px;
 	img{
 		width: 100%;
 	}
@@ -236,21 +214,16 @@ table tr td {
 	padding-top: 10px; 
 
 }
- 
-
 a {
 	color: $body-font-color;
 }
-
 a:hover {
 	text-decoration: underline;
 	color: #8e8d8d;
 }
-
 .next-tiles h2 {
 	font-size: rem-calc(48);
 }
-
 footer{
 	color: $body-font-color;
 	padding-top: 1em;
