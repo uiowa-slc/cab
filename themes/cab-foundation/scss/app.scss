@@ -229,17 +229,7 @@ table tr td {
 		
 	}
 
-	a {
-		background: rgb(148, 15, 15);
-		border-radius: 5px;
-		display: block;
-		text-indent: 0;
-		background-position: 0 0;
-		height: 38px;
-		padding: 10px;
-		font-family: arial, sans-serif;
-		width: 199px;
-	}
+	
 }
 .tagline{
 	font-size: 15px; 
@@ -264,4 +254,17 @@ a:hover {
 footer{
 	color: $body-font-color;
 	padding-top: 1em;
+}
+
+
+.becomeCAB {
+		background: rgb(148, 15, 15);
+		border-radius: 5px;
+		display: block;
+		text-indent: 0;
+		background-position: 0 0;
+		height: 38px;
+		padding: 10px;
+		font-family: arial, sans-serif;
+		width: 199px;
 }

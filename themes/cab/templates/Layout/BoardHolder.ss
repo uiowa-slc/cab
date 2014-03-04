@@ -40,6 +40,8 @@
 								<h4>$BoardMember</h4>
 								<h5>$MemberTitle <br />
 								$Email</h5>
+								<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+Send Mail</a>
 								<ul>
 							 
 									<li>major: $Major</li>

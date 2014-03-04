@@ -4,7 +4,7 @@
         	<div class="info large-3 column">
         		<h2>About Us</h2>
         		<p>$MissionStatement</p>
-        	    <a href="https://orgsync.com/17245/forms/66329">Become a CAB member!</a>
+        	    <a href="https://orgsync.com/17245/forms/66329" class= "becomeCAB">Become a CAB member!</a>
 			</div>
         	<div class="photo large-9 column">
         		$Image
@@ -17,8 +17,9 @@
 			<% loop Children %>
 				<li>					
 						$Image.SetHeight("200")														
-						<h3>$BoardMember</h3>
-                        <h4>$MemberTitle</h4>
+						<a href="mailto:$Email" target="_top">
+<h3>$BoardMember</h3></a>
+                        <h4>$MemberTitle</h4>		
 						<p>
 						<strong>major:</strong> $Major <br />
 						<strong>year:</strong> $Year
