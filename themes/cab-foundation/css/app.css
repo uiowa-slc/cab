@@ -8142,61 +8142,80 @@ table tr td {
   }
 }
 
-/* line 184, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
+.contactInfo {
+  font-family: 'Arimo', arial, serif;
+  text-transform: lowercase;
+  color: #A5A3A3;
+  font-size: 1em;
+  margin-top: 32px;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 183, ../scss/app.scss */
+  .contactInfo {
+    font-family: 'Arimo', arial, serif;
+    text-transform: lowercase;
+    color: #A5A3A3;
+    margin-top: 41px;
+    font-size: 1em;
+  }
+}
+
+/* line 200, ../scss/app.scss */
 .photo img {
   width: 100%;
 }
 
-/* line 190, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 .info h3 {
   font-size: 1.125rem;
   line-height: 1;
   margin-top: 8px;
 }
-/* line 196, ../scss/app.scss */
+/* line 212, ../scss/app.scss */
 .info h4 {
   color: #cccccc;
   font-size: 0.875rem;
   line-height: 1;
 }
-/* line 202, ../scss/app.scss */
+/* line 218, ../scss/app.scss */
 .info li p {
   font-size: 0.75rem;
 }
-/* line 206, ../scss/app.scss */
+/* line 222, ../scss/app.scss */
 .info hr {
   margin: 0.25rem 0 0.1875rem;
 }
 
-/* line 216, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 .tagline {
   font-size: 15px;
   padding-top: 10px;
 }
 
-/* line 221, ../scss/app.scss */
+/* line 237, ../scss/app.scss */
 a {
   color: white;
 }
 
-/* line 224, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 a:hover {
   text-decoration: underline;
   color: #8e8d8d;
 }
 
-/* line 228, ../scss/app.scss */
+/* line 244, ../scss/app.scss */
 .next-tiles h2 {
   font-size: 3rem;
 }
 
-/* line 231, ../scss/app.scss */
+/* line 247, ../scss/app.scss */
 footer {
   color: white;
   padding-top: 1em;
 }
 
-/* line 237, ../scss/app.scss */
+/* line 253, ../scss/app.scss */
 .becomeCAB {
   background: #940f0f;
   border-radius: 5px;
