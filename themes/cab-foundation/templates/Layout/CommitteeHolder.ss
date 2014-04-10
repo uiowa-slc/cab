@@ -8,9 +8,11 @@
          <% loop Children %> 	   
 		   		<li>
 		   		 <h3 class= "committeeName">$CommitteeName</h3>			
+		   		 	<% if $Image %>
 		   		 	<div class= "categoryImage">
 		   		 		$Image
-		   		 	</div>		   		
+		   		 	</div>		   
+		   		 	<% end_if %>		
 					<div class="committee_description_large eventListing">
 						$CommitteeDescription
 					</div>
