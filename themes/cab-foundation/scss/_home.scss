@@ -53,9 +53,12 @@ body .main.HomePage {
 
 	    	*{
 	    		width: 200px;
+	    		width: 100% !important;
 	    		max-width: 100% !important;
-	    		overflow: hidden;
+	    		overflow: scroll;
 	    		height: inherit;
+	    		overflow: auto; 
+	    		-webkit-overflow-scrolling:touch;
 	    	}
 
 	    	@media #{$small-up} {

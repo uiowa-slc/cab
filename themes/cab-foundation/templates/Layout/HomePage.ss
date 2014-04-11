@@ -17,7 +17,7 @@
 		<div id="next-up">
 			<h2>$NextUp</h2>	
 			<ul id="next-up-list">
-				<% loop RSSDisplay(20,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
+				<% loop RSSDisplay("20","http://afterclass.uiowa.edu/events/categoriesrss/CAB") %>
 				<a href="$Link"><li>
 					<span>$Title</span> $Dates <% if $Location %> at $Location <% end_if %>
 				</li></a>
@@ -35,11 +35,11 @@
 		<!-- END NEXT UP -->
 	</div><!-- END LEFT COLUMN, TOP -->
 	<div class="medium-6 end large-6 columns">
-		<div id="blog-box">
+		<div id="blog-box" class="hide-for-small-only">
 			<h2 id="cabfare"><img src="$ThemeDir/images/cabfarecutout_628.png" alt="Cabfare" /></h2>
 			<div id="facebook-feed">
 			<!-- FACEBOOK WIDGET -->
-			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=9000&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; background-color: #fff;" allowTransparency="true"></iframe>
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuiowacab&amp;width=525&amp;height=700&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=470713492967451" frameborder="0" style="border:none; width:100%; background-color: #fff;" allowTransparency="true"></iframe>
 			</div>	     		
 	    </div>
 	</div>

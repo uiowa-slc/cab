@@ -7787,9 +7787,12 @@ body .main.HomePage {
 /* line 54, ../scss/_home.scss */
 #top-content #blog-box #facebook-feed * {
   width: 200px;
+  width: 100% !important;
   max-width: 100% !important;
-  overflow: hidden;
+  overflow: scroll;
   height: inherit;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 @media only screen {
   /* line 51, ../scss/_home.scss */
@@ -7881,6 +7884,11 @@ body {
   background-image: linear-gradient(to bottom, #b53935 0%, #741411 100%);
   background-position: 20% 0;
   background-attachment: fixed;
+}
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
 }
 
 @media only screen and (min-width: 64.063em) {
