@@ -60,7 +60,7 @@
 		<!-- FLICKR, YOUTUBE -->
 	</div><!-- end widgets -->	
 	<div class="feature-box medium-6 large-6 columns">
-		<div class="widget">
+		<div class="widget instagram">
 		<!-- SnapWidget -->
 			<iframe src="http://snapwidget.com/sc/?u=dWlvd2FjYWJ8aW58MjUwfDN8M3x8bm98NXxub25lfG9uU3RhcnR8eWVz&v=14414" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
 		</div>
@@ -72,13 +72,13 @@
 		</div>
 		<hr>
 		-->
-		<div class="widget">
-			<a data-pin-do="embedUser" href="http://www.pinterest.com/uiowacab/">Visit University of Iowa CAB's profile on Pinterest.</a>
+		<div class="widget pinterest">	
+			<a data-pin-do="embedUser" href="http://www.pinterest.com/uiowacab/" data-pin-scale-width="100%" data-pin-scale-height="120">Visit University of Iowa CAB's profile on Pinterest.</a>
 			<!-- Please call pinit.js only once per page -->
 			<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
 		</div>
 		<hr>
-		<div class="widget">
+		<div class="widget tumblr">
 			<!-- Tumblr -->
 			<div class='ji-tumblr-photos'><a id='ji-tumblr-url-Tumblr_widget-1' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-1' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-2' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-2' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-3' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-3' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-4' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-4' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-5' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-5' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-6' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-6' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-7' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-7' src='' alt='' /></a>
 			</div>
@@ -101,7 +101,7 @@
 			</script>
 		</div>
 		<hr>
-		<div class="widget">
+		<div class="widget vine">
 			<iframe class="vine" scrolling="no" marginheight="0" frameborder="0" width="100%" src="http://vinalwidget.com/gallery.php?id=931375171250561024&amp;vids=6&amp;width=175&amp;margin=5&amp;display_username=1&amp;likes=1&amp;comments=1&amp;revines=1&amp;date=1&amp;description=0&amp;responsive=0&amp;frame=1" style="height: 436px;"></iframe>
 		</div>
 			</div>
