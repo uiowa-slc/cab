@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "5457f08809983114aebd0a95dfa9e58a50bf560a"
+                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/5457f08809983114aebd0a95dfa9e58a50bf560a",
-                "reference": "5457f08809983114aebd0a95dfa9e58a50bf560a",
+                "url": "https://api.github.com/repos/composer/installers/zipball/26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
+                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
                 "shasum": ""
             },
             "replace": {
@@ -87,7 +87,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-03-26 23:15:27"
+            "time": "2014-04-09 16:12:43"
         },
         {
             "name": "md/division-bar",
@@ -410,12 +410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "6937d65a07a7c1d3c61287933086d33c8fd30a4c"
+                "reference": "d8295c2a27539b7d807dfd8113e13b8b57391797"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/6937d65a07a7c1d3c61287933086d33c8fd30a4c",
-                "reference": "6937d65a07a7c1d3c61287933086d33c8fd30a4c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/d8295c2a27539b7d807dfd8113e13b8b57391797",
+                "reference": "d8295c2a27539b7d807dfd8113e13b8b57391797",
                 "shasum": ""
             },
             "require": {
@@ -439,7 +439,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-03-17 09:34:10"
+            "time": "2014-03-31 16:17:38"
         }
     ],
     "packages-dev": [

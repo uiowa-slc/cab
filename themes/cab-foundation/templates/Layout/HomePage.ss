@@ -47,12 +47,12 @@
 <!-- END TOP/ START BOTTOM CONTENT -->
 <div id="bottom-content" class="row">
 	<div id="social-media" class="medium-6 large-6 columns">
-
-		<!--<div class="widget">
-			<h5>Check Out: &nbsp; <a href="http://www.youtube.com/user/IowaCAB" target="_blank"><img src="$ThemeDir/images/icons/youtube.png" /></a>
-			<a href="http://www.flickr.com/photos/uiowacab" target="_blank"><img src="$ThemeDir/images/icons/flickr.png" /></a>
-			</h5>
-		</div>-->
+		<!-- GET INVOLVED -->
+        <div class="feature-box-content">
+       		<h2>$RedLightHeadline</h2>
+				$RedLightDescription         
+        </div>
+        <!-- end GET INVOLVED -->
 		<!-- TWITTER FEED -->
     	<div id="twitter-feed"> 
         	<a id="twitter-widget" class="twitter-timeline" data-show-faces="false"  data-chrome="transparent" href="https://twitter.com/search?q=%40uiowacab"  data-widget-id="432916008848728066">Tweets about "@uiowacab"</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -60,11 +60,51 @@
 		<!-- FLICKR, YOUTUBE -->
 	</div><!-- end widgets -->	
 	<div class="feature-box medium-6 large-6 columns">
-        <!-- GET INVOLVED -->
-        <div class="feature-box-content">
-       		<h2>$RedLightHeadline</h2>
-				$RedLightDescription         
-        </div>
-        <!-- end GET INVOLVED -->
+		<div class="widget">
+		<!-- SnapWidget -->
+			<iframe src="http://snapwidget.com/sc/?u=dWlvd2FjYWJ8aW58MjUwfDN8M3x8bm98NXxub25lfG9uU3RhcnR8eWVz&v=14414" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
+		</div>
+		<hr>
+		<!-- They no longer use youtube or flickr as of April, 2014
+		<div class="widget">
+			<a href="http://www.youtube.com/user/IowaCAB" target="_blank"><img src="$ThemeDir/images/icons/youtube.png" /></a>
+			<a href="http://www.flickr.com/photos/uiowacab" target="_blank"><img src="$ThemeDir/images/icons/flickr.png" /></a>
+		</div>
+		<hr>
+		-->
+		<div class="widget">
+			<a data-pin-do="embedUser" href="http://www.pinterest.com/uiowacab/">Visit University of Iowa CAB's profile on Pinterest.</a>
+			<!-- Please call pinit.js only once per page -->
+			<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+		</div>
+		<hr>
+		<div class="widget">
+			<!-- Tumblr -->
+			<div class='ji-tumblr-photos'><a id='ji-tumblr-url-Tumblr_widget-1' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-1' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-2' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-2' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-3' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-3' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-4' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-4' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-5' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-5' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-6' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-6' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-7' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-7' src='' alt='' /></a>
+			</div>
+			<script type='text/javascript' src='http://uicab.tumblr.com/api/read/json?number=7&type=photo'></script>
+			<script type='text/javascript'>
+			document.getElementById('ji-tumblr-photo-Tumblr_widget-1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-75']);
+			document.getElementById('ji-tumblr-url-Tumblr_widget-1').setAttribute('href', 'http://uicatumblcom.tumblr.com');
+			document.getElementById('ji-tumblr-photo-Tumblr_widget-2').setAttribute('src', tumblr_api_read.posts[1]['photo-url-75']);
+			document.getElementById('ji-tumblr-url-Tumblr_widget-2').setAttribute('href', 'http://uicatumblcom.tumblr.com');
+			document.getElementById('ji-tumblr-photo-Tumblr_widget-3').setAttribute('src', tumblr_api_read.posts[2]['photo-url-75']);
+			document.getElementById('ji-tumblr-url-Tumblr_widget-3').setAttribute('href', 'http://uicatumblcom.tumblr.com');
+			document.getElementById('ji-tumblr-photo-Tumblr_widget-4').setAttribute('src', tumblr_api_read.posts[3]['photo-url-75']);
+			document.getElementById('ji-tumblr-url-Tumblr_widget-4').setAttribute('href', 'http://uicatumblcom.tumblr.com');
+			document.getElementById('ji-tumblr-photo-Tumblr_widget-5').setAttribute('src', tumblr_api_read.posts[4]['photo-url-75']);
+			document.getElementById('ji-tumblr-url-Tumblr_widget-5').setAttribute('href', 'http://uicatumblcom.tumblr.com');
+			document.getElementById('ji-tumblr-photo-Tumblr_widget-6').setAttribute('src', tumblr_api_read.posts[5]['photo-url-75']);
+			document.getElementById('ji-tumblr-url-Tumblr_widget-6').setAttribute('href', 'http://uicatumblcom.tumblr.com');
+			document.getElementById('ji-tumblr-photo-Tumblr_widget-7').setAttribute('src', tumblr_api_read.posts[6]['photo-url-75']);
+			document.getElementById('ji-tumblr-url-Tumblr_widget-7').setAttribute('href', 'http://uicatumblcom.tumblr.com');
+			</script>
+		</div>
+		<hr>
+		<div class="widget">
+			<iframe class="vine" scrolling="no" marginheight="0" frameborder="0" width="100%" src="http://vinalwidget.com/gallery.php?id=931375171250561024&amp;vids=6&amp;width=175&amp;margin=5&amp;display_username=1&amp;likes=1&amp;comments=1&amp;revines=1&amp;date=1&amp;description=0&amp;responsive=0&amp;frame=1" style="height: 436px;"></iframe>
+		</div>
+			</div>
+		</div>
 	</div>
 </div>
