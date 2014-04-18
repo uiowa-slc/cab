@@ -18,11 +18,11 @@
 			<div class="col-1-4 hide-print">
 				<div class="colgroup">
 					<ul class="footer-nav">
-						<% if $SiteConfig.FacebookLink %>
-						<li><a href="//$SiteConfig.FacebookLink" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
-						<% end_if %>
+						
+						<li><a href="https://www.facebook.com/uiowacab" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
+						
 						<% if $SiteConfig.TwitterLink %>
-						<li><a href="//$SiteConfig.TwitterLink" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+						<li><a href="https://twitter.com/uiowaCAB" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
 						<% end_if %>
 					</ul>
 					<ul class="footer-nav">
