@@ -1,7 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic');
-@import "settings";
+@import "imports/settings";
 @import "../bower_components/foundation/scss/foundation";
-@import "home";
+@import "imports/home";
+@import "imports/footer/config";
+@import "imports/footer/mixins";
+@import "imports/footer/footer";
+@import "imports/footer/grid-simple";
+
 $include-html-type-classes: $include-html-classes;
 @import "../../../division-bar/css/_division-bar.css";
 
@@ -11,7 +16,7 @@ form .division-search-input{
 	margin-right: 0;
 	margin-top: 4px;
 	margin-bottom: 2px;
-	height: auto;
+	height: auto; 
 }
 .wrapper {
 	 @include grid-row();
