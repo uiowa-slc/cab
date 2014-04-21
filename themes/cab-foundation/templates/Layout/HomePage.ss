@@ -67,8 +67,8 @@
 		<hr>
 		<!-- They no longer use youtube or flickr as of April, 2014
 		<div class="widget">
-			<a href="http://www.youtube.com/user/IowaCAB" target="_blank"><img src="$ThemeDir/images/icons/youtube.png" /></a>
-			<a href="http://www.flickr.com/photos/uiowacab" target="_blank"><img src="$ThemeDir/images/icons/flickr.png" /></a>
+			<a href="http://www.youtube.com/user/IowaCAB" target="_blank"><img src="$ThemeDir/images/icons/youtube.png" alt="youtube"/></a>
+			<a href="http://www.flickr.com/photos/uiowacab" target="_blank"><img src="$ThemeDir/images/icons/flickr.png" alt="flickr"/></a>
 		</div>
 		<hr>
 		-->
