@@ -80,25 +80,7 @@
 		<hr>
 		<div class="widget tumblr">
 			<!-- Tumblr -->
-			<div class='ji-tumblr-photos'><a id='ji-tumblr-url-Tumblr_widget-1' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-1' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-2' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-2' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-3' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-3' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-4' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-4' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-5' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-5' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-6' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-6' src='' alt='' /></a><a id='ji-tumblr-url-Tumblr_widget-7' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-Tumblr_widget-7' src='' alt='' /></a>
-			</div>
-			<script type='text/javascript' src='http://uicab.tumblr.com/api/read/json?number=7&type=photo'></script>
-			<script type='text/javascript'>
-			document.getElementById('ji-tumblr-photo-Tumblr_widget-1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-75']);
-			document.getElementById('ji-tumblr-url-Tumblr_widget-1').setAttribute('href', 'http://uicatumblcom.tumblr.com');
-			document.getElementById('ji-tumblr-photo-Tumblr_widget-2').setAttribute('src', tumblr_api_read.posts[1]['photo-url-75']);
-			document.getElementById('ji-tumblr-url-Tumblr_widget-2').setAttribute('href', 'http://uicatumblcom.tumblr.com');
-			document.getElementById('ji-tumblr-photo-Tumblr_widget-3').setAttribute('src', tumblr_api_read.posts[2]['photo-url-75']);
-			document.getElementById('ji-tumblr-url-Tumblr_widget-3').setAttribute('href', 'http://uicatumblcom.tumblr.com');
-			document.getElementById('ji-tumblr-photo-Tumblr_widget-4').setAttribute('src', tumblr_api_read.posts[3]['photo-url-75']);
-			document.getElementById('ji-tumblr-url-Tumblr_widget-4').setAttribute('href', 'http://uicatumblcom.tumblr.com');
-			document.getElementById('ji-tumblr-photo-Tumblr_widget-5').setAttribute('src', tumblr_api_read.posts[4]['photo-url-75']);
-			document.getElementById('ji-tumblr-url-Tumblr_widget-5').setAttribute('href', 'http://uicatumblcom.tumblr.com');
-			document.getElementById('ji-tumblr-photo-Tumblr_widget-6').setAttribute('src', tumblr_api_read.posts[5]['photo-url-75']);
-			document.getElementById('ji-tumblr-url-Tumblr_widget-6').setAttribute('href', 'http://uicatumblcom.tumblr.com');
-			document.getElementById('ji-tumblr-photo-Tumblr_widget-7').setAttribute('src', tumblr_api_read.posts[6]['photo-url-75']);
-			document.getElementById('ji-tumblr-url-Tumblr_widget-7').setAttribute('href', 'http://uicatumblcom.tumblr.com');
-			</script>
+			
 		</div>
 		<hr>
 		<div class="widget vine">

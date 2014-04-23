@@ -6,6 +6,7 @@
 @import "imports/footer/mixins";
 @import "imports/footer/footer";
 @import "imports/footer/grid-simple";
+@import "foundation-icons/foundation-icons.css";
 
 $include-html-type-classes: $include-html-classes;
 @import "../../../division-bar/css/_division-bar.css";
@@ -95,9 +96,15 @@ h2{
 }
 .top-bar-section ul.right.top-menu-items li{
 	@media #{$medium-up}{ 
-		padding-top: 1.3em;
+		margin-top: 1.3em;
 	}
 }
+
+.top-bar-section ul.right.top-menu-items .active {
+		background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
+		
+	}
+	
 .top-bar-section ul li > a {
 	@media #{$medium-up}{
 		padding: 0;
