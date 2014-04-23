@@ -12,8 +12,8 @@
 			</li>
 			<% end_loop %>
 		</ul>
-		<ul class="left show-for-large-up">
-      		<li><span>entertainment</span> done right.</li>
+		<ul class="left show-for-xlarge-up">
+      		<li><a href="{$BaseHref}"><span>entertainment</span> done right.</a></li>
     	</ul>
 	</section>
 </nav>

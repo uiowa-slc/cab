@@ -5,9 +5,9 @@
 			<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
 				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categoriesrss/cab") %>
 				<li>	
-					<img src="$ImageURL" alt="slide 1" />
+					<a href="$Link"><img src="$ImageURL" alt="Image for $Title" /></a>
 					<div class="orbit-caption">	
-				         <a href="$Link"><span class="featurename">$Title</span><br>on $Dates at $Location</a>
+				         <a href="$Link"><span class="featurename">$Title</span><% if $Location %><br>on $Dates at $Location<% end_if %></a>
 					</div>
 				</li>
 				<% end_loop %>
