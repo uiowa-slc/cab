@@ -72,20 +72,28 @@
 		</div>
 		<hr>
 		-->
+		<h4>Cab is on Pinterest, Tumblr, and Vine; follow Us!</h4>
+		<div class='row'>
+			<div class='small-3 medium-4 columns'><a href="http://www.pinterest.com/uiowacab/"><image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/pinterest.png" alt='pinterest' /></a></div>
+			<div class='small-3 medium-4 columns'><a href="http://uicab.tumblr.com/"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/tumblr.png" alt='tumblr' /></a></div>
+			<div class='small-3 medium-4 columns'><a href="https://vine.co/u/931375171250561024"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/vine.png" alt='vine' /></a></div>
+		</div>
+		<hr>
+		<!--
 		<div class="widget pinterest">	
 			<a data-pin-do="embedUser" href="http://www.pinterest.com/uiowacab/" data-pin-scale-width="100%" data-pin-scale-height="120">Visit University of Iowa CAB's profile on Pinterest.</a>
-			<!-- Please call pinit.js only once per page -->
+			
+			
 			<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
 		</div>
 		<hr>
-		<div class="widget tumblr">
-			<!-- Tumblr -->
-			
+		<div class="widget tumblr">			
 		</div>
 		<hr>
 		<div class="widget vine">
 			<iframe class="vine" scrolling="no" marginheight="0" frameborder="0" width="100%" src="http://vinalwidget.com/gallery.php?id=931375171250561024&amp;vids=6&amp;width=175&amp;margin=5&amp;display_username=1&amp;likes=1&amp;comments=1&amp;revines=1&amp;date=1&amp;description=0&amp;responsive=0&amp;frame=1" style="height: 436px;"></iframe>
 		</div>
+		-->
 			</div>
 		</div>
 	</div>
