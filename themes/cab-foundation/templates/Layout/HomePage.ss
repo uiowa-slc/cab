@@ -3,7 +3,7 @@
  	<div class="medium-6 large-6 columns">  
  		<div data-equalizer-watch>
 			<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
-				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categories/CAB/feed/rss") %>
+				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categories/CAB/feed/rss").Reverse %>
 				<li>	
 					<a href="$Link"><img src="$ImageURL" alt="Image for $Title" /></a>
 					<div class="orbit-caption">	
@@ -17,7 +17,7 @@
 		<div id="next-up">
 			<h2>$NextUp</h2>	
 			<ul id="next-up-list">
-				<% loop RSSDisplay("8","http://afterclass.uiowa.edu/events/categories/CAB/feed/rss") %>
+				<% loop RSSDisplay("8","http://afterclass.uiowa.edu/events/categories/CAB/feed/rss").Reverse %>
 				<a href="$Link"><li>
 					<span>$Title</span> $Dates <% if $Location %> at $Location <% end_if %>
 				</li></a>
