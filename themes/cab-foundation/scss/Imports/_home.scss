@@ -6,6 +6,10 @@ body .main.HomePage {
 #top-content {
 	#next-up {
 		margin-bottom: 10px;
+
+		h2{
+			margin-top: 0;
+		}
 		
 		ul, ol {
 			margin: 0;
@@ -73,7 +77,9 @@ body .main.HomePage {
 		}
 	}
 }
- 
+ .orbit-bullets {
+ 	margin: 0 auto 10px auto;
+ }
  
 .orbit-slide-number {
 	display: none; 
@@ -83,11 +89,8 @@ body .main.HomePage {
 	display:none; 
 }
 
-#bottom-content {
-	margin-top: 1em;
-	
-	.feature-box-content {
-			background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
+.feature-box-content {
+			background: rgba(37, 41, 49, 0.65);
 			padding: 1em;
 			margin-bottom:.5em; 
 			height: inherit;
@@ -102,10 +105,12 @@ body .main.HomePage {
 		overflow: hidden;
 		margin: 0 auto;
 		padding: 7px;
-		background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
+		background: rgba(37, 41, 49, 0.65);
+		margin-top: 10px;
 	}
 	#twitter-widget {
 		width: 100%;
+
 	}
 	
 	.widget {
@@ -120,5 +125,3 @@ body .main.HomePage {
 		max-width: 100%;
 		overflow-x: hidden;
 	}
-	
-} 
