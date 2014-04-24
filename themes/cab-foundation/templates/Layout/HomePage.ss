@@ -24,7 +24,7 @@
 				<% end_loop %> 
 			</ul>			
 			<ul class="button-group">
-			  <li><a href="{$BaseHref}/movies" class="tiny button radius">view all movies and events</a></li>
+			  <li><a href="events/" class="tiny button radius">view all movies and events</a></li>
 			</ul>
 		</div>
 		<!-- GET INVOLVED -->
