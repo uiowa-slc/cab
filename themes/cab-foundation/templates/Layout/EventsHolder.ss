@@ -11,7 +11,7 @@
                 </tr>
             </thead>
             <tbody>
-				<% loop RSSDisplay(100,"http://afterclass.uiowa.edu/events/categories/CAB/feed/rss").Reverse %>
+				<% loop RSSDisplay(100,"http://afterclass.uiowa.edu/events/categories/CAB/feed/rss") %>
             	<tr>
                 	<td><a href="$Link" target="_blank">$Title</a></td>
                     <td><a href="$Link" target="_blank">$Dates</a></td>

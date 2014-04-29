@@ -25,9 +25,15 @@ body .main.HomePage {
 		#next-up-list {
 			li {
 				list-style-position: inside;
-				margin-bottom: 2px;
+				margin-top: 14px;
+				margin-bottom: 14px;
 				padding-left: 3px;
 				padding-right: 3px;
+				line-height: 1;
+
+				p {
+					margin: 0
+				}
 				
 			}
 			li:hover {
@@ -38,7 +44,7 @@ body .main.HomePage {
 				font-size: 1.25em;
 				text-transform: uppercase;	
 				text-decoration: none;
-				color: #fff;
+				color: #FFD2D2;
 			}
 		}
 	}	

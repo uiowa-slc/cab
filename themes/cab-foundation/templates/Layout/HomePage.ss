@@ -3,11 +3,13 @@
  	<div class="medium-6 large-6 columns">  
  		<div data-equalizer-watch>
 			<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
-				<% loop RSSDisplay(6,"http://afterclass.uiowa.edu/events/categories/CAB/feed/rss").Reverse %>
+				<% loop AfterClassFeed("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
 				<li>	
 					<a href="$Link"><img src="$ImageURL" alt="Image for $Title" /></a>
 					<div class="orbit-caption">	
-				         <a href="$Link"><span class="featurename">$Title</span><% if $Location %><br>on $Dates at $Location<% end_if %></a>
+				         <a href="$Link"><span class="featurename">$Title</span>
+				         	<br><% include ACDateLocation %>
+				         	<% if DateTimeCount > "1" %>(more times)<% end_if %></a>
 					</div>
 				</li>
 				<% end_loop %>
@@ -17,9 +19,9 @@
 		<div id="next-up">
 			<h2>$NextUp</h2>	
 			<ul id="next-up-list">
-				<% loop RSSDisplay("8","http://afterclass.uiowa.edu/events/categories/CAB/feed/rss").Reverse %>
+				<% loop AfterClassFeed("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
 				<a href="$Link"><li>
-					<span>$Title</span> $Dates <% if $Location %> at $Location <% end_if %>
+					<span>$Title</span><p><% include ACDateLocation %></p>
 				</li></a>
 				<% end_loop %> 
 			</ul>			
@@ -32,7 +34,7 @@
        		<h2>$RedLightHeadline</h2>
 				$RedLightDescription         
         </div>
-		<div class="widget instagram">
+		<div class="widget instagram hide-for-small-only">
 		<!-- SnapWidget -->
 			<iframe src="http://snapwidget.com/sc/?u=dWlvd2FjYWJ8aW58MjUwfDN8M3x8bm98NXxub25lfG9uU3RhcnR8eWVz&v=14414" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
 		</div>
