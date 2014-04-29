@@ -11,7 +11,7 @@
 		"silverstripe/blog" : "*",
 		"silverstripe/userforms" : "*",
 		"md/rss-display" : "*",
-		"md/ac-json-display" : "*",
+		"md/ac-json-events" : "*",
 		"rywa/silverstripe-foundation-forms": "dev-master"
 	},
 	"config": {

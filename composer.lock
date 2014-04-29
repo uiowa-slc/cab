@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8500b6b8879c7d993240f0e6fbc153de",
+    "hash": "29f96e8fb8c29b084585d63c796be095",
     "packages": [
         {
             "name": "composer/installers",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff"
+                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
+                "url": "https://api.github.com/repos/composer/installers/zipball/df19b48f557987e0a9bddff0c12dde37d5bcb757",
+                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757",
                 "shasum": ""
             },
             "replace": {
@@ -87,7 +87,39 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-09 16:12:43"
+            "time": "2014-04-15 03:26:48"
+        },
+        {
+            "name": "md/ac-json-events",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
+                "reference": "9ad57ee51ded54e96c1b2028c273ba557fe50afd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/9ad57ee51ded54e96c1b2028c273ba557fe50afd",
+                "reference": "9ad57ee51ded54e96c1b2028c273ba557fe50afd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "description": "After Class JSON Display Module",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
+            },
+            "time": "2014-04-29 19:06:52"
         },
         {
             "name": "md/division-bar",
@@ -95,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "83b85fca823dc970d0c5e2b6257927ad6a4ce3a8"
+                "reference": "a5845dfa6c766ed9fce8d19e7302c5404af70cd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/83b85fca823dc970d0c5e2b6257927ad6a4ce3a8",
-                "reference": "83b85fca823dc970d0c5e2b6257927ad6a4ce3a8",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/a5845dfa6c766ed9fce8d19e7302c5404af70cd3",
+                "reference": "a5845dfa6c766ed9fce8d19e7302c5404af70cd3",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +151,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-03-21 22:13:45"
+            "time": "2014-04-17 14:30:01"
         },
         {
             "name": "md/rss-display",
@@ -410,12 +442,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "d8295c2a27539b7d807dfd8113e13b8b57391797"
+                "reference": "b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/d8295c2a27539b7d807dfd8113e13b8b57391797",
-                "reference": "d8295c2a27539b7d807dfd8113e13b8b57391797",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e",
+                "reference": "b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e",
                 "shasum": ""
             },
             "require": {
@@ -439,7 +471,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-03-31 16:17:38"
+            "time": "2014-04-25 13:53:45"
         }
     ],
     "packages-dev": [

@@ -7,9 +7,9 @@
 				<li>	
 					<a href="$Link"><img src="$ImageURL" alt="Image for $Title" /></a>
 					<div class="orbit-caption">	
-				         <a href="$Link"><span class="featurename">$Title</span>
+				         <a href="$Link" target="_blank"><span class="featurename">$Title</span>
 				         	<br><% include ACDateLocation %>
-				         	<% if DateTimeCount > "1" %>(more times)<% end_if %></a>
+				         	<% if $DateTimeCount > "1" %>(more times)<% end_if %></a>
 					</div>
 				</li>
 				<% end_loop %>
@@ -20,13 +20,13 @@
 			<h2>$NextUp</h2>	
 			<ul id="next-up-list">
 				<% loop AfterClassFeed("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
-				<a href="$Link"><li>
+				<a href="$Link" target="_blank"><li>
 					<span>$Title</span><p><% include ACDateLocation %></p>
 				</li></a>
 				<% end_loop %> 
 			</ul>			
 			<ul class="button-group">
-			  <li><a href="events/" class="tiny button radius">view all movies and events</a></li>
+			  <li><a href="events/" class="tiny button radius" target="_blank">view all movies and events</a></li>
 			</ul>
 		</div>
 		<!-- GET INVOLVED -->
@@ -41,9 +41,12 @@
 		<hr>
 		<h4>Cab is on Pinterest, Tumblr, and Vine; follow Us!</h4>
 		<div class='row'>
-			<div class='small-3 medium-4 columns'><a href="http://www.pinterest.com/uiowacab/"><image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/pinterest.png" alt='pinterest' /></a></div>
-			<div class='small-3 medium-4 columns'><a href="http://uicab.tumblr.com/"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/tumblr.png" alt='tumblr' /></a></div>
-			<div class='small-3 medium-4 columns'><a href="https://vine.co/u/931375171250561024"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/vine.png" alt='vine' /></a></div>
+			<div class='small-2 medium-2 columns'><a href="http://www.pinterest.com/uiowacab/" target="_blank"><image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/pinterest.png" alt='pinterest' /></a></div>
+			<div class='small-2 medium-2 columns'><a href="http://uicab.tumblr.com/" target="_blank"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/tumblr.png" alt='tumblr' /></a></div>
+			<div class='small-2 medium-2 columns'><a href="https://vine.co/u/931375171250561024" target="_blank"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/vine.png" alt='vine' /></a></div>
+			<div class='small-2 medium-2 columns'><a href="https://twitter.com/uiowaCAB" target="_blank"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/twitter.png" alt='vine' /></a></div>
+			<div class='small-2 medium-2 columns'><a href="http://instagram.com/uiowacab" target="_blank"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/instagram.png" alt='vine' /></a></div>
+			<div class='small-2 medium-2 columns'><a href="https://www.facebook.com/uiowacab" target="_blank"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/facebook.png" alt='vine' /></a></div>
 		</div>
 		<hr>
 

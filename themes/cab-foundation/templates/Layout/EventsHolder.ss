@@ -5,18 +5,16 @@
             <thead>
             	<tr>
                 	<td>event</td>
-                    <td>date</td>
-                    <td>time</td>
+                    <td>date + time</td>
                     <td>location</td>
                 </tr>
             </thead>
             <tbody>
-				<% loop RSSDisplay(100,"http://afterclass.uiowa.edu/events/categories/CAB/feed/rss") %>
+				<% loop AfterClassFeed("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
             	<tr>
                 	<td><a href="$Link" target="_blank">$Title</a></td>
-                    <td><a href="$Link" target="_blank">$Dates</a></td>
-                    <td><a href="$Link" target="_blank">View Times &rarr;</a></td>
-                    <td><a href="$Link" target="_blank">$Location</a></td>
+                    <td><a href="$Link" target="_blank">$NextDateTime.Format("D, F n")<% if $NextDateTime.Time %> at<% end_if %> $NextDateTime.Time <% if $DateTimeCount > "1" %> (more)<% end_if %> </a></td>
+                    <td><a href="$Link" target="_blank">$Location<%if $Location %>,<% end_if %> $Venue</a></td>
             	</tr>
 				<% end_loop %>
             </tbody>

@@ -129,6 +129,15 @@ ul li {
 button, .button {
 	margin-right: .33em;
 }
+
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #7d7d7d;
+}
+
+.button.radius {
+	border-radius: 1px; 
+}
+
 // Events holder modification of DATA
 .externalLink{
 	width: 12px;
