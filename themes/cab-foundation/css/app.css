@@ -8514,28 +8514,37 @@ table tr td {
 }
 
 /* line 266, ../scss/app.scss */
+hr {
+  border: solid rgba(255, 92, 92, 0.32);
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.25rem 0 1.1875rem;
+  height: 0;
+}
+
+/* line 273, ../scss/app.scss */
 a {
   color: white;
 }
 
-/* line 269, ../scss/app.scss */
+/* line 276, ../scss/app.scss */
 a:hover {
   text-decoration: underline;
   color: #8e8d8d;
 }
 
-/* line 273, ../scss/app.scss */
+/* line 280, ../scss/app.scss */
 .next-tiles h2 {
   font-size: 3rem;
 }
 
-/* line 276, ../scss/app.scss */
+/* line 283, ../scss/app.scss */
 footer {
   color: white;
   padding-top: 1em;
 }
 
-/* line 282, ../scss/app.scss */
+/* line 289, ../scss/app.scss */
 .becomeCAB {
   background: #940f0f;
   display: block;
