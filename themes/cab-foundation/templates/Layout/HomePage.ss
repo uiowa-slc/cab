@@ -39,7 +39,7 @@
 			<iframe src="http://snapwidget.com/sc/?u=dWlvd2FjYWJ8aW58MjUwfDN8M3x8bm98NXxub25lfG9uU3RhcnR8eWVz&v=14414" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
 		</div>
 		<hr>
-		<h4>Cab is on Pinterest, Tumblr, and Vine; follow Us!</h4>
+		<h4>Cab is on Pinterest, Facebook, Instagram, Tumblr, and Vine; follow Us!</h4>
 		<div class='row'>
 			<div class='small-2 medium-2 columns'><a href="http://www.pinterest.com/uiowacab/" target="_blank"><image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/pinterest.png" alt='pinterest' /></a></div>
 			<div class='small-2 medium-2 columns'><a href="http://uicab.tumblr.com/" target="_blank"> <image style='display: block; margin: auto;' src="$ThemeDir/images/icons/social-media/tumblr.png" alt='tumblr' /></a></div>

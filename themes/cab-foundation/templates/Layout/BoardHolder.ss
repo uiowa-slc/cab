@@ -28,6 +28,9 @@
 			<% end_loop %>
 			</ul>
 			</div>
+			 </hr>
+        <% include NextTilesForOtherPages %> 
         </div>      
+       
     </div>
 </div>            
