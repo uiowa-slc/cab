@@ -106,6 +106,7 @@ h2{
 	}
 	
 .top-bar-section ul li > a {
+	text-transform: lowercase;
 	@media #{$medium-up}{
 		padding: 0;
 	}

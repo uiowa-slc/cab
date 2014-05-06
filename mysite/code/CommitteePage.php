@@ -2,42 +2,24 @@
 class CommitteePage extends Page {
 
 	private static $db = array(
-				"CommitteeName" => "Text",
-				'CommitteeDescription' => 'HTMLText',	
-				"CommitteeEvent" => "Text",
-				"EventDate" => "Text",
-				"CommitteeEvent1" => "Text",
-				"EventDate1" => "Text",
-				"CommitteeEvent2" => "Text",
-				"EventDate2" => "Text",
+		'CommitteeDescription' => 'HTMLText',	
 
-		);
+	);
 
 	private static $has_one = array(
-				"Image" => "Image",
+		"Image" => "Image",
 
 	);
 	
     private static $has_many = array(
-        'EventListings' => 'EventListing'
+
     );
     
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-	$fields->addFieldToTab('Root.Main', new TextField('CommitteeName', 'CommitteeName'));
-	
-	$fields->addFieldToTab("Root.Main", new HTMLEditorField('CommitteeDescription'));
-	$fields->addFieldToTab('Root.Main', new TextField('CommitteeEvent', 'Committee Event'));
-	$fields->addFieldToTab('Root.Main', new TextField('EventDate', 'Event Date'));
-	$fields->addFieldToTab('Root.Main', new TextField('CommitteeEvent1', 'Committee Event 1'));
-	$fields->addFieldToTab('Root.Main', new TextField('EventDate1', 'Event Date 1'));
-	$fields->addFieldToTab('Root.Main', new TextField('CommitteeEvent2', 'Committee Event 2'));
-	$fields->addFieldToTab('Root.Main', new TextField('EventDate2', 'Event Date 2'));
-	$fields->addFieldToTab('Root.Main', new UploadField('Image', 'CategoryImage'));	
-
-
-
-			  $fields->removeFieldFromTab("Root.Main","Content");
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField('CommitteeDescription'));
+		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Committee Image'));	
+		$fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}

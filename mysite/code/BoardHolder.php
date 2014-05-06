@@ -2,18 +2,12 @@
 class BoardHolder extends Page {
 
 	private static $db = array(
-		"FirstWords" => "Text",
-				"LastWords" => "Text",
-				"MissionStatement" => "HTMLText",
-				"WordOne" => "Text",
-				"WordTwo" => "Text",	
-		);
+		"MissionStatement" => "HTMLText",
+	);
 
 	private static $has_one = array(
-			"Image" => "Image",
+		"Image" => "Image",
 	);
-	
-	
 	private static $allowed_children = array(	'Board');
 	
 	function getCMSFields() {
@@ -42,18 +36,7 @@ class BoardHolder_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
-	);
-
-	public function Events(){
-		//$board = DataObject::get("Board");	
-		$board = Board::get(); 
-		
-		if($board)
-			return $board;
-			
-			
-	}
+	private static $allowed_actions = array ();
 	
 }
 ?>

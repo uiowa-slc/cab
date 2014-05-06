@@ -16,15 +16,12 @@ class Newsletter extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-	$fields->addFieldToTab('Root.Main', new TextField('FirstWords', 'Headline, first word'));
-	$fields->addFieldToTab('Root.Main', new TextField('LastWords', 'Headline, second word'));
-	
-	$fields->addFieldToTab("Root.Main", new TextField('Tagline','Tagline'));
-	
+		$fields->addFieldToTab('Root.Main', new TextField('FirstWords', 'Headline, first word'));
+		$fields->addFieldToTab('Root.Main', new TextField('LastWords', 'Headline, second word'));
+		
+		$fields->addFieldToTab("Root.Main", new TextField('Tagline','Tagline'));
 
-
-
-			  $fields->removeFieldFromTab("Root.Main","Content");
+		$fields->removeFieldFromTab("Root.Main","Content");
 
 		return $fields;
 	}

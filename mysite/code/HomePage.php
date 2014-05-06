@@ -1,26 +1,35 @@
 <?php
-class HomePage extends Page {
+class HomePage extends AfterClassEventsPage {
 
 	private static $db = array(
-			"NextUp" => "Text",
-			"RedLightHeadline" => "Text",
-			"RedLightDescription" => "HTMLText"
-			
+		"NextUp" => "Text",
+		"RedLightHeadline" => "Text",
+		"RedLightDescription" => "HTMLText"
 	);
 
 	private static $has_one = array(
-		"SliderFeature1" => "SiteTree",
-		"SliderFeature2" => "SiteTree",
-		"SliderFeature3" => "SiteTree",
-		"SliderFeature4" => "SiteTree",
-		"SliderFeature5" => "SiteTree",
-		"SliderFeature6" => "SiteTree"
+		"SliderFeature1" => "Int",
+		"SliderFeature2" => "Int",
+		"SliderFeature3" => "Int",
+		"SliderFeature4" => "Int",
+		"SliderFeature5" => "Int",
+		"SliderFeature6" => "Int"
 	);
 	
 	private static $allowed_children = array('HomePageSlider');
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
+
+		$fields->removeByName("Content");
+
+		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature1ID", "Slider Event 1", null, null, null, 15));
+		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature2ID", "Slider Event 2", null, null, null, 15));
+		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature3ID", "Slider Event 3", null, null, null, 15));
+		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature4ID", "Slider Event 4", null, null, null, 15));
+		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature5ID", "Slider Event 5", null, null, null, 15));
+		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature6ID", "Slider Event 6", null, null, null, 15));
+
 		$fields->addFieldToTab("Root.Main", new TextField('NextUp', 'Headline for upcoming events'));
 		$fields->addFieldToTab("Root.Main", new TextField('RedLightHeadline', 'Feature Box Title'));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField('Feature Box Content'));
@@ -28,7 +37,7 @@ class HomePage extends Page {
 		
 	}
 }
-class HomePage_Controller extends Page_Controller {
+class HomePage_Controller extends AfterClassEventsPage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -45,20 +54,19 @@ class HomePage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-private static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
-	public function Events(){
-		$events = EventListing::get(); 
-		if($events)
-			return $events;
-			
+	public function SliderEvents(){
+		$events = new ArrayList();
+		for ($i = 1; $i <= 6; $i++){
+		    $propertyName = "SliderFeature".$i."ID";
+		    if ($this->$propertyName){
+		    	$event = $this->AfterClassEvent($this->$propertyName);
+				if($event) {$events->push($event);} 
+		    }
+		}
+		return $events;
 	}
-	
-	public function OrbitEvents(){
-		
-	}
-	
-	
 }
 ?>
