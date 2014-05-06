@@ -7041,6 +7041,10 @@ h2 {
   font-size: 1.75rem;
 }
 
+.top-bar-section li:not(.has-form) a.tagline:not(.button) {
+  padding: 0;
+}
+
 .main {
   min-height: 320px;
 }

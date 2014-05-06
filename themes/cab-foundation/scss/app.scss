@@ -117,6 +117,11 @@ h2{
 .top-bar-section ul li > a.tagline {
 	font-size: rem-calc(28);
 }
+
+.top-bar-section li:not(.has-form) a.tagline:not(.button){
+	padding: 0;
+}
+
 .main {
 	min-height: 320px;
 	@media #{$large-up}{
