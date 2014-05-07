@@ -11,15 +11,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757"
+                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/df19b48f557987e0a9bddff0c12dde37d5bcb757",
-                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757",
+                "url": "https://api.github.com/repos/composer/installers/zipball/eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
+                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
@@ -46,7 +47,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -79,6 +80,7 @@
                 "phpbb",
                 "piwik",
                 "ppi",
+                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -87,7 +89,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-15 03:26:48"
+            "time": "2014-05-07 15:43:15"
         },
         {
             "name": "md/ac-json-events",
@@ -95,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "9ad57ee51ded54e96c1b2028c273ba557fe50afd"
+                "reference": "cc7983442bb30d6f80989ba0d100ffef818754cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/9ad57ee51ded54e96c1b2028c273ba557fe50afd",
-                "reference": "9ad57ee51ded54e96c1b2028c273ba557fe50afd",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/cc7983442bb30d6f80989ba0d100ffef818754cd",
+                "reference": "cc7983442bb30d6f80989ba0d100ffef818754cd",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +121,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2014-04-29 19:06:52"
+            "time": "2014-05-07 16:40:44"
         },
         {
             "name": "md/division-bar",
