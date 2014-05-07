@@ -17,7 +17,7 @@
 	<% end_if %>
 	<% include FavIconTags %>
 	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
-	
+
 </head>
 <body class="$ClassName.ATT">
 	<% include DivisionBar %>
@@ -26,7 +26,7 @@
 
 
 	<div class="main typography $ClassName" role="main">
-			$Layout	
+			$Layout
 	</div>
 
 

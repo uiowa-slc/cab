@@ -8,6 +8,8 @@ body .main.HomePage {
     #next-up {
         margin-bottom: 10px;
         h2 {
+            font-size: rem-calc(36);
+            line-height: 0.4;
             margin-top: 0;
         }
         ul, ol {
@@ -53,6 +55,7 @@ body .main.HomePage {
             width: 100%;
         }
         #facebook-feed {
+              margin-bottom: 10px;
             * {
                 width: 200px;
                 width: 100% !important;
@@ -66,7 +69,7 @@ body .main.HomePage {
                 height: 400px;
             }
             @media #{$medium-up} {
-                height: 700px;
+                height: 550px;
             }
             @media #{$large-only} {}
         }
@@ -109,6 +112,8 @@ body .main.HomePage {
     padding: 7px;
     background: rgba(37, 41, 49, 0.65);
     margin-top: 10px;
+    height: 400px !important;
+    margin-bottom: 10px;
 }
 
 #twitter-widget {
@@ -126,4 +131,8 @@ body .main.HomePage {
 .pinterest {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.main a.more-events-button{
+    color: #333;
 }

@@ -2,7 +2,6 @@
 class HomePage extends AfterClassEventsPage {
 
 	private static $db = array(
-		"NextUp" => "Text",
 		"RedLightHeadline" => "Text",
 		"RedLightDescription" => "HTMLText"
 	);
@@ -30,9 +29,8 @@ class HomePage extends AfterClassEventsPage {
 		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature5ID", "Slider Event 5", null, null, null, 15));
 		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature6ID", "Slider Event 6", null, null, null, 15));
 
-		$fields->addFieldToTab("Root.Main", new TextField('NextUp', 'Headline for upcoming events'));
 		$fields->addFieldToTab("Root.Main", new TextField('RedLightHeadline', 'Feature Box Title'));
-		$fields->addFieldToTab("Root.Main", new HTMLEditorField('Feature Box Content'));
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField('RedLightDescription', 'Feature Box Content'));
 		return $fields;
 		
 	}

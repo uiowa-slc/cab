@@ -69,6 +69,14 @@ body {
     color: #ccc;
 }
 
+.main a.button{
+   color: #333;
+}
+
+.main p.button a{
+    color: #333;
+}
+
 .main {
     min-height: 320px;
     @media #{$large-up} {
