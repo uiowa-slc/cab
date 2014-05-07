@@ -2,6 +2,7 @@
 	<!-- LEFT COLUMN, TOP -->
  	<div class="medium-6 large-6 columns">  
  		<div data-equalizer-watch>
+ 			<% cached %>
  			<% if SliderEvents || $AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
 				<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
 					<% if SliderEvents %>
@@ -30,6 +31,7 @@
 			  <li><a href="events/" class="tiny button radius" target="_blank">view all movies and events</a></li>
 			</ul>
 		</div>
+		<% end_cached %>
 		<!-- GET INVOLVED -->
 		
         <div class="feature-box-content">
