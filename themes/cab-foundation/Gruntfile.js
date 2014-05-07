@@ -24,7 +24,6 @@ module.exports = function(grunt) {
       js:{
         src: [
           'bower_components/modernizr/modernizr.js',
-          'bower_components/jquery/dist/jquery.min.js',
           'bower_components/foundation/js/foundation.min.js',
           '../../division-bar/js/division-bar.js',
           'javascript/*.js'
