@@ -1,5 +1,5 @@
 <li>	
-	<a href="$Link"><img src="$ImageURL" alt="Image for $Title" /></a>
+	<a href="$Link" target="_blank"><img src="$ImageURL" alt="Image for $Title" /></a>
 	<div class="orbit-caption">	
          <a href="$Link" target="_blank"><span class="featurename">$Title</span>
          	<br><% include ACDateLocation %>

@@ -2,11 +2,17 @@
 	<!-- LEFT COLUMN, TOP -->
  	<div class="medium-6 large-6 columns">  
  		<div data-equalizer-watch>
- 			<% if SliderEvents %>
+ 			<% if SliderEvents || $AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
 				<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
-					<% loop SliderEvents %>
-						<% include SliderEvent %>
-					<% end_loop %>
+					<% if SliderEvents %>
+						<% loop SliderEvents %>
+							<% include SliderEvent %>
+						<% end_loop %>
+					<% else %>
+						<% loop $AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
+							<% include SliderEvent %>
+						<% end_loop %>
+					<% end_if %>
 				</ul>
 			<% end_if %>       
 		<!-- NEXT UP -->
@@ -16,7 +22,7 @@
 			<ul id="next-up-list">
 				<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
 				<a href="$Link" target="_blank"><li>
-					<span>$Title</span><p><% include ACDateLocation %></p>
+					<span class="event-title">$Title</span><p><% include ACDateLocation %></p>
 				</li></a>
 				<% end_loop %> 
 			</ul>			

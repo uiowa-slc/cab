@@ -1,133 +1,129 @@
 body .main.HomePage {
-	background: none;
-	color: $body-font-color;
-	padding-top: 0;
+    background: none;
+    color: $body-font-color;
+    padding-top: 0;
 }
+
 #top-content {
-	#next-up {
-		margin-bottom: 10px;
-
-		h2{
-			margin-top: 0;
-		}
-		
-		ul, ol {
-			margin: 0;
-		}	
-		
-		a {
-			font-size:1em;
-		}
-		a:hover {
-			text-decoration: none;
-			color: #fff;
-		}
-		#next-up-list {
-			li {
-				list-style-position: inside;
-				margin-top: 14px;
-				margin-bottom: 14px;
-				padding-left: 3px;
-				padding-right: 3px;
-				line-height: 1;
-
-				p {
-					margin: 0
-				}
-				
-			}
-			li:hover {
-				background-color: rgba(27,0,0,.66);
-				cursor: hand;
-			}
-			li span {
-				font-size: 1.25em;
-				text-transform: uppercase;	
-				text-decoration: none;
-				color: #FFD2D2;
-			}
-		}
-	}	
-	
-	#blog-box {
-		margin: 0 auto;
-		background: white;
-				
-		#cabfare {
-			margin-top:0px;
-			padding: 0;
-			width: 100%;
-	    }
-	    #facebook-feed { 
-	    	
-
-	    	*{
-	    		width: 200px;
-	    		width: 100% !important;
-	    		max-width: 100% !important;
-	    		overflow: scroll;
-	    		height: inherit;
-	    		overflow: auto; 
-	    		-webkit-overflow-scrolling:touch;
-	    	}
-
-	    	@media #{$small-up} {
-				height: 400px;
-			}
-			@media #{$medium-up} {
-				height: 700px;
-			}
-			@media #{$large-only} {
-				
-			}
-		}
-	}
+    #next-up {
+        margin-bottom: 10px;
+        h2 {
+            margin-top: 0;
+        }
+        ul, ol {
+            margin: 0;
+        }
+        a {
+            font-size: 1em;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+        #next-up-list {
+            li {
+                list-style-position: inside;
+                margin-top: 14px;
+                margin-bottom: 14px;
+                padding-left: 3px;
+                padding-right: 3px;
+                line-height: 1;
+                p {
+                    margin: 0;
+                }
+            }
+            li:hover {
+                background-color: rgba(27, 0, 0, 0.66);
+                cursor: hand;
+            }
+            li span.event-title {
+                font-size: 1.25em;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #FFD2D2;
+            }
+        }
+    }
+    #blog-box {
+        margin: 0 auto;
+        background: white;
+        #cabfare {
+            margin-top: 0px;
+            padding: 0;
+            width: 100%;
+        }
+        #facebook-feed {
+            * {
+                width: 200px;
+                width: 100% !important;
+                max-width: 100% !important;
+                overflow: scroll;
+                height: inherit;
+                overflow: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            @media #{$small-up} {
+                height: 400px;
+            }
+            @media #{$medium-up} {
+                height: 700px;
+            }
+            @media #{$large-only} {}
+        }
+    }
 }
- .orbit-bullets {
- 	margin: 0 auto 10px auto;
- }
- 
+
+.orbit-bullets {
+    margin: 0 auto 10px auto;
+}
+
 .orbit-slide-number {
-	display: none; 
+    display: none;
 }
 
 .orbit-timer {
-	display:none; 
+    display: none;
+}
+.orbit-prev, .orbit-next {
+
+	visibility: hidden;
+
+	 @media #{$medium-up} {
+	 	visibility: visible;
+	 }
+}
+.feature-box-content {
+    background: rgba(37, 41, 49, 0.65);
+    padding: 1em;
+    margin-bottom: .5em;
+    height: inherit;
+    h2 {
+        margin-top: 0;
+    }
 }
 
-.feature-box-content {
-			background: rgba(37, 41, 49, 0.65);
-			padding: 1em;
-			margin-bottom:.5em; 
-			height: inherit;
+#twitter-feed {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 7px;
+    background: rgba(37, 41, 49, 0.65);
+    margin-top: 10px;
+}
 
-			h2{
-				margin-top: 0;
-			}
-		}
+#twitter-widget {
+    width: 100%;
+}
 
-	#twitter-feed {
-		width: 100%;
-		overflow: hidden;
-		margin: 0 auto;
-		padding: 7px;
-		background: rgba(37, 41, 49, 0.65);
-		margin-top: 10px;
-	}
-	#twitter-widget {
-		width: 100%;
+.widget {
+    width: auto;
+}
 
-	}
-	
-	.widget {
-		width: auto;
-	}
-	
-	.vine {
-		margin: 0 auto;
-	}
-	
-	.pinterest {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
+.vine {
+    margin: 0 auto;
+}
+
+.pinterest {
+    max-width: 100%;
+    overflow-x: hidden;
+}

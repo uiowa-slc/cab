@@ -15,10 +15,9 @@
 	<% if $Image %>
 	<meta property="og:image" content="<% with $Image.SetSize(500,500) %>$AbsoluteURL.ATT<% end_with %>" />
 	<% end_if %>
-	<link rel="icon" type="image/png" href="$ThemeDir/favicon.ico" />
-	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
+	<% include FavIconTags %>
 	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
-	<script src="$ThemeDir/bower_components/modernizr/modernizr.js"></script>
+	
 </head>
 <body class="$ClassName.ATT">
 	<% include DivisionBar %>
@@ -32,23 +31,9 @@
 
 
 	<% include Footer %>
-	
-	<%--Login Modal--%>
-	<div id="login-form-modal" class="reveal-modal medium" data-reveal>
-		<h2>Login</h2>
-		$LoginForm
-		<a class="close-reveal-modal">&#215;</a>
-	</div>
-	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
-	
-	<script src="$ThemeDir/bower_components/jquery/dist/jquery.js"></script>
-	<script src="$ThemeDir/bower_components/foundation/js/foundation.min.js"></script>
-	<script src="$ThemeDir/javascript/app.js"></script>
-	<script src="division-bar/js/division-bar.js"></script>
-	<script>
-		$(document).foundation();
-  	</script>
 
+	
+	<script src="$ThemeDir/build/build.js"></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

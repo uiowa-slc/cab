@@ -1,0 +1,61 @@
+.EventsHolder .main h2 {
+    text-transform: lowercase;
+    font-weight: bold;
+    color: $body-font-color;
+    padding: 10px 0 15px 0;
+    margin: 0;
+}
+
+table.event-table {
+    overflow: scroll;
+    border-spacing: 0;
+    width: 100%;
+    tr{
+    	border-bottom: 1px solid #333;
+    }
+    td{
+
+    }
+    thead tr td {
+        font-weight: normal;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-collapse: collapse;
+    }
+    .event-title {
+    	text-transform: uppercase;
+        color: #FFD2D2;
+    }
+    .more-info {
+    	text-align: right;
+    }
+}
+
+.event-list{
+    .event-title {
+    	margin: 0;
+        line-height: rem-calc(23);
+        font-size: rem-calc(23);
+        a{
+        	text-transform: uppercase;
+        	color: #FFD2D2;
+        }
+    }
+    .event-types{
+    	margin: 0;
+    	font-size: rem-calc(13);
+    	text-transform: lowercase;
+    }
+    p{
+    	font-size: rem-calc(15);
+    	line-height: rem-calc(18);
+    }
+    .date-location {
+    	margin-top: 5px;
+    	.next-date-time {
+    		color: #FF8989;
+
+    	}
+    	span{ display: block;}
+    }
+}

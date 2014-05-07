@@ -1,0 +1,16 @@
+//Committees
+.categoryImage img {
+    width: 100%;
+}
+
+.committeeName {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.committee-list {
+    @include block-grid($base_style: true, $per_row: 1);
+    @media #{$medium-up} {
+        @include block-grid($base_style: true, $per_row: 2, $spacing: 2em);
+    }
+}
