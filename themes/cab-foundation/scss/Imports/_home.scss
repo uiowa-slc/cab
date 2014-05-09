@@ -8,7 +8,7 @@ body .main.HomePage {
     #next-up {
         margin-bottom: 10px;
         h2 {
-            font-size: rem-calc(36);
+            font-size: rem-calc(40);
             line-height: 0.4;
             margin-top: 0;
         }
@@ -23,6 +23,7 @@ body .main.HomePage {
             color: #fff;
         }
         #next-up-list {
+            font-size: rem-calc(22);
             li {
                 list-style-position: inside;
                 margin-top: 14px;
@@ -52,7 +53,8 @@ body .main.HomePage {
         #cabfare {
             margin-top: 0px;
             padding: 0;
-            width: 100%;
+            width: 45%;
+            margin-bottom: 0;
         }
         #facebook-feed {
               margin-bottom: 10px;
@@ -95,6 +97,22 @@ body .main.HomePage {
 	 	visibility: visible;
 	 }
 }
+.main .orbit-caption a {
+    color: white;
+}
+.orbit-caption {
+    text-shadow: 0 1px 3px rgba(51, 51, 51, 0.64);
+}
+.orbit-caption .event-title{
+    font-size: rem-calc(24);
+}
+.orbit-container .orbit-slides-container li .orbit-caption{
+    background-color: rgba(51, 51, 51, 0.2);
+
+    @media #{$medium-up} {
+        background-color: rgba(51, 51, 51, 0.4);
+    }
+}
 .feature-box-content {
     background: rgba(37, 41, 49, 0.65);
     padding: 1em;
@@ -131,8 +149,4 @@ body .main.HomePage {
 .pinterest {
     max-width: 100%;
     overflow-x: hidden;
-}
-
-.main a.more-events-button{
-    color: #333;
 }

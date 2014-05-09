@@ -1,6 +1,6 @@
 <div id="top-content" class="row">
 	<!-- LEFT COLUMN -->
- 	<div class="medium-6 large-6 columns">  
+ 	<div class="medium-7 large-7 columns">  
  		<div data-equalizer-watch>
  		<% cached %>
 	 		<% include HomePageSlider %>
@@ -12,7 +12,7 @@
 		
 	</div><!-- END LEFT COLUMN -->
 	<!-- Right Column -->
-	<div class="medium-6 end large-6 columns">
+	<div class="medium-5 end large-5 columns">
 		<% include FacebookWidget %>
 		<% include HomePageFeatureBox %>
  		<% include TwitterWidget %>

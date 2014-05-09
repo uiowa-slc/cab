@@ -1,5 +1,5 @@
 		<div id="next-up">
-			<h2>next up</h2>	
+			<h2>next up:</h2>	
 			<ul id="next-up-list">
 				<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
 				<a href="$Link" target="_blank"><li>
