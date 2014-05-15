@@ -3,7 +3,8 @@ class HomePage extends AfterClassEventsPage {
 
 	private static $db = array(
 		"RedLightHeadline" => "Text",
-		"RedLightDescription" => "HTMLText"
+		"RedLightDescription" => "HTMLText",
+		"AdditionalInfo" => "Text"
 	);
 
 	private static $has_one = array(
@@ -21,7 +22,9 @@ class HomePage extends AfterClassEventsPage {
 		$fields = parent::getCMSFields();
 
 		$fields->removeByName("Content");
-
+		
+		$fields->addFieldToTab("Root.Main", new TextField('AdditionalInfo','Additional Info'));
+		
 		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature1ID", "Slider Event 1", null, null, null, 15));
 		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature2ID", "Slider Event 2", null, null, null, 15));
 		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature3ID", "Slider Event 3", null, null, null, 15));

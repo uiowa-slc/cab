@@ -3,7 +3,7 @@
 			<ul id="next-up-list">
 				<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
 				<a href="$Link" target="_blank"><li>
-					<span class="event-title">$Title</span><p><% include ACDateLocation %></p>
+					<span class="event-title">$Title</span><p>Next Date: <% include ACDateLocation %></p>
 				</li></a>
 				<% end_loop %> 
 			</ul>			

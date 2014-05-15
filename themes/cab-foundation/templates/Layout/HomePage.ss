@@ -3,8 +3,15 @@
  	<div class="medium-7 large-7 columns">  
  		<div data-equalizer-watch>
  		<% cached %>
+ 			<% if AfterClassEvents %>
 	 		<% include HomePageSlider %>
 			<% include HomePageEventList %>
+			<div class="addInfo">
+				<p>$AdditionalInfo</p>
+			</div>
+			<% else %>
+				<p> There are no events! </p>
+			<% end_if %>
 		<% end_cached %>
         <% include SocialMediaButtons %>
         <% include PinterestWidget %>
