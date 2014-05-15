@@ -10,7 +10,9 @@
 				<p>$AdditionalInfo</p>
 			</div>
 			<% else %>
-				<p> There are no events! </p>
+			<div class="noEvents">
+				<p> $NoEvents </p>
+			</div>
 			<% end_if %>
 		<% end_cached %>
         <% include SocialMediaButtons %>
