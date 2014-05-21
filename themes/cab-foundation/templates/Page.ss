@@ -17,7 +17,7 @@
 	<% end_if %>
 	<% include FavIconTags %>
 	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
-	
+
 </head>
 <body class="$ClassName.ATT">
 	<% include DivisionBar %>
@@ -26,13 +26,13 @@
 
 
 	<div class="main typography $ClassName" role="main">
-			$Layout	
+			$Layout
 	</div>
 
 
 	<% include Footer %>
 
-	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script src="$ThemeDir/build/build.js"></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -97,12 +97,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
+<<<<<<< HEAD
                 "reference": "38e517cbc953b241be928577003a25f6a821e841"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/38e517cbc953b241be928577003a25f6a821e841",
                 "reference": "38e517cbc953b241be928577003a25f6a821e841",
+=======
+                "reference": "cc7983442bb30d6f80989ba0d100ffef818754cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/cc7983442bb30d6f80989ba0d100ffef818754cd",
+                "reference": "cc7983442bb30d6f80989ba0d100ffef818754cd",
+>>>>>>> 785574376e9c12dd43a558e7c79f1b7a503f3b46
                 "shasum": ""
             },
             "require": {
@@ -121,7 +130,11 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/localist",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
+<<<<<<< HEAD
             "time": "2014-05-20 14:41:35"
+=======
+            "time": "2014-05-07 16:40:44"
+>>>>>>> 785574376e9c12dd43a558e7c79f1b7a503f3b46
         },
         {
             "name": "md/division-bar",
@@ -437,12 +450,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
+<<<<<<< HEAD
                 "reference": "7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc",
                 "reference": "7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc",
+=======
+                "reference": "bce1da2d7184c3371718919eb31ecd6b05da5cac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/bce1da2d7184c3371718919eb31ecd6b05da5cac",
+                "reference": "bce1da2d7184c3371718919eb31ecd6b05da5cac",
+>>>>>>> 785574376e9c12dd43a558e7c79f1b7a503f3b46
                 "shasum": ""
             },
             "require": {
@@ -466,7 +488,11 @@
                 "silverstripe",
                 "userforms"
             ],
+<<<<<<< HEAD
             "time": "2014-05-20 02:36:54"
+=======
+            "time": "2014-05-15 09:16:24"
+>>>>>>> 785574376e9c12dd43a558e7c79f1b7a503f3b46
         }
     ],
     "packages-dev": [

@@ -1,7 +1,8 @@
 <div id="top-content" class="row">
-	<!-- LEFT COLUMN, TOP -->
- 	<div class="medium-6 large-6 columns">  
+	<!-- LEFT COLUMN -->
+ 	<div class="medium-7 large-7 columns">  
  		<div data-equalizer-watch>
+<<<<<<< HEAD
  			<% cached %>
  			<% if SliderEvents || $AfterClassEvents %>
 				<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
@@ -31,20 +32,30 @@
 			  <li><a href="events/" class="tiny button radius" target="_blank">view all movies and events</a></li>
 			</ul>
 		</div>
+=======
+ 		<% cached %>
+ 			<% if AfterClassEvents %>
+	 		<% include HomePageSlider %>
+			<% include HomePageEventList %>
+			<div class="addInfo">
+				<p>$AdditionalInfo</p>
+			</div>
+			<% else %>
+			<div class="noEvents">
+				<p> $NoEvents </p>
+			</div>
+			<% end_if %>
+>>>>>>> 785574376e9c12dd43a558e7c79f1b7a503f3b46
 		<% end_cached %>
-		<!-- GET INVOLVED -->
-		
-        <div class="feature-box-content">
-       		<h2>$RedLightHeadline</h2>
-			$RedLightDescription         
-        </div>
+        <% include SocialMediaButtons %>
         <% include PinterestWidget %>
 	</div>
-		<!-- END NEXT UP -->
-	</div><!-- END LEFT COLUMN, TOP -->
-	<div class="medium-6 end large-6 columns">
+		
+	</div><!-- END LEFT COLUMN -->
+	<!-- Right Column -->
+	<div class="medium-5 end large-5 columns">
 		<% include FacebookWidget %>
-		<% include SocialMediaButtons %>
+		<% include HomePageFeatureBox %>
  		<% include TwitterWidget %>
 	</div>
 </div><!-- end top-content -->     

@@ -15,7 +15,7 @@
 @import "imports/footer/grid-simple";
 @import "foundation-icons/foundation-icons.css";
 $include-html-type-classes: $include-html-classes;
-@import "../../../division-bar/css/_division-bar.css";
+@import "../../../division-bar/css/_division-bar.css"; 
 
 form .division-search-input {
     padding: 5px 0 4px 5px;
@@ -67,6 +67,14 @@ body {
 
 .main a {
     color: #ccc;
+}
+
+.main a.button{
+   color: #333;
+}
+
+.main p.button a{
+    color: #333;
 }
 
 .main {
@@ -139,4 +147,11 @@ a.facebook {
 .event-title {
     text-transform: uppercase;
     color: #FFD2D2;
+}
+
+.noEvents
+{
+	min-height: 300px; 
+	text-align: 3em;
+	font-size: 3em;
 }
