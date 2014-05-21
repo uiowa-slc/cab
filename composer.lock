@@ -11,15 +11,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757"
+                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/df19b48f557987e0a9bddff0c12dde37d5bcb757",
-                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757",
+                "url": "https://api.github.com/repos/composer/installers/zipball/eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
+                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
@@ -46,7 +47,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -79,6 +80,7 @@
                 "phpbb",
                 "piwik",
                 "ppi",
+                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -87,7 +89,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-15 03:26:48"
+            "time": "2014-05-07 15:43:15"
         },
         {
             "name": "md/ac-json-events",
@@ -95,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "9ad57ee51ded54e96c1b2028c273ba557fe50afd"
+                "reference": "38e517cbc953b241be928577003a25f6a821e841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/9ad57ee51ded54e96c1b2028c273ba557fe50afd",
-                "reference": "9ad57ee51ded54e96c1b2028c273ba557fe50afd",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/38e517cbc953b241be928577003a25f6a821e841",
+                "reference": "38e517cbc953b241be928577003a25f6a821e841",
                 "shasum": ""
             },
             "require": {
@@ -116,10 +118,10 @@
             },
             "description": "After Class JSON Display Module",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/localist",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2014-04-29 19:06:52"
+            "time": "2014-05-20 14:41:35"
         },
         {
             "name": "md/division-bar",
@@ -435,12 +437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e"
+                "reference": "7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e",
-                "reference": "b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc",
+                "reference": "7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc",
                 "shasum": ""
             },
             "require": {
@@ -464,7 +466,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-04-25 13:53:45"
+            "time": "2014-05-20 02:36:54"
         }
     ],
     "packages-dev": [
