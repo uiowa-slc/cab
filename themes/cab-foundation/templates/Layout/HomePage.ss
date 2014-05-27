@@ -1,7 +1,6 @@
 <div id="top-content" class="row">
-	<!-- LEFT COLUMN -->
  	<div class="medium-7 large-7 columns"> 
- 		<% if $AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
+ 		<% if $AfterClassEvents("CAB") %>
 	 		<% include HomePageSlider %>
 			<% include HomePageEventList %>
 			<div class="addInfo">

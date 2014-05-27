@@ -1,5 +1,5 @@
 <?php
-class HomePage extends AfterClassEventsPage {
+class HomePage extends Page {
 
 	private static $db = array(
 		"RedLightHeadline" => "Text",
@@ -40,7 +40,7 @@ class HomePage extends AfterClassEventsPage {
 		
 	}
 }
-class HomePage_Controller extends AfterClassEventsPage_Controller {
+class HomePage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the

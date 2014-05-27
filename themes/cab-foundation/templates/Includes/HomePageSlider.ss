@@ -1,11 +1,11 @@
-<% if SliderEvents || $AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
+<% if SliderEvents || $AfterClassEvents("CAB") %>
 				<ul class="orbit-slider" data-orbit data-options="animation:fade; resume_on_mouseout:true;">
 					<% if SliderEvents %>
 						<% loop SliderEvents %>
 							<% include SliderEvent %>
 						<% end_loop %>
 					<% else %>
-						<% loop $AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
+						<% loop $AfterClassEvents("CAB") %>
 							<% include SliderEvent %>
 						<% end_loop %>
 					<% end_if %>
