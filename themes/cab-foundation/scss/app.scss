@@ -149,9 +149,10 @@ a.facebook {
     color: #FFD2D2;
 }
 
-.noEvents
+.no-events
 {
-	min-height: 300px; 
-	text-align: 3em;
-	font-size: 3em;
+    p{
+	   font-size: 3em;
+       line-height: 1.1;
+    }
 }

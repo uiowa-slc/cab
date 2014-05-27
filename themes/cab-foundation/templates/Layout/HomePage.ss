@@ -1,23 +1,20 @@
 <div id="top-content" class="row">
 	<!-- LEFT COLUMN -->
- 	<div class="medium-7 large-7 columns">  
- 		<div data-equalizer-watch>
- 		<% cached %>
- 			<% if AfterClassEvents %>
+ 	<div class="medium-7 large-7 columns"> 
+ 		<% if $AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
 	 		<% include HomePageSlider %>
 			<% include HomePageEventList %>
 			<div class="addInfo">
 				<p>$AdditionalInfo</p>
 			</div>
-			<% else %>
-			<div class="noEvents">
+		<% else %>
+			<div class="no-events">
 				<p> $NoEvents </p>
 			</div>
-			<% end_if %>
-		<% end_cached %>
+		<% end_if %>
+
         <% include SocialMediaButtons %>
         <% include PinterestWidget %>
-	</div>
 		
 	</div><!-- END LEFT COLUMN -->
 	<!-- Right Column -->
