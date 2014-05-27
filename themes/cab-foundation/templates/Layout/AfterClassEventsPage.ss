@@ -25,8 +25,6 @@
         <ul class="event-list xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
 	            <% loop AfterClassEvents %>
 	                <li>
-	                    
-
 	                    <a href="{$Link}" target="_blank"><img src="$ImageURL" alt="Photo for $Title" /></a>
                         <h3 class="event-title"><a href="{$Link}" target="_blank">$Title.LimitCharacters(30)</a></h3>
                         <p class="event-types">tagged as: $EventTypes</p>
@@ -39,7 +37,9 @@
 	            <% end_loop %>
         </ul>
         <% else %>
-        	<p> There are no Upcoming Events. </p>
+        	<% with Page("home") %>
+                $NoEvents
+            <% end_with %>
         <% end_if %>
 
     </div>  
