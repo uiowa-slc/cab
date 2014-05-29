@@ -8,7 +8,7 @@
 			</div>
 		<% else %>
 			<div class="no-events">
-				<p> $NoEvents </p>
+				$NoEvents
 			</div>
 		<% end_if %>
         <% include PinterestWidget %>
