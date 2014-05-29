@@ -13,7 +13,7 @@ class Contact extends UserDefinedForm {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		#$fields->removeFieldFromTab("Root.Content.Main","Content");
+		$fields->removeFieldFromTab("Root.Main","Content");
 		return $fields;
 	}
 }

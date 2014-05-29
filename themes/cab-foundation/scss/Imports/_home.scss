@@ -50,6 +50,10 @@ body .main.HomePage {
     #blog-box {
         margin: 0 auto;
         background: white;
+        a.button{
+            color: white;
+            background-color: $secondary-color;
+        }
         #cabfare {
             margin-top: 0px;
             padding: 0;
