@@ -11,14 +11,13 @@
 				<p> $NoEvents </p>
 			</div>
 		<% end_if %>
-
-        <% include SocialMediaButtons %>
         <% include PinterestWidget %>
 		
 	</div><!-- END LEFT COLUMN -->
 	<!-- Right Column -->
 	<div class="medium-5 end large-5 columns">
 		<% include FacebookWidget %>
+		 <% include SocialMediaButtons %>
 		<% include HomePageFeatureBox %>
  		<% include TwitterWidget %>
 	</div>
