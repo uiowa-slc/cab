@@ -18,7 +18,7 @@
         </ul>
         <% else %>
         <div class="row">
-            <div class="large-8">
+            <div class="large-8 columns">
             	<% with Page("home") %>
                     $NoEvents
                 <% end_with %>
