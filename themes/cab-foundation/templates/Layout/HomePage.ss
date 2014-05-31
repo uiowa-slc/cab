@@ -1,6 +1,6 @@
 <div id="top-content" class="row">
  	<div class="medium-7 large-7 columns"> 
- 		<% if $AfterClassEvents %>
+ 		<% if $AfterClassEvents("CAB") %>
 	 		<% include HomePageSlider %>
 			<% include HomePageEventList %>
 			<div class="addInfo">

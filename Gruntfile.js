@@ -28,7 +28,6 @@ module.exports = function(grunt) {
         src: [
           '<%=globalConfig.themeDir %>/bower_components/modernizr/modernizr.js',
           '<%=globalConfig.themeDir %>/bower_components/foundation/js/foundation.min.js',
-          '<%=globalConfig.themeDir %>/bower_components/FlexSlider/jquery.flexslider.js',
           'division-bar/js/division-bar.js',
           '<%=globalConfig.themeDir %>/javascript/*.js'
         ],
