@@ -2,6 +2,7 @@
 
 @import "imports/settings";
 @import "../bower_components/foundation/scss/foundation";
+@import "../bower_components/FlexSlider/flexslider.css";
 
 @import "imports/header";
 @import "imports/home";
@@ -16,6 +17,7 @@
 @import "foundation-icons/foundation-icons.css";
 $include-html-type-classes: $include-html-classes;
 @import "../../../division-bar/css/_division-bar.css"; 
+
 
 form .division-search-input {
     padding: 5px 0 4px 5px;

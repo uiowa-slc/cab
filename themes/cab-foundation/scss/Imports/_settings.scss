@@ -972,7 +972,7 @@ $include-html-top-bar-classes: $include-html-classes;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $body-bg;
+$topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-dropdown-link-color: #000;
 // $topbar-dropdown-link-bg: #fff;
 // $topbar-dropdown-toggle-size: 5px;
@@ -986,9 +986,9 @@ $topbar-dropdown-bg: $body-bg;
  $topbar-link-weight: normal;
  $topbar-link-font-size: 1.2em;
  $topbar-link-hover-lightness: 10%; // Darken by 10%
- $topbar-link-bg-hover: rgba($body-bg, 0);
- $topbar-link-bg-active: rgba($body-bg, 0);
- $topbar-link-bg-active-hover: rgba($body-bg, 0);
+ $topbar-link-bg-hover: $body-bg;
+ $topbar-link-bg-active: $body-bg;
+ $topbar-link-bg-active-hover: $body-bg;
  $topbar-link-padding: 0.6em;
 
 // $topbar-link-font-family: $body-font-family;

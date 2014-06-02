@@ -1,3 +1,4 @@
+<% if AfterClassEvents %>
 <ul class="next-tiles small-block-grid-2 medium-block-grid-4 large-block-grid-5" style="margin-bottom: 1em;">
 	<li><h2>Coming up next:</h2></li>
 	<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json") %>
@@ -6,3 +7,4 @@
 	</li>
 	<% end_loop %> 
 </ul>
+<% end_if %>
