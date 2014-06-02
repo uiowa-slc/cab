@@ -83,3 +83,20 @@ header {
 .top-bar-section li:not(.has-form) a.tagline:not(.button) {
     padding: 0;
 }
+
+/* overriding this because foundation 5.3.2 broke the hamburger icon? */
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+content: "";
+position: absolute;
+right: 0;
+display: block;
+width: 16px;
+top: 0;
+height: 0;
+box-shadow: 0 10px 0 1px #FFF,0 16px 0 1px #FFF,0 22px 0 1px #FFF;
+}
+
+.top-bar.expanded .toggle-topbar a span::after {
+box-shadow: 0 10px 0 1px #888,0 16px 0 1px #888,0 22px 0 1px #888;
+}
