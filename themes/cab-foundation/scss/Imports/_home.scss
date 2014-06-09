@@ -7,6 +7,12 @@ body .main.HomePage {
 #top-content {
     #next-up {
         margin-bottom: 10px;
+        margin-top: 40px;
+
+        @media #{$medium-up} {
+            margin-top: 30px;
+        }
+
         h2 {
             font-size: rem-calc(40);
             line-height: 0.4;
