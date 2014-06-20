@@ -1,5 +1,5 @@
 <div id="top-content" class="row">
- 	<div class="medium-7 large-7 columns"> 
+ 	<div class="medium-8 large-8 columns"> 
  		<% if $AfterClassEvents %>
 	 		<% include HomePageSlider %>
 			<% include HomePageEventList %>
@@ -15,7 +15,7 @@
 		
 	</div><!-- END LEFT COLUMN -->
 	<!-- Right Column -->
-	<div class="medium-5 end large-5 columns">
+	<div class="medium-4 end large-4 columns">
 		<% include FacebookWidget %>
 		 <% include SocialMediaButtons %>
 		<% include HomePageFeatureBox %>

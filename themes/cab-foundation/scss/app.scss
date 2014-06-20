@@ -53,14 +53,15 @@ a:hover {
 }
 
 body {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b53935), color-stop(1, #741411));
-    background-image: -o-linear-gradient(bottom, #b53935 0%, #741411 100%);
-    background-image: -moz-linear-gradient(bottom, #b53935 0%, #741411 100%);
-    background-image: -webkit-linear-gradient(bottom, #b53935 0%, #741411 100%);
-    background-image: -ms-linear-gradient(bottom, #b53935 0%, #741411 100%);
-    background-image: linear-gradient(to bottom, #b53935 0%, #741411 100%);
-    background-position: 20% 0;
+    background-size: cover;
     background-attachment: fixed;
+}
+
+.cab-circle{
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    top: 0;
 }
 
 .main {

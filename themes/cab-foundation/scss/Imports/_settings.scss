@@ -32,13 +32,13 @@
 // $include-html-grid-classes: $include-html-classes;
 
 
- $row-width: 1200px;
+ $row-width: 1360px;
  $column-gutter: 1rem;
 // $total-columns: 12;
 
 // We use these to control various global styles
 
-$body-bg: #7F1B1A;
+$body-bg: url('../images/background.jpg');
 $body-font-color: white;
 
  $body-font-family: 'Arimo', arial, serif;
@@ -980,9 +980,9 @@ $topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
- $topbar-link-color: white;
- $topbar-link-color-hover: white;
- $topbar-link-color-active: white;
+ $topbar-link-color: #333;
+ $topbar-link-color-hover: #333;
+ $topbar-link-color-active: #333;
  $topbar-link-weight: normal;
  $topbar-link-font-size: 1.2em;
  $topbar-link-hover-lightness: 10%; // Darken by 10%
