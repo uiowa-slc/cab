@@ -1,7 +1,7 @@
 <div id="top-content" class="row">
  	<div class="medium-8 large-8 columns"> 
  		<% if $AfterClassEvents %>
-	 		<% include HomePageSlider %>
+	 		<% include HomePageFeaturedEvents %>
 			<% include HomePageEventList %>
 			<div class="addInfo">
 				<p>$AdditionalInfo</p>
@@ -22,3 +22,26 @@
  		<% include TwitterWidget %>
 	</div>
 </div><!-- end top-content -->     
+
+<style>
+	<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(12) %>
+		#next-up-list .event-{$ID}:hover .bg{
+			background-image: url('$ImageURL');
+				-webkit-filter: blur(0px);
+			  -moz-filter: blur(0px);
+			  -o-filter: blur(0px);
+			  -ms-filter: blur(0px);
+			  filter: blur(0px)		
+		}
+
+		#next-up-list .event-{$ID} .bg{
+			background-image: url('$ImageURL');
+			-webkit-filter: blur(5px);
+			  -moz-filter: blur(5px);
+			  -o-filter: blur(5px);
+			  -ms-filter: blur(5px);
+			  filter: blur(5px);
+		}
+	}
+	<% end_loop %>
+</style>

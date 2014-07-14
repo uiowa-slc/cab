@@ -1,10 +1,16 @@
 		<div id="next-up">
 			<h2>next up:</h2>	
-			<ul id="next-up-list">
-				<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
-				<a href="$Link" target="_blank"><li>
+			<ul id="next-up-list" class="medium-block-grid-4">
+				<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(12) %>
+				<li class="event-{$ID}">
+					<div class="bg"></div>
+					<div class="event-content">
+					<a href="$Link" target="_blank">
 					<span class="event-title">$Title</span><p>Next Date: <% include ACDateLocation %></p>
-				</li></a>
+				</a>
+				</div>
+
+			</li>
 				<% end_loop %> 
 			</ul>			
 			<ul class="button-group">

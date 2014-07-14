@@ -1,5 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic");
 
+@import "imports/font";
 @import "imports/settings";
 @import "../bower_components/foundation/scss/foundation";
 @import "../bower_components/FlexSlider/flexslider.css";
@@ -53,6 +54,7 @@ a:hover {
 }
 
 body {
+    background-image:url('../images/background.jpg');
     background-size: cover;
     background-attachment: fixed;
 }

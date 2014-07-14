@@ -7,10 +7,17 @@
 }
 
 
+.HomePage .event-list{
+ 
+}
+
 .event-list{
+    * {
+        text-shadow: 0 0 40px #333;
+    }
     .event-title {
     	margin: 0;
-        margin-top: 0.3em;
+        margin-top: -43px;
         line-height: rem-calc(23);
         font-size: rem-calc(23);
         a{

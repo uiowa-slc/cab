@@ -17,7 +17,8 @@
 	<% end_if %>
 	<% include FavIconTags %>
 	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
-
+	<script type="text/javascript" src="//use.typekit.net/qjk7tjr.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="$ClassName.ATT">
 	<% include DivisionBar %>
