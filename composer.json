@@ -10,7 +10,7 @@
 		"silverstripe/recaptcha" : "*",
 		"silverstripe/userforms" : "*",
 		"md/rss-display" : "*",
-		"md/ac-json-events" : "*",
+		"md/ac-json-events" : "dev-localist",
 		"rywa/silverstripe-foundation-forms": "dev-master",
 		"silverstripe/mathspamprotection": "dev-master"
 	},
