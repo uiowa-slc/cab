@@ -1,7 +1,7 @@
 body .main.HomePage {
-    background: none;
+    background: rgba($darkGray, 0.25);
     color: $body-font-color;
-    padding-top: 0;
+    padding-top: 10px;
 }
 
 #top-content {
@@ -23,6 +23,7 @@ body .main.HomePage {
         }
         a {
             font-size: 1em;
+            color: lighten($secondary-color, 10);
         }
         a:hover {
             text-decoration: none;
@@ -31,7 +32,6 @@ body .main.HomePage {
         #next-up-list {
             li {
                 text-shadow: 0 0 40px #333;
-                padding: 10px;
                 p {
                     margin: 0;
                 }
@@ -40,11 +40,15 @@ body .main.HomePage {
                 background-color: rgba(27, 0, 0, 0.66);
                 background-size: cover;
                 cursor: hand;
+
+                a{
+                    color: #eee;
+                }
             }
             li span.event-title {
                 text-transform: uppercase;
                 text-decoration: none;
-                color: #FFD2D2;
+                color: white;
             }
         }
     }
@@ -84,8 +88,7 @@ body .main.HomePage {
 }
 
 .feature-box-content {
-    background: rgba(37, 41, 49, 0.65);
-    padding: 1em;
+    /*background: rgba(37, 41, 49, 0.65);*/
     margin-bottom: .5em;
     height: inherit;
     h2 {
@@ -97,8 +100,7 @@ body .main.HomePage {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    padding: 7px;
-    background: rgba(37, 41, 49, 0.65);
+    /*background: rgba(37, 41, 49, 0.65);*/
     margin-top: 10px;
 /*    height: 400px !important; */
     margin-bottom: 10px;

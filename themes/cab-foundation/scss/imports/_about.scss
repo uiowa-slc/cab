@@ -6,6 +6,7 @@
 }
 
 .info {
+    @include block-grid($spacing: 1em);
     img{
         width: 100%;
     }

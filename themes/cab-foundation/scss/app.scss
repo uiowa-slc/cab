@@ -67,11 +67,11 @@ body {
 }
 
 .main {
-    background-color: $darkGray;
+    background-color: rgba($darkGray, 0.64);
 }
 
 .main a {
-    color: #ccc;
+    color: white;
 }
 
 .main a.button{

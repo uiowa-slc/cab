@@ -12,17 +12,31 @@
 }
 
 .event-list{
+    @include block-grid($spacing: 1em);
     * {
         text-shadow: 0 0 40px #333;
+    }
+
+    li{
+        height: 230px;
+    }
+    .image-container{
+        height: 200px;
+        display: block;
+        background-size: cover;
+        background-position: 50%;
     }
     .event-title {
     	margin: 0;
         margin-top: -43px;
         line-height: rem-calc(23);
         font-size: rem-calc(23);
+        width:100%;
         a{
         	text-transform: uppercase;
-        	color: #FFD2D2;
+            background: #3B2939;
+            padding: 7px;
+
         }
     }
     .event-types{
@@ -36,8 +50,10 @@
     }
     .date-location {
     	margin-top: 5px;
+        background: #3B2939;
+        padding: 3px;
+        color: lighten($secondary-color, 10);
     	.next-date-time {
-    		color: #FF8989;
 
     	}
     }
