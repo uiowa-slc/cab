@@ -1,6 +1,7 @@
 <div id="top-content" class="row">
  	<div class="medium-8 large-8 columns"> 
- 		<% if $AfterClassEvents %>
+ 		<% with $Calendar %>
+ 		<% if $EventList %>
 	 		<% include HomePageFeaturedEvents %>
 			<% include HomePageEventList %>
 			<div class="addInfo">
@@ -11,20 +12,21 @@
 				$NoEvents
 			</div>
 		<% end_if %>
-        <% include PinterestWidget %>
+ 		<% end_with %>
+ 		        <% include PinterestWidget %>
 		
 	</div><!-- END LEFT COLUMN -->
 	<!-- Right Column -->
 	<div class="medium-4 end large-4 columns">
 		<% include FacebookWidget %>
-		 <% include SocialMediaButtons %>
+		<% include SocialMediaButtons %>
 		<% include HomePageFeatureBox %>
  		<% include TwitterWidget %>
 	</div>
 </div><!-- end top-content -->     
 
 <style>
-	<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(12) %>
+	<% loop $EventList %>
 		#next-up-list .event-{$ID}:hover .bg{
 			background-image: url('$ImageURL');
 				-webkit-filter: blur(0px);

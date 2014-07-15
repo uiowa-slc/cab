@@ -1,13 +1,13 @@
-<% if SliderEvents || $AfterClassEvents %>
-		<% if SliderEvents %>
+<% if $FeaturedEvents || $EventsList %>
+		<% if $FeaturedEvents %>
 			<ul class="event-list small-block-grid-1 medium-block-grid-2">
-				<% loop SliderEvents.Limit(4) %>
+				<% loop $FeaturedEvents.Limit(4) %>
 					<% include EventCard %>
 				<% end_loop %>
 			</ul>
 		<% else %>
 			<ul class="event-list small-block-grid-1 medium-block-grid-2">
-			<% loop $AfterClassEvents.Limit(4) %>
+			<% loop $EventList.Limit(4) %>
 				<% include EventCard %>
 			<% end_loop %>
 			</ul>

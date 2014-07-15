@@ -1,16 +1,16 @@
-<% if SliderEvents || $AfterClassEvents %>
+<% if $EventList %>
 <div class="flexslider">
   <ul class="slides">
-		<% if SliderEvents %>
+		<% if $FeaturedEvents %>
 			<ul class="event-list xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
-				<% loop SliderEvents %>
-					<% include SliderEvent %>
+				<% loop $FeaturedEvents %>
+					<%--<% include SliderEvent %>--%>
 				<% end_loop %>
 			</ul>
 		<% else %>
 			<ul class="event-list xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
-				<% loop $AfterClassEvents.Limit(5) %>
-					<% include SliderEvent %>
+				<% loop $EventList.Limit(5) %>
+					<%--<% include SliderEvent %>--%>
 				<% end_loop %>
 			</ul>
 		<% end_if %>

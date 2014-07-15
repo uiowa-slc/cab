@@ -1,7 +1,7 @@
 		<div id="next-up">
 			<h2>next up:</h2>	
 			<ul id="next-up-list" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-				<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(8) %>
+				<% loop $EventList.limit(8) %>
 				<li class="event-{$ID}">
 					<div class="bg"></div>
 					<div class="event-content">

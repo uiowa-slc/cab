@@ -34,6 +34,9 @@ class Page_Controller extends ContentController {
 	private  static $allowed_actions = array (
 	);
 	
+	public function Calendar() {
+  		return LocalistCalendar::get()->First();
+  	}
 	
 	public function init() {
 		parent::init();
