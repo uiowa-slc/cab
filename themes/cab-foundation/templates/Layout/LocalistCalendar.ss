@@ -3,9 +3,9 @@
 		<h2>Upcoming Events</h2>
 	   	<% if $EventList %>
         <ul class="event-list xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
-	            <% loop $EventList %>
-                    <% include EventCard %>
-	            <% end_loop %>
+	        <% loop $EventList %>
+                <% include EventCard %>
+	        <% end_loop %>
         </ul>
         <% else %>
         <div class="row">
