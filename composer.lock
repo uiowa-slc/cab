@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "11f7f8e82cbe1538721b72aa14bbd8007dde96e1"
+                "reference": "020fa1983597249bfcb947b485c5aac8e0e36652"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/11f7f8e82cbe1538721b72aa14bbd8007dde96e1",
-                "reference": "11f7f8e82cbe1538721b72aa14bbd8007dde96e1",
+                "url": "https://api.github.com/repos/composer/installers/zipball/020fa1983597249bfcb947b485c5aac8e0e36652",
+                "reference": "020fa1983597249bfcb947b485c5aac8e0e36652",
                 "shasum": ""
             },
             "replace": {
@@ -92,7 +92,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-06-04 16:59:54"
+            "time": "2014-07-09 14:29:42"
         },
         {
             "name": "md/ac-json-events",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "54d310c04df438f65954cef1e71ef11e22757fea"
+                "reference": "40b10008641a727d6ad05c2005e17a7b50e07393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/54d310c04df438f65954cef1e71ef11e22757fea",
-                "reference": "54d310c04df438f65954cef1e71ef11e22757fea",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/40b10008641a727d6ad05c2005e17a7b50e07393",
+                "reference": "40b10008641a727d6ad05c2005e17a7b50e07393",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +156,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-06-06 17:39:37"
+            "time": "2014-06-18 14:30:05"
         },
         {
             "name": "md/rss-display",
@@ -329,12 +329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-mathspamprotection.git",
-                "reference": "0e916101e2435eea23a43d34027c154fd90fe544"
+                "reference": "bd581c7f7c1bfa0c83096a69d7cc0de27673f20f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/0e916101e2435eea23a43d34027c154fd90fe544",
-                "reference": "0e916101e2435eea23a43d34027c154fd90fe544",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/bd581c7f7c1bfa0c83096a69d7cc0de27673f20f",
+                "reference": "bd581c7f7c1bfa0c83096a69d7cc0de27673f20f",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2014-04-03 21:31:04"
+            "time": "2014-06-11 00:32:12"
         },
         {
             "name": "silverstripe/recaptcha",
@@ -440,17 +440,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "b75fc3c51eb60f4f23967a917a0feec98e4ed6e0"
+                "reference": "32b9b42f3a2d993131d66e3a91705a96399187bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/b75fc3c51eb60f4f23967a917a0feec98e4ed6e0",
-                "reference": "b75fc3c51eb60f4f23967a917a0feec98e4ed6e0",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/32b9b42f3a2d993131d66e3a91705a96399187bd",
+                "reference": "32b9b42f3a2d993131d66e3a91705a96399187bd",
                 "shasum": ""
             },
             "require": {
                 "silverstripe/cms": ">=3.1.0",
                 "silverstripe/framework": ">=3.1.0"
+            },
+            "suggest": {
+                "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions"
             },
             "type": "silverstripe-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -469,7 +472,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-05-22 11:05:12"
+            "time": "2014-07-12 21:02:38"
         }
     ],
     "packages-dev": [

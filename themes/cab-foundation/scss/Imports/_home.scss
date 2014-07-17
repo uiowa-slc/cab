@@ -4,6 +4,15 @@ body .main.HomePage {
     padding-top: 10px;
 }
 
+.HomePage .event-list{
+    li{
+        height: 270px;
+    }
+    .date-location{
+        display: none;
+    }
+}
+
 #top-content {
     #next-up {
         margin-bottom: 10px;
@@ -23,11 +32,11 @@ body .main.HomePage {
         }
         a {
             font-size: 1em;
-            color: lighten($secondary-color, 10);
+            color: #fff;
         }
         a:hover {
             text-decoration: none;
-            color: #fff;
+
         }
         #next-up-list {
             li {
@@ -96,14 +105,20 @@ body .main.HomePage {
     }
 }
 
+.row.social-media-icons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #twitter-feed {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    /*background: rgba(37, 41, 49, 0.65);*/
+    background: rgba(37, 41, 49, 0.65);
     margin-top: 10px;
 /*    height: 400px !important; */
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 #twitter-widget {

@@ -59,6 +59,10 @@ body {
     background-attachment: fixed;
 }
 
+.button{
+    background: $secondary-color;
+}
+
 .cab-circle{
     position: fixed;
     left: 50%;
@@ -74,20 +78,16 @@ body {
     color: white;
 }
 
-.main a.button{
-   color: #333;
-}
-
-.main p.button a{
-    color: #333;
-}
-
 .main {
     min-height: 320px;
     @media #{$large-up} {
         padding-top: 20px;
         min-height: 600px;
     }
+}
+
+.button{
+    text-transform: uppercase;
 }
 
 button, .button {
