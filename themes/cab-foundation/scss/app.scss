@@ -165,8 +165,8 @@ a.facebook {
 	background: linear-gradient(to right,  rgba(67,43,65,1) 0%,rgba(186,186,186,0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#432b41', endColorstr='#00bababa',GradientType=1 ); /* IE6-9 */
 
-	-webkit-border-radius: 6px 6px 6px 6px;
-	border-radius: 6px 6px 6px 6px;
+	//-webkit-border-radius: 6px 6px 6px 6px;
+	//border-radius: 6px 6px 6px 6px;
 }
 
 .where {
@@ -196,6 +196,15 @@ a.facebook {
     background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
-    border: 3px solid black;
+    border: 1px solid black;
     //background-size: 100% 100%;
+}
+
+#header-bg-image {
+	width: 100%;
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
 }

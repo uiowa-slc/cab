@@ -3,7 +3,7 @@
 	<li><h2>Coming up next:</h2></li>
 	<% loop EventList.limit(11) %>
 		<li data-tooltip data-options="disable_for_touch:true" class="has-tip" title="<h4>$Title</h4><% if $Venue %> at $Venue.Title $Location <% end_if %>">
-		<a class="th tile-bg-image" href="$Link" target="_blank" style="background-image: url('$Image.URL');"><%--<img style="margin: 0 auto;" src="$Image.URL" />--%></a>
+		<button class="th tile-bg-image " href="$Link" target="_blank" style="background-image: url('$Image.URL');"><%--<img style="margin: 0 auto;" src="$Image.URL" />--%></button>
 	</li>
 	<% end_loop %> 
 </ul>

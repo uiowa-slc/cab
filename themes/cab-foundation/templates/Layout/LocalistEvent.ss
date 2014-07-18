@@ -1,7 +1,8 @@
 <div id ="content" class="row">
 	<article class="large-7 columns">
 		<div class = "row">
-			<img src='$Image.URL' />
+			<div class="small-12 columns" id="header-bg-image" style="background-image: url('$Image.URL');">
+			</div>			 
 		</div>
 		<div class="row">
 			<div class= "small-12 columns">
