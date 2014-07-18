@@ -27,7 +27,7 @@
 
 
 	<div class="main typography $ClassName" role="main">
-			$Layout
+		$Layout
 	</div>
 
 
