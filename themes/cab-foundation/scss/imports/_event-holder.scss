@@ -7,21 +7,15 @@
 }
 
 
-.HomePage .event-list{
- 
-}
 
 .event-list{
-    @include block-grid($spacing: 1em);
-    * {
-        text-shadow: 0 0 40px #333;
-    }
+    @include block-grid($spacing: 0.5em);
 
     li{
-        height: 230px;
+        height: 290px;
     }
     .image-container{
-        height: 200px;
+        height: 250px;
         display: block;
         background-size: cover;
         background-position: 50%;
@@ -29,7 +23,7 @@
     .event-title {
     	margin: 0;
         margin-top: -43px;
-        line-height: rem-calc(23);
+        line-height: rem-calc(32);
         font-size: rem-calc(23);
         width:100%;
         a{
@@ -52,7 +46,7 @@
     	margin-top: 5px;
         background: #3B2939;
         padding: 3px;
-        color: lighten($secondary-color, 10);
+        color: #D4D1D1;
     	.next-date-time {
 
     	}

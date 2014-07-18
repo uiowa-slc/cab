@@ -11,9 +11,6 @@
 				</div>
 
 			</li>
-				<% end_loop %> 
-			</ul>			
-			<ul class="button-group">
-			  <li><a href="events/" class="tiny button radius more-events-button" target="_blank">view all movies and events</a></li>
-			</ul>
+				<% end_loop %> 		
+			 <p><a href="events/" class="button" target="_blank">view all movies and events</a></p>
 		</div>
