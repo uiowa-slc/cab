@@ -1,15 +1,72 @@
-//Committees
-.categoryImage img {
-    width: 100%;
-}
-
-.committeeName {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
-
 .committee-list {
     @include block-grid($base_style: true, $per_row: 1);
+
+    img{
+    	width: 100%;
+    }
+    h3{
+    	text-transform: uppercase;
+    	font-size: rem-calc(24);
+    }
+
+    h3.film{
+    	color: #F48856;
+    }
+    h3.comedy{
+    	color: #F06B5D;
+    }
+    h3.nighthawks{
+    	color: #FFF4A0;
+    }
+    h3.variety-and-entertainment-2{
+    	color: #C2D365;
+    }
+    h3.cultural{
+    	color: #67C4B1;
+    }
+    h3.roads{
+    	color: #00B9C3;
+    }
+    h3.traditions{
+    	color: #65A2D5;
+    }
+    h3.family-weekend{
+    	color: #AB8BBE;
+    }
+    h3.marketing{
+    	/*background-color: #DACB92;*/
+    }
+    h3.public-relations{
+    	/*background-color: #DACB92;*/
+    }
+
+/*
+    h3.film{
+    	background-color: #D37B58;
+    }
+    h3.comedy{
+    	background-color: #E57668;
+    }
+    h3.nighthawks{
+    	background-color: #DACB92;
+    }
+    h3.variety-and-entertainment{
+    	background-color: #AAB467;
+    }
+    h3.cultural{
+    	background-color: #59A99B;
+    }
+    h3.roads{
+    	background-color: #7CA6AD;
+    }
+    h3.traditions{
+    	background-color: #916C9D;
+    }
+    h3.family-weekend{
+    	background-color: #744F8F;
+    }
+ */
+
     @media #{$medium-up} {
         @include block-grid($base_style: true, $per_row: 2, $spacing: 2em);
     }

@@ -5,14 +5,12 @@
 		<ul class="committee-list">
          <% loop Children %> 	   
 		   		<li>
-		   		 <h3 class= "committeeName">$Title</h3>			
-		   		 	<% if $Image %>
-		   		 	<div class= "categoryImage">
-		   		 		$Image
-		   		 	</div>		   
-		   		 	<% end_if %>		
-					<div class="committee_description_large eventListing">
-						$CommitteeDescription
+		   			<div class="row">
+			   			<div class="large-3 columns show-for-large-up committee-image"><img src="{$ThemeDir}/images/committees/{$URLSegment}.png" /></div>
+			   		 	<div class="large-9 columns">
+			   		 		<h3 class="$URLSegment">$Title</h3>
+							$CommitteeDescription
+						</div>
 					</div>
 				</li>
         <% end_loop %>
