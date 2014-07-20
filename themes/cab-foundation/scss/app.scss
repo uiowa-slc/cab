@@ -178,12 +178,16 @@ a.facebook {
     border: 1px solid #444
 }
 
+.next-tiles {
+	margin: 1em 0;
+}
+
 .tile-bg-image{
     //float: right;
-    //margin-left: 10px;
-    width: 125px;
+    margin: 0;
+    //width: 175px;
     background-size: cover;
-    height: 125px;
+    height: 175px;
     background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;

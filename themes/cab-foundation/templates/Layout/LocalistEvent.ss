@@ -8,10 +8,10 @@
 	</div>
 </div>
 <div class="row event-head">
-	<section class="small-12 medium-6 columns">
+	<section class="small-12 medium-6 large-6 columns">
 		<div id="header-bg-image" style="background-image: url('$Image.URL');"></div>			 
 	</section>
-	<section class="small-12 medium-3 columns">
+	<section class="small-12 medium-6 large-3 columns">
 		<div class="row when-where">
 			<div class="small-12 where">
 				<% if $Venue %>
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="small-12 medium-3 columns">
+	<section class="small-12 medium-6 large-3 columns">
 		<div class="row when-where">
 			<div class="small-12 columns when">
 				<% if $Dates %>
@@ -45,13 +45,9 @@
 	</section>
 </div>
 <div class="row" id="content" >
-	<div class="small-12 medium-6 columns end">
+	<div class="small-12 medium-7 columns end">
 		$Content
 		$Form
 	</div>
 </div>
-<div class="row" id="next-tiles" >
-	<div class="small-12 columns">
-		<% include NextTiles %>
-	</div>
-</div>
+
