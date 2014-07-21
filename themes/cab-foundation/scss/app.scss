@@ -18,6 +18,7 @@
 @import "foundation-icons/foundation-icons.css";
 $include-html-type-classes: $include-html-classes;
 @import "../../../division-bar/css/_division-bar.css"; 
+@import "imports/plugins/metrojs.ltt.min.css";
 
 
 form .division-search-input {
@@ -180,6 +181,15 @@ a.facebook {
 
 .next-tiles {
 	margin: 1em 0;
+}
+
+ul.tiles > li.live-tile {
+	min-height: 175px;
+	max-width: 175px;
+	
+	a {
+		text-decoration: none;	
+	}
 }
 
 .tile-bg-image{

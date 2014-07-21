@@ -1,18 +1,28 @@
 
-$(".tile-bg-image").mouseenter(function() {
+/*
+function niceFade() {
+	$(this).css('background-image', 'none');
+};
+
+$(".tile-bg-image").click( function() {
 	$(this).flip({
-		direction: 'tb',
-		content: 'testing new content'
+		bgColor: '#ffffff',
+		direction: 'rl',
+		speed: 250,
+		content: 'testing new content',
+		color: '#fff',
+		//fontSize: 20,
+		onAnimation: niceFade()
+
 	});
-
 });
-$(".tile-bg-image").mouseleave(function() {
-	$(this).revertFlip();
-}); 
 
-	//var title = $(this).data-
-	//var det1 = $(this).data-
-	//var det2 = $(this).data-
-	//$(this).inner?(vars);
+*/
 
+var $tiles = $(".live-tile").liveTile({ 
+    playOnHover:true,
+    repeatCount: 0,
+    delay: 0,
+    startNow:false 
+});
 
