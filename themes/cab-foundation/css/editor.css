@@ -150,8 +150,8 @@ select {
 }
 .row .row {
   width: auto;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -178,8 +178,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   width: 100%;
   float: left;
 }
@@ -340,8 +340,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -626,8 +626,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1056,8 +1056,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1396,7 +1396,7 @@ select {
 }
 .accordion .accordion-navigation > .content, .accordion dd > .content {
   display: none;
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
   display: block;
@@ -5329,7 +5329,7 @@ blockquote p {
 .tabs-content > .content {
   display: none;
   float: left;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   width: 100%;
 }
 .tabs-content > .content.active {
@@ -5337,13 +5337,13 @@ blockquote p {
   float: none;
 }
 .tabs-content > .content.contained {
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 .tabs-content.vertical {
   display: block;
 }
 .tabs-content.vertical > .content {
-  padding: 0 0.5rem;
+  padding: 0 0.75rem;
 }
 
 @media only screen and (min-width: 40.063em) {
