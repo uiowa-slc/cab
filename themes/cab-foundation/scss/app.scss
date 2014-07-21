@@ -150,6 +150,11 @@ a.facebook {
     font-size: rem-calc(12);
 }
 
+.scooch-down {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
 .event-title {
     text-transform: uppercase;
     color: #FFD2D2;
@@ -184,31 +189,45 @@ a.facebook {
 }
 
 ul.tiles > li.live-tile {
-	min-height: 175px;
-	max-width: 175px;
+
+	//height:100%;
+	//min-height: 200px;
+	width: 100%;
+	height: 100%;
+
+	
+}
+
+.live-tile {
+	width: 100%;
 	
 	a {
+		width: 100%;
 		text-decoration: none;	
+	}
+	
+	h1, h2, h3 {
+		margin-top: 0;
 	}
 }
 
 .tile-bg-image{
     //float: right;
     margin: 0;
-    //width: 175px;
     background-size: cover;
-    height: 175px;
-    background-position: center;
+    height: 150px;
+    //width: 250px;
+    background-position: center center;
     background-repeat: no-repeat;
     background-origin: border-box;
-    border: 1px solid black;
     //background-size: 100% 100%;
+    border: 1px solid black;
 }
 
 #header-bg-image {
 	width: 100%;
     background-size: cover;
-    height: 400px;
+    height: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-origin: content-box;
