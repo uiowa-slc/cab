@@ -23,6 +23,21 @@ class CommitteePage extends Page {
 
 		return $fields;
 	}
+	public function RenderedImage(){
+
+		$absolutePath = Director::baseFolder();
+		$name = $this->URLSegment;
+		$imagePath = $absolutePath.'/themes/cab-foundation/images/committees/'.$name.'.png';
+
+		if(file_exists($imagePath)){
+			$image = '<img src="themes/cab-foundation/images/committees/'.$name.'.png" />';
+			return $image;
+		}else{
+			return false;
+		}
+
+	}
+	//<img src="{$ThemeDir}/images/committees/{$URLSegment}.png" />
 }
 class CommitteePage_Controller extends Page_Controller {
 
