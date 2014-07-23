@@ -38,9 +38,18 @@
 	</section>
 </div>
 <div class="row" id="content" >
-	<div class="small-12 medium-10 large-8 columns end">
+	<div class="small-12 medium-6 large-7 columns">
 		$Content
 		$Form
+	</div>
+	<div class="small-12 medium-6 large-5 columns">
+		<div class="row">
+   			<div class="large-3 columns show-for-large-up committee-image"><img src="themes/cab-foundation/images/committees/comedy.png"></div>
+   		 	<div class="large-9 columns">
+   		 		<h3 class="comedy">Comedy</h3>
+				<p>The Comedy committee brings top acts from across the country! You may see these comedians on <em>VH1</em>, <em>Comedy Central</em>, or <em>Last Comic Standing</em>. We guarantee you will be laughing until your sides hurt!</p>
+			</div>
+		</div>			
 	</div>
 </div>
 <%-- included in page.ss
