@@ -4844,7 +4844,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
+@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
   .xxlarge-only-text-left {
     text-align: left !important;
   }
