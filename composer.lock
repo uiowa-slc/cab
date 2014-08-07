@@ -1,7 +1,8 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
     "hash": "83c1a79ef0bd72e3dcff113154dba249",
     "packages": [
@@ -11,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "020fa1983597249bfcb947b485c5aac8e0e36652"
+                "reference": "41cf781ed1271e25bf31b715416a349996aa2527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/020fa1983597249bfcb947b485c5aac8e0e36652",
-                "reference": "020fa1983597249bfcb947b485c5aac8e0e36652",
+                "url": "https://api.github.com/repos/composer/installers/zipball/41cf781ed1271e25bf31b715416a349996aa2527",
+                "reference": "41cf781ed1271e25bf31b715416a349996aa2527",
                 "shasum": ""
             },
             "replace": {
@@ -47,8 +48,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
@@ -64,6 +64,7 @@
                 "annotatecms",
                 "bitrix",
                 "cakephp",
+                "chef",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -83,6 +84,7 @@
                 "phpbb",
                 "piwik",
                 "ppi",
+                "puppet",
                 "roundcube",
                 "shopware",
                 "silverstripe",
@@ -92,7 +94,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-07-09 14:29:42"
+            "time": "2014-07-22 17:04:15"
         },
         {
             "name": "md/ac-json-events",
@@ -196,12 +198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryanwachtl/silverstripe-foundation-forms.git",
-                "reference": "48a4e9c7943629e9e5385544dcabd83fc0621c15"
+                "reference": "8e1daa4c89a0dd36f491b210fe8e9ca07674a94e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryanwachtl/silverstripe-foundation-forms/zipball/48a4e9c7943629e9e5385544dcabd83fc0621c15",
-                "reference": "48a4e9c7943629e9e5385544dcabd83fc0621c15",
+                "url": "https://api.github.com/repos/ryanwachtl/silverstripe-foundation-forms/zipball/8e1daa4c89a0dd36f491b210fe8e9ca07674a94e",
+                "reference": "8e1daa4c89a0dd36f491b210fe8e9ca07674a94e",
                 "shasum": ""
             },
             "require": {
@@ -228,7 +230,7 @@
                 "silverstripe",
                 "zurbfoundation"
             ],
-            "time": "2014-02-22 22:15:47"
+            "time": "2014-08-01 02:02:34"
         },
         {
             "name": "silverstripe/cms",
@@ -440,12 +442,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "32b9b42f3a2d993131d66e3a91705a96399187bd"
+                "reference": "42932ea47f7b28eab91d5f8199b64dc7a888d6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/32b9b42f3a2d993131d66e3a91705a96399187bd",
-                "reference": "32b9b42f3a2d993131d66e3a91705a96399187bd",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/42932ea47f7b28eab91d5f8199b64dc7a888d6e6",
+                "reference": "42932ea47f7b28eab91d5f8199b64dc7a888d6e6",
                 "shasum": ""
             },
             "require": {
@@ -463,8 +465,7 @@
             "authors": [
                 {
                     "name": "Will Rossiter",
-                    "email": "will@fullscreen.io",
-                    "homepage": "http://wilr.github.com"
+                    "email": "will@fullscreen.io"
                 }
             ],
             "description": "UserForms enables CMS users to create dynamic forms via a drag and drop interface and without getting involved in any PHP code",
@@ -472,7 +473,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-07-12 21:02:38"
+            "time": "2014-07-27 08:51:23"
         }
     ],
     "packages-dev": [
@@ -488,6 +489,7 @@
         "rywa/silverstripe-foundation-forms": 20,
         "silverstripe/mathspamprotection": 20
     },
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
