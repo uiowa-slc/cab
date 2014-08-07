@@ -150,8 +150,13 @@ select {
 }
 .row .row {
   width: auto;
+<<<<<<< HEAD
   margin-left: -0.75rem;
   margin-right: -0.75rem;
+=======
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+>>>>>>> rebrand
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -178,8 +183,13 @@ select {
 
 .column,
 .columns {
+<<<<<<< HEAD
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+=======
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+>>>>>>> rebrand
   width: 100%;
   float: left;
 }
@@ -340,8 +350,13 @@ select {
   .column,
   .columns {
     position: relative;
+<<<<<<< HEAD
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+=======
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+>>>>>>> rebrand
     float: left;
   }
 
@@ -626,8 +641,13 @@ select {
   .column,
   .columns {
     position: relative;
+<<<<<<< HEAD
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+=======
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+>>>>>>> rebrand
     float: left;
   }
 
@@ -1056,8 +1076,13 @@ select {
   .column,
   .columns {
     position: relative;
+<<<<<<< HEAD
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+=======
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+>>>>>>> rebrand
     float: left;
   }
 
@@ -1396,7 +1421,11 @@ select {
 }
 .accordion .accordion-navigation > .content, .accordion dd > .content {
   display: none;
+<<<<<<< HEAD
   padding: 0.75rem;
+=======
+  padding: 0.5rem;
+>>>>>>> rebrand
 }
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
   display: block;
@@ -4844,7 +4873,11 @@ table tr td {
     text-align: justify !important;
   }
 }
+<<<<<<< HEAD
 @media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
+=======
+@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
+>>>>>>> rebrand
   .xxlarge-only-text-left {
     text-align: left !important;
   }
@@ -5329,7 +5362,11 @@ blockquote p {
 .tabs-content > .content {
   display: none;
   float: left;
+<<<<<<< HEAD
   padding: 0.75rem 0;
+=======
+  padding: 0.5rem 0;
+>>>>>>> rebrand
   width: 100%;
 }
 .tabs-content > .content.active {
@@ -5337,13 +5374,21 @@ blockquote p {
   float: none;
 }
 .tabs-content > .content.contained {
+<<<<<<< HEAD
   padding: 0.75rem;
+=======
+  padding: 0.5rem;
+>>>>>>> rebrand
 }
 .tabs-content.vertical {
   display: block;
 }
 .tabs-content.vertical > .content {
+<<<<<<< HEAD
   padding: 0 0.75rem;
+=======
+  padding: 0 0.5rem;
+>>>>>>> rebrand
 }
 
 @media only screen and (min-width: 40.063em) {
