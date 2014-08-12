@@ -5,7 +5,7 @@
 				<li class="event-{$ID}">
 					<div class="bg" style="background-image: url('{$Image.URL}');"></div>
 					<div class="event-content">
-					<a href="$Link" target="_blank">
+					<a href="$Link">
 					<span class="event-title">$Title.LimitCharacters(30)</span>
 					<p><span class="next-date-time">
 						<% loop $Dates.Limit(1) %>
@@ -18,5 +18,5 @@
 
 			</li>
 				<% end_loop %> 		
-			 <p><a href="events/" class="button" target="_blank">view all movies and events</a></p>
+			 <p><a href="events/" class="button">view all movies and events</a></p>
 		</div>

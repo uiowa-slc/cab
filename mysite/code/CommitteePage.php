@@ -7,7 +7,7 @@ class CommitteePage extends Page {
 	);
 
 	private static $has_one = array(
-		"Image" => "Image",
+		'Image' => 'Image',
 
 	);
 	
@@ -17,9 +17,9 @@ class CommitteePage extends Page {
     
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab("Root.Main", new HTMLEditorField('CommitteeDescription'));
+		$fields->addFieldToTab('Root.Main', new HTMLEditorField('CommitteeDescription'));
 		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Committee Image'));	
-		$fields->removeFieldFromTab("Root.Main","Content");
+		$fields->removeFieldFromTab('Root.Main','Content');
 
 		return $fields;
 	}
@@ -37,7 +37,7 @@ class CommitteePage extends Page {
 		}
 
 	}
-	//<img src="{$ThemeDir}/images/committees/{$URLSegment}.png" />
+	//<img src='{$ThemeDir}/images/committees/{$URLSegment}.png' />
 }
 class CommitteePage_Controller extends Page_Controller {
 

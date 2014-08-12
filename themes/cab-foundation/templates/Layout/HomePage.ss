@@ -3,6 +3,7 @@
  		<% with $Calendar %>
  		<% if $EventList %>
 	 		<% include HomePageFeaturedEvents %>
+	 		<hr />
 			<% include HomePageEventList %>
 			<div class="addInfo">
 				<p>$AdditionalInfo</p>
@@ -26,9 +27,9 @@
 </div><!-- end top-content -->     
 
 <style>
-	<% loop $EventList %>
+	<%--<% loop $EventList %>
 		#next-up-list .event-{$ID}:hover .bg{
-			background-image: url('$ImageURL');
+			background-image: url('$Image.URL');
 				-webkit-filter: blur(0px);
 			  -moz-filter: blur(0px);
 			  -o-filter: blur(0px);
@@ -37,7 +38,7 @@
 		}
 
 		#next-up-list .event-{$ID} .bg{
-			background-image: url('$ImageURL');
+			background-image: url('$Image.URL');
 			-webkit-filter: blur(5px);
 			  -moz-filter: blur(5px);
 			  -o-filter: blur(5px);
@@ -45,5 +46,5 @@
 			  filter: blur(5px);
 		}
 	}
-	<% end_loop %>
+	<% end_loop %>--%>
 </style>
