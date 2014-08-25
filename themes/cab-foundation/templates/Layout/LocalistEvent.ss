@@ -13,17 +13,18 @@
 		</div>
 		<hr />
 		<% loop $Committees %>
-			<div class="row">
+			<div class="row committee $URLSegment">
 	   		 	<div class="large-9 columns">
-	   		 		<h3 class="comedy">$Title</h3>
+	   		 		<h3>$Title</h3>
 					$CommitteeDescription
 				</div>
 	   			<div class="large-3 columns show-for-large-up committee-image">$RenderedImage</div>
 			</div>
+			<hr />
+			<a href="committees/" class="button">See all Committees</a>
 		<% end_loop %>		
 	</div>
 </div>
-<%-- included in page.ss
 <% include NextTiles %>
---%>
+
 

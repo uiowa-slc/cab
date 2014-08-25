@@ -20,5 +20,5 @@
         </ul>
     </div>
     </hr>
-    <% include NextTilesForOtherPages %>
+    <% include NextTiles %>
 </div>

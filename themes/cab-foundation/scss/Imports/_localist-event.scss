@@ -28,7 +28,7 @@
 }
 
 .next-tiles {
-	margin: 1em 0;
+
 }
 
 ul.tiles > li.live-tile {
@@ -43,6 +43,7 @@ ul.tiles > li.live-tile {
 
 .live-tile {
 	width: 100%;
+	margin: 0;
 	
 	a {
 		width: 100%;
@@ -64,7 +65,6 @@ ul.tiles > li.live-tile {
     background-repeat: no-repeat;
     background-origin: border-box;
     //background-size: 100% 100%;
-    border: 1px solid black;
 }
 
 #header-bg-image {
@@ -116,5 +116,46 @@ ul.tiles > li.live-tile {
 .main.LocalistEvent {
 	p {
 		font-size: 1.33rem;
+	}
+}
+
+.committee.film {
+	h3{
+		color: $film-color;
+	}
+}
+.committee.comedy{
+	h3{
+		color: $comedy-color;
+	}
+}
+.committee.nighthawks{
+	h3{
+		color: $nighthawks-color;
+	}
+}
+.committee.variety-and-entertainment2{
+	h3{
+		color: $variety-color;
+	}
+}
+.committee.cultural{
+	h3{
+		color: $cultural-color;
+	}
+}
+.committee.roads{
+	h3{
+		color: $roads-color;
+	}
+}
+.committee.traditions{
+	h3{
+		color: $traditions-color;
+	}
+}
+.committee.family-weekend{
+	h3{
+		color: $family-weekend-color;
 	}
 }

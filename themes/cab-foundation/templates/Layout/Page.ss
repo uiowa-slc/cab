@@ -15,8 +15,6 @@
 		
 	</div>
 </div>
-<%-- included in page.ss
 <div id="next-tiles" class="row">
 	<% include NextTiles %>
 </div>
---%>

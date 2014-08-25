@@ -5,11 +5,12 @@ body .main.HomePage {
 }
 
 .HomePage .event-list{
+    @include block-grid($spacing: 1em);
     li{
-        height: 270px;
+        height: 300px;
     }
     .date-location{
-        display: none;
+    
     }
 }
 
