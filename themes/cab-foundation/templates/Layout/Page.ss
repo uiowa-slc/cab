@@ -12,9 +12,9 @@
 		$Form
 	</article>
 	<div class="large-5 columns">
-		
+		<div id="next-tiles" class="row">
+			<% include NextTilesForOtherPages %>
+		</div>		
 	</div>
 </div>
-<div id="next-tiles" class="row">
-	<% include NextTiles %>
-</div>
+

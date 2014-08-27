@@ -1,3 +1,4 @@
+<% with $Calendar %>
 <% if EventList %>
 <div class="row scooch-down" id="next-tiles" >
 	<div class="small-12 columns">
@@ -36,3 +37,4 @@
 	</div>
 </div>
 <% end_if %>
+<% end_with %>

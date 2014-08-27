@@ -33,7 +33,7 @@
 
 
  $row-width: 1360px;
- $column-gutter: 1.5rem;
+ $column-gutter: rem-calc(14);
 // $total-columns: 12;
 
 // We use these to control various global styles
@@ -74,6 +74,7 @@ $cultural-color: #67C4B1;
 $roads-color: #00B9C3;
 $traditions-color: #65A2D5;
 $family-weekend-color: #AB8BBE;
+$marketing-color: #D876AD;
 
 
 

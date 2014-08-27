@@ -6,7 +6,7 @@
 	 		<hr />
 			<% include HomePageEventList %>
 			<div class="addInfo">
-				<p>$AdditionalInfo</p>
+				$Top.AdditionalInfo
 			</div>
 		<% else %>
 			<div class="no-events">
