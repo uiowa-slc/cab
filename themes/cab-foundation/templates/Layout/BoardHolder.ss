@@ -12,7 +12,7 @@
         </div>             
         <div id="board" class="row">
            <div class="large-12 column">
-           <h2>Executive Board</h2>
+           <h2>Meet CAB</h2>
             <ul class="person-list small-block-grid-2 medium-block-grid-4 large-block-grid-5">
             <% loop Children %>
                 <li>                    
