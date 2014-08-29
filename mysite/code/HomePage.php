@@ -23,13 +23,6 @@ class HomePage extends Page {
 		$fields = parent::getCMSFields();
 
 		$fields->removeByName("Content");
-		
-		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature1ID", "Slider Event 1"));
-		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature2ID", "Slider Event 2"));
-		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature3ID", "Slider Event 3"));
-		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature4ID", "Slider Event 4"));
-		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature5ID", "Slider Event 5"));
-		$fields->addFieldToTab("Root.Main", new AfterClassEventPickerField("SliderFeature6ID", "Slider Event 6"));
 
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField('AdditionalInfo','Show under the "Next Up" Event List.'));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField('NoEvents','Show the following message if there aren\'t any events.'));
@@ -60,6 +53,7 @@ class HomePage_Controller extends Page_Controller {
 	);
 
 	public function SliderEvents(){
+		/*
 		$events = new ArrayList();
 		for ($i = 1; $i <= 6; $i++){
 		    $propertyName = "SliderFeature".$i."ID";
@@ -69,6 +63,7 @@ class HomePage_Controller extends Page_Controller {
 		    }
 		}
 		return $events;
+		*/
 	}
 }
 ?>

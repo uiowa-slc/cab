@@ -7,15 +7,32 @@
 }
 
 
+
 .event-list{
+    @include block-grid($spacing: 1em);
+
+    li{
+      /*  height: 340px; */
+        a.facebook{
+            padding: 0.2em;
+            text-transform: uppercase;
+            font-size: rem-calc(12);
+        }
+    }
+    .image-container{
+        height: 220px;
+        display: block;
+        background-size: cover;
+        background-position: 50%;
+    }
     .event-title {
     	margin: 0;
-        margin-top: 0.3em;
-        line-height: rem-calc(23);
+        line-height: rem-calc(32);
         font-size: rem-calc(23);
+        width:100%;
         a{
-        	text-transform: uppercase;
-        	color: #FFD2D2;
+            padding-top: 10px;
+
         }
     }
     .event-types{
@@ -28,10 +45,9 @@
     	line-height: rem-calc(18);
     }
     .date-location {
-    	margin-top: 5px;
+        color: #D4D1D1;
     	.next-date-time {
-    		color: #FF8989;
-
+            color: #A9A9A9;
     	}
     }
 }

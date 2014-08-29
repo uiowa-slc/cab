@@ -1,13 +1,22 @@
 		<div id="next-up">
 			<h2>next up:</h2>	
-			<ul id="next-up-list">
-				<% loop AfterClassEvents("http://afterclass.uiowa.edu/events/categories/CAB/feed/json").Limit(6) %>
-				<a href="$Link" target="_blank"><li>
-					<span class="event-title">$Title</span><p>Next Date: <% include ACDateLocation %></p>
-				</li></a>
-				<% end_loop %> 
-			</ul>			
-			<ul class="button-group">
-			  <li><a href="events/" class="tiny button radius more-events-button" target="_blank">view all movies and events</a></li>
-			</ul>
+			<ul id="next-up-list" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+				<% loop $EventList.limit(8) %>
+				<li class="event-{$ID}">
+					<div class="bg" style="background-image: url('{$Image.URL}');"></div>
+					<div class="event-content">
+					<a href="$Link">
+					<span class="event-title">$Title.LimitCharacters(30)</span>
+					<p><span class="next-date-time">
+						<% loop $Dates.Limit(1) %>
+							<time itemprop="startDate" datetime="$Format(c)" class="$FirstLast">$Format(M) $Format(j)</time>
+						<% end_loop %>
+					</span>
+				</p>
+				</a>
+				</div>
+
+			</li>
+				<% end_loop %> 		
+			 <p><a href="events/" class="button">view all movies and events</a></p>
 		</div>

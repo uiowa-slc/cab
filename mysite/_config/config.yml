@@ -1,0 +1,3 @@
+LocalistEvent:
+  extensions:
+    - LocalistEventExtension

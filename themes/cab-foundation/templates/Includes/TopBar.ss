@@ -13,7 +13,7 @@
 			<% end_loop %>
 		</ul>
 		<ul class="left show-for-large-up">
-      		<li><a href="{$BaseHref}" class="tagline"><span>entertainment</span> done right.</a></li>
+      		<li><a href="{$BaseHref}" class="tagline"><span>entertainment</span> done right</a></li>
     	</ul>
 	</section>
 </nav>

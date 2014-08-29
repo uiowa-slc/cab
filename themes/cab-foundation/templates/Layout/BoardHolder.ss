@@ -11,25 +11,25 @@
 			</div>
         </div>             
         <div id="board" class="row">
-           <div class = "large-12 column">
-           <h2>Executive Board</h2>
-			<ul class = "info small-block-grid-2 medium-block-grid-4 large-block-grid-5">
-			<% loop Children %>
-				<li>					
-						$Image.SetHeight("200")														
-						<a href="mailto:$Email" target="_top">
+           <div class="large-12 column">
+           <h2>Meet CAB</h2>
+            <ul class="person-list small-block-grid-2 medium-block-grid-4 large-block-grid-5">
+            <% loop Children %>
+                <li>                    
+                        $Image.SetHeight("200")                                                     
+                        <a href="mailto:$Email" target="_top">
 <h3>$BoardMember</h3></a>
-                        <h4>$MemberTitle</h4>		
-						<p>
-						<strong>major:</strong> $Major <br />
-						<strong>year:</strong> $Year
+                        <h4>$MemberTitle</h4>       
+                        <p>
+                        <strong>major:</strong> $Major <br />
+                        <strong>year:</strong> $Year
                     </p>
-				</li>
-			<% end_loop %>
-			</ul>
-			</div>
-			 </hr>
-        <% include NextTilesForOtherPages %> 
+                </li>
+            <% end_loop %>
+            </ul>
+            </div>
+             </hr>
+        <% include NextTiles %> 
         </div>      
        
     </div>

@@ -1,7 +1,17 @@
 body .main.HomePage {
-    background: none;
+    background: rgba($darkGray, 0.25);
     color: $body-font-color;
-    padding-top: 0;
+    padding-top: 10px;
+}
+
+.HomePage .event-list{
+    @include block-grid($spacing: 1em);
+    li{
+        height: 300px;
+    }
+    .date-location{
+    
+    }
 }
 
 #top-content {
@@ -23,33 +33,30 @@ body .main.HomePage {
         }
         a {
             font-size: 1em;
+            color: #fff;
         }
         a:hover {
             text-decoration: none;
-            color: #fff;
+
         }
         #next-up-list {
-            font-size: rem-calc(22);
             li {
-                list-style-position: inside;
-                margin-top: 14px;
-                margin-bottom: 14px;
-                padding-left: 3px;
-                padding-right: 3px;
-                line-height: 1;
+                text-shadow: 0 0 40px #333;
                 p {
                     margin: 0;
                 }
             }
             li:hover {
-                background-color: rgba(27, 0, 0, 0.66);
-                cursor: hand;
+    
             }
             li span.event-title {
-                font-size: 1.25em;
                 text-transform: uppercase;
                 text-decoration: none;
-                color: #FFD2D2;
+                color: white;
+                line-height: 1;
+            }
+            .next-date-time {
+                color: #A9A9A9;
             }
         }
     }
@@ -89,8 +96,7 @@ body .main.HomePage {
 }
 
 .feature-box-content {
-    background: rgba(37, 41, 49, 0.65);
-    padding: 1em;
+    /*background: rgba(37, 41, 49, 0.65);*/
     margin-bottom: .5em;
     height: inherit;
     h2 {
@@ -98,14 +104,19 @@ body .main.HomePage {
     }
 }
 
+.row.social-media-icons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #twitter-feed {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    padding: 7px;
     background: rgba(37, 41, 49, 0.65);
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 #twitter-widget {
