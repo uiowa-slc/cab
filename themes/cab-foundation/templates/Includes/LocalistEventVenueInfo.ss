@@ -1,4 +1,4 @@
-<% if $Venue %>
+<% if $Venue.Title %>
 	<% with $Venue %>
 		<div class="map-container">
 			<div id="mini-map" style="width: 100%; height: 100%;"  data-link="$Link" data-lat="$Latitude" data-lng="$Longitude" data-address="$Address" data-title="$Title.LimitCharacters(20)"></div>

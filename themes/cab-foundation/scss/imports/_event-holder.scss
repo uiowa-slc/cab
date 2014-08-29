@@ -9,10 +9,10 @@
 
 
 .event-list{
-    @include block-grid($spacing: 0.5em);
+    @include block-grid($spacing: 1em);
 
     li{
-        height: 340px;
+      /*  height: 340px; */
         a.facebook{
             padding: 0.2em;
             text-transform: uppercase;
