@@ -1,3 +1,4 @@
+<% with $Calendar %>
 <% if EventList %>
 <div class="row scooch-down" id="next-tiles" >
 	<div class="small-12 columns">
@@ -25,7 +26,13 @@
 				<a href="$Link">
 				<div>
 					<h4>
-					<span>$Title</span>
+					<span >$Title <br />
+						<% if $Dates %>
+							<% loop $Dates.Limit(1) %>
+								<time itemprop="startDate" datetime="$Format(c)" class="$FirstLast">$Format(M) $Format(j)</time>
+							<% end_loop %>
+						<% end_if %>
+					</span>
 					</h4>
 				</div>
 				</a>
@@ -36,3 +43,4 @@
 	</div>
 </div>
 <% end_if %>
+<% end_with %>

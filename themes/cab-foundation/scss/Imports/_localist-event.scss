@@ -28,7 +28,7 @@
 }
 
 .next-tiles {
-	margin: 1em 0;
+
 }
 
 ul.tiles > li.live-tile {
@@ -43,6 +43,7 @@ ul.tiles > li.live-tile {
 
 .live-tile {
 	width: 100%;
+	margin: 0;
 	
 	a {
 		width: 100%;
@@ -64,7 +65,6 @@ ul.tiles > li.live-tile {
     background-repeat: no-repeat;
     background-origin: border-box;
     //background-size: 100% 100%;
-    border: 1px solid black;
 }
 
 #header-bg-image {
@@ -79,13 +79,13 @@ ul.tiles > li.live-tile {
     @media #{$large-up} {
    		height: 450px;
     }
-    background-position: center;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-origin: content-box;
     margin-bottom: 1.5em;
 }
 
-.event-head {
+.event-details {
 	/*
 	background: -moz-linear-gradient(left,  rgba(67,43,65,0) 0%, rgba(67,43,65,0.5) 25%, rgba(67,43,65,0.75) 49%, rgba(128,116,127,0.5) 75%, rgba(186,186,186,0) 100%);
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(67,43,65,0)), color-stop(25%,rgba(67,43,65,0.5)), color-stop(49%,rgba(67,43,65,0.75)), color-stop(75%,rgba(128,116,127,0.5)), color-stop(100%,rgba(186,186,186,0)));
@@ -119,8 +119,48 @@ ul.tiles > li.live-tile {
 	}
 }
 
-#content {
-	background: none repeat scroll 0% 0% rgba(15, 15, 15, 0.18);
-	padding: 20px;
-	min-height: 333px
+.committee.film {
+	h3{
+		color: $film-color;
+	}
+}
+.committee.comedy{
+	h3{
+		color: $comedy-color;
+	}
+}
+.committee.night-hawks{
+	h3{
+		color: $nighthawks-color;
+	}
+}
+.committee.variety{
+	h3{
+		color: $variety-color;
+	}
+}
+.committee.cultural{
+	h3{
+		color: $cultural-color;
+	}
+}
+.committee.road-trips{
+	h3{
+		color: $roads-color;
+	}
+}
+.committee.traditions{
+	h3{
+		color: $traditions-color;
+	}
+}
+.committee.family-weekend{
+	h3{
+		color: $family-weekend-color;
+	}
+}
+.committee.marketing{
+	h3{
+		color: $marketing-color;
+	}
 }

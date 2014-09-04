@@ -5,11 +5,12 @@ body .main.HomePage {
 }
 
 .HomePage .event-list{
+    @include block-grid($spacing: 1em);
     li{
-        height: 270px;
+        height: 300px;
     }
     .date-location{
-        display: none;
+    
     }
 }
 
@@ -46,18 +47,16 @@ body .main.HomePage {
                 }
             }
             li:hover {
-                background-color: rgba(27, 0, 0, 0.66);
-                background-size: cover;
-                cursor: hand;
-
-                a{
-                    color: #eee;
-                }
+    
             }
             li span.event-title {
                 text-transform: uppercase;
                 text-decoration: none;
                 color: white;
+                line-height: 1;
+            }
+            .next-date-time {
+                color: #A9A9A9;
             }
         }
     }

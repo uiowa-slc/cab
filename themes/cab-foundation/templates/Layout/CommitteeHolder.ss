@@ -6,7 +6,10 @@
          <% loop Children %> 	   
 		   		<li>
 		   			<div class="row">
-			   			<div class="large-3 columns show-for-large-up committee-image"><img src="{$ThemeDir}/images/committees/{$URLSegment}.png" /></div>
+			   			<div class="large-3 columns show-for-large-up committee-image">
+			   				$RenderedImage
+			   				
+			   			</div>
 			   		 	<div class="large-9 columns">
 			   		 		<h3 class="$URLSegment">$Title</h3>
 							$CommitteeDescription
@@ -17,5 +20,5 @@
         </ul>
     </div>
     </hr>
-    <% include NextTilesForOtherPages %>
+    <% include NextTiles %>
 </div>

@@ -3,9 +3,10 @@
  		<% with $Calendar %>
  		<% if $EventList %>
 	 		<% include HomePageFeaturedEvents %>
+	 		<hr />
 			<% include HomePageEventList %>
 			<div class="addInfo">
-				<p>$AdditionalInfo</p>
+				$Top.AdditionalInfo
 			</div>
 		<% else %>
 			<div class="no-events">
@@ -13,7 +14,8 @@
 			</div>
 		<% end_if %>
  		<% end_with %>
- 		        <% include PinterestWidget %>
+ 		<hr />
+ 		<% include PinterestWidget %>
 		
 	</div><!-- END LEFT COLUMN -->
 	<!-- Right Column -->
@@ -23,27 +25,4 @@
 		<% include HomePageFeatureBox %>
  		<% include TwitterWidget %>
 	</div>
-</div><!-- end top-content -->     
-
-<style>
-	<% loop $EventList %>
-		#next-up-list .event-{$ID}:hover .bg{
-			background-image: url('$ImageURL');
-				-webkit-filter: blur(0px);
-			  -moz-filter: blur(0px);
-			  -o-filter: blur(0px);
-			  -ms-filter: blur(0px);
-			  filter: blur(0px)		
-		}
-
-		#next-up-list .event-{$ID} .bg{
-			background-image: url('$ImageURL');
-			-webkit-filter: blur(5px);
-			  -moz-filter: blur(5px);
-			  -o-filter: blur(5px);
-			  -ms-filter: blur(5px);
-			  filter: blur(5px);
-		}
-	}
-	<% end_loop %>
-</style>
+</div><!-- end top-content -->

@@ -9,27 +9,29 @@
 
 
 .event-list{
-    @include block-grid($spacing: 0.5em);
+    @include block-grid($spacing: 1em);
 
     li{
-        height: 290px;
+      /*  height: 340px; */
+        a.facebook{
+            padding: 0.2em;
+            text-transform: uppercase;
+            font-size: rem-calc(12);
+        }
     }
     .image-container{
-        height: 250px;
+        height: 220px;
         display: block;
         background-size: cover;
         background-position: 50%;
     }
     .event-title {
     	margin: 0;
-        margin-top: -43px;
         line-height: rem-calc(32);
         font-size: rem-calc(23);
         width:100%;
         a{
-        	text-transform: uppercase;
-            background: #3B2939;
-            padding: 7px;
+            padding-top: 10px;
 
         }
     }
@@ -43,12 +45,9 @@
     	line-height: rem-calc(18);
     }
     .date-location {
-    	margin-top: 5px;
-        background: #3B2939;
-        padding: 3px;
         color: #D4D1D1;
     	.next-date-time {
-
+            color: #A9A9A9;
     	}
     }
 }

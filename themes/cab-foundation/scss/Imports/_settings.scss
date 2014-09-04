@@ -33,7 +33,7 @@
 
 
  $row-width: 1360px;
- $column-gutter: 1.5rem;
+ $column-gutter: rem-calc(14);
 // $total-columns: 12;
 
 // We use these to control various global styles
@@ -63,6 +63,20 @@ $body-font-family: 'gesta', sans-serif;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+
+//Committee Colors
+
+$film-color: #F48856;
+$comedy-color: #F06B5D;
+$nighthawks-color: #FFF4A0;
+$variety-color: #C2D365;
+$cultural-color: #67C4B1;
+$roads-color: #00B9C3;
+$traditions-color: #65A2D5;
+$family-weekend-color: #AB8BBE;
+$marketing-color: #D876AD;
+
+
 
 // We use these to make sure border radius matches unless we want it different.
  $global-radius: 0px;
@@ -100,7 +114,41 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max
 // $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
 // $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
 
+// We use these to build padding for buttons.
+$button-med: rem-calc(9);
+//$button-tny: rem-calc(7);
+//$button-sml: rem-calc(9);
+$button-lrg: rem-calc(16);
 
+// We use this to control the display property.
+//$button-display: inline-block;
+//$button-margin-bottom: rem-calc(20);
+
+// We use these to control button text styles.
+//$button-font-family: inherit;
+//$button-font-color: #fff;
+//$button-font-color-alt: #333;
+//$button-font-med: rem-calc(16);
+//$button-font-tny: rem-calc(11);
+//$button-font-sml: rem-calc(13);
+//$button-font-lrg: rem-calc(20);
+//$button-font-weight: bold;
+//$button-font-align: center;
+
+// We use these to control various hover effects.
+//$button-function-factor: 10%;
+
+// We use these to control button border styles.
+//$button-border-width: 1px;
+//$button-border-style: solid;
+
+// We use this to set the default radius used throughout the core.
+//$button-radius: $global-radius;
+//$button-round: $global-rounded;
+
+// We use this to set default opacity and cursor for disabled buttons.
+//$button-disabled-opacity: 0.6;
+//$button-disabled-cursor: $cursor-default-value;
 
 // Legacy
 // $small: $medium-up;
