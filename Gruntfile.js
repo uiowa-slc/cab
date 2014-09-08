@@ -10,13 +10,12 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
-      dist: { 
+      dist: {
         files: {
           '<%=globalConfig.themeDir %>/css/app.css' : '<%=globalConfig.themeDir %>/scss/app.scss'
         },                  // Target
         options: {              // Target options
           style: 'compressed',
-          sourcemap: 'true',
           loadPath: ['<%=globalConfig.themeDir %>/bower_components/foundation/scss']
         }
       }
@@ -56,7 +55,7 @@ module.exports = function(grunt) {
         }
       },
       css: {
-        files: ['<%=globalConfig.themeDir %>/scss/*.scss', 
+        files: ['<%=globalConfig.themeDir %>/scss/*.scss',
                 '<%=globalConfig.themeDir %>/scss/**/*.scss'
                 ],
         tasks: ['sass'],

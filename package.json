@@ -2,15 +2,23 @@
   "name": "cab",
   "version": "0.1.1",
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-concat": "~0.4.0",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-sass": "~0.7.2",
-    "gifsicle": "~0.1.5",
-    "optipng-bin": "~0.3.3",
-    "jpegtran-bin":"~0.2.6",
-    "grunt-contrib-imagemin": "~0.6.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-simple-watch": "~0.1.2"
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*",
+    "gifsicle": "*",
+    "optipng-bin": "*",
+    "jpegtran-bin": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "dependencies": {
+    "gifsicle": "^1.0.2",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-imagemin": "^0.8.1",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.5.1",
+    "jpegtran-bin": "^1.0.1",
+    "optipng-bin": "^1.0.1"
   }
 }
