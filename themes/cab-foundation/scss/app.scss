@@ -134,9 +134,6 @@ hr {
     height: 0;
 }
 
-.next-tiles h2 {
-    font-size: rem-calc(48);
-}
 
 footer {
     color: $body-font-color;
@@ -156,6 +153,15 @@ a.facebook {
 }
 
 .scooch-down {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	padding-bottom: $column-gutter;
+}
+
+/* Tiles */
+
+.tiles{
+    @include block-grid($spacing: 10px);    
+}
+
+.next-tiles h2 {
+    font-size: rem-calc(48);
 }
