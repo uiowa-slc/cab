@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic");
-
+@import "../../../division-bar/css/_division-bar.css";
 @import "imports/font";
 @import "imports/settings";
 @import "foundation";
@@ -18,8 +18,6 @@
 @import "imports/footer/grid-simple";
 @import "foundation-icons/foundation-icons.css";
 $include-html-type-classes: $include-html-classes;
-@import "../../../division-bar/css/_division-bar.css"; 
-
 
 
 form .division-search-input {
@@ -29,6 +27,9 @@ form .division-search-input {
     margin-top: 4px;
     margin-bottom: 2px;
     height: auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 .wrapper {
     @include grid-row;
@@ -41,8 +42,7 @@ ul li {
 h2 {
     text-transform: lowercase;
     line-height: 1;
-    margin-top: 1.5rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.3rem;
 }
 
 a {
@@ -82,7 +82,7 @@ body {
 .main {
     min-height: 320px;
     @media #{$large-up} {
-        padding-top: 20px;
+        padding-top: rem-calc(14);
         min-height: 600px;
     }
 }

@@ -1,11 +1,11 @@
 body .main.HomePage {
     background: rgba($darkGray, 0.25);
     color: $body-font-color;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .HomePage .event-list{
-    @include block-grid($spacing: 1em);
+    @include block-grid($spacing: rem-calc(14));
     li{
         height: 300px;
     }
@@ -42,6 +42,7 @@ body .main.HomePage {
         #next-up-list {
             li {
                 text-shadow: 0 0 40px #333;
+                line-height: 1.2;
                 p {
                     margin: 0;
                 }

@@ -4,7 +4,6 @@
         	<div class="info large-3 column">
         		<h2>About Us</h2>
         		<p>$MissionStatement</p>
-        	    <a href="https://orgsync.com/17245/forms/111585" class= "becomeCAB">Become a CAB member!</a>
 			</div>
         	<div class="photo large-9 column">
         		$Image

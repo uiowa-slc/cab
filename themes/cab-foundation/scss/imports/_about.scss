@@ -6,7 +6,7 @@
 }
 
 .person-list {
-    @include block-grid($spacing: 1em);
+    @include block-grid($spacing: rem-calc(14));
     img{
         width: 100%;
 
