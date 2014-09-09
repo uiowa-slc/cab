@@ -7,7 +7,7 @@ body .main.HomePage {
 .HomePage .event-list{
     @include block-grid($spacing: rem-calc(14));
     li{
-        height: 300px;
+        height: 320px;
     }
     .date-location{
     
