@@ -33,6 +33,14 @@ form .division-search-input {
 }
 .wrapper {
     @include grid-row;
+
+    
+    @media #{$medium-up} {
+        padding-right: 7px;
+    }
+    @media #{$large-up} {
+        padding-right: 0;
+    }
 }
 
 ul li {
