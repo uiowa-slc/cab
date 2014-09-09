@@ -107,7 +107,16 @@ body .main.HomePage {
     /*background: rgba(37, 41, 49, 0.65);*/
     margin-bottom: .5em;
     height: inherit;
+    h1{
+        @media #{$medium-up} {
+            font-size: rem-calc(28);
+        }
+        @media #{$large-up} {
+            font-size: rem-calc(32);
+        }
+    }
     h2 {
+
         margin-top: 0;
     }
 }
