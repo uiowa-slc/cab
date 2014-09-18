@@ -4,7 +4,7 @@
     <p class="date-location">
         <span class="next-date-time">
         	<% loop $Dates.Limit(1) %>
-				<a href="{$Link}" class="date-link"><time itemprop="startDate" datetime="$Format(c)" class="$FirstLast">$Format(M) $Format(j)</time></a>
+				<% include LocalistDateShortNoLinks %>
 			<% end_loop %>
 		</span> 
 		<span class="location"><% if $Location %>at $Location<% end_if %><% if $Venue.Title %>, $Venue.Title<% end_if %> <% if $DateTimeCount > "1" %><a href="$Link">(more times)</a><% end_if %></span>

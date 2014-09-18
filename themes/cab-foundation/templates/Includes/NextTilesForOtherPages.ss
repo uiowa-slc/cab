@@ -4,7 +4,7 @@
 	<li><h2>up next:</h2></li>
 	<% loop EventList.Limit(11) %>
 		<li data-tooltip data-options="disable_for_touch:true" class="has-tip" title="<h4>$Title</h4><% loop $Dates.Limit(1) %>
-				$Format(M) $Format(j)
+				<% include LocalistDateShortNoLinks %>
 			<% end_loop %><% if $Location %> at $Location <% end_if %>">
 		<a class="th" href="$Link" target="_blank"><img style="margin: 0 auto;" src="$Image.URL" /></a>
 	</li>

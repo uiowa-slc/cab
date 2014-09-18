@@ -29,7 +29,7 @@
 					<span >$Title <br />
 						<% if $Dates %>
 							<% loop $Dates.Limit(1) %>
-								<time itemprop="startDate" datetime="$Format(c)" class="$FirstLast">$Format(M) $Format(j)</time>
+								<% include LocalistDateShortNoLinks %>
 							<% end_loop %>
 						<% end_if %>
 					</span>
