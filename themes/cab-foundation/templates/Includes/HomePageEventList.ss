@@ -9,7 +9,7 @@
 					<span class="event-title">$Title.LimitCharacters(30)</span>
 					<p><span class="next-date-time">
 						<% loop $Dates.Limit(1) %>
-							<time itemprop="startDate" datetime="$Format(c)" class="$FirstLast">$Format(M) $Format(j)</time>
+							<% include LocalistDateShortNoLinks %>
 						<% end_loop %>
 					</span>
 				</p>
@@ -17,6 +17,7 @@
 				</div>
 
 			</li>
-				<% end_loop %> 		
+				<% end_loop %> 	
+			</ul>	
 			 <p><a href="events/" class="button">view all movies and events</a></p>
 		</div>

@@ -70,6 +70,10 @@ body {
     background: $secondary-color;
 }
 
+.button.after-class{
+    background: #4C3D69;
+}
+
 .cab-circle{
     position: fixed;
     left: 50%;
@@ -148,6 +152,7 @@ footer {
 a.facebook {
     background-color: #3D5B99;
     color: white;
+    display: inline-block;
 }
 
 .scooch-down {

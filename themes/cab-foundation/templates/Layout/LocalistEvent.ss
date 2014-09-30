@@ -6,7 +6,7 @@
 		<p>Cost: $Cost</p>
 		$Content
 		<hr />
-		<p><% if $FacebookEventLink %><a href="{$ParsedFacebookEventLink}" class="facebook button" target="_blank">Facebook Event</a><% end_if %> <a href="{$LocalistLink}" target="_blank" class="button">View on events.uiowa.edu</a></p>
+		<p><% if $FacebookEventLink %><a href="{$ParsedFacebookEventLink}" class="facebook button" target="_blank">Facebook Event</a><% end_if %><a href="{$AfterClassLink}" target="_blank" class="button after-class">View on After Class</a></p>
 	</div>
 	<div class="medium-5 large-4 columns">
 		<div class="event-details">

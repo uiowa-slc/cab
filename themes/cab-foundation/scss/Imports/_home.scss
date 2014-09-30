@@ -7,13 +7,13 @@ body .main.HomePage {
 .HomePage .event-list{
     @include block-grid($spacing: rem-calc(14));
     li{
-        height: 300px;
+        height: 330px;
 
         @media #{$medium-up} {
-            height: 350px;
+            height: 380px;
         }
         @media #{$large-up} {
-            height: 320px;
+            height: 350px;
         }
     }
     .date-location{

@@ -14,9 +14,9 @@
     li{
       /*  height: 340px; */
         a.facebook{
-            padding: 0.2em;
             text-transform: uppercase;
             font-size: rem-calc(12);
+            display: inline-block;
         }
     }
     .image-container{
@@ -27,7 +27,7 @@
     }
     .event-title {
     	margin: 0;
-        line-height: rem-calc(32);
+        line-height: rem-calc(29);
         font-size: rem-calc(23);
         width:100%;
 

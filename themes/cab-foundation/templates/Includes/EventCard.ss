@@ -9,6 +9,6 @@
 		</span> 
 		<span class="location"><% if $Location %>at $Location<% end_if %><% if $Venue.Title %>, $Venue.Title<% end_if %> <% if $DateTimeCount > "1" %><a href="$Link">(more times)</a><% end_if %></span>
 
-        <% if $FacebookEventLink %><a href="$ParsedFacebookEventLink" class="facebook" target="_blank">View Facebook Event</a><% end_if %>
+        <% if $FacebookEventLink %><a href="$ParsedFacebookEventLink" class="facebook" target="_blank">Facebook Event</a><% end_if %>
     </p>
 </li>
