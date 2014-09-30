@@ -11,7 +11,7 @@
                 <% include EventCard %>
             <% end_loop %>
         </ul>
-        <% else %>
+        <% else_if $URLSegment == "home" %>
         <div class="row">
             <div class="large-8 columns">
             	<% with Page("home") %>
@@ -19,6 +19,12 @@
                 <% end_with %>
             </div>
          </div>
+         <% else %>
+            <div class="row">
+                <div class="large-8 columns">
+                    <p>No events listed.</p>
+                </div>
+             </div>
         <% end_if %>
     </div>  
 </div>
