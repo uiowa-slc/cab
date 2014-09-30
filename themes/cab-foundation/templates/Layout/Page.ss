@@ -5,7 +5,7 @@
 				<h2>$Title </h2> 
 			</div>
 			<div class="small-6 medium-8 large-8 columns">
-				<% if $URLSegment == 'contact' %><h3 class="contactInfo">145 Iowa memorial Union </br> cab@uiowa.edu</h3> <% end_if %>
+				<% if $URLSegment == 'contact' %><h3 class="contactInfo">145 Iowa memorial Union </br> <a href="mailto:cab@uiowa.edu">cab@uiowa.edu</a></h3> <% end_if %>
 			</div>
 		</div>
 		$Content
