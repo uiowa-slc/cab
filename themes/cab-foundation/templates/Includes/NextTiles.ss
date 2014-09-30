@@ -9,7 +9,7 @@
 						<h2>Coming up: </h2>
 					</div>
 					<div>
-						<h2>Cool Events</h2>
+						<h2>CAB Events</h2>
 					</div>
 				</div>
 			</li>

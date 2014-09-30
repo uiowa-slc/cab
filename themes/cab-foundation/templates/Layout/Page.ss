@@ -12,9 +12,8 @@
 		$Form
 	</article>
 	<div class="large-5 columns">
-		<div id="next-tiles" class="row">
-			<% include NextTilesForOtherPages %>
-		</div>		
+		<% include SocialMediaButtons %>
+ 		<% include TwitterWidget %>
 	</div>
 </div>
-
+<% include NextTiles %>
