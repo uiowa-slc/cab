@@ -16,11 +16,14 @@ module.exports = function(grunt) {
         },                  // Target
         options: {              // Target options
           style: 'compressed',
-          includePaths: ['<%=globalConfig.themeDir %>/bower_components/foundation/scss']
+          loadPath: [
+          '<%=globalConfig.themeDir %>/bower_components/foundation/scss'
+          ],
+          sourcemap: true
         }
       }
     },
-    //concat all the files into the build folder
+    //concat all the files into the build folder includePaths: 
 
     concat: {
       js:{
@@ -70,7 +73,7 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
