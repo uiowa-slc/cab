@@ -11,7 +11,6 @@
 	<div class="medium-5 large-4 columns">
 		<div class="event-details">
 			<% include LocalistEventVenueInfo %>
-			
 		</div>
 		<hr />
 		<% loop $Committees %>
