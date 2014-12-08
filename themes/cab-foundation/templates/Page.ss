@@ -22,7 +22,7 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="$ClassName.ATT">
-	<% include DivisionBar %>
+	<% include DivisionBarFoundation %>
 	<% include TopBar %>
 
 	<div class="main typography $ClassName" role="main">

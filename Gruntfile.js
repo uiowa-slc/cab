@@ -59,7 +59,8 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['<%=globalConfig.themeDir %>/scss/*.scss',
-                '<%=globalConfig.themeDir %>/scss/**/*.scss'
+                '<%=globalConfig.themeDir %>/scss/**/*.scss',
+                'division-bar/scss/*.scss'
                 ],
         tasks: ['sass'],
         options: {
