@@ -3,7 +3,6 @@
  		<% with $Calendar %>
  		<% if $EventList %>
 	 		<% include HomePageFeaturedEvents %>
-	 		<hr />
 			<% include HomePageEventList %>
 			<div class="addInfo">
 				$Top.AdditionalInfo
