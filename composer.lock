@@ -137,12 +137,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "bea5d3716a1cf7329fdfe6936df5cbccf328d178"
+                "reference": "cb6baa3f63fb95b0bbf330f0d687513cf15ba8e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/bea5d3716a1cf7329fdfe6936df5cbccf328d178",
-                "reference": "bea5d3716a1cf7329fdfe6936df5cbccf328d178",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/cb6baa3f63fb95b0bbf330f0d687513cf15ba8e0",
+                "reference": "cb6baa3f63fb95b0bbf330f0d687513cf15ba8e0",
                 "shasum": ""
             },
             "require": {
@@ -161,7 +161,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-12-08 20:07:09"
+            "time": "2014-12-10 20:14:48"
         },
         {
             "name": "md/rss-display",
