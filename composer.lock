@@ -200,12 +200,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ryanwachtl/silverstripe-foundation-forms.git",
+                "url": "https://github.com/rywa/silverstripe-foundation-forms.git",
                 "reference": "8e1daa4c89a0dd36f491b210fe8e9ca07674a94e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryanwachtl/silverstripe-foundation-forms/zipball/8e1daa4c89a0dd36f491b210fe8e9ca07674a94e",
+                "url": "https://api.github.com/repos/rywa/silverstripe-foundation-forms/zipball/8e1daa4c89a0dd36f491b210fe8e9ca07674a94e",
                 "reference": "8e1daa4c89a0dd36f491b210fe8e9ca07674a94e",
                 "shasum": ""
             },
