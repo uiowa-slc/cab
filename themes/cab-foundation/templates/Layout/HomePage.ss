@@ -9,7 +9,7 @@
 			</div>
 		<% else %>
 			<div class="no-events">
-				$NoEvents
+				$Top.NoEvents
 			</div>
 		<% end_if %>
  		<% end_with %>
