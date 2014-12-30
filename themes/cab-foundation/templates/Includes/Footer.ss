@@ -1,18 +1,22 @@
+
 <footer class="footer clearfix" role="contentinfo">
 	<div class="row">
 		<div class="medium-6 large-5 columns">
 			<a href="http://studentlife.uiowa.edu" class="hide-print footer-logo"><img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life"></a><br>
+			<% if $SiteConfig.GroupSummary %>
+				$SiteConfig.GroupSummary
+			<% else %>
 				<p>The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</p>
-				<p>145 iowa memorial union<br>
+			<% end_if %>
+			<p>145 iowa memorial union<br>
 				cab@uiowa.edu
-				</p>
-				
+			</p>
 			<p>$SiteConfig.Address
 				<% if $SiteConfig.PhoneNumber %>
 					<br />Phone: $SiteConfig.PhoneNumber
 				<% end_if %>
 				<% if $SiteConfig.EmailAddress %>
-					<br />Email: <a href="mailto:{$EmailAddress}">$SiteConfig.EmailAddress</a>
+					<br />Email: <a href="mailto:{$SiteConfig.EmailAddress}">$SiteConfig.EmailAddress</a>
 				<% end_if %>
 			</p>
 		</div>

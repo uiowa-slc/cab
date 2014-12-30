@@ -1,11 +1,6 @@
 /*-------------------------------------------
     Media Queries
 -------------------------------------------*/
-$break-small: 480px;
-$break-medium: 768px;
-$break-large: 980px; /* 980px / 16px; */
-$break-xlarge: 1140px; /* 1140px / 16px; */
- 
 .footer {
 	background: #222;
 	border-top: 8px solid #000;
@@ -15,39 +10,38 @@ $break-xlarge: 1140px; /* 1140px / 16px; */
 	color: #eee;
 	padding: 3em 0 1em;
 	position: relative;
+	line-height: 1.6;
 }
-.footer p {
-	font-size: rem-calc(12);
-	@media screen and (min-width: $break-small) {
-		font-size: rem-calc(13);
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5 {
+	color: #eee;
+	font-size: rem-calc(15);
+	text-transform: uppercase;
+	@media #{$medium-up} {
+		font-size: rem-calc(14);
 	}
-	
+}
+.footer p, .footer li {
+	font-size: rem-calc(12);
 }
 .footer a {
 	color: #eee;
 }
-.footer h4 {
-	color: #eee;
-	font-weight: 300;
-	
-	text-transform: uppercase;
-	@media screen and (min-width: $break-small) {
-		margin-top: 0;
-	}
+.footer-logo img {
+	display: block;
+	margin-top: -20px;
 }
-
-.footer-nav {
+.border-list {
 	list-style: none;
 	margin: 0;
-	padding: 1em 0 0;
-	@media screen and (min-width: $break-small) {
+	padding: 0;
+	@media #{$medium-up} {
 		border-left: 1px solid #000;
 	}
 }
-.footer-nav:first-child {
+.border-list:first-child {
 	padding-top: 0;
 }
-.footer-nav a {
+.border-list a {
 	display: block;
 	padding: 10px 0;
 	-webkit-transition: all .2s ease-in-out;
@@ -56,26 +50,26 @@ $break-xlarge: 1140px; /* 1140px / 16px; */
 	&:hover {
 		border-left-color: $yellow;
 	}
-	font-size: rem-calc(13);
-	@media screen and (min-width: $break-small) {
+	@media #{$medium-up} {
 		border-left: 1px solid #2e2e2e;
-		
 		padding: 5px 0 5px 10px;
 	}
 }
-@media only screen and (max-width: $break-small) {
-	.mobile-half {
-		float: left;
-		width: 50%;
-	}
-}
-.footer .btn {color: #333;}
 .footer hr {
 	border-top-color: #000;
 	border-bottom-color: #2e2e2e;
-    margin: .5em 0;
+	margin: .5em 0;
 }
-.appt-btn {
+.footer h4 {
+	color: #eee;
+	font-weight: 300;
+	
+	text-transform: uppercase;
+	@media #{$small-up} {
+		margin-top: 0;
+	}
+}
+.footer-btn {
 	border: 3px solid #eee;
 	color: #fff;
 	display: block;
