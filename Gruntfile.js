@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           'division-bar/js/division-bar.js',
           '<%=globalConfig.themeDir %>/javascript/*.js'
         ],
-        dest: '<%=globalConfig.themeDir %>/build/src/main_concat.js'
+        dest: '<%=globalConfig.themeDir %>/build/build.src.js'
       }
     },
 
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     uglify: {
       my_target:{
         files:{
-        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/src/main_concat.js'],
+        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build.src.js'],
         }
       }
     },

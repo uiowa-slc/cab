@@ -1011,7 +1011,7 @@ $include-html-top-bar-classes: $include-html-classes;
  $topbar-bg: $topbar-bg-color;
 
 // Height and margin
- $topbar-height: 45px;
+ $topbar-height: rem-calc(45);
 // $topbar-margin-bottom: 0;
 
 // Control Input height for top bar
@@ -1038,7 +1038,7 @@ $topbar-dropdown-bg: $topbar-bg-color;
  $topbar-link-bg-hover: $body-bg;
  $topbar-link-bg-active: $body-bg;
  $topbar-link-bg-active-hover: $body-bg;
- $topbar-link-padding: 10px;
+ $topbar-link-padding: rem-calc(10);
 
 // $topbar-link-font-family: $body-font-family;
 
