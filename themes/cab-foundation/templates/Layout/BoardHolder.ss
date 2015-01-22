@@ -15,7 +15,7 @@
             <ul class="person-list small-block-grid-2 medium-block-grid-4 large-block-grid-5">
             <% loop Children %>
                 <li>                    
-                        $Image.SetHeight("200")                                                     
+                        $Image.CroppedImage(200, 200)                                                    
                         <a href="mailto:$Email" target="_top">
 <h3>$BoardMember</h3></a>
                         <h4>$MemberTitle</h4>       
