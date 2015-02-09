@@ -1,9 +1,12 @@
-<div class="row big-header show-for-medium-up">
-	<div class="large-12 columns">
-		<h1><a href="{$BaseHref}"><img src="{$ThemeDir}/images/cablogo.png" alt="$SiteConfig.Title" /></a></h1>
-		<p class="tagline">Entertainment Done Right</p>
+<div class="big-header-container">
+	<div class="row big-header show-for-medium-up">
+		<div class="large-12 columns">
+			<h1><a href="{$BaseHref}"><img src="{$ThemeDir}/images/cablogo.png" alt="$SiteConfig.Title" /></a></h1>
+			<p class="tagline"><span>Entertainment Done Right</span></p>
+		</div>
 	</div>
 </div>
+
 </div>
 <div class="contain-to-grid">
 <nav class="top-bar" role="navigation" data-topbar>

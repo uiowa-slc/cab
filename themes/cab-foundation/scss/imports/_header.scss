@@ -5,6 +5,10 @@ header {
 }
 
 
+.big-header-container{
+    max-width: 600px;
+    margin: auto;
+}
 
 .big-header{
     text-align: center;
@@ -14,9 +18,28 @@ header {
     }
 
     .tagline {
-        font-size: 26px;
+        font-size: 18px;
         text-transform: uppercase;
         margin-bottom: 0;
+        color: white;
+        
+
+        span{
+            background: $secondary-color;
+            padding: 5px;
+        }
+    }
+}
+
+/* Home Page specific big header styles */
+
+.HomePage {
+    .big-header-container{
+        max-width: 1000px;
+    }
+
+    .big-header .tagline{
+        font-size: 26px;
     }
 }
 

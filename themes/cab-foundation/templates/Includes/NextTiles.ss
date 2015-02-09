@@ -20,7 +20,7 @@
 			<li>
 				<div class="live-tile" data-mode="flip">
 				<a href="$Link">
-				<div class="tile-bg-image" style="background-image: url('$Image.URL');">
+				<div class="tile-bg-image b-lazy" data-src="$Image.URL" style="background-image: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
 				</div>
 				</a>
 				<a href="$Link">

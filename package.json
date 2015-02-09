@@ -10,7 +10,8 @@
     "optipng-bin": "*",
     "jpegtran-bin": "*",
     "grunt-contrib-imagemin": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-criticalcss": "*"
   },
   "dependencies": {
     "gifsicle": "^1.0.2",

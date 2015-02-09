@@ -64,6 +64,9 @@ $body-font-family: 'gesta', sans-serif;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
+
+$purple: #936FA1;
+
 //Committee Colors
 
 $film-color: #F48856;
@@ -241,7 +244,7 @@ $h2-font-size: 4rem;
 
 // We use this to control the maximum number of block grid elements per row
 // $block-grid-elements: 12;
- $block-grid-default-spacing: rem-calc(14);
+ $block-grid-default-spacing: $column-gutter;
  $align-block-grid-to-grid: true;
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 // $block-grid-media-queries: true;
@@ -1035,9 +1038,9 @@ $topbar-dropdown-bg: $topbar-bg-color;
  $topbar-link-weight: normal;
  $topbar-link-font-size: 1.2em;
  $topbar-link-hover-lightness: 10%; // Darken by 10%
- $topbar-link-bg-hover: $body-bg;
- $topbar-link-bg-active: $body-bg;
- $topbar-link-bg-active-hover: $body-bg;
+ $topbar-link-bg-hover: $purple;
+ $topbar-link-bg-active: $purple;
+ $topbar-link-bg-active-hover: $purple;
  $topbar-link-padding: rem-calc(10);
 
 // $topbar-link-font-family: $body-font-family;
