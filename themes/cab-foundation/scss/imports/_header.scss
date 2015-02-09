@@ -4,9 +4,20 @@ header {
     }
 }
 
-.tagline {
-    font-size: 15px;
-    padding-top: 10px;
+
+
+.big-header{
+    text-align: center;
+
+    h1{
+        padding: 10px 0;
+    }
+
+    .tagline {
+        font-size: 26px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
 }
 
 .main-header h1, .main-header h2 {
@@ -23,18 +34,27 @@ header {
 
 .top-bar {
     height: 85px;
+    @media #{$medium-up}{
+        text-align: center;
+    }
 }
 
 .top-bar .name {
     padding-top: 10px;
     height: 85px;
     img{
-    	width: 154px;
+    	width: 300px;
     }
 }
 
 .top-bar .name h1 a {
-    padding: 0 5px;
+    padding: 13px 5px;
+}
+
+.top-bar-section{
+    @media #{$medium-up}{
+        display: inline-block;
+    }
 }
 
 .top-bar-section ul {

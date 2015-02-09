@@ -1,8 +1,15 @@
+<div class="row big-header show-for-medium-up">
+	<div class="large-12 columns">
+		<h1><a href="{$BaseHref}"><img src="{$ThemeDir}/images/cablogo.png" alt="$SiteConfig.Title" /></a></h1>
+		<p class="tagline">Entertainment Done Right</p>
+	</div>
+</div>
+</div>
 <div class="contain-to-grid">
 <nav class="top-bar" role="navigation" data-topbar>
 	<ul class="title-area">
-		<li class="name"><h1><a href="{$BaseHref}"><img src="{$ThemeDir}/images/cablogo.png" alt="$SiteConfig.Title" /></a></h1></li>
-		<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+		<li class="name hide-for-medium-up"><h1><a href="{$BaseHref}"><img src="{$ThemeDir}/images/cablogo.png" alt="$SiteConfig.Title" /></a></h1></li>
+		<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
   	</ul>
 	<section class="top-bar-section">
 		<ul class="right top-menu-items">
@@ -12,9 +19,6 @@
 			</li>
 			<% end_loop %>
 		</ul>
-		<ul class="left show-for-large-up">
-      		<li><a href="{$BaseHref}" class="tagline"><span>entertainment</span> done right</a></li>
-    	</ul>
 	</section>
 </nav>
 </div>
