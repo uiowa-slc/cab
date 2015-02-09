@@ -7,8 +7,6 @@ silverstripe-cache
 .settings
 .idea
 .DS_Store
-
-
 .sass-cache/*
 *.scssc
 html/*
