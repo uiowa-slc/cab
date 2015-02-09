@@ -1,5 +1,5 @@
 <li>
-    <a href="{$Link}" class="image-container" style="background-image: url('{$Image.URL}'); text-indent: -9999px;">$Title</a>
+    <a href="{$Link}" class="image-container b-lazy" data-src="$Image.URL" style="background-image: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==; text-indent: -9999px;">$Title</a>
     <h3 class="event-title"><a href="{$Link}">$Title.LimitCharacters(50)</a></h3>
     <p class="date-location">
         <span class="next-date-time">
