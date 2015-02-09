@@ -1,3 +1,6 @@
 LocalistEvent:
   extensions:
     - LocalistEventExtension
+Controller:
+  extensions:
+    - SS_MinifiedResponseExtension

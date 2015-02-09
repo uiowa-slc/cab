@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         src: [
           '<%=globalConfig.themeDir %>/bower_components/modernizr/modernizr.js',
           '<%=globalConfig.themeDir %>/bower_components/foundation/js/foundation.min.js',
-          '<%=globalConfig.themeDir %>/bower_components/FlexSlider/jquery.flexslider.js',
+          '<%=globalConfig.themeDir %>/bower_components/blazy/blazy.js',
           'division-bar/js/division-bar.js',
           '<%=globalConfig.themeDir %>/javascript/*.js'
         ],
@@ -69,6 +69,20 @@ module.exports = function(grunt) {
       }
     },
 
+    criticalcss: {
+            custom: {
+                options: {
+                    url: "http://localhost:8888/cab/",
+                    width: 1200,
+                    height: 900,
+                    outputfile: "<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss",
+                    filename: "<%=globalConfig.themeDir %>/css/app.css", // Using path.resolve( path.join( ... ) ) is a good idea here
+                    buffer: 800*1024,
+                    ignoreConsole: false
+                }
+            }
+        }
+
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -77,9 +91,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-criticalcss');
 
   // Default task(s).
   // Note: order of tasks is very important
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'criticalcss', 'watch']);
 
 };

@@ -1,7 +1,17 @@
 @import url("http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic");
 @import "imports/font";
 @import "imports/settings";
-@import "foundation";
+/* Import foundation components */
+@import "foundation/components/global";
+@import "foundation/components/grid";
+@import "foundation/components/block-grid";
+@import "foundation/components/visibility";
+@import "foundation/components/buttons";
+@import "foundation/components/type";
+@import "foundation/components/forms";
+@import "foundation/components/top-bar";
+
+
 @import "imports/plugins/MetroJs.ltt.min.scss";
 @import "imports/header";
 @import "imports/home";
@@ -151,10 +161,6 @@ a.facebook {
 
 /* Tiles */
 
-.tiles{
-    @include block-grid($spacing: 10px);    
-}
-
 .next-tiles h2 {
-    font-size: rem-calc(48);
+    font-size: rem-calc(42);
 }

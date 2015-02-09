@@ -2,7 +2,7 @@
 class CommitteePage extends Page {
 
 	private static $db = array(
-		'CommitteeDescription' => 'HTMLText',	
+		'CommitteeDescription' => 'HTMLText',
 
 	);
 
@@ -10,29 +10,29 @@ class CommitteePage extends Page {
 		'Image' => 'Image',
 
 	);
-	
-    private static $has_many = array(
 
-    );
-    
+	private static $has_many = array(
+
+	);
+
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->addFieldToTab('Root.Main', new HTMLEditorField('CommitteeDescription'));
-		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Committee Image'));	
-		$fields->removeFieldFromTab('Root.Main','Content');
+		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Committee Image'));
+		$fields->removeFieldFromTab('Root.Main', 'Content');
 
 		return $fields;
 	}
-	public function RenderedImage(){
+	public function RenderedImage() {
 
 		$absolutePath = Director::baseFolder();
 		$name = $this->URLSegment;
-		$imagePath = $absolutePath.'/themes/cab-foundation/images/committees/'.$name.'.png';
+		$imagePath = $absolutePath . '/themes/cab-foundation/images/committees/' . $name . '.png';
 
-		if(file_exists($imagePath)){
-			$image = '<img src="themes/cab-foundation/images/committees/'.$name.'.png" />';
+		if (file_exists($imagePath)) {
+			$image = '<img src="themes/cab-foundation/images/committees/' . $name . '.png" />';
 			return $image;
-		}else{
+		} else {
 			return false;
 		}
 
@@ -56,7 +56,7 @@ class CommitteePage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
+	private static $allowed_actions = array(
 	);
 
 	public function init() {

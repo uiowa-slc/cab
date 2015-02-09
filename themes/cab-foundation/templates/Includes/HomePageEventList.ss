@@ -3,7 +3,6 @@
 			<ul id="next-up-list" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
 				<% loop $EventList.limit(8) %>
 				<li class="event-{$ID}">
-					<div class="bg" style="background-image: url('{$Image.URL}');"></div>
 					<div class="event-content">
 					<a href="$Link">
 					<span class="event-title">$Title.LimitCharacters(30)</span>
