@@ -64,6 +64,9 @@ $body-font-family: 'gesta', sans-serif;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
+
+$purple: #B45FD5;
+
 //Committee Colors
 
 $film-color: #F48856;
@@ -1011,7 +1014,7 @@ $include-html-top-bar-classes: $include-html-classes;
  $topbar-bg: $topbar-bg-color;
 
 // Height and margin
- $topbar-height: rem-calc(45);
+ $topbar-height: rem-calc(60);
 // $topbar-margin-bottom: 0;
 
 // Control Input height for top bar
@@ -1030,14 +1033,14 @@ $topbar-dropdown-bg: $topbar-bg-color;
 
 // Set the link colors and styles for top-level nav
  $topbar-link-color: white;
- $topbar-link-color-hover: white;
- $topbar-link-color-active: white;
+ $topbar-link-color-hover: lighten($purple, 20);
+ $topbar-link-color-active: lighten($purple, 10);
  $topbar-link-weight: normal;
- $topbar-link-font-size: 1.2em;
+ $topbar-link-font-size: rem-calc(18);
  $topbar-link-hover-lightness: 10%; // Darken by 10%
- $topbar-link-bg-hover: $body-bg;
- $topbar-link-bg-active: $body-bg;
- $topbar-link-bg-active-hover: $body-bg;
+ $topbar-link-bg-hover: rgba(0,0,0,0);
+ $topbar-link-bg-active: rgba(0,0,0,0);
+ $topbar-link-bg-active-hover: rgba(0,0,0,0);
  $topbar-link-padding: rem-calc(10);
 
 // $topbar-link-font-family: $body-font-family;

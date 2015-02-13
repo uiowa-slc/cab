@@ -16,8 +16,12 @@
 	<meta property="og:image" content="<% with $Image.SetSize(500,500) %>$AbsoluteURL.ATT<% end_with %>" />
 	<% end_if %>
 	<% include FavIconTags %>
-<style><% include CriticalCss %></style>
-	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
+	<style><% include CriticalCss %></style>
+	<% include LoadCss %>
+	<script>
+	  loadCSS( "$ThemeDir/css/app.css" );
+	</script>
+	<noscript><link href="$ThemeDir/css/app.css" rel="stylesheet"></noscript>
 	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
 	<script type="text/javascript" src="//use.typekit.net/qjk7tjr.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>

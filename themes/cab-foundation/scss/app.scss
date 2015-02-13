@@ -1,6 +1,8 @@
 @import url("http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic");
+
 @import "imports/font";
 @import "imports/settings";
+
 /* Import foundation components */
 @import "foundation/components/global";
 @import "foundation/components/grid";
@@ -12,6 +14,7 @@
 @import "foundation/components/top-bar";
 @import "foundation/components/dropdown-buttons";
 @import "foundation/components/dropdown";
+
 
 
 @import "imports/plugins/MetroJs.ltt.min.scss";
@@ -26,7 +29,6 @@
 @import "imports/footer/mixins";
 @import "imports/footer/footer";
 @import "imports/footer/grid-simple";
-$include-html-type-classes: $include-html-classes;
 
 @import "../../../division-bar/scss/_division-bar-foundation.scss";
 
@@ -51,6 +53,7 @@ h2 {
     text-transform: lowercase;
     line-height: 1;
     margin-bottom: 1.3rem;
+    margin-top: 1rem;
 }
 
 a {
