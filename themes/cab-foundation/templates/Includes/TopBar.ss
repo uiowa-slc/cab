@@ -15,7 +15,7 @@
 		<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
   	</ul>
 	<section class="top-bar-section">
-		<ul class="right top-menu-items">
+		<ul class="left top-menu-items">
 			<% loop Menu(1) %>
 			<li class="<% if $LinkingMode == "current" || $LinkingMode == "section" %>active<% end_if %>">
 				<a href="$Link" title="Go to the $Title.ATT">$MenuTitle</a>

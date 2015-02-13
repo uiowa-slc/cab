@@ -22,11 +22,11 @@ header {
         text-transform: uppercase;
         margin-bottom: 0;
         color: white;
+        background: $secondary-color;
         
 
         span{
-            background: $secondary-color;
-            padding: 5px;
+
         }
     }
 }
@@ -56,7 +56,6 @@ header {
 }
 
 .top-bar {
-    height: 85px;
     @media #{$medium-up}{
         text-align: center;
     }
@@ -89,8 +88,6 @@ header {
     font-size: rem-calc(18);
     @media #{$large-up} {
         font-size: rem-calc(25);
-        padding-top:  27px;
-        padding-left: 10px;
     }
 }
 
@@ -113,7 +110,7 @@ header {
         text-shadow: 0 0 40px #333;
     }
     @media #{$large-up} {
-        font-size: 1.4em;
+        font-size: rem-calc(22);
     }
 }
 
@@ -129,8 +126,6 @@ header {
 }
 
 .top-bar-section li:not(.has-form) a.tagline:not(.button) {
-    padding: 3px 2px;
-    line-height: 1.3;
 }
 
 /* overriding this because foundation 5.2.3 broke the hamburger icon? */
