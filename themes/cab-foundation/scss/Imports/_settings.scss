@@ -65,7 +65,7 @@ $body-font-family: 'gesta', sans-serif;
 // $info-color: #a0d3e8;
 
 
-$purple: #936FA1;
+$purple: #B45FD5;
 
 //Committee Colors
 
@@ -1033,14 +1033,14 @@ $topbar-dropdown-bg: $topbar-bg-color;
 
 // Set the link colors and styles for top-level nav
  $topbar-link-color: white;
- $topbar-link-color-hover: white;
- $topbar-link-color-active: white;
+ $topbar-link-color-hover: lighten($purple, 20);
+ $topbar-link-color-active: lighten($purple, 10);
  $topbar-link-weight: normal;
  $topbar-link-font-size: rem-calc(18);
  $topbar-link-hover-lightness: 10%; // Darken by 10%
- $topbar-link-bg-hover: $purple;
- $topbar-link-bg-active: $purple;
- $topbar-link-bg-active-hover: $purple;
+ $topbar-link-bg-hover: rgba(0,0,0,0);
+ $topbar-link-bg-active: rgba(0,0,0,0);
+ $topbar-link-bg-active-hover: rgba(0,0,0,0);
  $topbar-link-padding: rem-calc(10);
 
 // $topbar-link-font-family: $body-font-family;

@@ -155,7 +155,7 @@ meta.foundation-mq-topbar{ font-family: '/only screen and (min-width:40.063em)/'
 .top-bar-section ul{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 100%; height: auto; display: block; font-size: 16px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .top-bar-section ul li{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(221, 112, 100, 0); background-position: initial initial; background-repeat: initial initial; }
 .top-bar-section ul li > a{ display: block; width: 100%; color: rgb(255, 255, 255); padding-top: 12px; padding-right: 0px; padding-bottom: 12px; padding-left: 0.625rem; font-family: gesta, sans-serif; font-size: 1.125rem; font-weight: normal; text-transform: none; }
-.top-bar-section ul li.active > a{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(147, 111, 161); color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+.top-bar-section ul li.active > a{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; color: rgb(199, 135, 224); background-position: initial initial; background-repeat: initial initial; }
 @media only screen and (min-width: 40.063em){
 .top-bar{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(221, 112, 100, 0); overflow-x: visible; overflow-y: visible; background-position: initial initial; background-repeat: initial initial; }
 .top-bar::before, .top-bar::after{ content: ' '; display: table; }
@@ -168,7 +168,7 @@ meta.foundation-mq-topbar{ font-family: '/only screen and (min-width:40.063em)/'
 .top-bar-section ul{ width: auto; height: auto !important; display: inline; }
 .top-bar-section ul li{ float: left; }
 .top-bar-section li:not(.has-form) a:not(.button){ padding-top: 0px; padding-right: 0.625rem; padding-bottom: 0px; padding-left: 0.625rem; line-height: 3.75rem; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(221, 112, 100, 0); background-position: initial initial; background-repeat: initial initial; }
-.top-bar-section li.active:not(.has-form) a:not(.button){ padding-top: 0px; padding-right: 0.625rem; padding-bottom: 0px; padding-left: 0.625rem; line-height: 3.75rem; color: rgb(255, 255, 255); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(147, 111, 161); background-position: initial initial; background-repeat: initial initial; }
+.top-bar-section li.active:not(.has-form) a:not(.button){ padding-top: 0px; padding-right: 0.625rem; padding-bottom: 0px; padding-left: 0.625rem; line-height: 3.75rem; color: rgb(199, 135, 224); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: initial initial; background-repeat: initial initial; }
 }
 .big-header-container{ max-width: 600px; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; }
 .big-header{ text-align: center; }
@@ -177,9 +177,7 @@ meta.foundation-mq-topbar{ font-family: '/only screen and (min-width:40.063em)/'
 @media only screen and (min-width: 40.063em){
 .top-bar{ text-align: center; }
 }
-.top-bar .name{ padding-top: 10px; height: 85px; }
 .top-bar .name img{ width: 300px; }
-.top-bar .name h1 a{ padding-top: 13px; padding-right: 5px; padding-bottom: 13px; padding-left: 5px; }
 @media only screen and (min-width: 40.063em){
 .top-bar-section{ display: inline-block; }
 }
