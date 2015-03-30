@@ -33,6 +33,7 @@
  					<ul class="border-list">
 						<li><a href="https://www.facebook.com/uiowacab" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
 						<li><a href="https://twitter.com/uiowaCAB" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+						<li><a href="https://plus.google.com/103390113054655160465" rel="publisher" target="_blank">Google+</a></li>
 					</ul>
 				</div>
 			</div>
