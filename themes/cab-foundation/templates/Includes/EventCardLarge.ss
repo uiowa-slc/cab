@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row event-card-large">
 	<div class="large-4 columns">
 		<a href="$Link" target="_blank"><img src="$Image.URL" alt="Image for $Title" /></a>
 	</div>
