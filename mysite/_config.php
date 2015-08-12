@@ -23,3 +23,7 @@ SiteTree::enable_nested_urls();
 
 FulltextSearchable::enable();
 //Object::add_extension('BlogTree_Controller', 'BlogTreeExtensions');
+
+if(Director::isLive()) {
+	Director::forceSSL(array('/^Security/','/^admin/'));
+}
