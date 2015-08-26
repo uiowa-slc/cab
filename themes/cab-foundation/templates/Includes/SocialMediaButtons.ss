@@ -5,6 +5,6 @@
 	<li><a href="https://vine.co/u/931375171250561024" target="_blank"> <img src="$ThemeDir/images/icons/social-media/vine.png" alt="vine" /></a></li>
 </div>
 	<P> Never miss an event <br/>
-	<a href="https://docs.google.com/forms/d/16U4aq9giKHOBkhEXH8yb2Syf5Vp5jXCQUxVV_aXvV3Q/viewform?c=0&w=1" class="button" /> Sign up for our Newsletter </a></P>
+	<a href="https://orgsync.com/17245/forms/156898" class="button" /> Sign up for our Newsletter </a></P>
 <%-- 	<div class="small-2 medium-2 columns"><a href="http://uicab.tumblr.com/" target="_blank"> <img src="$ThemeDir/images/icons/social-media/tumblr.png" alt="tumblr" /></a></div> --%>
 <%-- 	<div class="small-2 medium-2 columns"><a href="http://www.pinterest.com/uiowacab/" target="_blank"><img src="$ThemeDir/images/icons/social-media/pinterest.png" alt="pinterest" /></a></div> --%>
