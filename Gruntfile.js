@@ -31,6 +31,7 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/bower_components/modernizr/modernizr.js',
           '<%=globalConfig.themeDir %>/bower_components/foundation/js/foundation.min.js',
           '<%=globalConfig.themeDir %>/bower_components/blazy/blazy.js',
+          '<%=globalConfig.themeDir %>/bower_components/fitvids/jquery.fitvids.js',
           'division-bar/js/division-bar.js',
           '<%=globalConfig.themeDir %>/javascript/*.js'
         ],

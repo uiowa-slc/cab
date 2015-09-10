@@ -170,6 +170,9 @@ a.facebook {
 
 /* Tiles */
 
-.next-tiles h2 {
-    font-size: rem-calc(42);
+#next-tiles h2 {
+    font-size: rem-calc(36);
+    @media #{$large-up}{
+        font-size: rem-calc(42);
+    }
 }
