@@ -45,6 +45,11 @@
     border-radius: 15px;
 }*/
 
+input.action{
+    @extend .button;
+    color: white;
+}
+
 ul li {
     list-style: none;
 }

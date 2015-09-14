@@ -32,7 +32,7 @@
 // $include-html-grid-classes: $include-html-classes;
 
 
- $row-width: 1280px;
+ $row-width: 1300px;
  $column-gutter: rem-calc(20);
 // $total-columns: 12;
 
@@ -427,10 +427,10 @@ $h2-font-size: 4rem;
 // $input-include-glowing-effect: true;
 
 // We use these to style the fieldset border and spacing.
-// $fieldset-border-style: solid;
+ $fieldset-border-style: none;
 // $fieldset-border-width: 1px;
 // $fieldset-border-color: #ddd;
-// $fieldset-padding: rem-calc(20);
+ $fieldset-padding: 0;
 // $fieldset-margin: rem-calc(18 0);
 
 // We use these to style the legends when you use them
