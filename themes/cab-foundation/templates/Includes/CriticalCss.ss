@@ -180,7 +180,7 @@ input[type="submit"]{ -webkit-appearance: none; border-top-left-radius: 0px 0px;
 }
 .top-bar-section ul li > a{ text-transform: lowercase; }
 @media only screen and (min-width: 40.063em){
-.top-bar-section ul li > a{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-shadow: rgb(51, 51, 51) 0px 0px 40px; }
+.top-bar-section ul li > a{ text-shadow: rgb(51, 51, 51) 0px 0px 40px; }
 }
 @media only screen and (min-width: 64.063em){
 .top-bar-section ul li > a{ font-size: 1.375rem; }
