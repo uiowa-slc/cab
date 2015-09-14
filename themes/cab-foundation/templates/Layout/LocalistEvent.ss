@@ -39,7 +39,7 @@
 				<% if $Venue.Title || $Location %>
 					<div class="large-8 columns">
 				<% else %>
-					<div class="large-12">
+					<div class="large-12 columns">
 				<% end_if %>
 					<h2>$Title</h2>
 					<% include LocalistEventDate %>
