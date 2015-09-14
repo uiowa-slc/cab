@@ -161,8 +161,6 @@ input[type="submit"]{ -webkit-appearance: none; border-top-left-radius: 0px 0px;
 .top-bar-section{ left: 0px !important; }
 .top-bar-section ul{ width: auto; height: auto !important; display: inline; }
 .top-bar-section ul li{ float: left; }
-.top-bar-section li:not(.has-form) a:not(.button){ padding-top: 0px; padding-right: 1.5625rem; padding-bottom: 0px; padding-left: 1.5625rem; line-height: 3.75rem; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(221, 112, 100, 0); background-position: initial initial; background-repeat: initial initial; }
-.top-bar-section li.active:not(.has-form) a:not(.button){ padding-top: 0px; padding-right: 1.5625rem; padding-bottom: 0px; padding-left: 1.5625rem; line-height: 3.75rem; color: rgb(237, 216, 245); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: initial initial; background-repeat: initial initial; }
 }
 .big-header-container{ max-width: 600px; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; }
 .big-header{ text-align: center; }

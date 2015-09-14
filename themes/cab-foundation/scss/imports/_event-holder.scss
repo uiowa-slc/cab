@@ -23,7 +23,11 @@
         height: 220px;
         display: block;
         background-size: cover;
-        background-position: 50%;
+        background-position: 50% 50%;
+
+        &.Portrait{
+            background-position: 50% 20%;
+        }
     }
     .event-title {
     	margin: 0;
