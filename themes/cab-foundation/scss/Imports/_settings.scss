@@ -33,7 +33,7 @@
 
 
  $row-width: 1280px;
- $column-gutter: rem-calc(14);
+ $column-gutter: rem-calc(20);
 // $total-columns: 12;
 
 // We use these to control various global styles
@@ -1034,14 +1034,14 @@ $topbar-dropdown-bg: $topbar-bg-color;
 // Set the link colors and styles for top-level nav
  $topbar-link-color: white;
  $topbar-link-color-hover: lighten($purple, 20);
- $topbar-link-color-active: lighten($purple, 10);
- $topbar-link-weight: normal;
- $topbar-link-font-size: rem-calc(18);
+ $topbar-link-color-active: lighten($purple, 30);
+ $topbar-link-weight: bold;
+ $topbar-link-font-size: rem-calc(25);
  $topbar-link-hover-lightness: 10%; // Darken by 10%
  $topbar-link-bg-hover: rgba(0,0,0,0);
  $topbar-link-bg-active: rgba(0,0,0,0);
  $topbar-link-bg-active-hover: rgba(0,0,0,0);
- $topbar-link-padding: rem-calc(10);
+ $topbar-link-padding: rem-calc(25);
 
 // $topbar-link-font-family: $body-font-family;
 

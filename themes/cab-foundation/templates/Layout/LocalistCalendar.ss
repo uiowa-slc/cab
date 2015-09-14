@@ -1,5 +1,9 @@
 <div id ="content" class = "row">
     <div id="interior" class="large-12 large-centered column">
+        <% if $FilterHeader %>
+            <h1 class="text-center">$FilterHeader</h1>
+        <% end_if %>
+
 	   	<% if $EventList %>
         <ul class="event-list xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2 small-block-grid-1">
             <% loop $EventList %>

@@ -1,4 +1,4 @@
-<% if $FeaturedEvents || $EventsList %>
+<% if $FeaturedEvents || $EventList %>
 	<% if $FeaturedEvents %>
 
 		<% if $FeaturedEvents.Count == 1 %>
