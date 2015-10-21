@@ -18,5 +18,5 @@
 			</li>
 				<% end_loop %> 	
 			</ul>	
-			 <p><a href="events/" class="button">view all movies and events</a></p>
+			 <p class="text-center"><a href="events/" class="button">view all movies and events &rarr;</a></p>
 		</div>

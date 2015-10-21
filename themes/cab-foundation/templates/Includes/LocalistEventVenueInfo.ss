@@ -3,11 +3,27 @@
 		<div class="map-container">
 			<div id="mini-map" style="width: 100%; height: 100%;"  data-link="$Link" data-lat="$Latitude" data-lng="$Longitude" data-address="$Address" data-title="$Title.LimitCharacters(20)"></div>
 		</div>
-		<h4><span> Happening at:</span> $Title </h4>
-		<p><a class="button get-directions" href="$DirectionsLink" target="_blank">Get Directions</a>
-		<% if $LocalistLink %><a href="$LocalistLink" class="button" target="_blank">More Events Here</a><% end_if %>
+		<h4><span>Location:</span> $Title </h4>
+		<p><a class="button tiny get-directions" href="$DirectionsLink" target="_blank">Get Directions</a>
+		<% if $LocalistLink %><a href="$LocalistLink" class="button tiny" target="_blank">More Events Here</a><% end_if %>
 	</p>
 	<% end_with %>
+<% else_if $Location %>
+	<p>$Location</p>
 <% else %>
-	<div><p>No location information provided</p></div>
+	<div><p>No location information provided.</p></div>
+<% end_if %>
+<% if $Committees %>
+<hr />
+<% loop $Committees %>
+	<div class="row committee $URLSegment">
+		 	<div class="large-9 columns">
+		 		<h3>$Title</h3>
+			$CommitteeDescription
+		</div>
+			<div class="large-3 columns show-for-large-up committee-image">$RenderedImage</div>
+	</div>
+	<hr />
+	<a href="committees/" class="button">See all Committees &rarr;</a>
+<% end_loop %>	
 <% end_if %>

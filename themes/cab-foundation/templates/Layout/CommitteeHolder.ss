@@ -1,7 +1,7 @@
 <% require themedCSS(interior) %> 
 <div id ="content" class ="row">
     <div id="interior" class="large-12 column">
-    	<h2>$PageTitle</h2>	    	
+    	<h2 class="text-center">$PageTitle</h2>	    	
 		<ul class="committee-list">
          <% loop Children %> 	   
 		   		<li>

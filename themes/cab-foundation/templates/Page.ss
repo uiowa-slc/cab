@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title | The University of Iowa</title>
+
 	<meta name="description" content="$MetaDescription.ATT" />
 	<%--http://ogp.me/--%>
 	<meta property="og:site_name" content="$SiteConfig.Title.ATT" />
@@ -13,10 +14,14 @@
 	<meta property="og:description" content="$MetaDescription.ATT" />
 	<meta property="og:url" content="$AbsoluteLink.ATT" />
 	<% if $Image %>
-	<meta property="og:image" content="<% with $Image.SetSize(500,500) %>$AbsoluteURL.ATT<% end_with %>" />
+	<meta property="og:image" content="<% with $Image.Pad(500,500) %>$AbsoluteURL.ATT<% end_with %>" />
 	<% end_if %>
+
+	<% include MetaTags %>
+
 	<% include FavIconTags %>
-	<style><% include CriticalCss %></style>
+	<style>
+	<% include CriticalCss %></style>
 	<% include LoadCss %>
 	<script>
 	  loadCSS( "$ThemeDir/css/app.css" );
@@ -27,9 +32,10 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="$ClassName.ATT">
+	
 	<% include DivisionBarFoundation %>
 	<% include TopBar %>
-
+	
 	<div class="main typography $ClassName" role="main">
 		$Layout
 	</div>
@@ -37,7 +43,7 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-  	<script src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false&key=AIzaSyB6ZQYL6TQGH7SLLvJRM9pQwOk5G6glKLE"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false&key=AIzaSyB6ZQYL6TQGH7SLLvJRM9pQwOk5G6glKLE"></script>
   	
 	<script type="text/javascript">
 	function downloadJSAtOnload() {
@@ -60,5 +66,12 @@
 	 	ga('create', 'UA-426753-39', 'uiowa.edu');
 	  	ga('send', 'pageview');
  	</script>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=270867676312194&version=v2.4";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

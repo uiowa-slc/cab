@@ -45,6 +45,11 @@
     border-radius: 15px;
 }*/
 
+input.action{
+    @extend .button;
+    color: white;
+}
+
 ul li {
     list-style: none;
 }
@@ -55,14 +60,17 @@ h2 {
     margin-bottom: 1.3rem;
     margin-top: 1rem;
 }
-
-a {
-    color: $body-font-color;
+.alert p{
+    background: #333;
 }
-
 a:hover {
     text-decoration: underline;
     color: #8e8d8d;
+}
+
+.alert p {
+    font-size: rem-calc(28);
+    text-align: center;
 }
 
 body {
@@ -170,6 +178,9 @@ a.facebook {
 
 /* Tiles */
 
-.next-tiles h2 {
-    font-size: rem-calc(42);
+#next-tiles h2 {
+    font-size: rem-calc(36);
+    @media #{$large-up}{
+        font-size: rem-calc(42);
+    }
 }

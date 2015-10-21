@@ -24,4 +24,11 @@
 		</ul>
 	</section>
 </nav>
+<div class="row alert">
+
+	<div class="large-12 columns text-center">
+
+		$SiteConfig.AlertText 
+	</div>
+</div>
 </div>

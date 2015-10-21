@@ -31,18 +31,21 @@ division-project/
 division-bar
 vendor/composer/
 vendor/autoload.php
-
 node_modules
 npm-debug.log
 tagfield/
 
+
 rss-display/
-
-
 foundationforms/
-
 ac-json-events/
-
 mathspamprotection/
-
 cache/
+
+reports/
+
+gridfieldextensions/
+segment-field/
+sitecongig/
+
+siteconfig/

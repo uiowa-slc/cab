@@ -32,8 +32,8 @@
 // $include-html-grid-classes: $include-html-classes;
 
 
- $row-width: 1280px;
- $column-gutter: rem-calc(14);
+ $row-width: 1300px;
+ $column-gutter: rem-calc(20);
 // $total-columns: 12;
 
 // We use these to control various global styles
@@ -63,7 +63,7 @@ $body-font-family: 'gesta', sans-serif;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
-
+$anchor-font-color: $secondary-color;
 
 $purple: #B45FD5;
 
@@ -427,10 +427,10 @@ $h2-font-size: 4rem;
 // $input-include-glowing-effect: true;
 
 // We use these to style the fieldset border and spacing.
-// $fieldset-border-style: solid;
+ $fieldset-border-style: none;
 // $fieldset-border-width: 1px;
 // $fieldset-border-color: #ddd;
-// $fieldset-padding: rem-calc(20);
+ $fieldset-padding: 0;
 // $fieldset-margin: rem-calc(18 0);
 
 // We use these to style the legends when you use them
@@ -1034,14 +1034,14 @@ $topbar-dropdown-bg: $topbar-bg-color;
 // Set the link colors and styles for top-level nav
  $topbar-link-color: white;
  $topbar-link-color-hover: lighten($purple, 20);
- $topbar-link-color-active: lighten($purple, 10);
- $topbar-link-weight: normal;
- $topbar-link-font-size: rem-calc(18);
+ $topbar-link-color-active: lighten($purple, 30);
+ $topbar-link-weight: bold;
+ $topbar-link-font-size: rem-calc(25);
  $topbar-link-hover-lightness: 10%; // Darken by 10%
  $topbar-link-bg-hover: rgba(0,0,0,0);
  $topbar-link-bg-active: rgba(0,0,0,0);
  $topbar-link-bg-active-hover: rgba(0,0,0,0);
- $topbar-link-padding: rem-calc(10);
+ $topbar-link-padding: rem-calc(25);
 
 // $topbar-link-font-family: $body-font-family;
 

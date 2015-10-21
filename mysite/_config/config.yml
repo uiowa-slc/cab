@@ -4,3 +4,6 @@ LocalistEvent:
 Controller:
   extensions:
     - SS_MinifiedResponseExtension
+SiteConfig:
+  extensions:
+    - CustomSiteConfig
