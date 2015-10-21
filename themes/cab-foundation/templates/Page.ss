@@ -7,7 +7,8 @@
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title | The University of Iowa</title>
 	<% include MetaTags %>
 	<% include FavIconTags %>
-	<style><% include CriticalCss %></style>
+	<style>
+	<% include CriticalCss %></style>
 	<% include LoadCss %>
 	<script>
 	  loadCSS( "$ThemeDir/css/app.css" );
