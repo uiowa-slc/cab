@@ -17,8 +17,6 @@ class HomePage extends Page {
 		"SliderFeature6" => "Int"
 	);
 	
-	private static $allowed_children = array('HomePageSlider');
-	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 

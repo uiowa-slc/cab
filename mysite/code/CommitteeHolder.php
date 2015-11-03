@@ -11,7 +11,7 @@ class CommitteeHolder extends Page {
 	);
 	
 	
-	private static $allowed_children = array(	'CommitteePage');
+	private static $allowed_children = array('CommitteePage');
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();

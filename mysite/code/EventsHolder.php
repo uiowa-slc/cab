@@ -8,8 +8,7 @@ class EventsHolder extends Page {
 	private static $has_one = array(
 	);
 	
-	
-	private static $allowed_children = array();
+
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
