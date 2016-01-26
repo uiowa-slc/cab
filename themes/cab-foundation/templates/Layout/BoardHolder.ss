@@ -17,8 +17,8 @@
             <% loop Children %>
                 <li>                 
                         <img class="b-lazy" data-src="$Image.CroppedImage(200,200).URL" />                                                       
-                        <a href="mailto:$Email" target="_top">
-<h3>$BoardMember</h3></a>
+                        
+                        <h3>$BoardMember</h3>
                         <h4>$MemberTitle</h4>       
                         <p>
                         <strong>major:</strong> $Major <br />
