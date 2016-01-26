@@ -1,4 +1,4 @@
-meta.foundation-mq-small{ font-family: '/only screen/'; width: 0em; }
+Console output: Google Maps API warning: SensorNotRequired: https://developers.google.com/maps/documentation/javascript/error-messagesmeta.foundation-mq-small{ font-family: '/only screen/'; width: 0em; }
 meta.foundation-mq-small-only{ font-family: '/only screen and (max-width: 40em)/'; width: 0em; }
 meta.foundation-mq-medium{ font-family: '/only screen and (min-width:40.063em)/'; width: 40.063em; }
 meta.foundation-mq-medium-only{ font-family: '/only screen and (min-width:40.063em) and (max-width:64em)/'; width: 40.063em; }
@@ -61,13 +61,12 @@ img{ display: inline-block; vertical-align: middle; }
 .small-block-grid-2 > li:nth-of-type(2n+1){ clear: both; }
 .small-block-grid-2 > li:nth-of-type(2n+1){ padding-left: 0rem; padding-right: 0.625rem; }
 .small-block-grid-2 > li:nth-of-type(2n){ padding-left: 0.625rem; padding-right: 0rem; }
-.small-block-grid-4 > li{ width: 25%; list-style-type: none; list-style-position: initial; list-style-image: initial; }
-.small-block-grid-4 > li:nth-of-type(1n){ clear: none; }
-.small-block-grid-4 > li:nth-of-type(4n+1){ clear: both; }
-.small-block-grid-4 > li:nth-of-type(4n+1){ padding-left: 0rem; padding-right: 0.9375rem; }
-.small-block-grid-4 > li:nth-of-type(4n+2){ padding-left: 0.3125rem; padding-right: 0.625rem; }
-.small-block-grid-4 > li:nth-of-type(4n+3){ padding-left: 0.625rem; padding-right: 0.3125rem; }
-.small-block-grid-4 > li:nth-of-type(4n){ padding-left: 0.9375rem; padding-right: 0rem; }
+.small-block-grid-3 > li{ width: 33.33333%; list-style-type: none; list-style-position: initial; list-style-image: initial; }
+.small-block-grid-3 > li:nth-of-type(1n){ clear: none; }
+.small-block-grid-3 > li:nth-of-type(3n+1){ clear: both; }
+.small-block-grid-3 > li:nth-of-type(3n+1){ padding-left: 0rem; padding-right: 0.83333rem; }
+.small-block-grid-3 > li:nth-of-type(3n+2){ padding-left: 0.41667rem; padding-right: 0.41667rem; }
+.small-block-grid-3 > li:nth-of-type(3n){ padding-left: 0.83333rem; padding-right: 0rem; }
 }
 @media only screen and (min-width: 40.063em){
 .medium-block-grid-2 > li{ width: 50%; list-style-type: none; list-style-position: initial; list-style-image: initial; }
@@ -120,8 +119,9 @@ img{ max-width: 100% !important; }
 p, h2, h3{ orphans: 3; widows: 3; }
 h2, h3{ page-break-after: avoid; }
 }
+.text-center{ text-align: center !important; }
 div, ul, li, h1, h2, h3, form, p{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
-a{ color: rgb(255, 255, 255); text-decoration: none; line-height: inherit; }
+a{ color: rgb(221, 112, 100); text-decoration: none; line-height: inherit; }
 a img{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; }
 p{ font-family: inherit; font-weight: normal; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem; text-rendering: optimizelegibility; }
 h1, h2, h3{ font-family: norwester, sans-serif; font-weight: normal; font-style: normal; color: rgb(255, 255, 255); text-rendering: optimizelegibility; margin-top: 0.2rem; margin-bottom: 0.5rem; line-height: 1.4; }
@@ -351,7 +351,7 @@ a.dosl, p.adr{ padding-top: 0px; padding-left: 0px; padding-bottom: 10px; displa
 }
 ul li{ list-style-type: none; list-style-position: initial; list-style-image: initial; }
 h2{ text-transform: lowercase; line-height: 1; margin-bottom: 1.3rem; margin-top: 1rem; }
-a{ color: rgb(255, 255, 255); }
+.alert p{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial; }
 body{ background-image: url(../images/background.jpg); background-size: cover; background-attachment: fixed; }
 .main{ background-color: rgba(34, 37, 44, 0.636719); }
 .main a{ color: white; }

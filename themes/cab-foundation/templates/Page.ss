@@ -7,7 +7,7 @@
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title | The University of Iowa</title>
 	<% include MetaTags %>
 	<% include FavIconTags %>
-	<style>
+<style>
 	<% include CriticalCss %></style>
 	<% include LoadCss %>
 	<script>
@@ -26,7 +26,7 @@
 		$Layout
 	</div>
 	<% include Footer %>
-
+	<% include MdBar %>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
   	<script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false&key=AIzaSyB6ZQYL6TQGH7SLLvJRM9pQwOk5G6glKLE"></script>

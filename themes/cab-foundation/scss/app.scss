@@ -15,8 +15,6 @@
 @import "foundation/components/dropdown-buttons";
 @import "foundation/components/dropdown";
 
-
-
 @import "imports/plugins/MetroJs.ltt.min.scss";
 @import "imports/header";
 @import "imports/home";
@@ -31,7 +29,7 @@
 @import "imports/footer/grid-simple";
 
 @import "../../../division-bar/scss/_division-bar-foundation.scss";
-
+@import "../../../division-bar/scss/_md-bar.scss";
 
 /*form .division-search-input {
     padding: 5px 0 4px 5px;
@@ -45,8 +43,9 @@
     border-radius: 15px;
 }*/
 
-input.action{
+input.action {
     @extend .button;
+
     color: white;
 }
 
@@ -60,29 +59,31 @@ h2 {
     margin-bottom: 1.3rem;
     margin-top: 1rem;
 }
-.alert p{
+
+.alert p {
     background: #333;
 }
+
 a:hover {
     text-decoration: underline;
     color: #8e8d8d;
 }
 
 body {
-    background-image:url('../images/background.jpg');
+    background-image: url("../images/background.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
-.button{
+.button {
     background: $secondary-color;
 }
 
-.button.after-class{
+.button.after-class {
     background: #4C3D69;
 }
 
-.cab-circle{
+.cab-circle {
     position: fixed;
     left: 50%;
     right: 50%;
@@ -99,13 +100,14 @@ body {
 
 .main {
     min-height: 320px;
+
     @media #{$large-up} {
         padding-top: rem-calc(14);
         min-height: 600px;
     }
 }
 
-.button{
+.button {
     text-transform: uppercase;
 }
 
@@ -144,7 +146,6 @@ hr {
     height: 0;
 }
 
-
 footer {
     color: $body-font-color;
     padding-top: 1em;
@@ -164,10 +165,10 @@ a.facebook {
 }
 
 .scooch-down {
-	padding-bottom: $column-gutter;
+    padding-bottom: $column-gutter;
 }
 
-.event-card-large{
+.event-card-large {
     min-height: 200px;
 }
 
@@ -175,7 +176,8 @@ a.facebook {
 
 #next-tiles h2 {
     font-size: rem-calc(36);
-    @media #{$large-up}{
+
+    @media #{$large-up} {
         font-size: rem-calc(42);
     }
 }
