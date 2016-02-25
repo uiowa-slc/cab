@@ -12,7 +12,9 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          '<%=globalConfig.themeDir %>/css/app.css' : '<%=globalConfig.themeDir %>/scss/app.scss'
+          '<%=globalConfig.themeDir %>/css/app.css' : '<%=globalConfig.themeDir %>/scss/app.scss',
+          '<%=globalConfig.themeDir %>/css/editor.css' : '<%=globalConfig.themeDir %>/scss/editor.scss'
+
         },                  // Target
         options: {              // Target options
           style: 'compressed',

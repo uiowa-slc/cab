@@ -1,4 +1,4 @@
-Console output: Google Maps API warning: SensorNotRequired: https://developers.google.com/maps/documentation/javascript/error-messagesmeta.foundation-mq-small{ font-family: '/only screen/'; width: 0em; }
+Console output: Google Maps API warning: SensorNotRequired https://developers.google.com/maps/documentation/javascript/error-messages#sensor-not-requiredmeta.foundation-mq-small{ font-family: '/only screen/'; width: 0em; }
 meta.foundation-mq-small-only{ font-family: '/only screen and (max-width: 40em)/'; width: 0em; }
 meta.foundation-mq-medium{ font-family: '/only screen and (min-width:40.063em)/'; width: 40.063em; }
 meta.foundation-mq-medium-only{ font-family: '/only screen and (min-width:40.063em) and (max-width:64em)/'; width: 40.063em; }

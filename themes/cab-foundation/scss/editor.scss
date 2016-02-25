@@ -1,10 +1,7 @@
 @import "imports/settings";
-@import "../bower_components/foundation/scss/foundation.scss";
 
 .typography {
-    padding: 18px 20px;
+	@import "../bower_components/foundation/scss/foundation/components/type.scss";
 }
 
-.bonk {
-	
-}
+.bonk {}
