@@ -354,7 +354,6 @@ h2{ text-transform: lowercase; line-height: 1; margin-bottom: 1.3rem; margin-top
 .alert p{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial; }
 body{ background-image: url(../images/background.jpg); background-size: cover; background-attachment: fixed; }
 .main{ background-color: rgba(34, 37, 44, 0.636719); }
-.main a{ color: white; }
 .main{ min-height: 320px; }
 @media only screen and (min-width: 64.063em){
 .main{ padding-top: 0.875rem; min-height: 600px; }
