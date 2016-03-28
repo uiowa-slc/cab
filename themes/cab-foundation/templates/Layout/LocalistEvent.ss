@@ -17,21 +17,26 @@
 				<h2>$Title</h2>
 				<% include LocalistEventDate %>
 				<p>Cost: $Cost</p>
+					<% if $Ticket_URL!= "" %>
+				<a href="$Ticket_URL" class="button">BUY TICKETS</a>
+				<% end_if %>
+				<p></p>
 				$Content
+
 			</div>
 
 			<% if $Venue.Title || $Location %>
 			<div class="large-4 columns">
 				<div class="event-details">
 					<% include LocalistEventVenueInfo %>
+						</div>
 				</div>
 			</div>
 			<% end_if %>
 		</div>
-	</div>
+
 
 </div>
-
 <% include NextTiles %>
 
 
