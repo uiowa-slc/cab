@@ -8,7 +8,7 @@
 		"md/division-bar" : "*",
 		"silverstripe/spamprotection" : "*",
 		"silverstripe/recaptcha" : "*",
-		"silverstripe/userforms" : "2.*",
+		"silverstripe/userforms" : "3.*",
 		"md/rss-display" : "*",
 		"md/ac-json-events" : "dev-master",
 		"rywa/silverstripe-foundation-forms": "dev-master",
