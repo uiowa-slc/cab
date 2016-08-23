@@ -25,13 +25,14 @@
 
 <%-- if not portrait (eg, if landscape or square) --%>
 <% else %>
+	<% if $Image %>
 	<div class="row">
 		<div class="large-12 medium-centered columns">
 			<div id="header-bg-image" style="background-image: url('$Image.URL');"></div>
 		</div>
 
 	</div>
-
+	<% end_if %>
 	<div class="row" id="content">
 		<div class="large-10 columns large-centered">
 
