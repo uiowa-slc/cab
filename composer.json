@@ -11,7 +11,7 @@
 		"silverstripe/userforms" : "3.*",
 		"md/rss-display" : "*",
 		"md/ac-json-events" : "dev-master",
-		"rywa/silverstripe-foundation-forms": "dev-master",
+		"rywa/silverstripe-foundation-forms": "1.0.x-dev",
 		"silverstripe/mathspamprotection": "*"
 	},
 	"config": {
