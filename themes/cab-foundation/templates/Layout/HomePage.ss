@@ -14,7 +14,7 @@
 		<% end_if %>
  		<% end_with %>
  		<hr />
- 		<% include PinterestWidget %>
+ 		<% include InstagramWidget %>
 		
 	</div><!-- END LEFT COLUMN -->
 	<!-- Right Column -->

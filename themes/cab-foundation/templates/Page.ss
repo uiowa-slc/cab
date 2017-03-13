@@ -7,13 +7,7 @@
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title | The University of Iowa</title>
 	<% include MetaTags %>
 	<% include FavIconTags %>
-<style>
-	<% include CriticalCss %></style>
-	<% include LoadCss %>
-	<script>
-	  loadCSS( "$ThemeDir/css/app.css" );
-	</script>
-	<noscript><link href="$ThemeDir/css/app.css" rel="stylesheet"></noscript>
+	<link href="$ThemeDir/css/app.css" rel="stylesheet">
 	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
 	<script type="text/javascript" src="//use.typekit.net/qjk7tjr.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
