@@ -127,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "44ce668e2925d0de9f5e1994cc0282ac20fbcf9e"
+                "reference": "e6dac05b0f20c336963adfccd140d031c6cb3a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/44ce668e2925d0de9f5e1994cc0282ac20fbcf9e",
-                "reference": "44ce668e2925d0de9f5e1994cc0282ac20fbcf9e",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/e6dac05b0f20c336963adfccd140d031c6cb3a92",
+                "reference": "e6dac05b0f20c336963adfccd140d031c6cb3a92",
                 "shasum": ""
             },
             "require": {
@@ -151,7 +151,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2016-10-19 16:07:13"
+            "time": "2017-04-12 19:06:46"
         },
         {
             "name": "md/division-bar",
@@ -458,16 +458,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-reports.git",
-                "reference": "b10955d98584df546f6d05a91576923368378d06"
+                "reference": "c1d26965140321217b347956ddbb77be4b8eb47d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/b10955d98584df546f6d05a91576923368378d06",
-                "reference": "b10955d98584df546f6d05a91576923368378d06",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/c1d26965140321217b347956ddbb77be4b8eb47d",
+                "reference": "c1d26965140321217b347956ddbb77be4b8eb47d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3,<7",
+                "php": ">=5.3.3,<7.2",
                 "silverstripe/framework": "~3.3"
             },
             "require-dev": {
@@ -500,7 +500,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2016-11-28 14:14:09"
+            "time": "2017-04-03 23:03:05"
         },
         {
             "name": "silverstripe/segment-field",
