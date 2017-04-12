@@ -25,5 +25,5 @@ FulltextSearchable::enable();
 //Object::add_extension('BlogTree_Controller', 'BlogTreeExtensions');
 
 if(Director::isLive()) {
-	Director::forceSSL(array('/^Security/','/^admin/'));
+	Director::forceSSL();
 }
