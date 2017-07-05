@@ -24,6 +24,7 @@ SiteTree::enable_nested_urls();
 FulltextSearchable::enable();
 //Object::add_extension('BlogTree_Controller', 'BlogTreeExtensions');
 
+Authenticator::set_default_authenticator('SAMLAuthenticator');
 if(Director::isLive()) {
 	Director::forceSSL();
 }
