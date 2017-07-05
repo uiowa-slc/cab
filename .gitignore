@@ -43,3 +43,7 @@ gridfieldextensions/
 segment-field/
 reports/
 siteconfig/
+activedirectory/
+multivaluefield/
+queuedjobs/
+vendor/
