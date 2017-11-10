@@ -5,7 +5,9 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.6.*@stable",
 		"silverstripe/framework": "3.6.*@stable",
+		"md/uiowa-bar" : "*",
 		"md/division-bar" : "*",
+        "md/division-analytics" : "*",
 		"silverstripe/spamprotection" : "*",
 		"silverstripe/recaptcha" : "*",
 		"silverstripe/userforms" : "4.*",
@@ -22,7 +24,15 @@
     "repositories": [
         {
             "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-uiowa-bar"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
         },
         {
             "type": "vcs",
