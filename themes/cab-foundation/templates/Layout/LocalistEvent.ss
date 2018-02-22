@@ -18,7 +18,15 @@
 				<% end_if %>
 					<h2>$Title</h2>
 					<% include LocalistEventDate %>
-					<p>Cost: $Cost</p>
+					<p><strong>Cost:</strong> $Cost
+					<% if $Venue.Title %>
+						<% with $Venue %>
+							<br /><strong>Location:</strong> $Title 
+						<% end_with %>
+					<% else_if $Location %>
+						<br />$Location
+					<% end_if %>
+					</p>				
 					$Content
 				</div>
 
