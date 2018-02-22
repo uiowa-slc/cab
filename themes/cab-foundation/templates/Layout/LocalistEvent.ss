@@ -1,31 +1,5 @@
-<%-- if image is portrait --%>
-<% if $Image.Orientation == "Portrait" %>
-	<div class="row" id="content">
-		<div class="large-10 columns large-centered">
 
-			<div class="row">
-	
-				<div class="large-8 columns">
-			<div class="event-details">
-						<% include LocalistEventVenueInfo %>
-					</div>
-					<h2>$Title</h2>
-					<% include LocalistEventDate %>
-					<p>Cost: $Cost</p>
-					$Content
-				</div>		
-				<div class="large-4 columns">
-					<div id="header-bg-image" style="background-image: url('$Image.URL');"></div>
-				</div>
-
-			</div>
-		</div>
-
-	</div>
-
-<%-- if not portrait (eg, if landscape or square) --%>
-<% else %>
-	<% if $Image %>
+	<% if $Image.URL %>
 	<div class="row">
 		<div class="large-12 medium-centered columns">
 			<div id="header-bg-image" style="background-image: url('$Image.URL');"></div>
@@ -59,7 +33,6 @@
 		</div>
 
 	</div>
-<% end_if %>
 
 <% include NextTiles %>
 
