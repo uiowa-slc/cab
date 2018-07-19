@@ -5,7 +5,7 @@
 	<div class="large-8 columns">
 		<h3><a href="$Link">$Title</a></h3>
         	<% loop $Dates.Limit(1) %>
-				<% include LocalistDateShortNoLinks %>
+				<% include UiDateShortNoLinks %>
 			<% end_loop %><br />
          	$Content.Summary(50)
          	</p>

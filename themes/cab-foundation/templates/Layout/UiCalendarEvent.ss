@@ -17,11 +17,13 @@
 					<div class="large-12 columns">
 				<% end_if %>
 					<h2>$Title</h2>
-					<% include LocalistEventDate %>
-					<p><strong>Cost:</strong> $Cost
+					<% include UiEventDate %>
+
+
+					<p><% if $Cost %><strong>Cost:</strong> $Cost <br /><% end_if %>
 					<% if $Venue.Title %>
 						<% with $Venue %>
-							<br /><strong>Location:</strong> $Title 
+							<strong>Location:</strong> $Title 
 						<% end_with %>
 					<% else_if $Location %>
 						<br />$Location
@@ -33,7 +35,7 @@
 				<% if $Venue.Title || $Location %>
 				<div class="large-4 columns">
 					<div class="event-details">
-						<% include LocalistEventVenueInfo %>
+						<% include UiEventVenueInfo %>
 					</div>
 				</div>
 				<% end_if %>

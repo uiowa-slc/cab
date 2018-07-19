@@ -4,8 +4,8 @@
 			<div id="mini-map" style="width: 100%; height: 100%;"  data-link="$Link" data-lat="$Latitude" data-lng="$Longitude" data-address="$Address" data-title="$Title.LimitCharacters(20)"></div>
 		</div>
 		<h4><span>Location:</span> $Title </h4>
-		<p><a class="button tiny get-directions" href="$DirectionsLink" target="_blank">Get Directions</a>
-		<% if $LocalistLink %><a href="$LocalistLink" class="button tiny" target="_blank">More Events Here</a><% end_if %>
+		<p><a class="button tiny get-directions" href="$DirectionsLink">Get Directions</a>
+		<% if $UiLink %><a href="$UiLink" class="button tiny" target="_blank">More Events Here</a><% end_if %>
 	</p>
 	<% end_with %>
 <% else_if $Location %>

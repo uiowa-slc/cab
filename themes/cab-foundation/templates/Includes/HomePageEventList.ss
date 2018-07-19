@@ -8,7 +8,7 @@
 					<span class="event-title">$Title.LimitCharacters(30)</span>
 					<p><span class="next-date-time">
 						<% loop $Dates.Limit(1) %>
-							<% include LocalistDateShortNoLinks %>
+							<% include UiDateShortNoLinks %>
 						<% end_loop %>
 					</span>
 				</p>

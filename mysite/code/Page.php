@@ -35,7 +35,7 @@ class Page_Controller extends ContentController {
 	);
 	
 	public function Calendar() {
-  		return LocalistCalendar::get()->First();
+  		return UiCalendar::get()->First();
   	}
 	
 	public function init() {

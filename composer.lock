@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "bdfc610431a249062b2dc6a733dc81b6",
@@ -47,12 +47,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "0c420e1cd0e8a3a78e7a5e48b1d2ec2fded5d39e"
+                "reference": "5d15e4e9aab1da3a622678bdaaa4f7d57d150923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/0c420e1cd0e8a3a78e7a5e48b1d2ec2fded5d39e",
-                "reference": "0c420e1cd0e8a3a78e7a5e48b1d2ec2fded5d39e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/5d15e4e9aab1da3a622678bdaaa4f7d57d150923",
+                "reference": "5d15e4e9aab1da3a622678bdaaa4f7d57d150923",
                 "shasum": ""
             },
             "require": {
@@ -159,7 +159,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-01-25T16:41:42+00:00"
+            "time": "2018-04-05T19:08:21+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -215,12 +215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "fba6b16591e59d06312bbc8a23fa8bea2af06f44"
+                "reference": "023e0543869effc3a375dac551e8f7accb403eed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/fba6b16591e59d06312bbc8a23fa8bea2af06f44",
-                "reference": "fba6b16591e59d06312bbc8a23fa8bea2af06f44",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/023e0543869effc3a375dac551e8f7accb403eed",
+                "reference": "023e0543869effc3a375dac551e8f7accb403eed",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +239,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2018-03-15T16:18:17+00:00"
+            "time": "2018-07-19T15:30:42+00:00"
         },
         {
             "name": "md/division-analytics",
@@ -338,12 +338,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar.git",
-                "reference": "1acab266eba5dcc8a2dfbf8dd4809cb2b4fcc7fa"
+                "reference": "4000ed0114a053142ba0da480f8fe7adbb8d6031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/1acab266eba5dcc8a2dfbf8dd4809cb2b4fcc7fa",
-                "reference": "1acab266eba5dcc8a2dfbf8dd4809cb2b4fcc7fa",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/4000ed0114a053142ba0da480f8fe7adbb8d6031",
+                "reference": "4000ed0114a053142ba0da480f8fe7adbb8d6031",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/issues"
             },
-            "time": "2018-02-06T19:50:16+00:00"
+            "time": "2018-04-02T20:09:24+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -461,16 +461,16 @@
         },
         {
             "name": "onelogin/php-saml",
-            "version": "v2.13.0",
+            "version": "v2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onelogin/php-saml.git",
-                "reference": "28e7ccc949592e78f7f4648dcfb492893aecc360"
+                "reference": "939f509143e95c21ab9720d2bfd5220c5828016d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/28e7ccc949592e78f7f4648dcfb492893aecc360",
-                "reference": "28e7ccc949592e78f7f4648dcfb492893aecc360",
+                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/939f509143e95c21ab9720d2bfd5220c5828016d",
+                "reference": "939f509143e95c21ab9720d2bfd5220c5828016d",
                 "shasum": ""
             },
             "require": {
@@ -510,7 +510,7 @@
                 "onelogin",
                 "saml"
             ],
-            "time": "2018-03-05T15:43:24+00:00"
+            "time": "2018-06-17T08:10:08+00:00"
         },
         {
             "name": "ramsey/array_column",
@@ -619,7 +619,7 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.6.5",
+            "version": "3.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
@@ -677,16 +677,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.6.5",
+            "version": "3.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "a805aabecd1c859f772456e7b49fb3693b509787"
+                "reference": "91327ab63e8c0361ce9e3af007b4a047314cd4c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/a805aabecd1c859f772456e7b49fb3693b509787",
-                "reference": "a805aabecd1c859f772456e7b49fb3693b509787",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/91327ab63e8c0361ce9e3af007b4a047314cd4c2",
+                "reference": "91327ab63e8c0361ce9e3af007b4a047314cd4c2",
                 "shasum": ""
             },
             "require": {
@@ -758,11 +758,11 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2018-02-05T02:19:24+00:00"
+            "time": "2018-05-13T22:59:58+00:00"
         },
         {
             "name": "silverstripe/mathspamprotection",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-mathspamprotection.git",
@@ -840,16 +840,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-reports.git",
-                "reference": "01fd709d7413bf3c812f4d9877e469f112d1f748"
+                "reference": "4803f2e652a432e1c9c3efbfffa3a9a49587b774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/01fd709d7413bf3c812f4d9877e469f112d1f748",
-                "reference": "01fd709d7413bf3c812f4d9877e469f112d1f748",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/4803f2e652a432e1c9c3efbfffa3a9a49587b774",
+                "reference": "4803f2e652a432e1c9c3efbfffa3a9a49587b774",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3,<7.2",
+                "php": "^5.3.3 || ^7",
                 "silverstripe/framework": "~3.3"
             },
             "require-dev": {
@@ -858,7 +858,7 @@
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
-                    "3.x-dev": "3.7.x-dev"
+                    "3.x-dev": "3.8.x-dev"
                 }
             },
             "autoload": {
@@ -887,7 +887,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2018-01-16T12:13:58+00:00"
+            "time": "2018-07-17T20:06:06+00:00"
         },
         {
             "name": "silverstripe/segment-field",
@@ -934,12 +934,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
-                "reference": "e6879131548dadfcd69c56a11186c2d0f8483e88"
+                "reference": "4028f0471fdc5547517719bb8414d420e0e01f69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/e6879131548dadfcd69c56a11186c2d0f8483e88",
-                "reference": "e6879131548dadfcd69c56a11186c2d0f8483e88",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/4028f0471fdc5547517719bb8414d420e0e01f69",
+                "reference": "4028f0471fdc5547517719bb8414d420e0e01f69",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +952,7 @@
             "extra": {
                 "installer-name": "siteconfig",
                 "branch-alias": {
-                    "3.x-dev": "3.7.x-dev"
+                    "3.x-dev": "3.8.x-dev"
                 }
             },
             "autoload": {
@@ -972,7 +972,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2018-01-09T13:53:43+00:00"
+            "time": "2018-07-17T20:14:35+00:00"
         },
         {
             "name": "silverstripe/spamprotection",
@@ -1027,19 +1027,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "ee0e43118fc87da8a8b3a68b723044cdd281cebc"
+                "reference": "caf6a5b81431e1149c5e2c7043b64a1dce8ff627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/ee0e43118fc87da8a8b3a68b723044cdd281cebc",
-                "reference": "ee0e43118fc87da8a8b3a68b723044cdd281cebc",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/caf6a5b81431e1149c5e2c7043b64a1dce8ff627",
+                "reference": "caf6a5b81431e1149c5e2c7043b64a1dce8ff627",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/cms": "~3.2",
-                "silverstripe/framework": "~3.2",
+                "silverstripe/cms": "^3.4.2",
+                "silverstripe/framework": "^3.4.2",
                 "silverstripe/segment-field": "^1.0",
-                "symbiote/silverstripe-gridfieldextensions": "~2.0"
+                "symbiote/silverstripe-gridfieldextensions": "^2.0"
             },
             "suggest": {
                 "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions",
@@ -1078,7 +1078,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2018-02-21T01:06:13+00:00"
+            "time": "2018-07-16T11:12:05+00:00"
         },
         {
             "name": "symbiote/silverstripe-gridfieldextensions",
@@ -1223,28 +1223,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-authentication.git",
-                "reference": "796013de02b70e804489ea7858411f1b20baf5b9"
+                "reference": "8713734236df1dd91a61f9a1aa752e630e2ece53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-authentication/zipball/796013de02b70e804489ea7858411f1b20baf5b9",
-                "reference": "796013de02b70e804489ea7858411f1b20baf5b9",
+                "url": "https://api.github.com/repos/zendframework/zend-authentication/zipball/8713734236df1dd91a61f9a1aa752e630e2ece53",
+                "reference": "8713734236df1dd91a61f9a1aa752e630e2ece53",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "~4.0",
-                "zendframework/zend-crypt": "^2.6",
-                "zendframework/zend-db": "^2.7",
-                "zendframework/zend-http": "^2.5.4",
-                "zendframework/zend-ldap": "^2.6",
-                "zendframework/zend-session": "^2.6.2",
-                "zendframework/zend-uri": "^2.5",
-                "zendframework/zend-validator": "^2.6"
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-crypt": "^2.6 || ^3.2.1",
+                "zendframework/zend-db": "^2.8.2",
+                "zendframework/zend-http": "^2.7",
+                "zendframework/zend-ldap": "^2.8",
+                "zendframework/zend-session": "^2.8",
+                "zendframework/zend-uri": "^2.5.2",
+                "zendframework/zend-validator": "^2.10.1"
             },
             "suggest": {
                 "zendframework/zend-crypt": "Zend\\Crypt component",
@@ -1258,8 +1258,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev",
-                    "dev-develop": "2.6-dev"
+                    "dev-master": "2.6.x-dev",
+                    "dev-develop": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -1272,35 +1272,35 @@
                 "BSD-3-Clause"
             ],
             "description": "provides an API for authentication and includes concrete authentication adapters for common use case scenarios",
-            "homepage": "https://github.com/zendframework/zend-authentication",
             "keywords": [
                 "Authentication",
-                "zf2"
+                "ZendFramework",
+                "zf"
             ],
-            "time": "2016-04-27T18:55:45+00:00"
+            "time": "2018-04-12T21:10:42+00:00"
         },
         {
             "name": "zendframework/zend-eventmanager",
-            "version": "3.0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-eventmanager.git",
-                "reference": "5c80bdee0e952be112dcec0968bad770082c3a6e"
+                "reference": "27eb1489df583456fac8c77c95059dde09ff38d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/5c80bdee0e952be112dcec0968bad770082c3a6e",
-                "reference": "5c80bdee0e952be112dcec0968bad770082c3a6e",
+                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/27eb1489df583456fac8c77c95059dde09ff38d8",
+                "reference": "27eb1489df583456fac8c77c95059dde09ff38d8",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "athletic/athletic": "^0.1",
                 "container-interop/container-interop": "^1.1.0",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "^2.0",
+                "phpbench/phpbench": "^0.13",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-stdlib": "^2.7.3 || ^3.0"
             },
             "suggest": {
@@ -1310,8 +1310,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev",
-                    "dev-develop": "3.1-dev"
+                    "dev-master": "3.2-dev",
+                    "dev-develop": "3.3-dev"
                 }
             },
             "autoload": {
@@ -1331,29 +1331,29 @@
                 "events",
                 "zf2"
             ],
-            "time": "2016-02-18T20:53:00+00:00"
+            "time": "2018-04-25T15:35:22+00:00"
         },
         {
             "name": "zendframework/zend-ldap",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-ldap.git",
-                "reference": "0234654ce6c300d3e59f7ce752d2895a7e6e673a"
+                "reference": "15e0f95647c1ba8ad84523a00dc6fdd6d376a6b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-ldap/zipball/0234654ce6c300d3e59f7ce752d2895a7e6e673a",
-                "reference": "0234654ce6c300d3e59f7ce752d2895a7e6e673a",
+                "url": "https://api.github.com/repos/zendframework/zend-ldap/zipball/15e0f95647c1ba8ad84523a00dc6fdd6d376a6b1",
+                "reference": "15e0f95647c1ba8ad84523a00dc6fdd6d376a6b1",
                 "shasum": ""
             },
             "require": {
                 "ext-ldap": "*",
-                "php": "^5.5 || ^7.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "php-mock/php-mock-phpunit": "~0.3",
-                "phpunit/phpunit": "^4.6",
+                "php-mock/php-mock-phpunit": "^1.1.2 || ^2.1.1",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-config": "^2.5",
                 "zendframework/zend-eventmanager": "^2.6.3 || ^3.0.1",
@@ -1365,8 +1365,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev",
-                    "dev-develop": "2.9-dev"
+                    "dev-master": "2.10.x-dev",
+                    "dev-develop": "2.11.x-dev"
                 }
             },
             "autoload": {
@@ -1378,37 +1378,38 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "provides support for LDAP operations including but not limited to binding, searching and modifying entries in an LDAP directory",
-            "homepage": "https://github.com/zendframework/zend-ldap",
+            "description": "Provides support for LDAP operations including but not limited to binding, searching and modifying entries in an LDAP directory",
             "keywords": [
+                "ZendFramework",
                 "ldap",
-                "zf2"
+                "zf"
             ],
-            "time": "2017-09-27T07:01:58+00:00"
+            "time": "2018-07-05T05:23:22+00:00"
         },
         {
             "name": "zendframework/zend-session",
-            "version": "2.7.4",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-session.git",
-                "reference": "fa1d68852cd09e08a25c7dc7893d19811c085be9"
+                "reference": "e7cdb22a329c80cd73cdc82fb580efc3866aa7bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/fa1d68852cd09e08a25c7dc7893d19811c085be9",
-                "reference": "fa1d68852cd09e08a25c7dc7893d19811c085be9",
+                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/e7cdb22a329c80cd73cdc82fb580efc3866aa7bb",
+                "reference": "e7cdb22a329c80cd73cdc82fb580efc3866aa7bb",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0",
+                "php": "^5.6 || ^7.0",
                 "zendframework/zend-eventmanager": "^2.6.2 || ^3.0",
                 "zendframework/zend-stdlib": "^2.7 || ^3.0"
             },
             "require-dev": {
                 "container-interop/container-interop": "^1.1",
                 "mongodb/mongodb": "^1.0.1",
-                "phpunit/phpunit": "~4.0",
+                "php-mock/php-mock-phpunit": "^1.1.2 || ^2.0",
+                "phpunit/phpunit": "^5.7.5 || >=6.0.13 <6.5.0",
                 "zendframework/zend-cache": "^2.6.1",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-db": "^2.7",
@@ -1427,8 +1428,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev",
-                    "dev-develop": "2.8-dev"
+                    "dev-master": "2.8-dev",
+                    "dev-develop": "2.9-dev"
                 },
                 "zf": {
                     "component": "Zend\\Session",
@@ -1445,40 +1446,40 @@
                 "BSD-3-Clause"
             ],
             "description": "manage and preserve session data, a logical complement of cookie data, across multiple page requests by the same client",
-            "homepage": "https://github.com/zendframework/zend-session",
             "keywords": [
+                "ZendFramework",
                 "session",
-                "zf2"
+                "zf"
             ],
-            "time": "2017-06-19T15:23:03+00:00"
+            "time": "2018-02-22T16:28:39+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "3.0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae"
+                "reference": "181042fd782146364e66fed138f04fc822cfaef6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/8bafa58574204bdff03c275d1d618aaa601588ae",
-                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/181042fd782146364e66fed138f04fc822cfaef6",
+                "reference": "181042fd782146364e66fed138f04fc822cfaef6",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "athletic/athletic": "~0.1",
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "~4.0"
+                "phpbench/phpbench": "^0.13",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev",
-                    "dev-develop": "3.1-dev"
+                    "dev-master": "3.2.x-dev",
+                    "dev-develop": "3.3.x-dev"
                 }
             },
             "autoload": {
@@ -1490,12 +1491,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zend-stdlib",
+            "description": "SPL extensions, array utilities, error handlers, and more",
             "keywords": [
+                "ZendFramework",
                 "stdlib",
-                "zf2"
+                "zf"
             ],
-            "time": "2016-04-12T21:19:36+00:00"
+            "time": "2018-04-30T14:23:00+00:00"
         }
     ],
     "packages-dev": [],
