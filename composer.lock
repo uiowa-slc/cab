@@ -215,12 +215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "023e0543869effc3a375dac551e8f7accb403eed"
+                "reference": "6987f50b484052ffecd798655564a17e0dcd9152"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/023e0543869effc3a375dac551e8f7accb403eed",
-                "reference": "023e0543869effc3a375dac551e8f7accb403eed",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/6987f50b484052ffecd798655564a17e0dcd9152",
+                "reference": "6987f50b484052ffecd798655564a17e0dcd9152",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +239,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2018-07-19T15:30:42+00:00"
+            "time": "2018-07-19T16:00:11+00:00"
         },
         {
             "name": "md/division-analytics",
