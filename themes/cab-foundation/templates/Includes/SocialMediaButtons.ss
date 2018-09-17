@@ -3,5 +3,4 @@
 	<li><a href="http://instagram.com/uiowacab" target="_blank"> <img src="$ThemeDir/images/icons/social-media/instagram.png" alt="vine" /></a></li>
 	<li><a href="https://twitter.com/uiowaCAB" target="_blank"> <img src="$ThemeDir/images/icons/social-media/twitter.png" alt="vine" /></a></li>
 </div>
-<p class="text-center"> Never miss an event: <br/>
-</p>
+
