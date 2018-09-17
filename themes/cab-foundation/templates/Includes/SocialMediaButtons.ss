@@ -4,4 +4,4 @@
 	<li><a href="https://twitter.com/uiowaCAB" target="_blank"> <img src="$ThemeDir/images/icons/social-media/twitter.png" alt="vine" /></a></li>
 </div>
 <p class="text-center"> Never miss an event: <br/>
-<a href="http://eepurl.com/6-dP5" class="button" /> Sign up for our Newsletter &rarr;</a></p>
+</p>
