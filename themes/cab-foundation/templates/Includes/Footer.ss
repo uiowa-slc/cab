@@ -8,7 +8,7 @@
 			<% else %>
 				<p>The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</p>
 			<% end_if %>
-			<p>145 iowa memorial union<br>
+			<p>157 Iowa Memorial Union, Iowa City, IA 52242<br>
 				cab@uiowa.edu
 			</p>
 			<p>$SiteConfig.Address
