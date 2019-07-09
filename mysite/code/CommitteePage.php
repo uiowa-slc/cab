@@ -4,6 +4,7 @@ use SilverStripe\Assets\Image;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Control\Director;
+use SilverStripe\ORM\FieldType\DBHTMLText;
 class CommitteePage extends Page {
 
 	private static $db = array(
@@ -32,10 +33,10 @@ class CommitteePage extends Page {
 
 		$absolutePath = Director::baseFolder();
 		$name = $this->URLSegment;
-		$imagePath = $absolutePath . '/themes/cab-foundation/images/committees/' . $name . '.png';
-
+		$imagePath = $absolutePath . '/themes/cab/dist/images/committees/' . $name . '.png';
+		$image = new DBHTMLText();
 		if (file_exists($imagePath)) {
-			$image = '<img src="themes/cab-foundation/images/committees/' . $name . '.png" />';
+			$image->setValue('<img src="_resources/themes/cab/dist/images/committees/' . $name . '.png" />');
 			return $image;
 		} else {
 			return false;
