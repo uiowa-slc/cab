@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "161e9b9d11c0089a481012afbd1ec52e",
+    "content-hash": "88cacf45d4b786f23cab1f3ee5500f7a",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -319,16 +319,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "dev-master",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "e113254d23b24c548f0b4d8f671828c4eeb876d2"
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e113254d23b24c548f0b4d8f671828c4eeb876d2",
-                "reference": "e113254d23b24c548f0b4d8f671828c4eeb876d2",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
                 "shasum": ""
             },
             "require": {
@@ -386,7 +386,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-06-17T23:10:01+00:00"
+            "time": "2019-07-01T23:21:34+00:00"
         },
         {
             "name": "intervention/image",
@@ -864,12 +864,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "4d5b7e6ba1127789c7ff59d6f762298eaa29787f"
+                "reference": "17cbfb8b9ccf56c03a32cb72d4a5ec466961eaa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4d5b7e6ba1127789c7ff59d6f762298eaa29787f",
-                "reference": "4d5b7e6ba1127789c7ff59d6f762298eaa29787f",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/17cbfb8b9ccf56c03a32cb72d4a5ec466961eaa3",
+                "reference": "17cbfb8b9ccf56c03a32cb72d4a5ec466961eaa3",
                 "shasum": ""
             },
             "require": {
@@ -934,7 +934,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2018-12-26T14:24:03+00:00"
+            "time": "2019-07-06T13:03:00+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -942,12 +942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "3cf61fdd267a9c39167eaa715b121a3d787f3c3f"
+                "reference": "3f718ee2c3a22b656773476f19dd8d72a50e2413"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3cf61fdd267a9c39167eaa715b121a3d787f3c3f",
-                "reference": "3cf61fdd267a9c39167eaa715b121a3d787f3c3f",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3f718ee2c3a22b656773476f19dd8d72a50e2413",
+                "reference": "3f718ee2c3a22b656773476f19dd8d72a50e2413",
                 "shasum": ""
             },
             "require": {
@@ -985,20 +985,20 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-06-23T13:11:05+00:00"
+            "time": "2019-06-30T10:13:28+00:00"
         },
         {
             "name": "onelogin/php-saml",
-            "version": "3.2.0.x-dev",
+            "version": "3.2.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onelogin/php-saml.git",
-                "reference": "5d14862fec207be56e1bdaa27e1146ac0eac7ba3"
+                "reference": "845a6ce39e839ed9e687f80bffb02ffde16a70d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/5d14862fec207be56e1bdaa27e1146ac0eac7ba3",
-                "reference": "5d14862fec207be56e1bdaa27e1146ac0eac7ba3",
+                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/845a6ce39e839ed9e687f80bffb02ffde16a70d0",
+                "reference": "845a6ce39e839ed9e687f80bffb02ffde16a70d0",
                 "shasum": ""
             },
             "require": {
@@ -1035,7 +1035,7 @@
                 "onelogin",
                 "saml"
             ],
-            "time": "2019-06-11T10:13:30+00:00"
+            "time": "2019-06-25T10:28:20+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2289,6 +2289,64 @@
             "time": "2019-05-06T02:57:48+00:00"
         },
         {
+            "name": "silverstripe/spamprotection",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
+                "reference": "f3fa9fe9fc1538ebe0f446ebea4fef4c9a9090c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/f3fa9fe9fc1538ebe0f446ebea4fef4c9a9090c5",
+                "reference": "f3fa9fe9fc1538ebe0f446ebea4fef4c9a9090c5",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "silverstripe/versioned": "^1.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "images"
+                ],
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\SpamProtection\\": "code/",
+                    "SilverStripe\\SpamProtection\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Saophalkun Ponlu",
+                    "email": "phalkunz@silverstripe.com"
+                },
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io"
+                }
+            ],
+            "description": "Spam protection module for SilverStripe.",
+            "keywords": [
+                "silverstripe",
+                "spamprotection"
+            ],
+            "time": "2019-05-09T22:14:27+00:00"
+        },
+        {
             "name": "silverstripe/userforms",
             "version": "dev-master",
             "source": {
@@ -2727,12 +2785,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "29a33f66194fbe2ed4555981810f15fd8440e4a8"
+                "reference": "dfa7b953d59ab0fa2653a3524a9ee5ded15f568b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/29a33f66194fbe2ed4555981810f15fd8440e4a8",
-                "reference": "29a33f66194fbe2ed4555981810f15fd8440e4a8",
+                "url": "https://api.github.com/repos/symfony/config/zipball/dfa7b953d59ab0fa2653a3524a9ee5ded15f568b",
+                "reference": "dfa7b953d59ab0fa2653a3524a9ee5ded15f568b",
                 "shasum": ""
             },
             "require": {
@@ -2783,7 +2841,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-30T15:47:52+00:00"
+            "time": "2019-07-05T04:54:49+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -3179,6 +3237,60 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-03-25T07:48:46+00:00"
+        },
+        {
+            "name": "undefinedoffset/silverstripe-nocaptcha",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/UndefinedOffset/silverstripe-nocaptcha.git",
+                "reference": "b9fe21d0b08d18a91ac4fde87f6fe2ab8bb69ac5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/UndefinedOffset/silverstripe-nocaptcha/zipball/b9fe21d0b08d18a91ac4fde87f6fe2ab8bb69ac5",
+                "reference": "b9fe21d0b08d18a91ac4fde87f6fe2ab8bb69ac5",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0",
+                "silverstripe/spamprotection": "~3.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "javascript"
+                ],
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "UndefinedOffset\\NoCaptcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Chipman",
+                    "homepage": "http://www.edchipman.ca",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A spam protector and form field using the new Google's reCAPTCHA 2 aka No Captcha",
+            "keywords": [
+                "nocaptcha",
+                "recaptcha",
+                "recaptcha2",
+                "silverstripe",
+                "spamprotection"
+            ],
+            "time": "2019-05-13T15:42:07+00:00"
         },
         {
             "name": "webonyx/graphql-php",

@@ -14,7 +14,8 @@
         "md/saml": "dev-md",
         "md/division-analytics": "1.*",
         "md/uiowa-bar": "*",
-        "silverstripe/userforms": "^5.0@dev"
+        "silverstripe/userforms": "^5.0@dev",
+        "undefinedoffset/silverstripe-nocaptcha":"*"
     },
     "config": {
         "process-timeout": 600
