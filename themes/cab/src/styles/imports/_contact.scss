@@ -1,0 +1,14 @@
+//contact page
+.contactInfo {
+    font-family: 'Arimo', arial, serif;
+    text-transform: lowercase;
+    color: #A5A3A3;
+    font-size: 1em;
+
+    @media #{$medium-up} {
+        font-family: 'Arimo', arial, serif;
+        text-transform: lowercase;
+        color: #A5A3A3;
+        font-size: 1em;
+    }
+}

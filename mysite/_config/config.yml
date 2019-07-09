@@ -1,9 +1,8 @@
-LocalistEvent:
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: mysite
+SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - LocalistEventExtension
-Controller:
-  extensions:
-    - SS_MinifiedResponseExtension
-SiteConfig:
-  extensions:
-    - CustomSiteConfig
+    - UiowaBarSiteConfigExtension

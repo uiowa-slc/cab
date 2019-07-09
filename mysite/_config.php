@@ -1,30 +1,16 @@
 <?php
 
-global $project;
-$project = 'mysite';
+use SilverStripe\Security\PasswordValidator;
+use SilverStripe\Security\Member;
+use SilverStripe\Control\Director;
 
-global $database;
-$database = 'cab';
- 
-// Use _ss_environment.php file for configuration
-require_once("conf/ConfigureFromEnv.php");
+// remove PasswordValidator for SilverStripe 5.0
+$validator = new PasswordValidator();
 
-MySQLDatabase::set_connection_charset('utf8');
+$validator->minLength(8);
+$validator->checkHistoricalPasswords(6);
+Member::set_password_validator($validator);
 
-// This line set's the current theme. More themes can be
-// downloaded from http://www.silverstripe.org/themes/
-SSViewer::set_theme('blackcandy');
-
-// Set the site locale
-i18n::set_locale('en_US');
-
-// enable nested URLs for this site (e.g. page/sub-page/)
-SiteTree::enable_nested_urls();
-
-FulltextSearchable::enable();
-//Object::add_extension('BlogTree_Controller', 'BlogTreeExtensions');
-Authenticator::unregister('MemberAuthenticator');
-Authenticator::set_default_authenticator('SAMLAuthenticator');
 if(Director::isLive()) {
 	Director::forceSSL();
 }

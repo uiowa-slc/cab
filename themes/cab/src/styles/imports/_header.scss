@@ -1,0 +1,129 @@
+header {
+    @media #{$large-up} {
+        margin-top: 20px;
+    }
+}
+
+
+.big-header-container{
+    max-width: 600px;
+    margin: auto;
+}
+
+.big-header{
+    text-align: center;
+
+    h1{
+        padding: 10px 0;
+    }
+
+    .tagline {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: white;
+        background: $secondary-color;
+        
+
+        span{
+
+        }
+    }
+}
+
+/* Home Page specific big header styles */
+
+.HomePage {
+    .big-header-container{
+        max-width: 1000px;
+    }
+
+    .big-header .tagline{
+        font-size: 26px;
+    }
+}
+
+.main-header h1, .main-header h2 {
+    display: inline;
+}
+
+.main-header h2 {
+    color: $gray;
+}
+
+.main-header h2 {
+    margin-left: 20px;
+}
+
+.top-bar {
+    @media #{$medium-up}{
+        text-align: center;
+    }
+}
+
+.top-bar .name {
+    img{
+    	width: 300px;
+    }
+}
+
+.top-bar .name h1 a {
+
+}
+
+.top-bar-section{
+    @media #{$medium-up}{
+        display: inline-block;
+    }
+}
+
+.top-bar-section ul {
+    background: none;
+    text-transform: lowercase;
+}
+
+.top-bar-section ul.left li {
+    font-size: rem-calc(18);
+    @media #{$large-up} {
+        font-size: rem-calc(25);
+    }
+}
+
+.top-bar-section ul.right.top-menu-items li {
+    @media #{$medium-up} {
+        margin-top: 1.3em;
+    }
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+    text-decoration: none;
+}
+.top-bar-section ul.right.top-menu-items .active {
+    background: none repeat scroll 0 0 rgba(37, 41, 49, 0.65);
+}
+
+.top-bar-section ul li > a {
+    text-transform: lowercase;
+    @media #{$medium-up} {
+       // padding: 0;
+        text-shadow: 0 0 40px #333;
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(22);
+    }
+}
+
+.top-bar-section li:not(.has-form) a.tagline:not(.button){
+    background: none;
+}
+
+.top-bar-section ul li > a.tagline {
+    font-size: rem-calc(16);
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.top-bar-section li:not(.has-form) a.tagline:not(.button) {
+}
+
+/* overriding this because foundation 5.2.3 broke the hamburger icon? */

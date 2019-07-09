@@ -1,4 +1,6 @@
 <?php
+
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 class HomePage extends Page {
 
 	private static $db = array(
@@ -16,8 +18,10 @@ class HomePage extends Page {
 		"SliderFeature5" => "Int",
 		"SliderFeature6" => "Int"
 	);
+
+	private static $icon_class = 'font-icon-p-home';
 	
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
 		$fields->removeByName("Content");
@@ -30,38 +34,3 @@ class HomePage extends Page {
 		
 	}
 }
-class HomePage_Controller extends Page_Controller {
-
-	/**
-	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
-	 * permissions or conditions required to allow the user to access it.
-	 *
-	 * <code>
-	 * array (
-	 *     'action', // anyone can access this action
-	 *     'action' => true, // same as above
-	 *     'action' => 'ADMIN', // you must have ADMIN permissions to access this action
-	 *     'action' => '->checkAction' // you can only access this action if $this->checkAction() returns true
-	 * );
-	 * </code>
-	 *
-	 * @var array
-	 */
-	private static $allowed_actions = array (
-	);
-
-	public function SliderEvents(){
-		/*
-		$events = new ArrayList();
-		for ($i = 1; $i <= 6; $i++){
-		    $propertyName = "SliderFeature".$i."ID";
-		    if ($this->$propertyName){
-		    	$event = $this->AfterClassEvent($this->$propertyName);
-				if($event) {$events->push($event);} 
-		    }
-		}
-		return $events;
-		*/
-	}
-}
-?>
