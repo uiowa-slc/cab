@@ -15,7 +15,7 @@
         "md/division-analytics": "1.*",
         "md/uiowa-bar": "*",
         "silverstripe/userforms": "^5.0@dev",
-        "undefinedoffset/silverstripe-nocaptcha":"*"
+        "undefinedoffset/silverstripe-nocaptcha": "*"
     },
     "config": {
         "process-timeout": 600
@@ -41,26 +41,30 @@
         ]
     },
     "minimum-stability": "dev",
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
         },
-        {
+        "1": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
         },
-        {
+        "2": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
         },
-        {
+        "3": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
         },
-        {
+        "4": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events"
+        },
+        "repo-name": {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/deploy-helper"
         }
-    ]
+    }
 }
