@@ -14,6 +14,7 @@
         "md/saml": "dev-md",
         "md/division-analytics": "1.*",
         "md/uiowa-bar": "*",
+        "md/deploy-helper": "*",
         "silverstripe/userforms": "^5.0@dev",
         "undefinedoffset/silverstripe-nocaptcha": "*"
     },
