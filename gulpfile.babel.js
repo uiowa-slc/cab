@@ -116,6 +116,8 @@ gulp.task('scripts', () =>
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
       './themes/cab/src/scripts/lib/*.js',
+      './themes/cab/src/scripts/mapStyles.js',
+      './themes/cab/src/scripts/mappingWidget.js',
       './themes/cab/src/scripts/app.js',
 
     ])
