@@ -40,7 +40,7 @@ class CommitteePage extends Page {
 		$imagePath = $absolutePath . '/themes/cab/dist/images/committees/' . $name . '.png';
 		$image = new DBHTMLText();
 		if (file_exists($imagePath)) {
-			$image->setValue('<img src="_resources/themes/cab/dist/images/committees/' . $name . '.png" />');
+			$image->setValue('<img alt="" role="presentation" src="_resources/themes/cab/dist/images/committees/' . $name . '.png" />');
 			return $image;
 		} else {
 			return false;

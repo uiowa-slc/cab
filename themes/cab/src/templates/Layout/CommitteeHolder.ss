@@ -7,7 +7,12 @@
 		   		<li>
 		   			<div class="row">
 			   			<div class="large-3 columns show-for-large-up committee-image">
+
+			   				<% if $Image %>
+			   				<img src="$Image.URL" style="border-radius: 300px" alt="" role="presentation">
+			   				<% else %>
 			   				$RenderedImage
+			   				<% end_if %>
 			   				
 			   			</div>
 			   		 	<div class="large-9 columns">
