@@ -17,6 +17,10 @@ class CommitteePage extends Page {
 
 	);
 
+	private static $owns = array(
+		'Image'
+	);
+
 	private static $has_many = array(
 
 	);
@@ -24,7 +28,7 @@ class CommitteePage extends Page {
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->addFieldToTab('Root.Main', new HTMLEditorField('CommitteeDescription'));
-		$fields->addFieldToTab('Root.Main', new UploadField(Image::class, 'Committee Image'));
+		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Committee Image'));
 		$fields->removeFieldFromTab('Root.Main', 'Content');
 
 		return $fields;
