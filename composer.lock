@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff3e7cecd3b9ec188cfc6bf8578947eb",
+    "content-hash": "1fdadc61a196dbfeef51564bc680a6de",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -865,16 +865,16 @@
         },
         {
             "name": "md/uiowa-bar",
-            "version": "dev-master",
+            "version": "1.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar.git",
-                "reference": "d1f5bfc400de649eb14084754bedf45ff2f4cff7"
+                "reference": "2b087ee8c75ce04deddd749fe9a60200351c66ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/d1f5bfc400de649eb14084754bedf45ff2f4cff7",
-                "reference": "d1f5bfc400de649eb14084754bedf45ff2f4cff7",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/2b087ee8c75ce04deddd749fe9a60200351c66ca",
+                "reference": "2b087ee8c75ce04deddd749fe9a60200351c66ca",
                 "shasum": ""
             },
             "require": {
@@ -885,10 +885,10 @@
             "type": "silverstripe-vendormodule",
             "description": "The University of Iowa Bar",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/tree/master",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/tree/1.2.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/issues"
             },
-            "time": "2019-11-04T15:17:42+00:00"
+            "time": "2020-03-13T18:29:09+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -896,12 +896,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "cc6d6c3a0d365d6407111942d7e2016889598183"
+                "reference": "5c670ec3d2cebcc3c20f014f5b8fe2087e434a60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/cc6d6c3a0d365d6407111942d7e2016889598183",
-                "reference": "cc6d6c3a0d365d6407111942d7e2016889598183",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5c670ec3d2cebcc3c20f014f5b8fe2087e434a60",
+                "reference": "5c670ec3d2cebcc3c20f014f5b8fe2087e434a60",
                 "shasum": ""
             },
             "require": {
@@ -966,7 +966,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2020-02-14T17:17:22+00:00"
+            "time": "2020-03-13T16:46:09+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2687,12 +2687,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "530ddfd153aea8a573ea704ab6975004e0aba70a"
+                "reference": "515f68750921b30f3b368edd4f0c1355fe2b4402"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/530ddfd153aea8a573ea704ab6975004e0aba70a",
-                "reference": "530ddfd153aea8a573ea704ab6975004e0aba70a",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/515f68750921b30f3b368edd4f0c1355fe2b4402",
+                "reference": "515f68750921b30f3b368edd4f0c1355fe2b4402",
                 "shasum": ""
             },
             "require": {
@@ -2749,7 +2749,7 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2020-02-04T08:04:52+00:00"
+            "time": "2020-03-16T08:31:04+00:00"
         },
         {
             "name": "symfony/config",
@@ -2757,12 +2757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "4afa3fc5410ea12a5110975b1eb506df8d35d1bf"
+                "reference": "fc5be36e0659ab6e58cc069e8845f0819e6d086e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/4afa3fc5410ea12a5110975b1eb506df8d35d1bf",
-                "reference": "4afa3fc5410ea12a5110975b1eb506df8d35d1bf",
+                "url": "https://api.github.com/repos/symfony/config/zipball/fc5be36e0659ab6e58cc069e8845f0819e6d086e",
+                "reference": "fc5be36e0659ab6e58cc069e8845f0819e6d086e",
                 "shasum": ""
             },
             "require": {
@@ -2813,7 +2813,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2020-03-06T09:50:39+00:00"
+            "time": "2020-03-16T08:31:04+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -2821,12 +2821,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "266c9540b475f26122b61ef8b23dd9198f5d1cfd"
+                "reference": "6d4fdf28187250f671c1edc9cf921ebfb7fe3809"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/266c9540b475f26122b61ef8b23dd9198f5d1cfd",
-                "reference": "266c9540b475f26122b61ef8b23dd9198f5d1cfd",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/6d4fdf28187250f671c1edc9cf921ebfb7fe3809",
+                "reference": "6d4fdf28187250f671c1edc9cf921ebfb7fe3809",
                 "shasum": ""
             },
             "require": {
@@ -2863,7 +2863,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2020-01-21T08:20:44+00:00"
+            "time": "2020-03-16T08:56:54+00:00"
         },
         {
             "name": "symfony/finder",
@@ -3034,12 +3034,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "766ee47e656529b352da69c0ff29da928a9629e7"
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/766ee47e656529b352da69c0ff29da928a9629e7",
-                "reference": "766ee47e656529b352da69c0ff29da928a9629e7",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
                 "shasum": ""
             },
             "require": {
@@ -3085,7 +3085,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-02-27T09:26:54+00:00"
+            "time": "2020-03-09T19:04:49+00:00"
         },
         {
             "name": "symfony/translation",
@@ -3157,12 +3157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "37d6a73b7b94b71d59dad53cbcaae850f91cbdc4"
+                "reference": "688cfb1f40b94f03b8ae9d8646ba5140e518315d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/37d6a73b7b94b71d59dad53cbcaae850f91cbdc4",
-                "reference": "37d6a73b7b94b71d59dad53cbcaae850f91cbdc4",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/688cfb1f40b94f03b8ae9d8646ba5140e518315d",
+                "reference": "688cfb1f40b94f03b8ae9d8646ba5140e518315d",
                 "shasum": ""
             },
             "require": {
@@ -3208,7 +3208,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2020-03-09T10:53:35+00:00"
+            "time": "2020-03-16T08:31:04+00:00"
         },
         {
             "name": "undefinedoffset/silverstripe-nocaptcha",
