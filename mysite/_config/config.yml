@@ -3,9 +3,6 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: mysite
-SilverStripe\SiteConfig\SiteConfig:
-  extensions:
-    - UiowaBarSiteConfigExtension
 SilverStripe\Assets\Flysystem\AssetAdapter:
   file_permissions:
     'file':
