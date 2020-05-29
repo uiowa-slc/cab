@@ -29,6 +29,7 @@
 .footer-logo img {
 	display: block;
 	margin-top: -20px;
+    width: 300px;
 }
 .border-list {
 	list-style: none;
@@ -63,7 +64,7 @@
 .footer h4 {
 	color: #eee;
 	font-weight: 300;
-	
+
 	text-transform: uppercase;
 	@media #{$small-up} {
 		margin-top: 0;
