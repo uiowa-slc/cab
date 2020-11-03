@@ -15,6 +15,8 @@
 @import "foundation/components/dropdown-buttons";
 @import "foundation/components/dropdown";
 
+@import "uiowa-bar";
+
 @import "imports/plugins/MetroJs.ltt.min.scss";
 @import "imports/header";
 @import "imports/home";
@@ -28,7 +30,7 @@
 @import "imports/footer/footer";
 @import "imports/footer/grid-simple";
 
-@import "uiowa-bar";
+
 
 // @import "../../../division-bar/scss/_division-bar-foundation.scss";
 // @import "../../../division-bar/scss/_md-bar.scss";
