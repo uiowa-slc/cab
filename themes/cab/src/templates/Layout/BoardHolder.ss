@@ -1,25 +1,27 @@
-<div id ="content" class = "row">
-    <div id="interior" class="large-12 large-centered column">            
-        <div class= "row">
-        	<div class="info large-3 column">
+<div id ="content">
+
+        <div class ="row">
+        	<div class="info <% if $Image %>large-3<% else %>large-7<% end_if %> large-centered column">
         		<h2>About Us</h2>
         		<p>$MissionStatement</p>
 			</div>
+            <% if $Image %>
         	<div class="photo large-9 column">
         		$Image
 			</div>
-        </div>             
-        <div id="board" class="row">
-           <div class="large-12 column">
+            <% end_if %>
+        </div>
+        <div id="board" class="row column">
+
            <hr />
            <h2 class="text-center">Meet CAB</h2>
             <ul class="person-list small-block-grid-2 medium-block-grid-4 large-block-grid-5">
             <% loop Children %>
-                <li>                 
-                        <img class="b-lazy" data-src="$Image.Fill(200,200).URL" />                                                       
-                        
+                <li>
+                        <img class="b-lazy" data-src="$Image.Fill(200,200).URL" />
+
                         <h3>$BoardMember</h3>
-                        <h4>$MemberTitle</h4>       
+                        <h4>$MemberTitle</h4>
                         <p>
                         <strong>major:</strong> $Major <br />
                         <strong>year:</strong> $Year
@@ -27,10 +29,9 @@
                 </li>
             <% end_loop %>
             </ul>
-            </div>
-             </hr>
-        <% include NextTiles %> 
-        </div>      
-       
+
+             <hr />
+        <% include NextTiles %>
+        </div>
+
     </div>
-</div>            
