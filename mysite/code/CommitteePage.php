@@ -3,7 +3,6 @@
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
 use SilverStripe\Control\Director;
-use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
 
 class CommitteePage extends Page {
@@ -28,9 +27,7 @@ class CommitteePage extends Page {
 	private static $icon_class = 'font-icon-torsos-all';
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.Main', new HTMLEditorField('CommitteeDescription'));
-		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Committee Image'));
-		$fields->removeFieldFromTab('Root.Main', 'Content');
+		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Committee Image'), 'Content');
 
 		return $fields;
 	}
