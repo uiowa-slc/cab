@@ -5,9 +5,12 @@
 		<div class="col-lg-7">
             <%-- $Breadcrumbs --%>
 			<article id="content">
+			<h1>$Title</h1>
 		       $Content
-		       <h2>Up next:</h2>
+		      
 	            <% if $EventList %>
+	            <hr />
+	             <h2>Up next:</h2>
 	                <% loop $EventList %>
 	                    <% include ShowCard %>
 	                <% end_loop %>
