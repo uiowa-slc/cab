@@ -21,7 +21,7 @@
 			   			</div>
 			   		 	<div class="col-9 my-lg-4">
 			   		 		<h3 class="$URLSegment">$Title</h3>
-							$CommitteeDescription
+							$Content
 						</div>
 					</div>
 				<% end_loop %>
