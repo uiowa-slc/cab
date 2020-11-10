@@ -7,28 +7,11 @@
                <p class="lead">CAB is your source for entertainment on campus! We provide a wide range of awesome activities for students every week throughout the year! Whether you're laughing yourself silly at one of our great comedy shows, or on the edge of your seat watching one of our incredible weekend movie series, we guarantee that you'll leave satisfied! We are entertainment DONE RIGHT!</p>
 
             </div>
-            
-<%--                 <div class="col-sm-4 offset-md-1">
-                    <div id="twitter-root"></div>
-                     <div><a class="twitter-timeline" data-theme="light" data-width="600" data-height="300" href="$SiteConfig.TwitterLink">Tweets by uilectures</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-                </div> --%>
          
         </div>
     </div>
 </section>
 
-<%-- <section class="py-3 py-sm-6 my-5 bg-gray">
-    <div class="container-xl">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3 class="display-3">Our Mission</h3>
-            </div>
-            <div class="col-sm-6">
-                <p class="lead">CAB is your source for entertainment on campus! We provide a wide range of awesome activities for students every week throughout the year! Whether you're laughing yourself silly at one of our great comedy shows, or on the edge of your seat watching one of our incredible weekend movie series, we guarantee that you'll leave satisfied! We are entertainment DONE RIGHT!</p>
-            </div>
-        </div>
-    </div>
-</section> --%>
 
 <main id="content" class="my-3 mb-5 my-lg-6">
     <div class="container-xl">
@@ -36,31 +19,25 @@
 
             <div class="col-lg-10">
                 $Content
-
             </div>
 
         </div>
-        <hr class="my-5" />
-        <div class="row justify-content-center">
-
-            <div class="col-lg-8">
+        <% if $Calendar.EventList %>
+            <hr class="my-5" />
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
                     <% with $Calendar %>
-                        <% if $EventList %>
-                             <h2>Up next:</h2>
-                            <% loop $EventList %>
-                                <% include ShowCard %>
-                            <% end_loop %>
-                                        <p class="text-center">
-            <a href="calendar/" class="btn btn-outline-primary text-center">View Calendar</a>
-            </p>
-                        <% else %>
-                              $Top.NoEvents
-                        <% end_if %><!-- end upcoming shows if statement -->
+                        <h2>Up next:</h2>
+                        <% loop $EventList %>
+                            <% include ShowCard %>
+                        <% end_loop %>
+                        <p class="text-center">
+                            <a href="calendar/" class="btn btn-outline-primary text-center">View Calendar</a>
+                        </p> 
                     <% end_with %>
+                </div>
             </div>
-
-        </div>
-
+        <% end_if %>
     </div>
 </main>
 

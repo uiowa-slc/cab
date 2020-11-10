@@ -1,18 +1,19 @@
 <% include Header %>
 
 <main class="container-xl my-5">
-	<div class="row">
-		<div class="<% if $Menu(2) %>col-lg-8 col-xl-9 <% else %>col-md-10 offset-md-1<% end_if %>">
+	<div class="row justify-content-center">
+		<div class="col-lg-7">
             <%-- $Breadcrumbs --%>
 			<article id="content">
-		       
-		            <% if $EventList %>
-		                <% loop $EventList %>
-		                    <% include ShowCard %>
-		                <% end_loop %>
-		            <% else %>
-		                  $Top.NoEvents
-		            <% end_if %><!-- end upcoming shows if statement -->
+		       $Content
+		       <h2>Up next:</h2>
+	            <% if $EventList %>
+	                <% loop $EventList %>
+	                    <% include ShowCard %>
+	                <% end_loop %>
+	            <% else %>
+	                  <p>No events are currently listed. Please check back soon.</p>
+	            <% end_if %><!-- end upcoming shows if statement -->
 		 
 			</article>
 			$Form

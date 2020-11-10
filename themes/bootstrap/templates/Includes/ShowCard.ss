@@ -1,11 +1,12 @@
 <div class="card mb-4">
-	<div class="row no-gutters">
-		<div class="col-md-4 border-right">
+	<% if $Image.URL %>
 			<a href="$Link">
 				<img src="$Image.URL" class="card-img" alt="$Title" loading="lazy">
 			</a>
-		</div>
-		<div class="col-md-8">
+	<% end_if %>
+	<div class="row no-gutters">
+
+		<div class="col-md-12">
 			<div class="card-body">
 				<h3 class="card-title my-2">
 					<a href="$Link">$Title</a>
@@ -18,12 +19,12 @@
 	<% if $Dates %>
 		<% loop $Dates.Limit(1) %>
 			<% with $StartDateTime %>
-				<time itemprop="startDate" datetime="$Rfc3339">$Format("MMM d, h:mm a")</time>
+				<time itemprop="startDate" datetime="$Rfc3339">$Format("EEEE, MMM d, h:mm a")</time>
 			<% end_with %>
 			<% if $EndDate %>
 			 - 
 			<% with $EndDate %>
-				<time itemprop="endDate" datetime="$Rfc3339">$Format("MMM d, h:mm a")</time>
+				<time itemprop="endDate" datetime="$Rfc3339">$Format("EEEE, MMM d, h:mm a")</time>
 			<% end_with %>
 			<% end_if %>
 		<% end_loop %>

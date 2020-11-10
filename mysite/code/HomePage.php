@@ -1,7 +1,5 @@
 <?php
 
-use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
-
 class HomePage extends Page {
 
 	private static $db = array(
@@ -28,7 +26,7 @@ class HomePage extends Page {
 		// $fields->removeByName("Content");
 
 		// $fields->addFieldToTab("Root.Main", new HTMLEditorField('AdditionalInfo','Show under the "Next Up" Event List.'));
-		$fields->addFieldToTab("Root.Main", new HTMLEditorField('NoEvents', 'Show the following message if there aren\'t any events.'));
+		// $fields->addFieldToTab("Root.Main", new HTMLEditorField('NoEvents', 'Show the following message if there aren\'t any events.'));
 
 		// $fields->addFieldToTab("Root.Main", new HTMLEditorField('RedLightDescription', 'Feature Box Content'));
 		return $fields;
