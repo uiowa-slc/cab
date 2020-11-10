@@ -1,0 +1,80 @@
+#BetterNavigator {
+    display: none;
+}
+
+.hero-header {
+    font-size: 3rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 3.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 4rem;
+    }
+}
+
+.show-title {
+    position: relative;
+    z-index: 1;
+
+    & a {
+        background-color: $light;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 180%;
+    }
+}
+
+/* Flickity Carousel */
+.carousel-cell {
+    width: 100%;
+}
+
+.flickity-viewport {
+    transition: height 0.2s; //adaptable height transition
+}
+
+.flickity-page-dots {
+    bottom: -33px;
+}
+
+.flickity-page-dots li:only-child {
+    // hide page dots if only one slide
+    display: none;
+}
+
+.tickets {
+    position: relative;
+
+    & p {
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(../images/IOWA-ParticlePattern.png) 0 0 repeat;
+        opacity: .15;
+    }
+}
+
+.social-media {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(../images/IOWA-ParticlePattern.png) 0 0 repeat;
+        opacity: .15;
+    }
+}

@@ -1,0 +1,1 @@
+<a class="btn btn-primary btn-stream-{$StreamType.Lowercase.ATT}"href="$StreamLink" target="_blank">$StreamButtonText <% if $StreamType == "Twitch"%><i class="fab fa-twitch"></i><% else %><i class="fas fa-video"></i><% end_if %></a>

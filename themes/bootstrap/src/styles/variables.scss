@@ -1,0 +1,121 @@
+/*-------------------------------------------
+    Bootstrap Configuration
+    variables are in node_modules/bootstrap/scss/_variables.scss
+-------------------------------------------*/
+$fa-font-path: "../fonts";
+
+// Color system
+$gold: #ffcd00;
+$blue: #4571b6;
+$teal: #88d8d2;
+$orange: #ff8a5c;
+$green: #33aa6d;
+$yellow: $gold;
+$body-bg: #f8f9fa;
+
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #151515;
+$black: #000;
+
+
+$primary: #d71f27;
+$highlight: $gold;
+$warning: $orange;
+$success: $green;
+$info: $teal;
+$secondary: $gray-600;
+$light: $gray-100;
+$dark: $gray-900;
+
+$theme-colors: ();
+$theme-colors: map-merge(("gray": $gray-200), $theme-colors);
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1260px);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1200px);
+
+// Grid gutter
+$grid-gutter-width: 40px;
+
+
+// Fonts
+$enable-responsive-font-sizes: true;
+$font-family-base: Roboto,
+sans-serif;
+$headings-font-family: Roboto Condensed,
+sans-serif;
+$font-size-base: 1.15rem;
+$font-size-lg: $font-size-base * 1.2;
+$font-size-sm: $font-size-base * .875;
+$line-height-base: 1.6;
+$headings-font-weight: 600;
+
+$h1-font-size: $font-size-base * 2.75;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$display1-size: 6rem;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem;
+
+$display1-weight: 600;
+$display2-weight: 600;
+$display3-weight: 600;
+$display4-weight: 600;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (6: ($spacer * 4.5),
+7: ($spacer * 6),
+8: ($spacer * 9),
+9: ($spacer * 12));
+
+// Border
+$border-radius: .20rem;
+$border-radius-lg: .25rem;
+$border-radius-sm: .15rem;
+
+// Navbar
+$navbar-padding-y: $spacer / 1;
+$navbar-padding-x: $spacer;
+$navbar-nav-link-padding-x: .6rem;
+
+// Dropdown
+$dropdown-font-size: $font-size-sm;
+
+// Caret
+$caret-width: .25em;
+
+// Breadcrumbs
+$breadcrumb-bg: $body-bg;
+$breadcrumb-font-size: $font-size-sm;
+$breadcrumb-padding-y: .25rem;
+$breadcrumb-padding-x: 0;

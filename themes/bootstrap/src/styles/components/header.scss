@@ -1,0 +1,40 @@
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    background: $gray-100;
+    color: #000;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -200%);
+    transform: translate(-50%, -200%);
+    -webkit-transition: -webkit-transform .35s;
+    transition: -webkit-transform .35s;
+    transition: transform .35s;
+    transition: transform .35s, -webkit-transform .35s;
+
+    &:focus,
+    &:active {
+        -webkit-transform: translate(-50%, 25px);
+        transform: translate(-50%, 25px);
+    }
+}
+
+.navbar-light .navbar-text a {
+    color: white;
+
+    &:focus,
+    &:hover {
+        color: white;
+    }
+}
+
+.navbar-brand__logo {
+    max-width: 150px;
+
+    @include media-breakpoint-up(sm) {
+        max-width: 180px;
+    }
+}

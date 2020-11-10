@@ -1,6 +1,6 @@
 <?php
-use SilverStripe\Core\Config\Config;
 use SilverStripe\CMS\Controllers\ContentController;
+
 class PageController extends ContentController {
 
 	/**
@@ -26,6 +26,11 @@ class PageController extends ContentController {
 
 	}
 	public function Calendar() {
-  		return UiCalendar::get()->First();
-  	}
+		return UiCalendar::get()->First();
+	}
+
+	public function RandomStaffMembers($limit = 3) {
+		$staffPages = StaffPage::get()->Sort('RAND()')->Limit($limit);
+		return $staffPages;
+	}
 }

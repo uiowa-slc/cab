@@ -1,0 +1,12 @@
+.link-highlight {
+	background-repeat: no-repeat;
+	background-image: linear-gradient(transparent 50%,rgba(42,109,244,0.2) 50%);
+	background-image: linear-gradient(transparent 50%, scale-color($warning, $lightness: 40%) 50%);
+	background-size: 0% 100%;
+	will-change: background-size;
+	transition: background-size .3s cubic-bezier(.645,.045,.355,1);
+	transition: background-size .3s ease-in-out;
+	&:hover, &:focus {
+		background-size: 100% 100%;
+	}
+}

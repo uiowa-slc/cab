@@ -1,0 +1,8 @@
+---
+Name: mywebfonts
+---
+gorriecoe\Webfonts\View\Webfonts:
+  GoogleFonts:
+    - 'Roboto Condensed:regular,bold'
+    - 'Roboto: regular,bold,italic'
+    - 'Zilla Slab: regular,bold'

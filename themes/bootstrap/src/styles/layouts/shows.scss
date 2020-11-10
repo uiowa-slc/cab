@@ -1,0 +1,32 @@
+.late-night-feature {
+
+    position: relative;
+    padding: 20px 80px 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+
+    &__smalltext {
+
+        font-size: 12px;
+
+        a {
+
+            text-decoration: underline;
+        }
+    }
+
+    &__flag {
+        width: 60px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.card__banner-img {
+    display: block;
+    position: absolute;
+    width: 10%;
+    right: 0;
+}

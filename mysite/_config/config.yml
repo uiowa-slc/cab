@@ -3,8 +3,10 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: mysite
-SilverStripe\Assets\Flysystem\AssetAdapter:
-  file_permissions:
-    'file':
-      'public': '0644'
-      'private': '0600'
+SilverStripe\View\SSViewer:
+  themes:
+    - '$public'
+    - 'bootstrap'
+    - '$default'
+SilverStripe\Assets\InterventionBackend:
+  flush_enabled: false

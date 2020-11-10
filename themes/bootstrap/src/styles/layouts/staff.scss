@@ -1,0 +1,18 @@
+/* Staff Holder
+----------------------------------------------------*/
+.stafflist__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	grid-gap: 16px;
+}
+.stafflist {
+	&__text {
+		color: $body-color;
+		& p {
+			margin: 0;
+		}
+	}
+}
+
+/* Staff Page
+----------------------------------------------------*/

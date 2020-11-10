@@ -1,0 +1,20 @@
+# Paths for gulp
+#!!!! PATHS ARE RELATIVE TO vendor/md/bootstrap-project/ NOT SITE ROOT !!!!
+#Example path in theme:  - '../../../themes/bootstrap/src/scripts/whatever.js'
+#
+#Autoloads stuff in themes/[themename]/src/scripts/lib/* no need to place those here
+#Autoloads themes/[themename]/src/scripts/app.js after everything else, no need to add it here
+PATHS:
+  projectName: "cab"
+  theme: "bootstrap"
+  javascript:
+    - './node_modules/jquery/dist/jquery.js'
+    - './node_modules/popper.js/dist/umd/popper.min.js'
+    - './node_modules/tether/dist/js/tether.min.js'
+    - './node_modules/bootstrap/dist/js/bootstrap.min.js'
+    - './node_modules/@fortawesome/fontawesome-free/js/fontawesome.js'
+    - './node_modules/lazysizes/lazysizes.js'
+    - './node_modules/lazysizes/plugins/aspectratio/ls.aspectratio.js'
+    - './node_modules/flickity/dist/flickity.pkgd.js'
+    - './node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+

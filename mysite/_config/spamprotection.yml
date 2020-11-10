@@ -1,5 +1,5 @@
 ---
-name: cab-spamprotection
+name: myspamprotection
 ---
 SilverStripe\SpamProtection\Extension\FormSpamProtectionExtension:
     default_spam_protector: UndefinedOffset\NoCaptcha\Forms\NocaptchaProtector
