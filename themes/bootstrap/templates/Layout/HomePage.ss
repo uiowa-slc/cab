@@ -5,6 +5,7 @@
             <div class="col-lg-10">
                 <h2 class="hero-header">Entertainment Done Right.</h2>
                <p class="lead">CAB is your source for entertainment on campus! We provide a wide range of awesome activities for students every week throughout the year! Whether you're laughing yourself silly at one of our great comedy shows, or on the edge of your seat watching one of our incredible weekend movie series, we guarantee that you'll leave satisfied! We are entertainment DONE RIGHT!</p>
+               <p><a href="calendar/" class="btn btn-outline-light btn-large">See our calendar</a> <a href="get-involved/" class="btn btn-outline-light btn-large">Get Involved with CAB</a> <a href="collaborate/" class="btn btn-outline-light btn-large"> Collaborate with CAB</a></p>
 
             </div>
          
