@@ -4,11 +4,11 @@
 		<% if $Photo %>
 			<% if $Parent.PhotoOrientation == "Portrait" %>
 				<a href="$Link">
-					<img src="$Photo.Fill(234,350).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
+					<img src="$Photo.FocusFill(234,350).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
 				</a>
 			<% else %>
 				<a href="$Link">
-					<img src="$Photo.Fill(350,234).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
+					<img src="$Photo.FocusFill(350,234).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
 				</a>
 			<% end_if %>
 		<% else %>
