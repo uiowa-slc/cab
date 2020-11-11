@@ -1,21 +1,21 @@
 <% include Header %>
 
 <main class="container-xl my-5">
-	<div class="row">
-		<div class="col-md-10 offset-md-1">
+	<div class="row column">
+		<div class="">
             <%-- $Breadcrumbs --%>
 			<article id="content">
 				<h1>$Title</h1>
                 $Content
-
-				<% loop Children %> 
+                <div class="row">
+				<% loop Children %>
+				
+				<div class="col-lg-6">
 					<div class="row my-md-5">
 			   			<div class="col-3 committee-image">
 
 			   				<% if $Image %>
 			   				<img src="$Image.URL" class="w-100 d-block" style="border-radius: 300px" alt="" role="presentation">
-			   				<% else %>
-			   				$RenderedImage
 			   				<% end_if %>
 			   				
 			   			</div>
@@ -24,8 +24,10 @@
 							$Content
 						</div>
 					</div>
+				</div>
+				
 				<% end_loop %>
-
+				</div>
 			</article>
 			$Form
 			$PageComments
