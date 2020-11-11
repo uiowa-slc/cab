@@ -7,7 +7,7 @@
                 <div class="my-5">
                     <p class="h3 my-2"><i class="fab fa-facebook"></i> Find us on Facebook: <a href="$SiteConfig.FacebookLink" target="_blank" rel="noopener">@uiowacab</a><br />
                     </p>
-                    <p class="h3 my-2"><i class="fab fa-twitter"></i> Follow us on Instagram: <a href="$SiteConfig.InstagramLink" target="_blank" rel="noopener">@uiowacab
+                    <p class="h3 my-2"><i class="fab fa-instagram"></i> Follow us on Instagram: <a href="$SiteConfig.InstagramLink" target="_blank" rel="noopener">@uiowacab
                 </div>
 
             </div>
