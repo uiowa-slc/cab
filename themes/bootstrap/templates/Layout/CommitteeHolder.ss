@@ -19,7 +19,7 @@
 			   				<% end_if %>
 			   				
 			   			</div>
-			   		 	<div class="col-9 my-lg-4">
+			   		 	<div class="col-9">
 			   		 		<h3 class="$URLSegment">$Title</h3>
 							$Content
 						</div>
