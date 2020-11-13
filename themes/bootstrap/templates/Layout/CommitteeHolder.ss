@@ -1,8 +1,8 @@
 <% include Header %>
 
 <main class="container-xl my-5">
-	<div class="row column">
-		<div class="">
+	<div class="row">
+		<div class="col-lg-12">
             <%-- $Breadcrumbs --%>
 			<article id="content">
 				<h1>$Title</h1>
