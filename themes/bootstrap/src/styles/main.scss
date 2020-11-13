@@ -55,12 +55,15 @@
 /* bootstrap-project files (footer, remcalc, sidebar, login styles) can be included individually.
  (located in vendor/md/bootstrap-project/client/styles/)
 --------------------------------------------*/
-@import "mixins/remcalc";
-@import "components/footer";
-@import "components/breadcrumbs";
+@import "../../../../vendor/md/bootstrap-project/client/styles/mixins/remcalc";
+@import "../../../../vendor/md/bootstrap-project/client/styles/components/footer";
+@import "../../../../vendor/md/bootstrap-project/client/styles/components/breadcrumbs";
 // @import "components/sidebar";
-@import "layouts/login";
+@import "../../../../vendor/md/bootstrap-project/client/styles/layouts/login";
 
+//UIDS:
+
+@import "../../../../vendor/md/bootstrap-project/client/styles/uids/buttons";
 
 /* Components
 -------------------------------------------*/

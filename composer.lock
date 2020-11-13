@@ -920,12 +920,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "a37b08148d73d034609d0d4fbdd7e83a9e88b5d0"
+                "reference": "1432199ed338bfeece1716aeae307e60c397d213"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/a37b08148d73d034609d0d4fbdd7e83a9e88b5d0",
-                "reference": "a37b08148d73d034609d0d4fbdd7e83a9e88b5d0",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/1432199ed338bfeece1716aeae307e60c397d213",
+                "reference": "1432199ed338bfeece1716aeae307e60c397d213",
                 "shasum": ""
             },
             "require": {
@@ -945,7 +945,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/3",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2020-10-20T13:52:01+00:00"
+            "time": "2020-11-12T14:19:12+00:00"
         },
         {
             "name": "md/bootstrap-project",
@@ -953,12 +953,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project.git",
-                "reference": "bb0eab37af291bec4cc0bbf33f089317cdcee18b"
+                "reference": "115f27531a60cc73c997cdb29e64239792fdce1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/bb0eab37af291bec4cc0bbf33f089317cdcee18b",
-                "reference": "bb0eab37af291bec4cc0bbf33f089317cdcee18b",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/115f27531a60cc73c997cdb29e64239792fdce1d",
+                "reference": "115f27531a60cc73c997cdb29e64239792fdce1d",
                 "shasum": ""
             },
             "require": {
@@ -988,7 +988,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/tree/main",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/issues"
             },
-            "time": "2020-11-11T19:39:45+00:00"
+            "time": "2020-11-13T14:57:13+00:00"
         },
         {
             "name": "md/division-analytics",
@@ -4349,16 +4349,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5"
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220",
                 "shasum": ""
             },
             "require": {
@@ -4399,7 +4399,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-29T13:22:24+00:00"
+            "time": "2020-11-13T09:40:50+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",

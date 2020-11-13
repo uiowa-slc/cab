@@ -15,7 +15,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
                         <ul class="navbar-nav">
                             <% loop $Menu(1) %>
-                                <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %>">
+                                <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> nav-item-active active<% end_if %>">
                                     <a class="nav-link" href="$Link">$MenuTitle.XML</a>
                                 </li>
                             <% end_loop %>

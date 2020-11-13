@@ -25,7 +25,7 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #151515;
 $black: #000;
-
+$gray: #63666A;
 
 $primary: #d71f27;
 $highlight: $gold;
@@ -99,9 +99,9 @@ $spacers: (6: ($spacer * 4.5),
 9: ($spacer * 12));
 
 // Border
-$border-radius: .20rem;
-$border-radius-lg: .25rem;
-$border-radius-sm: .15rem;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
 // Navbar
 $navbar-padding-y: $spacer / 1;
