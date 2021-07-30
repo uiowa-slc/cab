@@ -27,7 +27,7 @@ $gray-900: #151515;
 $black: #000;
 $gray: #63666A;
 
-$primary: #d71f27;
+$primary: $gold;
 $highlight: $gold;
 $warning: $orange;
 $success: $green;
@@ -36,8 +36,8 @@ $secondary: $gray-600;
 $light: $gray-100;
 $dark: $gray-900;
 
-$theme-colors: ();
-$theme-colors: map-merge(("gray": $gray-200), $theme-colors);
+
+$link-color: $blue;
 
 // Grid breakpoints
 //
