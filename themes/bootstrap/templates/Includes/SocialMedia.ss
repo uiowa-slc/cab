@@ -1,4 +1,4 @@
-	<section class="bg-dark social-media text-white text-center py-3 py-sm-6">
+<section class="bg-dark social-media text-white text-center py-3 py-sm-6">
     <div class="container-xl">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-sm-8 col-md-7">
