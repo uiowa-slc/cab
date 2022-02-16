@@ -26,12 +26,14 @@
         <% if $Calendar.EventList %>
             <hr class="my-5" />
             <div class="row justify-content-center">
-                <div class="col-lg-7">
+                <div class="col-lg-12">
                     <% with $Calendar %>
                         <h2>Up next:</h2>
+                        <div class="row">
                         <% loop $EventList %>
-                            <% include ShowCard %>
+                            <div class="col-lg-4"><% include ShowCard %></div>
                         <% end_loop %>
+                        </div>
                         <p class="text-center">
                             <a href="calendar/" class="btn btn-outline-primary text-center">View Calendar</a>
                         </p> 

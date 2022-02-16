@@ -3,7 +3,7 @@
 
 <div class="container" role="main" id="content">
 
-	<div class="row d-flex ptop-30 justify-content-center">
+	<div class="row d-flex pt-3 justify-content-center">
 		<div class="col-lg-8">
 			<article>
 
@@ -164,7 +164,7 @@
     						<% if $Venue.Title %>
     							<% with $Venue %>
     								<% if $Link %>
-    									<a href="$Link" class="btn btn-warning btn-sm" itemprop="location">$Title</a>
+    									<a href="$Link" class="btn btn-sm" itemprop="location">$Title</a>
     								<% else %>
     									$Title
     								<% end_if %>

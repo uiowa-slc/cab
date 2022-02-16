@@ -7,13 +7,20 @@
 			<article id="content">
 			<h1>$Title</h1>
 		       $Content
-		      
+        </article>
+
+    </div>
+
+    <div class="row justify-content-center">
+		<div class="col-lg-12">
 	            <% if $EventList %>
 	            <hr />
 	             <h2>Up next:</h2>
-	                <% loop $EventList %>
-	                    <% include ShowCard %>
-	                <% end_loop %>
+                 <div class="row">
+                <% loop $EventList %>
+                    <div class="col-lg-4"><% include ShowCard %></div>
+                <% end_loop %>
+                </div>
 	            <% else %>
 	                  <p>No events are currently listed. Please check back soon.</p>
 	            <% end_if %><!-- end upcoming shows if statement -->
