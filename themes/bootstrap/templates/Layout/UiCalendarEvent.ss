@@ -188,3 +188,4 @@
 </div>
 
 <% include SocialMedia %>
+<% include InstaFeed %>
