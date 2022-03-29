@@ -39,3 +39,4 @@
 	</div>
 </main>
 <% include SocialMedia %>
+<% include InstaFeed %>

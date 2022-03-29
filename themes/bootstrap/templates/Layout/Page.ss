@@ -21,3 +21,4 @@
 </main>
 
 <% include SocialMedia %>
+<% include InstaFeed %>
